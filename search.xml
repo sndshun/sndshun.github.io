@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>23种经典设计模式</title>
+    <url>/2020/02/01/GoF23/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 常用代码段</title>
+    <url>/2019/10/07/JavaScript-Skills/</url>
+    <content><![CDATA[<p>JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果</p>
+<span id="more"></span>
+
+<h2 id="Quick-Console-log"><a href="#Quick-Console-log" class="headerlink" title="Quick Console.log"></a>Quick Console.log</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> c = <span class="built_in">console</span>.log.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> info = <span class="built_in">console</span>.info.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更加简短的 console.log() 或者是 console.info() </p>
+</blockquote>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">print1</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> print2 = <span class="function">() =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> sum2 = <span class="function">(<span class="params">x, y</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>通过箭头函数有效减少代码量，熟悉后更易阅读</p>
+</blockquote>
+<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array connection</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> concat = [...num1, ...num2]                 <span class="comment">// [1, 2, 3, 4, 5, 6]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(concat)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Copying An Array</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> alpha = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> copy = [...alpha]                           <span class="comment">// [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(copy)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array literals</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data = [<span class="number">100</span>, <span class="number">200</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> literal = [...data, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>]          <span class="comment">// [100,200,300,400,500]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(literal)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>展开运算符(ES6)，它接受一个可迭代对象并将其扩展为单个元素</p>
+</blockquote>
+<h2 id="Truncating-an-array"><a href="#Truncating-an-array" class="headerlink" title="Truncating an array"></a>Truncating an array</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr = [<span class="number">100</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>, <span class="number">600</span>]</span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">3</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// [100,200,300]</span></span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// []</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>length 方法不仅可以显示字符串大小，还可以将数组截断为任意大小</p>
+</blockquote>
+<h2 id="Smart-Replacing"><a href="#Smart-Replacing" class="headerlink" title="Smart Replacing"></a>Smart Replacing</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> str = <span class="string">&quot;This is potato and potato&quot;</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/</span>, <span class="string">&quot;tom&quot;</span>))          <span class="comment">// This is tomato and potato</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/g</span>, <span class="string">&quot;tom&quot;</span>))         <span class="comment">// This is tomato and tomato</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>替换特定词</p>
+</blockquote>
+<h2 id="Numerical-Separator"><a href="#Numerical-Separator" class="headerlink" title="Numerical Separator"></a>Numerical Separator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data1 = <span class="number">10_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data2 = <span class="number">3_0000_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data1)                              <span class="comment">// 100000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data2)                              <span class="comment">// 300000000</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这个简单的技巧可以提高 JavaScript 大量数据的可读性</p>
+</blockquote>
+<h2 id="Quick-Power-Calculation"><a href="#Quick-Power-Calculation" class="headerlink" title="Quick Power Calculation"></a>Quick Power Calculation</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Normal Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">4</span>, <span class="number">5</span>))                     <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">5</span>))                     <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Quick Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">4</span> ** <span class="number">5</span>)                             <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">2</span> ** <span class="number">5</span>)                             <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>pow() 方法来计算任何数字的幂，这个技巧将常规数学方法以快速形式计算次方</p>
+</blockquote>
+<h2 id="Rest-Parameter"><a href="#Rest-Parameter" class="headerlink" title="Rest Parameter"></a>Rest Parameter</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">...num</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> cal = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">const</span> a <span class="keyword">of</span> num) &#123;</span></span><br><span class="line"><span class="javascript">            cal += a</span></span><br><span class="line"><span class="javascript">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(cal)                            <span class="comment">// 27</span></span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    sum(<span class="number">20</span>,<span class="number">7</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Rest Parameter 语法用于处理函数中定义中的无限数量的参数</p>
+</blockquote>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>js-Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>时间标准</title>
+    <url>/2018/01/23/Date/</url>
+    <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
+<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
+</blockquote>
+<p>2016-08-9T10:01:54.123Z</p>
+<p>T代表后面跟着的是时间</p>
+<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
+<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
+</blockquote>
+<p>Thu Oct 16 07:13:48 GMT 2015</p>
+<hr>
+<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
+<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
+<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
+</blockquote>
+<p>Thu Sep 08 23:14:00 CST 2011</p>
+<hr>
+<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
+<p><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
+</blockquote>
+<p>2017-09-30T09:00:00</p>
+<hr>
+<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
+<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
+</blockquote>
+<p>1633786697</p>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Standardization</category>
+      </categories>
+      <tags>
+        <tag>Date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 格式转换</title>
+    <url>/2019/10/11/Javascript-Format/</url>
+    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
+<span id="more"></span>
+
+<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
+<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
+<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
+<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
+<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
+</blockquote>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>Format</category>
+      </categories>
+      <tags>
+        <tag>js-Format</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Promise</title>
+    <url>/2020/01/01/Promise/</url>
+    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
+<span id="more"></span>
+
+<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
+<p>并发：Concurrency</p>
+<p>并行：Parallelism</p>
+<p>异步：Asynchronous</p>
+<p>同步：Synchronous</p>
+</blockquote>
+<p>待完善。。。</p>
+<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
+<p>ECMAScript 6 原生提供了 Promise 对象。</p>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
+</blockquote>
+<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>js-Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2015/01/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>

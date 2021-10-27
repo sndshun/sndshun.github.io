@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>浅梦的笔记</title>
+  
+  <subtitle>整理中</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-10-14T06:14:06.899Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>浅梦</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>23种经典设计模式</title>
+    <link href="http://example.com/2020/02/01/GoF23/"/>
+    <id>http://example.com/2020/02/01/GoF23/</id>
+    <published>2020-02-01T04:00:00.000Z</published>
+    <updated>2021-10-14T06:14:06.899Z</updated>
+    
+    
+    
+    
+    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Promise</title>
+    <link href="http://example.com/2020/01/01/Promise/"/>
+    <id>http://example.com/2020/01/01/Promise/</id>
+    <published>2020-01-01T04:00:00.000Z</published>
+    <updated>2021-10-27T10:01:39.780Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="Skills" scheme="http://example.com/categories/JavaScript/Skills/"/>
+    
+    
+    <category term="js-Skills" scheme="http://example.com/tags/js-Skills/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 格式转换</title>
+    <link href="http://example.com/2019/10/11/Javascript-Format/"/>
+    <id>http://example.com/2019/10/11/Javascript-Format/</id>
+    <published>2019-10-11T04:00:00.000Z</published>
+    <updated>2021-10-12T14:04:39.577Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="Format" scheme="http://example.com/categories/JavaScript/Format/"/>
+    
+    
+    <category term="js-Format" scheme="http://example.com/tags/js-Format/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 常用代码段</title>
+    <link href="http://example.com/2019/10/07/JavaScript-Skills/"/>
+    <id>http://example.com/2019/10/07/JavaScript-Skills/</id>
+    <published>2019-10-07T04:00:00.000Z</published>
+    <updated>2021-10-12T14:05:02.929Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    <category term="Skills" scheme="http://example.com/categories/JavaScript/Skills/"/>
+    
+    
+    <category term="js-Skills" scheme="http://example.com/tags/js-Skills/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间标准</title>
+    <link href="http://example.com/2018/01/23/Date/"/>
+    <id>http://example.com/2018/01/23/Date/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2021-10-12T14:04:58.506Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
+&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
+&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Standardization" scheme="http://example.com/categories/Standardization/"/>
+    
+    
+    <category term="Date" scheme="http://example.com/tags/Date/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2015/01/01/hello-world/"/>
+    <id>http://example.com/2015/01/01/hello-world/</id>
+    <published>2015-01-01T04:00:00.000Z</published>
+    <updated>2021-10-08T07:58:49.363Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
