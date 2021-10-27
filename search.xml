@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>23种经典设计模式</title>
+    <url>/2020/02/01/GoF23/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>时间标准</title>
     <url>/2018/01/23/Date/</url>
     <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
@@ -44,14 +55,31 @@
       </tags>
   </entry>
   <entry>
-    <title>23种经典设计模式</title>
-    <url>/2020/02/01/GoF23/</url>
-    <content><![CDATA[]]></content>
+    <title>Promise</title>
+    <url>/2020/01/01/Promise/</url>
+    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
+<span id="more"></span>
+
+<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
+<p>并发：Concurrency</p>
+<p>并行：Parallelism</p>
+<p>异步：Asynchronous</p>
+<p>同步：Synchronous</p>
+</blockquote>
+<p>待完善。。。</p>
+<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
+<p>ECMAScript 6 原生提供了 Promise 对象。</p>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
+</blockquote>
+<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
       <categories>
-        <category>Java</category>
+        <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>知识点</tag>
       </tags>
   </entry>
   <entry>
@@ -110,34 +138,6 @@
       </categories>
       <tags>
         <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Promise</title>
-    <url>/2020/01/01/Promise/</url>
-    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
-<span id="more"></span>
-
-<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
-<p>并发：Concurrency</p>
-<p>并行：Parallelism</p>
-<p>异步：Asynchronous</p>
-<p>同步：Synchronous</p>
-</blockquote>
-<p>待完善。。。</p>
-<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
-<p>ECMAScript 6 原生提供了 Promise 对象。</p>
-<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
-</blockquote>
-<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>知识点</tag>
       </tags>
   </entry>
   <entry>
