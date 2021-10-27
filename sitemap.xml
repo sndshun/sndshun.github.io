@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2019/10/07/JavaScript-Skills/</loc>
+    
+    <lastmod>2021-10-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/01/Promise/</loc>
+    
+    <lastmod>2021-10-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2019/10/11/Javascript-Format/</loc>
+    
+    <lastmod>2021-10-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2018/01/23/Date/</loc>
+    
+    <lastmod>2021-10-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/schedule/index.html</loc>
     
     <lastmod>2021-10-27</lastmod>
@@ -30,37 +58,9 @@
   </url>
   
   <url>
-    <loc>http://example.com/2020/01/01/Promise/</loc>
-    
-    <lastmod>2021-10-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2020/02/01/GoF23/</loc>
     
     <lastmod>2021-10-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2019/10/07/JavaScript-Skills/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2018/01/23/Date/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2019/10/11/Javascript-Format/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
     
   </url>
   
@@ -81,7 +81,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/Date/</loc>
+    <loc>http://example.com/tags/%E5%9F%BA%E7%9F%B3/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -95,14 +95,21 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/js-Format/</loc>
+    <loc>http://example.com/tags/Skills/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/js-Skills/</loc>
+    <loc>http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <lastmod>2021-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Format/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -111,7 +118,7 @@
 
   
   <url>
-    <loc>http://example.com/categories/Standardization/</loc>
+    <loc>http://example.com/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -132,14 +139,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/Format/</loc>
+    <loc>http://example.com/categories/JavaScript/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/Skills/</loc>
+    <loc>http://example.com/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</loc>
     <lastmod>2021-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

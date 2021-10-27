@@ -38,7 +38,7 @@
     <link href="http://example.com/2020/01/01/Promise/"/>
     <id>http://example.com/2020/01/01/Promise/</id>
     <published>2020-01-01T04:00:00.000Z</published>
-    <updated>2021-10-27T10:01:39.780Z</updated>
+    <updated>2021-10-27T12:41:25.081Z</updated>
     
     
     <summary type="html">&lt;p&gt;异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用&lt;/p&gt;</summary>
@@ -47,10 +47,8 @@
     
     <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
     
-    <category term="Skills" scheme="http://example.com/categories/JavaScript/Skills/"/>
     
-    
-    <category term="js-Skills" scheme="http://example.com/tags/js-Skills/"/>
+    <category term="知识点" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
   </entry>
   
@@ -59,7 +57,7 @@
     <link href="http://example.com/2019/10/11/Javascript-Format/"/>
     <id>http://example.com/2019/10/11/Javascript-Format/</id>
     <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-10-12T14:04:39.577Z</updated>
+    <updated>2021-10-27T12:38:43.427Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
@@ -68,10 +66,10 @@
     
     <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
     
-    <category term="Format" scheme="http://example.com/categories/JavaScript/Format/"/>
+    <category term="格式转换" scheme="http://example.com/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
     
-    <category term="js-Format" scheme="http://example.com/tags/js-Format/"/>
+    <category term="Format" scheme="http://example.com/tags/Format/"/>
     
   </entry>
   
@@ -80,7 +78,7 @@
     <link href="http://example.com/2019/10/07/JavaScript-Skills/"/>
     <id>http://example.com/2019/10/07/JavaScript-Skills/</id>
     <published>2019-10-07T04:00:00.000Z</published>
-    <updated>2021-10-12T14:05:02.929Z</updated>
+    <updated>2021-10-27T12:41:25.088Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
@@ -89,10 +87,10 @@
     
     <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
     
-    <category term="Skills" scheme="http://example.com/categories/JavaScript/Skills/"/>
+    <category term="技巧" scheme="http://example.com/categories/JavaScript/%E6%8A%80%E5%B7%A7/"/>
     
     
-    <category term="js-Skills" scheme="http://example.com/tags/js-Skills/"/>
+    <category term="Skills" scheme="http://example.com/tags/Skills/"/>
     
   </entry>
   
@@ -101,7 +99,7 @@
     <link href="http://example.com/2018/01/23/Date/"/>
     <id>http://example.com/2018/01/23/Date/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-10-12T14:04:58.506Z</updated>
+    <updated>2021-10-27T12:38:43.421Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
@@ -113,10 +111,10 @@
     
     
     
-    <category term="Standardization" scheme="http://example.com/categories/Standardization/"/>
+    <category term="知识点" scheme="http://example.com/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-    <category term="Date" scheme="http://example.com/tags/Date/"/>
+    <category term="基石" scheme="http://example.com/tags/%E5%9F%BA%E7%9F%B3/"/>
     
   </entry>
   

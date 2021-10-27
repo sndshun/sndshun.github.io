@@ -37,10 +37,10 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>Standardization</category>
+        <category>知识点</category>
       </categories>
       <tags>
-        <tag>Date</tag>
+        <tag>基石</tag>
       </tags>
   </entry>
   <entry>
@@ -52,63 +52,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript 格式转换</title>
-    <url>/2019/10/11/Javascript-Format/</url>
-    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
-<span id="more"></span>
-
-<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
-<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
-<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
-<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
-<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
-<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-        <category>Format</category>
-      </categories>
-      <tags>
-        <tag>js-Format</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Promise</title>
-    <url>/2020/01/01/Promise/</url>
-    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
-<span id="more"></span>
-
-<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
-<p>并发：Concurrency</p>
-<p>并行：Parallelism</p>
-<p>异步：Asynchronous</p>
-<p>同步：Synchronous</p>
-</blockquote>
-<p>待完善。。。</p>
-<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
-<p>ECMAScript 6 原生提供了 Promise 对象。</p>
-<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
-</blockquote>
-<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>js-Skills</tag>
       </tags>
   </entry>
   <entry>
@@ -163,10 +106,38 @@
 ]]></content>
       <categories>
         <category>JavaScript</category>
-        <category>Skills</category>
+        <category>技巧</category>
       </categories>
       <tags>
-        <tag>js-Skills</tag>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Promise</title>
+    <url>/2020/01/01/Promise/</url>
+    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
+<span id="more"></span>
+
+<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
+<p>并发：Concurrency</p>
+<p>并行：Parallelism</p>
+<p>异步：Asynchronous</p>
+<p>同步：Synchronous</p>
+</blockquote>
+<p>待完善。。。</p>
+<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
+<p>ECMAScript 6 原生提供了 Promise 对象。</p>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
+</blockquote>
+<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>知识点</tag>
       </tags>
   </entry>
   <entry>
@@ -188,5 +159,33 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>JavaScript 格式转换</title>
+    <url>/2019/10/11/Javascript-Format/</url>
+    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
+<span id="more"></span>
+
+<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
+<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
+<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
+<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
+<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
+</blockquote>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>格式转换</category>
+      </categories>
+      <tags>
+        <tag>Format</tag>
+      </tags>
   </entry>
 </search>
