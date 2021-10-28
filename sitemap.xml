@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2019/10/07/JavaScript-Skills/</loc>
+    <loc>https://sndshun.xyz/2019/10/07/JavaScript-Skills/</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/01/01/Promise/</loc>
+    <loc>https://sndshun.xyz/2020/01/01/Promise/</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2019/10/11/Javascript-Format/</loc>
+    <loc>https://sndshun.xyz/2019/10/11/Javascript-Format/</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2018/01/23/Date/</loc>
+    <loc>https://sndshun.xyz/2018/01/23/Date/</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/schedule/index.html</loc>
+    <loc>https://sndshun.xyz/schedule/index.html</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>https://sndshun.xyz/about/index.html</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://sndshun.xyz/categories/index.html</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://sndshun.xyz/tags/index.html</loc>
     
     <lastmod>2021-10-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/02/01/GoF23/</loc>
+    <loc>https://sndshun.xyz/2020/02/01/GoF23/</loc>
     
     <lastmod>2021-10-14</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2015/01/01/hello-world/</loc>
+    <loc>https://sndshun.xyz/2015/01/01/hello-world/</loc>
     
     <lastmod>2021-10-08</lastmod>
     
@@ -73,7 +73,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://sndshun.xyz/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -81,35 +81,35 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E5%9F%BA%E7%9F%B3/</loc>
+    <loc>https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Java/</loc>
+    <loc>https://sndshun.xyz/tags/Java/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Format/</loc>
+    <loc>https://sndshun.xyz/tags/Format/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Skills/</loc>
+    <loc>https://sndshun.xyz/tags/Skills/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <loc>https://sndshun.xyz/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -118,35 +118,35 @@
 
   
   <url>
-    <loc>http://example.com/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <loc>https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Java/</loc>
+    <loc>https://sndshun.xyz/categories/Java/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/</loc>
+    <loc>https://sndshun.xyz/categories/JavaScript/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</loc>
+    <loc>https://sndshun.xyz/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/JavaScript/%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://sndshun.xyz/categories/JavaScript/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
