@@ -74,7 +74,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,35 +82,35 @@
   
   <url>
     <loc>http://example.com/tags/%E5%9F%BA%E7%9F%B3/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Java/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Format/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Skills/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,35 +119,35 @@
   
   <url>
     <loc>http://example.com/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/Java/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/JavaScript/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/JavaScript/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
