@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2021-10-14T06:14:06.899Z</updated>
+  <updated>2021-10-28T14:01:08.156Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -17,19 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>23种经典设计模式</title>
-    <link href="https://sndshun.xyz/2020/02/01/GoF23/"/>
-    <id>https://sndshun.xyz/2020/02/01/GoF23/</id>
-    <published>2020-02-01T04:00:00.000Z</published>
-    <updated>2021-10-14T06:14:06.899Z</updated>
+    <title>Vue3 新特性</title>
+    <link href="https://sndshun.xyz/2021/10/28/Vue3/"/>
+    <id>https://sndshun.xyz/2021/10/28/Vue3/</id>
+    <published>2021-10-28T04:00:00.000Z</published>
+    <updated>2021-10-28T14:01:08.156Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化&lt;/p&gt;</summary>
     
     
     
+    <category term="JavaScript" scheme="https://sndshun.xyz/categories/JavaScript/"/>
     
-    <category term="Java" scheme="https://sndshun.xyz/categories/Java/"/>
+    
+    <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML 实用标签</title>
+    <link href="https://sndshun.xyz/2020/10/30/HTML-tags/"/>
+    <id>https://sndshun.xyz/2020/10/30/HTML-tags/</id>
+    <published>2020-10-30T04:00:00.000Z</published>
+    <updated>2021-10-30T11:40:47.495Z</updated>
     
     
-    <category term="Java" scheme="https://sndshun.xyz/tags/Java/"/>
+    <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="HTML" scheme="https://sndshun.xyz/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://sndshun.xyz/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又发现一个小网站</title>
+    <link href="https://sndshun.xyz/2020/01/23/utils/utils/"/>
+    <id>https://sndshun.xyz/2020/01/23/utils/utils/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2021-10-30T11:40:47.504Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://sndshun.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="学习工具" scheme="https://sndshun.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -57,7 +97,7 @@
     <link href="https://sndshun.xyz/2019/10/11/Javascript-Format/"/>
     <id>https://sndshun.xyz/2019/10/11/Javascript-Format/</id>
     <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-10-27T12:38:43.427Z</updated>
+    <updated>2021-10-28T12:16:22.178Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
@@ -66,10 +106,8 @@
     
     <category term="JavaScript" scheme="https://sndshun.xyz/categories/JavaScript/"/>
     
-    <category term="格式转换" scheme="https://sndshun.xyz/categories/JavaScript/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
-    
-    <category term="Format" scheme="https://sndshun.xyz/tags/Format/"/>
+    <category term="格式转换" scheme="https://sndshun.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
@@ -78,7 +116,7 @@
     <link href="https://sndshun.xyz/2019/10/07/JavaScript-Skills/"/>
     <id>https://sndshun.xyz/2019/10/07/JavaScript-Skills/</id>
     <published>2019-10-07T04:00:00.000Z</published>
-    <updated>2021-10-27T12:41:25.088Z</updated>
+    <updated>2021-10-28T12:16:08.336Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
@@ -87,10 +125,8 @@
     
     <category term="JavaScript" scheme="https://sndshun.xyz/categories/JavaScript/"/>
     
-    <category term="技巧" scheme="https://sndshun.xyz/categories/JavaScript/%E6%8A%80%E5%B7%A7/"/>
     
-    
-    <category term="Skills" scheme="https://sndshun.xyz/tags/Skills/"/>
+    <category term="技巧" scheme="https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
