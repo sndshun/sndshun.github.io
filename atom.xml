@@ -40,7 +40,7 @@
     <link href="https://sndshun.xyz/2020/10/30/HTML-tags/"/>
     <id>https://sndshun.xyz/2020/10/30/HTML-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2021-10-30T11:40:47.495Z</updated>
+    <updated>2021-10-30T12:35:22.108Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
@@ -56,10 +56,10 @@
   
   <entry>
     <title>又发现一个小网站</title>
-    <link href="https://sndshun.xyz/2020/01/23/utils/utils/"/>
-    <id>https://sndshun.xyz/2020/01/23/utils/utils/</id>
+    <link href="https://sndshun.xyz/2020/01/23/utils/"/>
+    <id>https://sndshun.xyz/2020/01/23/utils/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2021-10-30T11:40:47.504Z</updated>
+    <updated>2021-10-30T12:35:35.863Z</updated>
     
     
     <summary type="html">&lt;p&gt;理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。&lt;/p&gt;</summary>
@@ -78,7 +78,7 @@
     <link href="https://sndshun.xyz/2020/01/01/Promise/"/>
     <id>https://sndshun.xyz/2020/01/01/Promise/</id>
     <published>2020-01-01T04:00:00.000Z</published>
-    <updated>2021-10-27T12:41:25.081Z</updated>
+    <updated>2021-10-30T09:45:56.823Z</updated>
     
     
     <summary type="html">&lt;p&gt;异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用&lt;/p&gt;</summary>
