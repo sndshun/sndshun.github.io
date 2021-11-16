@@ -326,6 +326,8 @@
 <p>将编写的参数处理器注册</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addArgumentResolvers</span><span class="params">(List&lt;HandlerMethodArgumentResolver&gt; resolvers)</span> </span>&#123;</span><br><span class="line">        WebMvcConfigurer.<span class="keyword">super</span>.addArgumentResolvers(resolvers);</span><br><span class="line">        <span class="comment">//配置自定义处理器</span></span><br><span class="line">        resolvers.add(<span class="keyword">new</span> JsonResolver());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png" alt="uTools_1637050412679" style="zoom:33%;" />
+
 <p><a href="https://docs.apipost.cn/preview/28bf59b888c9069c/71437f5c10135a51">这里可以查看用法</a></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>除此外还有别的解决方法,这篇就先分享本人常用的三种.</p>
 <p>关于这三种方法缺点也是很明显.</p>

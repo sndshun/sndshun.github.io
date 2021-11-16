@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2021-11-16T07:35:32.873Z</updated>
+  <updated>2021-11-16T08:13:45.602Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sndshun.xyz/2021/11/15/JsonParam/"/>
     <id>https://sndshun.xyz/2021/11/15/JsonParam/</id>
     <published>2021-11-15T04:00:00.000Z</published>
-    <updated>2021-11-16T07:35:32.873Z</updated>
+    <updated>2021-11-16T08:13:45.602Z</updated>
     
     
     <summary type="html">&lt;p&gt;在写 &lt;code&gt;Spring Boot&lt;/code&gt; 加 &lt;code&gt;Vue&lt;/code&gt; 项目时,发现由 &lt;code&gt;Spring MVC&lt;/code&gt; 提供的@RequestBody 注解在一个方法内,只能有一个。&lt;/p&gt;
