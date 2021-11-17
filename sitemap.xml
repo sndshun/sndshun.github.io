@@ -102,20 +102,6 @@
 
   
   <url>
-    <loc>https://sndshun.xyz/tags/JavaScript/</loc>
-    <lastmod>2021-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2021-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/tags/HTML/</loc>
     <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
@@ -130,7 +116,28 @@
   </url>
   
   <url>
+    <loc>https://sndshun.xyz/tags/JavaScript/</loc>
+    <lastmod>2021-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2021-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sndshun.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2021-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/tags/Vue/</loc>
     <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -145,13 +152,6 @@
   
   <url>
     <loc>https://sndshun.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/tags/Vue/</loc>
     <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
