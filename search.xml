@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>时间标准</title>
+    <url>/2018/01/23/Date/</url>
+    <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
+<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
+</blockquote>
+<p>2016-08-9T10:01:54.123Z</p>
+<p>T代表后面跟着的是时间</p>
+<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
+<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
+</blockquote>
+<p>Thu Oct 16 07:13:48 GMT 2015</p>
+<hr>
+<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
+<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
+<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
+</blockquote>
+<p>Thu Sep 08 23:14:00 CST 2011</p>
+<hr>
+<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
+<p><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
+</blockquote>
+<p>2017-09-30T09:00:00</p>
+<hr>
+<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
+<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
+</blockquote>
+<p>1633786697</p>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>知识点</category>
+      </categories>
+      <tags>
+        <tag>基石</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML 实用标签</title>
     <url>/2020/10/30/HTML-tags/</url>
     <content><![CDATA[<p><code>HTML</code>标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。</p>
@@ -68,46 +111,31 @@
       </tags>
   </entry>
   <entry>
-    <title>时间标准</title>
-    <url>/2018/01/23/Date/</url>
-    <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
-<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
-</blockquote>
-<p>2016-08-9T10:01:54.123Z</p>
-<p>T代表后面跟着的是时间</p>
-<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
+    <title>JavaScript 格式转换</title>
+    <url>/2019/10/11/Javascript-Format/</url>
+    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
 <span id="more"></span>
 
-<hr>
-<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
-<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
+<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
+<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
+<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
+<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
+<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
 </blockquote>
-<p>Thu Oct 16 07:13:48 GMT 2015</p>
-<hr>
-<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
-<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
-<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
-</blockquote>
-<p>Thu Sep 08 23:14:00 CST 2011</p>
-<hr>
-<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
-<p><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
-</blockquote>
-<p>2017-09-30T09:00:00</p>
-<hr>
-<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
-<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
-</blockquote>
-<p>1633786697</p>
 <blockquote>
 <p><em>！如有错误请在评论及时指出</em></p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>知识点</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>基石</tag>
+        <tag>JavaScript</tag>
+        <tag>格式转换</tag>
       </tags>
   </entry>
   <entry>
@@ -169,52 +197,50 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 格式转换</title>
-    <url>/2019/10/11/Javascript-Format/</url>
-    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
+    <title>Controller 接收多个json对象</title>
+    <url>/2021/11/15/JsonParam/</url>
+    <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
+<p>但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用</p>
 <span id="more"></span>
 
-<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-url-加-请求体"><a href="#1-url-加-请求体" class="headerlink" title="1.url 加 请求体"></a>1.url 加 请求体</h2><p>将分页需要的信息通过url拼接的方式传给后台,将json对象放在body请求体中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png" alt="uTools_1637043775953"></p>
+<p>请求工具是 <code>axios</code> 会将params属性里的json对象自动拼接到url,需要注意的是 <code>@RequestBody</code> 只能放在参数第一位</p>
+<h2 id="2-再次封装实体类"><a href="#2-再次封装实体类" class="headerlink" title="2.再次封装实体类"></a>2.再次封装实体类</h2><p>封装实体类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PageAndPictureDTO</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Page&lt;Picture&gt; page;</span><br><span class="line">    <span class="keyword">private</span> Picture picture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
-<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
-<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
-<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
-<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
-<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
+<p>前端传入的 <code>json</code> 对象</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;page&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;current&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;size&quot;</span>: <span class="number">5</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;picture&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">        <span class="attr">&quot;type&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>Controller</code> 接收</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;list&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> R <span class="title">test</span><span class="params">(<span class="meta">@RequestBody</span> PageAndPictureDTO dto)</span></span>&#123;</span><br><span class="line">     <span class="keyword">return</span> R.ok(<span class="keyword">this</span>.pictureService.getAll(dto.getPage(),dto.getPicture()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-自定义MVC参数处理器"><a href="#3-自定义MVC参数处理器" class="headerlink" title="3.自定义MVC参数处理器"></a>3.自定义MVC参数处理器</h2><p>定义注解</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Target(ElementType.PARAMETER)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JsonParam &#123;</span><br><span class="line">    <span class="comment">//是否脱敏 默认大小写敏感</span></span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">insensitive</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>编写参数处理器</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonResolver</span> <span class="keyword">implements</span> <span class="title">HandlerMethodArgumentResolver</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String JSON_REQUEST_ATTRIBUTE_NAME = <span class="string">&quot;JSON_REQUEST_BODY&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回值为true时才调用resolveArgument()</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> boolean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supportsParameter</span><span class="params">(MethodParameter methodParameter)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 参数是否有@JsonParam注解</span></span><br><span class="line">        <span class="keyword">return</span> methodParameter.hasParameterAnnotation(JsonParam.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 解析json参数,并反序列化</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter       是spring对被注解修饰过参数的包装，从其中能拿到参数的反射相关信息。</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> modelAndViewContainer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> nativeWebRequest</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webDataBinderFactory</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 根据json反序列化后的对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">resolveArgument</span><span class="params">(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">// 获取参数注解</span></span><br><span class="line">        JsonParam jsonParam = methodParameter.getParameterAnnotation(JsonParam.class);</span><br><span class="line">        <span class="comment">// 获取前端传入的数据</span></span><br><span class="line">        String jsonBody = getRequestBody(nativeWebRequest);</span><br><span class="line">        <span class="comment">// 无数据传入直接返回</span></span><br><span class="line">        <span class="keyword">if</span> (jsonBody.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 创建jackson对象,设置jackson只序列不为空和JavaBean所拥有的属性</span></span><br><span class="line">        ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper()</span><br><span class="line">                .setSerializationInclusion(JsonInclude.Include.NON_NULL)</span><br><span class="line">                .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);</span><br><span class="line"></span><br><span class="line">        objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, jsonParam.insensitive());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取Controller中参数的类型</span></span><br><span class="line">        Class clazz = methodParameter.getParameterType();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 存放泛型类型</span></span><br><span class="line">        Class Superclass = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">// 获取参数类型及泛型类型</span></span><br><span class="line">        Type classParameterizedType = methodParameter.getGenericParameterType();</span><br><span class="line">        <span class="comment">// 判断是否泛型的实例</span></span><br><span class="line">        <span class="keyword">if</span> (classParameterizedType <span class="keyword">instanceof</span> ParameterizedType) &#123;</span><br><span class="line">            <span class="comment">// 强转为泛型</span></span><br><span class="line">            ParameterizedType parameterizedType = (ParameterizedType) classParameterizedType;</span><br><span class="line">            <span class="comment">// 获取第一个泛型Type,强转为Class</span></span><br><span class="line">            Superclass = (Class) parameterizedType.getActualTypeArguments()[<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果参数类型是list,返回ArrayList,list无法newInstance()</span></span><br><span class="line">        <span class="keyword">if</span> (clazz == List.class) &#123;</span><br><span class="line">            clazz = ArrayList.class;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例化</span></span><br><span class="line">        Object target = clazz.newInstance();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断是否为集合类型</span></span><br><span class="line">        <span class="keyword">if</span> (Collection.class.isAssignableFrom(clazz)) &#123;</span><br><span class="line">            <span class="comment">// 设置jackson反序列化时的类型</span></span><br><span class="line">            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(clazz, Superclass);</span><br><span class="line">            <span class="comment">// jackson反序列化为对象</span></span><br><span class="line">            target = objectMapper.readValue(jsonBody, javaType);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            target = objectMapper.readValue(jsonBody, clazz);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取请求体JSON字符串</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webRequest mvc封装后的请求体</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 前端传入的json</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getRequestBody</span><span class="params">(NativeWebRequest webRequest)</span> </span>&#123;</span><br><span class="line">        HttpServletRequest servletRequest = webRequest.getNativeRequest(HttpServletRequest.class);</span><br><span class="line">        String jsonBody = (String) webRequest.getAttribute(JSON_REQUEST_ATTRIBUTE_NAME, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (jsonBody == <span class="keyword">null</span>) &#123;</span><br><span class="line">                jsonBody = servletRequest.getReader().lines().collect(Collectors.joining(<span class="string">&quot;\n&quot;</span>));</span><br><span class="line">                webRequest.setAttribute(JSON_REQUEST_ATTRIBUTE_NAME, jsonBody, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jsonBody;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将编写的参数处理器注册</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addArgumentResolvers</span><span class="params">(List&lt;HandlerMethodArgumentResolver&gt; resolvers)</span> </span>&#123;</span><br><span class="line">        WebMvcConfigurer.<span class="keyword">super</span>.addArgumentResolvers(resolvers);</span><br><span class="line">        <span class="comment">//配置自定义处理器</span></span><br><span class="line">        resolvers.add(<span class="keyword">new</span> JsonResolver());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png" alt="uTools_1637050412679" style="zoom:33%;" />
+
+<p><a href="https://docs.apipost.cn/preview/28bf59b888c9069c/71437f5c10135a51">这里可以查看用法</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>除此外还有别的解决方法,这篇就先分享本人常用的三种.</p>
+<p>关于这三种方法缺点也是很明显.</p>
+<h3 id="url-加-请求体"><a href="#url-加-请求体" class="headerlink" title="url 加  请求体"></a>url 加  请求体</h3><p>这种方法显然是只能接受俩个对象的,如果要加入第三个对象,是接收不到的.并且url有着长度限制.</p>
+<p>但是如果只是传俩个对象,这种方法最为便利,不用对项目做任何更改</p>
+<h3 id="封装实体类"><a href="#封装实体类" class="headerlink" title="封装实体类"></a>封装实体类</h3><p>这种方法不怎么灵活,每次参数组合改变都要新建一个封装类.</p>
+<p>个人项目经验还不够丰富,不知道配合DTO层用这种方法是不是会好很多</p>
+<h3 id="自定义MVC参数处理器"><a href="#自定义MVC参数处理器" class="headerlink" title="自定义MVC参数处理器"></a>自定义MVC参数处理器</h3><p>用这个方法会使小项目结构变得复杂,并且使用了 <code>jackson</code> 进行反序列化,spring boot本身集成了 <code>jackson</code> 这个包,但如果是ssm项目还需导入,或者换成阿里的 <code>fastJson</code> .</p>
+<p>项目本来就很复杂,并且有着各种类,用这个方法配置一次,之后就随意使用了.</p>
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>后端</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-        <tag>格式转换</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue3 新特性</title>
-    <url>/2021/10/28/Vue3/</url>
-    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
-<span id="more"></span>
-
-<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
-<blockquote>
-<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
-<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
-<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
-</blockquote>
-<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>Vue</tag>
+        <tag>技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -266,50 +292,24 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Controller 接收多个json对象</title>
-    <url>/2021/11/15/JsonParam/</url>
-    <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
-<p>但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用</p>
+    <title>Vue3 新特性</title>
+    <url>/2021/10/28/Vue3/</url>
+    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
 <span id="more"></span>
 
-<h2 id="1-url-加-请求体"><a href="#1-url-加-请求体" class="headerlink" title="1.url 加 请求体"></a>1.url 加 请求体</h2><p>将分页需要的信息通过url拼接的方式传给后台,将json对象放在body请求体中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png" alt="uTools_1637043775953"></p>
-<p>请求工具是 <code>axios</code> 会将params属性里的json对象自动拼接到url,需要注意的是 <code>@RequestBody</code> 只能放在参数第一位</p>
-<h2 id="2-再次封装实体类"><a href="#2-再次封装实体类" class="headerlink" title="2.再次封装实体类"></a>2.再次封装实体类</h2><p>封装实体类</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PageAndPictureDTO</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Page&lt;Picture&gt; page;</span><br><span class="line">    <span class="keyword">private</span> Picture picture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>前端传入的 <code>json</code> 对象</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;page&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;current&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;size&quot;</span>: <span class="number">5</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;picture&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">        <span class="attr">&quot;type&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>Controller</code> 接收</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;list&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> R <span class="title">test</span><span class="params">(<span class="meta">@RequestBody</span> PageAndPictureDTO dto)</span></span>&#123;</span><br><span class="line">     <span class="keyword">return</span> R.ok(<span class="keyword">this</span>.pictureService.getAll(dto.getPage(),dto.getPicture()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-自定义MVC参数处理器"><a href="#3-自定义MVC参数处理器" class="headerlink" title="3.自定义MVC参数处理器"></a>3.自定义MVC参数处理器</h2><p>定义注解</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Target(ElementType.PARAMETER)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JsonParam &#123;</span><br><span class="line">    <span class="comment">//是否脱敏 默认大小写敏感</span></span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">insensitive</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>编写参数处理器</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonResolver</span> <span class="keyword">implements</span> <span class="title">HandlerMethodArgumentResolver</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String JSON_REQUEST_ATTRIBUTE_NAME = <span class="string">&quot;JSON_REQUEST_BODY&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回值为true时才调用resolveArgument()</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> boolean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supportsParameter</span><span class="params">(MethodParameter methodParameter)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 参数是否有@JsonParam注解</span></span><br><span class="line">        <span class="keyword">return</span> methodParameter.hasParameterAnnotation(JsonParam.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 解析json参数,并反序列化</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter       是spring对被注解修饰过参数的包装，从其中能拿到参数的反射相关信息。</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> modelAndViewContainer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> nativeWebRequest</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webDataBinderFactory</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 根据json反序列化后的对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">resolveArgument</span><span class="params">(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">// 获取参数注解</span></span><br><span class="line">        JsonParam jsonParam = methodParameter.getParameterAnnotation(JsonParam.class);</span><br><span class="line">        <span class="comment">// 获取前端传入的数据</span></span><br><span class="line">        String jsonBody = getRequestBody(nativeWebRequest);</span><br><span class="line">        <span class="comment">// 无数据传入直接返回</span></span><br><span class="line">        <span class="keyword">if</span> (jsonBody.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 创建jackson对象,设置jackson只序列不为空和JavaBean所拥有的属性</span></span><br><span class="line">        ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper()</span><br><span class="line">                .setSerializationInclusion(JsonInclude.Include.NON_NULL)</span><br><span class="line">                .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);</span><br><span class="line"></span><br><span class="line">        objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, jsonParam.insensitive());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取Controller中参数的类型</span></span><br><span class="line">        Class clazz = methodParameter.getParameterType();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 存放泛型类型</span></span><br><span class="line">        Class Superclass = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">// 获取参数类型及泛型类型</span></span><br><span class="line">        Type classParameterizedType = methodParameter.getGenericParameterType();</span><br><span class="line">        <span class="comment">// 判断是否泛型的实例</span></span><br><span class="line">        <span class="keyword">if</span> (classParameterizedType <span class="keyword">instanceof</span> ParameterizedType) &#123;</span><br><span class="line">            <span class="comment">// 强转为泛型</span></span><br><span class="line">            ParameterizedType parameterizedType = (ParameterizedType) classParameterizedType;</span><br><span class="line">            <span class="comment">// 获取第一个泛型Type,强转为Class</span></span><br><span class="line">            Superclass = (Class) parameterizedType.getActualTypeArguments()[<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果参数类型是list,返回ArrayList,list无法newInstance()</span></span><br><span class="line">        <span class="keyword">if</span> (clazz == List.class) &#123;</span><br><span class="line">            clazz = ArrayList.class;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例化</span></span><br><span class="line">        Object target = clazz.newInstance();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断是否为集合类型</span></span><br><span class="line">        <span class="keyword">if</span> (Collection.class.isAssignableFrom(clazz)) &#123;</span><br><span class="line">            <span class="comment">// 设置jackson反序列化时的类型</span></span><br><span class="line">            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(clazz, Superclass);</span><br><span class="line">            <span class="comment">// jackson反序列化为对象</span></span><br><span class="line">            target = objectMapper.readValue(jsonBody, javaType);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            target = objectMapper.readValue(jsonBody, clazz);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取请求体JSON字符串</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webRequest mvc封装后的请求体</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 前端传入的json</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getRequestBody</span><span class="params">(NativeWebRequest webRequest)</span> </span>&#123;</span><br><span class="line">        HttpServletRequest servletRequest = webRequest.getNativeRequest(HttpServletRequest.class);</span><br><span class="line">        String jsonBody = (String) webRequest.getAttribute(JSON_REQUEST_ATTRIBUTE_NAME, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (jsonBody == <span class="keyword">null</span>) &#123;</span><br><span class="line">                jsonBody = servletRequest.getReader().lines().collect(Collectors.joining(<span class="string">&quot;\n&quot;</span>));</span><br><span class="line">                webRequest.setAttribute(JSON_REQUEST_ATTRIBUTE_NAME, jsonBody, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jsonBody;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>将编写的参数处理器注册</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addArgumentResolvers</span><span class="params">(List&lt;HandlerMethodArgumentResolver&gt; resolvers)</span> </span>&#123;</span><br><span class="line">        WebMvcConfigurer.<span class="keyword">super</span>.addArgumentResolvers(resolvers);</span><br><span class="line">        <span class="comment">//配置自定义处理器</span></span><br><span class="line">        resolvers.add(<span class="keyword">new</span> JsonResolver());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png" alt="uTools_1637050412679" style="zoom:33%;" />
-
-<p><a href="https://docs.apipost.cn/preview/28bf59b888c9069c/71437f5c10135a51">这里可以查看用法</a></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>除此外还有别的解决方法,这篇就先分享本人常用的三种.</p>
-<p>关于这三种方法缺点也是很明显.</p>
-<h3 id="url-加-请求体"><a href="#url-加-请求体" class="headerlink" title="url 加  请求体"></a>url 加  请求体</h3><p>这种方法显然是只能接受俩个对象的,如果要加入第三个对象,是接收不到的.并且url有着长度限制.</p>
-<p>但是如果只是传俩个对象,这种方法最为便利,不用对项目做任何更改</p>
-<h3 id="封装实体类"><a href="#封装实体类" class="headerlink" title="封装实体类"></a>封装实体类</h3><p>这种方法不怎么灵活,每次参数组合改变都要新建一个封装类.</p>
-<p>个人项目经验还不够丰富,不知道配合DTO层用这种方法是不是会好很多</p>
-<h3 id="自定义MVC参数处理器"><a href="#自定义MVC参数处理器" class="headerlink" title="自定义MVC参数处理器"></a>自定义MVC参数处理器</h3><p>用这个方法会使小项目结构变得复杂,并且使用了 <code>jackson</code> 进行反序列化,spring boot本身集成了 <code>jackson</code> 这个包,但如果是ssm项目还需导入,或者换成阿里的 <code>fastJson</code> .</p>
-<p>项目本来就很复杂,并且有着各种类,用这个方法配置一次,之后就随意使用了.</p>
-]]></content>
+<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<blockquote>
+<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
+<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
+<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+</blockquote>
+<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
       <categories>
-        <category>后端</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>技巧</tag>
+        <tag>JavaScript</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
