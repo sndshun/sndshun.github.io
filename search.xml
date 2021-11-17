@@ -197,6 +197,55 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue3 新特性</title>
+    <url>/2021/10/28/Vue3/</url>
+    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
+<span id="more"></span>
+
+<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<blockquote>
+<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
+<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
+<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+</blockquote>
+<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Promise</title>
+    <url>/2020/01/01/Promise/</url>
+    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
+<span id="more"></span>
+
+<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
+<p>并发：Concurrency</p>
+<p>并行：Parallelism</p>
+<p>异步：Asynchronous</p>
+<p>同步：Synchronous</p>
+</blockquote>
+<p>待完善。。。</p>
+<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
+<p>ECMAScript 6 原生提供了 Promise 对象。</p>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
+</blockquote>
+<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>知识点</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Controller 接收多个json对象</title>
     <url>/2021/11/15/JsonParam/</url>
     <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
@@ -244,34 +293,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Promise</title>
-    <url>/2020/01/01/Promise/</url>
-    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
-<span id="more"></span>
-
-<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
-<p>并发：Concurrency</p>
-<p>并行：Parallelism</p>
-<p>异步：Asynchronous</p>
-<p>同步：Synchronous</p>
-</blockquote>
-<p>待完善。。。</p>
-<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
-<p>ECMAScript 6 原生提供了 Promise 对象。</p>
-<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
-</blockquote>
-<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>知识点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2015/01/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -290,27 +311,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Vue3 新特性</title>
-    <url>/2021/10/28/Vue3/</url>
-    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
-<span id="more"></span>
-
-<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
-<blockquote>
-<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
-<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
-<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
-</blockquote>
-<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>Vue</tag>
-      </tags>
   </entry>
   <entry>
     <title>又发现一个小网站</title>
