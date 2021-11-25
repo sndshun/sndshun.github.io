@@ -111,34 +111,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 格式转换</title>
-    <url>/2019/10/11/Javascript-Format/</url>
-    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
-<span id="more"></span>
-
-<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
-<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
-<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
-<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
-<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
-<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>格式转换</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript 常用代码段</title>
     <url>/2019/10/07/JavaScript-Skills/</url>
     <content><![CDATA[<p>JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果</p>
@@ -197,44 +169,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue3 新特性</title>
-    <url>/2021/10/28/Vue3/</url>
-    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
+    <title>JavaScript 格式转换</title>
+    <url>/2019/10/11/Javascript-Format/</url>
+    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
 <span id="more"></span>
 
-<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
-<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
-<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
+<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
+<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
+<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
+<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
 </blockquote>
-<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Promise</title>
-    <url>/2020/01/01/Promise/</url>
-    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
-<span id="more"></span>
-
-<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
-<p>并发：Concurrency</p>
-<p>并行：Parallelism</p>
-<p>异步：Asynchronous</p>
-<p>同步：Synchronous</p>
-</blockquote>
-<p>待完善。。。</p>
-<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
-<p>ECMAScript 6 原生提供了 Promise 对象。</p>
-<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
-</blockquote>
-<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<blockquote>
 <p><em>！如有错误请在评论及时指出</em></p>
 </blockquote>
 ]]></content>
@@ -242,7 +192,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>知识点</tag>
+        <tag>JavaScript</tag>
+        <tag>格式转换</tag>
       </tags>
   </entry>
   <entry>
@@ -293,6 +244,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue3 新特性</title>
+    <url>/2021/10/28/Vue3/</url>
+    <content><![CDATA[<p>Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化</p>
+<span id="more"></span>
+
+<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是Vue3.0中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<blockquote>
+<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
+<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
+<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+</blockquote>
+<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2015/01/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -311,39 +283,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>又发现一个小网站</title>
-    <url>/2020/01/23/utils/</url>
-    <content><![CDATA[<p>理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。</p>
-<span id="more"></span>
-
-<h2 id="动画学Git"><a href="#动画学Git" class="headerlink" title="动画学Git"></a>动画学Git</h2><p>这是个叫做 <a href="https://learngitbranching.js.org/?locale=zh_CN"><strong>Learning Git Branching</strong></a> 的项目，强烈推荐。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/641.webp" alt="641"></p>
-<p>在项目中用到 Git 时，我们可能会自己发现来来回回就会用 clone，add .，commit，merge，push，pull 这几个命令，其他的命令完全不会。</p>
-<p>这个动画网站吧常见的Git命令讲解的非常清楚，配上可视化的动画效果，学习起来事半功倍。</p>
-<h2 id="练习正则表达式"><a href="#练习正则表达式" class="headerlink" title="练习正则表达式"></a>练习正则表达式</h2><p>练习平台<a href="https://regexone.com/"><strong>RegexOne</strong></a></p>
-<p>前面有基本教程，后面有一些常见的正则表达式题目，比如判断邮箱、URL、电话号，或者抽取日志的关键信息等等，注意是英文的。</p>
-<p>写出符合要求的正则表达式，就可以进入下一个问题，关键是每道题还有标准答案，可以点击下面的 solution 按钮查看。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/642.webp" alt="642"></p>
-<p>再说个在线测试工具 <a href="https://regex101.com/"><strong>RegExr</strong></a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/643.webp" alt="643"></p>
-<p>可以看见，输入对应的文本和正则模式串后，网站会给正则表达式自动添加一些添加好看的样式，自动在文本中搜索模式串，还会高亮显示匹配的字符串，显示每个分组捕获的字符串。</p>
-<h2 id="练习SQL"><a href="#练习SQL" class="headerlink" title="练习SQL"></a>练习SQL</h2><p><a href="xuesql.cn"><strong>SQLBolt</strong></a> 是一个适合小白学习 SQL 的网站，这里由浅及深的介绍了 SQL 的知识，每一个章节是一组相关的 SQL 知识点，且配备着相应的练习。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/644.webp" alt="644"></p>
-<p>基础学了之后，可以尝试挑战一下进阶版： <a href="https://leetcode-cn.com/"><strong>leetcode</strong></a> </p>
-<p>而且可以在线测评，和评测算法题一样，也会让你很直观的看到自己所写的 SQL 的运行速度等，同样可以去借鉴别人优化好的 SQL。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/640.webp" alt="640"></p>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>学习工具</tag>
-      </tags>
   </entry>
   <entry>
     <title>Redis 学习笔记</title>
@@ -470,6 +409,67 @@
       </categories>
       <tags>
         <tag>Redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>又发现一个小网站</title>
+    <url>/2020/01/23/utils/</url>
+    <content><![CDATA[<p>理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。</p>
+<span id="more"></span>
+
+<h2 id="动画学Git"><a href="#动画学Git" class="headerlink" title="动画学Git"></a>动画学Git</h2><p>这是个叫做 <a href="https://learngitbranching.js.org/?locale=zh_CN"><strong>Learning Git Branching</strong></a> 的项目，强烈推荐。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/641.webp" alt="641"></p>
+<p>在项目中用到 Git 时，我们可能会自己发现来来回回就会用 clone，add .，commit，merge，push，pull 这几个命令，其他的命令完全不会。</p>
+<p>这个动画网站吧常见的Git命令讲解的非常清楚，配上可视化的动画效果，学习起来事半功倍。</p>
+<h2 id="练习正则表达式"><a href="#练习正则表达式" class="headerlink" title="练习正则表达式"></a>练习正则表达式</h2><p>练习平台<a href="https://regexone.com/"><strong>RegexOne</strong></a></p>
+<p>前面有基本教程，后面有一些常见的正则表达式题目，比如判断邮箱、URL、电话号，或者抽取日志的关键信息等等，注意是英文的。</p>
+<p>写出符合要求的正则表达式，就可以进入下一个问题，关键是每道题还有标准答案，可以点击下面的 solution 按钮查看。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/642.webp" alt="642"></p>
+<p>再说个在线测试工具 <a href="https://regex101.com/"><strong>RegExr</strong></a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/643.webp" alt="643"></p>
+<p>可以看见，输入对应的文本和正则模式串后，网站会给正则表达式自动添加一些添加好看的样式，自动在文本中搜索模式串，还会高亮显示匹配的字符串，显示每个分组捕获的字符串。</p>
+<h2 id="练习SQL"><a href="#练习SQL" class="headerlink" title="练习SQL"></a>练习SQL</h2><p><a href="xuesql.cn"><strong>SQLBolt</strong></a> 是一个适合小白学习 SQL 的网站，这里由浅及深的介绍了 SQL 的知识，每一个章节是一组相关的 SQL 知识点，且配备着相应的练习。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/644.webp" alt="644"></p>
+<p>基础学了之后，可以尝试挑战一下进阶版： <a href="https://leetcode-cn.com/"><strong>leetcode</strong></a> </p>
+<p>而且可以在线测评，和评测算法题一样，也会让你很直观的看到自己所写的 SQL 的运行速度等，同样可以去借鉴别人优化好的 SQL。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/640.webp" alt="640"></p>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>学习工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Promise</title>
+    <url>/2020/01/01/Promise/</url>
+    <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
+<span id="more"></span>
+
+<h2 id="异步概念"><a href="#异步概念" class="headerlink" title="异步概念"></a>异步概念</h2><blockquote>
+<p>并发：Concurrency</p>
+<p>并行：Parallelism</p>
+<p>异步：Asynchronous</p>
+<p>同步：Synchronous</p>
+</blockquote>
+<p>待完善。。。</p>
+<h2 id="JavaScript-Promise-对象"><a href="#JavaScript-Promise-对象" class="headerlink" title="JavaScript Promise 对象"></a>JavaScript Promise 对象</h2><blockquote>
+<p>ECMAScript 6 原生提供了 Promise 对象。</p>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息。</p>
+</blockquote>
+<h3 id="Promise-对象有以下两个特点"><a href="#Promise-对象有以下两个特点" class="headerlink" title="Promise 对象有以下两个特点:"></a>Promise 对象有以下两个特点:</h3><blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>知识点</tag>
       </tags>
   </entry>
 </search>
