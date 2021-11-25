@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2021-11-16T08:13:45.602Z</updated>
+  <updated>2021-11-25T12:12:53.177Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redis 学习笔记</title>
+    <link href="https://sndshun.xyz/2021/11/21/redis/"/>
+    <id>https://sndshun.xyz/2021/11/21/redis/</id>
+    <published>2021-11-21T04:00:00.000Z</published>
+    <updated>2021-11-25T12:12:53.177Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252012991.jpeg&quot; alt=&quot;4809d0858ab40491687c27e3ec96873e&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;什么是Redis数据库&quot;&gt;&lt;a href=&quot;#什么是Redis数据库&quot; class=&quot;headerlink&quot; title=&quot;什么是Redis数据库&quot;&gt;&lt;/a&gt;什么是Redis数据库&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;完全开源的key-value的高性能数据库&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;数据库分为了关系型数据库和非关系型数据库&quot;&gt;&lt;a href=&quot;#数据库分为了关系型数据库和非关系型数据库&quot; class=&quot;headerlink&quot; title=&quot;数据库分为了关系型数据库和非关系型数据库&quot;&gt;&lt;/a&gt;数据库分为了关系型数据库和非关系型数据库&lt;/h2&gt;&lt;h3 id=&quot;关系型数据库&quot;&gt;&lt;a href=&quot;#关系型数据库&quot; class=&quot;headerlink&quot; title=&quot;关系型数据库&quot;&gt;&lt;/a&gt;关系型数据库&lt;/h3&gt;&lt;p&gt;有 &lt;code&gt;MYSQL&lt;/code&gt; &lt;code&gt;ORacle&lt;/code&gt; 和 &lt;code&gt;SQL Server&lt;/code&gt;&lt;br&gt;​是指采用了关系模型来组建数据的数据库&lt;br&gt;其以行和列的形式来存储我们的数据，以便于用户的理解&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="后端" scheme="https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="笔记" scheme="https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Redis" scheme="https://sndshun.xyz/tags/Redis/"/>
+    
+  </entry>
   
   <entry>
     <title>Controller 接收多个json对象</title>
