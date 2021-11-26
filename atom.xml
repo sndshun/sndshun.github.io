@@ -62,10 +62,10 @@
     <link href="https://sndshun.xyz/2021/10/28/Vue3/"/>
     <id>https://sndshun.xyz/2021/10/28/Vue3/</id>
     <published>2021-10-28T04:00:00.000Z</published>
-    <updated>2021-11-15T11:32:43.232Z</updated>
+    <updated>2021-11-26T06:56:47.083Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Vue3在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下Vue3的变化&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化&lt;/p&gt;</summary>
     
     
     
@@ -75,6 +75,31 @@
     <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
     <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 使用存储过程批量插入</title>
+    <link href="https://sndshun.xyz/2021/10/26/MySQL-delimiter/"/>
+    <id>https://sndshun.xyz/2021/10/26/MySQL-delimiter/</id>
+    <published>2021-10-26T04:00:00.000Z</published>
+    <updated>2021-11-26T13:16:33.833Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;存储过程：是保存一条或多条 &lt;code&gt;SQL&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="https://sndshun.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+    <category term="MySQL" scheme="https://sndshun.xyz/tags/MySQL/"/>
     
   </entry>
   
