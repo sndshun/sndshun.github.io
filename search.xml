@@ -169,34 +169,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 格式转换</title>
-    <url>/2019/10/11/Javascript-Format/</url>
-    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
-<span id="more"></span>
-
-<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">formatTime</span>(<span class="params">time</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
-<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
-<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
-<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
-<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
-<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>格式转换</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Controller 接收多个json对象</title>
     <url>/2021/11/15/JsonParam/</url>
     <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
@@ -524,39 +496,6 @@
       </tags>
   </entry>
   <entry>
-    <title>又发现一个小网站</title>
-    <url>/2020/01/23/utils/</url>
-    <content><![CDATA[<p>理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。</p>
-<span id="more"></span>
-
-<h2 id="动画学Git"><a href="#动画学Git" class="headerlink" title="动画学Git"></a>动画学Git</h2><p>这是个叫做 <a href="https://learngitbranching.js.org/?locale=zh_CN"><strong>Learning Git Branching</strong></a> 的项目，强烈推荐。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/641.webp" alt="641"></p>
-<p>在项目中用到 Git 时，我们可能会自己发现来来回回就会用 clone，add .，commit，merge，push，pull 这几个命令，其他的命令完全不会。</p>
-<p>这个动画网站吧常见的Git命令讲解的非常清楚，配上可视化的动画效果，学习起来事半功倍。</p>
-<h2 id="练习正则表达式"><a href="#练习正则表达式" class="headerlink" title="练习正则表达式"></a>练习正则表达式</h2><p>练习平台<a href="https://regexone.com/"><strong>RegexOne</strong></a></p>
-<p>前面有基本教程，后面有一些常见的正则表达式题目，比如判断邮箱、URL、电话号，或者抽取日志的关键信息等等，注意是英文的。</p>
-<p>写出符合要求的正则表达式，就可以进入下一个问题，关键是每道题还有标准答案，可以点击下面的 solution 按钮查看。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/642.webp" alt="642"></p>
-<p>再说个在线测试工具 <a href="https://regex101.com/"><strong>RegExr</strong></a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/643.webp" alt="643"></p>
-<p>可以看见，输入对应的文本和正则模式串后，网站会给正则表达式自动添加一些添加好看的样式，自动在文本中搜索模式串，还会高亮显示匹配的字符串，显示每个分组捕获的字符串。</p>
-<h2 id="练习SQL"><a href="#练习SQL" class="headerlink" title="练习SQL"></a>练习SQL</h2><p><a href="xuesql.cn"><strong>SQLBolt</strong></a> 是一个适合小白学习 SQL 的网站，这里由浅及深的介绍了 SQL 的知识，每一个章节是一组相关的 SQL 知识点，且配备着相应的练习。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/644.webp" alt="644"></p>
-<p>基础学了之后，可以尝试挑战一下进阶版： <a href="https://leetcode-cn.com/"><strong>leetcode</strong></a> </p>
-<p>而且可以在线测评，和评测算法题一样，也会让你很直观的看到自己所写的 SQL 的运行速度等，同样可以去借鉴别人优化好的 SQL。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/640.webp" alt="640"></p>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>学习工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Promise</title>
     <url>/2020/01/01/Promise/</url>
     <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
@@ -598,7 +537,7 @@
 
 <p><strong>数据库为8.0</strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262057191.png" alt="uTools_1637931373445"></p>
-<p>一百万条数据用了 166 秒，运行时用了 120 兆左右的内存</p>
+<p>一百万条数据用了 166 秒非常慢，运行时用了 120 兆左右的内存</p>
 <h2 id="user表"><a href="#user表" class="headerlink" title="user表"></a>user表</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> Navicat Premium Data Transfer</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Source Server         : Mysql</span></span><br><span class="line"><span class="comment"> Source Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Source Server Version : 80019</span></span><br><span class="line"><span class="comment"> Source Host           : localhost:3306</span></span><br><span class="line"><span class="comment"> Source Schema         : echarts</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Target Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Target Server Version : 80019</span></span><br><span class="line"><span class="comment"> File Encoding         : 65001</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Date: 26/11/2021 21:13:51</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> NAMES utf8mb4;</span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Table structure for user</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `<span class="keyword">user</span>`;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `<span class="keyword">user</span>`  (</span><br><span class="line">  `id` <span class="type">int</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT COMMENT <span class="string">&#x27;id&#x27;</span>,</span><br><span class="line">  `<span class="keyword">user</span>` <span class="type">varchar</span>(<span class="number">20</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;账号&#x27;</span>,</span><br><span class="line">  `password` <span class="type">varchar</span>(<span class="number">24</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;密码&#x27;</span>,</span><br><span class="line">  `name` <span class="type">varchar</span>(<span class="number">20</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">  `sex` tinyint <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;性别（0：女）（1：男）&#x27;</span>,</span><br><span class="line">  `email` <span class="type">varchar</span>(<span class="number">50</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;邮箱&#x27;</span>,</span><br><span class="line">  `phone` <span class="type">varchar</span>(<span class="number">11</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;手机号&#x27;</span>,</span><br><span class="line">  `user_type` tinyint <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;用户类型&#x27;</span>,</span><br><span class="line">  `address` <span class="type">int</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;地区&#x27;</span>,</span><br><span class="line">  `address_info` <span class="type">varchar</span>(<span class="number">255</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;详细地址&#x27;</span>,</span><br><span class="line">  `level` <span class="type">int</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;等级&#x27;</span>,</span><br><span class="line">  `last_login_time` datetime <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> COMMENT <span class="string">&#x27;最后登录时间&#x27;</span>,</span><br><span class="line">  `update_time` datetime <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> <span class="keyword">ON</span> UPDATE <span class="built_in">CURRENT_TIMESTAMP</span> COMMENT <span class="string">&#x27;数据更新时间&#x27;</span>,</span><br><span class="line">  `create_time` datetime <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span> COMMENT <span class="string">&#x27;创建时间&#x27;</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`id`) <span class="keyword">USING</span> BTREE</span><br><span class="line">) ENGINE <span class="operator">=</span> InnoDB <span class="type">CHARACTER</span> <span class="keyword">SET</span> <span class="operator">=</span> utf8mb4 <span class="keyword">COLLATE</span> <span class="operator">=</span> utf8mb4_0900_ai_ci ROW_FORMAT <span class="operator">=</span> <span class="keyword">Dynamic</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="type表"><a href="#type表" class="headerlink" title="type表"></a>type表</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> Navicat Premium Data Transfer</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Source Server         : Mysql</span></span><br><span class="line"><span class="comment"> Source Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Source Server Version : 80019</span></span><br><span class="line"><span class="comment"> Source Host           : localhost:3306</span></span><br><span class="line"><span class="comment"> Source Schema         : echarts</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Target Server Type    : MySQL</span></span><br><span class="line"><span class="comment"> Target Server Version : 80019</span></span><br><span class="line"><span class="comment"> File Encoding         : 65001</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> Date: 26/11/2021 21:15:13</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> NAMES utf8mb4;</span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Table structure for type</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `type`;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `type`  (</span><br><span class="line">  `id` <span class="type">int</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT,</span><br><span class="line">  `type_name` <span class="type">varchar</span>(<span class="number">12</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_0900_ai_ci <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `update_time` datetime <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span> <span class="keyword">ON</span> UPDATE <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  `create_time` datetime <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`id`) <span class="keyword">USING</span> BTREE</span><br><span class="line">) ENGINE <span class="operator">=</span> InnoDB <span class="type">CHARACTER</span> <span class="keyword">SET</span> <span class="operator">=</span> utf8mb4 <span class="keyword">COLLATE</span> <span class="operator">=</span> utf8mb4_0900_ai_ci ROW_FORMAT <span class="operator">=</span> <span class="keyword">Dynamic</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="comment">-- Records of type</span></span><br><span class="line"><span class="comment">-- ----------------------------</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="string">&#x27;工人&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:29:25&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">2</span>, <span class="string">&#x27;农民&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:29:35&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">3</span>, <span class="string">&#x27;公务员&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:30:06&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">4</span>, <span class="string">&#x27;程序员&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:30:13&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">5</span>, <span class="string">&#x27;会计&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:30:25&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">6</span>, <span class="string">&#x27;律师&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:47:57&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">7</span>, <span class="string">&#x27;医生&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:48:28&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">8</span>, <span class="string">&#x27;护士&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:48:31&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">9</span>, <span class="string">&#x27;学生&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:49:19&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">10</span>, <span class="string">&#x27;服务员&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:49:30&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">11</span>, <span class="string">&#x27;销售&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:49:34&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">12</span>, <span class="string">&#x27;运动员&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:49:46&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">13</span>, <span class="string">&#x27;消防员&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:49:55&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">14</span>, <span class="string">&#x27;城管&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:50:05&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">15</span>, <span class="string">&#x27;军人&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:50:08&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">16</span>, <span class="string">&#x27;警察&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:50:26&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">17</span>, <span class="string">&#x27;军人&#x27;</span>, <span class="keyword">NULL</span>, <span class="string">&#x27;2021-11-26 16:50:30&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `type` <span class="keyword">VALUES</span> (<span class="number">18</span>, <span class="string">&#x27;记者&#x27;</span>, <span class="string">&#x27;2021-11-26 16:51:26&#x27;</span>, <span class="string">&#x27;2021-11-26 16:51:00&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">SET</span> FOREIGN_KEY_CHECKS <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -609,6 +548,120 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习小网站</title>
+    <url>/2020/01/23/web-tools/</url>
+    <content><![CDATA[<p>理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。</p>
+<span id="more"></span>
+
+<h2 id="动画学Git"><a href="#动画学Git" class="headerlink" title="动画学Git"></a>动画学Git</h2><p>这是个叫做 <a href="https://learngitbranching.js.org/?locale=zh_CN"><strong>Learning Git Branching</strong></a> 的项目，强烈推荐。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/641.webp" alt="641"></p>
+<p>在项目中用到 Git 时，我们可能会自己发现来来回回就会用 clone，add .，commit，merge，push，pull 这几个命令，其他的命令完全不会。</p>
+<p>这个动画网站吧常见的Git命令讲解的非常清楚，配上可视化的动画效果，学习起来事半功倍。</p>
+<h2 id="练习正则表达式"><a href="#练习正则表达式" class="headerlink" title="练习正则表达式"></a>练习正则表达式</h2><p>练习平台<a href="https://regexone.com/"><strong>RegexOne</strong></a></p>
+<p>前面有基本教程，后面有一些常见的正则表达式题目，比如判断邮箱、URL、电话号，或者抽取日志的关键信息等等，注意是英文的。</p>
+<p>写出符合要求的正则表达式，就可以进入下一个问题，关键是每道题还有标准答案，可以点击下面的 solution 按钮查看。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/642.webp" alt="642"></p>
+<p>再说个在线测试工具 <a href="https://regex101.com/"><strong>RegExr</strong></a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/643.webp" alt="643"></p>
+<p>可以看见，输入对应的文本和正则模式串后，网站会给正则表达式自动添加一些添加好看的样式，自动在文本中搜索模式串，还会高亮显示匹配的字符串，显示每个分组捕获的字符串。</p>
+<h2 id="练习SQL"><a href="#练习SQL" class="headerlink" title="练习SQL"></a>练习SQL</h2><p><a href="xuesql.cn"><strong>SQLBolt</strong></a> 是一个适合小白学习 SQL 的网站，这里由浅及深的介绍了 SQL 的知识，每一个章节是一组相关的 SQL 知识点，且配备着相应的练习。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/644.webp" alt="644"></p>
+<p>基础学了之后，可以尝试挑战一下进阶版： <a href="https://leetcode-cn.com/"><strong>leetcode</strong></a> </p>
+<p>而且可以在线测评，和评测算法题一样，也会让你很直观的看到自己所写的 SQL 的运行速度等，同样可以去借鉴别人优化好的 SQL。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/640.webp" alt="640"></p>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>实用网站</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 格式转换</title>
+    <url>/2019/10/11/utils/Javascript-Format/</url>
+    <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
+<span id="more"></span>
+
+<h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><h3 id="UTC格式转换"><a href="#UTC格式转换" class="headerlink" title="UTC格式转换"></a>UTC格式转换</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 格式化UTC格式的时间 例：2019-10-09T13:51:25.414Z</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>time 需要转换的时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span> </span>格式转换后的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> formatUTC_DateTime = <span class="function">(<span class="params">time</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> == time || <span class="string">&quot;&quot;</span> == time) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;无数据&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
+<p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
+<p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
+<p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
+<p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
+</blockquote>
+<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><h3 id="文本过长省略"><a href="#文本过长省略" class="headerlink" title="文本过长省略"></a>文本过长省略</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>,count)+omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>设置文本长度到几时省略</p>
+<p>设置省略符合</p>
+<p>判断是否达到指标，是则返回处理后的文本，否则返回原值</p>
+</blockquote>
+<h1 id="过滤工具类"><a href="#过滤工具类" class="headerlink" title="过滤工具类"></a>过滤工具类</h1><p><strong>export 模块标准编写</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description </span>: 过滤工具</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author </span>: mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date </span>: 2021/11/9</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version </span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update by : mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update time : 2021/12/8</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 格式化UTC格式的时间 例：2019-10-09T13:51:25.414Z</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>time 需要转换的时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span> </span>格式转换后的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> formatUTC_DateTime = <span class="function">(<span class="params">time</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> == time || <span class="string">&quot;&quot;</span> == time) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;无数据&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>,count)+omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    formatUTC_DateTime,</span><br><span class="line">    textTooLongAndOmitted</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Vue-中使用"><a href="#Vue-中使用" class="headerlink" title="Vue 中使用"></a>Vue 中使用</h2><h3 id="Vue-2-x"><a href="#Vue-2-x" class="headerlink" title="Vue 2.x"></a>Vue 2.x</h3><p>在main.js中导入</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入过滤工具</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> filters <span class="keyword">from</span> <span class="string">&#x27;./utils/filters&#x27;</span></span><br><span class="line"><span class="built_in">Object</span>.keys(filters).forEach(<span class="function"><span class="params">key</span>=&gt;</span>&#123;</span><br><span class="line">  <span class="comment">//注册为Vue全局过滤器</span></span><br><span class="line">  Vue.filter(key,filters[key])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>直接管道符拼接使用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//处理过长文本,将20以后的字符替换为...</span></span><br><span class="line">&#123;&#123;text|textTooLongAndOmitted(<span class="number">20</span>,<span class="string">&#x27;...&#x27;</span>)&#125;&#125;</span><br><span class="line">&#123;&#123;<span class="string">&#x27;这是一个过长的文本，好吧它好像不够20个&#x27;</span>|textTooLongAndOmitted(<span class="number">20</span>,<span class="string">&#x27;...&#x27;</span>)&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意管道符前的变量会成为第一个参数</strong></p>
+<h3 id="Vue-3-x"><a href="#Vue-3-x" class="headerlink" title="Vue 3.x"></a>Vue 3.x</h3><p>在main.js中导入</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入过滤工具</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> filters <span class="keyword">from</span> <span class="string">&#x27;./utils/filters&#x27;</span></span><br><span class="line"><span class="keyword">const</span> app = createApp(App)</span><br><span class="line"><span class="comment">//注册为全局属性</span></span><br><span class="line">app.config.globalProperties.$filters=filters</span><br><span class="line">app.use(router)</span><br><span class="line">    .mount(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>使用</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//调用全局属性调用</span></span><br><span class="line">&#123;&#123; $filters.formatUTC_DateTime(createDate) &#125;&#125;</span><br><span class="line">&#123;&#123; $filters.formatUTC_DateTime(<span class="string">&#x27;2019-10-09T13:51:25.414Z&#x27;</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Vue 3.x 取消了过滤器，官方希望我们使用计算属性来替代</p>
+<p>不过对于常用的工具还是可以注册为全局属性，方便使用</p>
+</blockquote>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>js工具类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring boot 集成邮件发送</title>
+    <url>/2018/01/23/configs/spring-eamil/</url>
+    <content><![CDATA[<h2 id="Spring-boot-集成邮件发送"><a href="#Spring-boot-集成邮件发送" class="headerlink" title="Spring boot 集成邮件发送"></a>Spring boot 集成邮件发送</h2><h3 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h3><ul>
+<li>Spring boot : <strong>2.6.1</strong></li>
+<li>mail : <strong>1.4</strong></li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.mail<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mail<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这个 javax.mail 在测试发送时发现 1.4 以上的版本发送时间在3到4秒非常慢，1.4版本基本在1秒左右，1.4以下未测试。具体原因没有深入研究，影响因素很多，自行测试。</p>
+<p>Spring boot 其实也有官方邮件发送的starter，导入后可以在application.yaml文件配置相关信息但是发送速度慢，可能是没配置对。所以先采用 Java 原生的邮件发送</p>
+</blockquote>
+<h3 id="开通邮箱发送业务"><a href="#开通邮箱发送业务" class="headerlink" title="开通邮箱发送业务"></a>开通邮箱发送业务</h3><p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112011339757.png" alt="QQ截图20211201133914"></p>
+<p>只需开启第一个服务</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112011348877.png" alt="QQ截图20211201134713"></p>
+<p>在验证完手机号信息后即可开启，会返回一个授权码，发送邮件时会用到</p>]]></content>
+      <categories>
+        <category>配置</category>
+      </categories>
+      <tags>
+        <tag>项目配置</tag>
       </tags>
   </entry>
 </search>

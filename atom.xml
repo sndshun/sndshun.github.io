@@ -83,7 +83,7 @@
     <link href="https://sndshun.xyz/2021/10/26/MySQL-delimiter/"/>
     <id>https://sndshun.xyz/2021/10/26/MySQL-delimiter/</id>
     <published>2021-10-26T04:00:00.000Z</published>
-    <updated>2021-11-26T13:25:53.770Z</updated>
+    <updated>2021-11-27T07:23:54.194Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262125984.png&quot; alt=&quot;uTools_1637933124302&quot;&gt;&lt;/p&gt;</summary>
@@ -117,21 +117,21 @@
   </entry>
   
   <entry>
-    <title>又发现一个小网站</title>
-    <link href="https://sndshun.xyz/2020/01/23/utils/"/>
-    <id>https://sndshun.xyz/2020/01/23/utils/</id>
+    <title>学习小网站</title>
+    <link href="https://sndshun.xyz/2020/01/23/web-tools/"/>
+    <id>https://sndshun.xyz/2020/01/23/web-tools/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2021-11-02T10:26:35.471Z</updated>
+    <updated>2021-12-01T04:27:51.799Z</updated>
     
     
     <summary type="html">&lt;p&gt;理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。&lt;/p&gt;</summary>
     
     
     
-    <category term="工具" scheme="https://sndshun.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="实用网站" scheme="https://sndshun.xyz/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
     
     
-    <category term="学习工具" scheme="https://sndshun.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://sndshun.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -156,10 +156,10 @@
   
   <entry>
     <title>JavaScript 格式转换</title>
-    <link href="https://sndshun.xyz/2019/10/11/Javascript-Format/"/>
-    <id>https://sndshun.xyz/2019/10/11/Javascript-Format/</id>
+    <link href="https://sndshun.xyz/2019/10/11/utils/Javascript-Format/"/>
+    <id>https://sndshun.xyz/2019/10/11/utils/Javascript-Format/</id>
     <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-11-15T11:39:42.578Z</updated>
+    <updated>2021-12-08T13:29:00.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
@@ -171,7 +171,7 @@
     
     <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
-    <category term="格式转换" scheme="https://sndshun.xyz/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
     
   </entry>
   
@@ -201,7 +201,7 @@
     <link href="https://sndshun.xyz/2018/01/23/Date/"/>
     <id>https://sndshun.xyz/2018/01/23/Date/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-10-27T12:38:43.421Z</updated>
+    <updated>2021-12-01T04:47:26.131Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
@@ -217,6 +217,26 @@
     
     
     <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring boot 集成邮件发送</title>
+    <link href="https://sndshun.xyz/2018/01/23/configs/spring-eamil/"/>
+    <id>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2021-12-01T07:24:05.971Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;code&gt;Spring boot&lt;/code&gt; 集成邮件发送&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssm&lt;/code&gt; 集成邮件发送&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="项目配置" scheme="https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
