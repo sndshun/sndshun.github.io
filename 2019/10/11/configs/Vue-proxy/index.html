@@ -22,20 +22,25 @@
     var CONFIG = {"hostname":"sndshun.xyz","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="UTC：协调世界时 协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。世界标准时间UTC：GMT+0  2016-08-9T10:01:54.123Z T代表后面跟着的是时间 Z代表0时区UTC统一时间（慢北京">
+  <meta name="description" content="初学 Vue 时配置跨域走了不少坑，区分不了版本，找不到配置文件，复制粘贴到无效配置等等 现已找到捷径，总结记录下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时间标准">
-<meta property="og:url" content="https://sndshun.xyz/2018/01/23/Date/index.html">
+<meta property="og:title" content="Vue 跨域配置">
+<meta property="og:url" content="https://sndshun.xyz/2019/10/11/configs/Vue-proxy/index.html">
 <meta property="og:site_name" content="&amp;的博客">
-<meta property="og:description" content="UTC：协调世界时 协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。世界标准时间UTC：GMT+0  2016-08-9T10:01:54.123Z T代表后面跟着的是时间 Z代表0时区UTC统一时间（慢北京">
+<meta property="og:description" content="初学 Vue 时配置跨域走了不少坑，区分不了版本，找不到配置文件，复制粘贴到无效配置等等 现已找到捷径，总结记录下">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2018-01-23T04:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-01T04:47:26.131Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082304683.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082309831.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082317692.png">
+<meta property="article:published_time" content="2019-10-11T04:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-08T13:29:00.000Z">
 <meta property="article:author" content="sndshun">
-<meta property="article:tag" content="基石">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082304683.png">
 
-<link rel="canonical" href="https://sndshun.xyz/2018/01/23/Date/">
+<link rel="canonical" href="https://sndshun.xyz/2019/10/11/configs/Vue-proxy/">
 
 
 <script id="page-configurations">
@@ -48,7 +53,7 @@
   };
 </script>
 
-  <title>时间标准 | &的博客</title>
+  <title>Vue 跨域配置 | &的博客</title>
   
 
 
@@ -198,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sndshun.xyz/2018/01/23/Date/">
+    <link itemprop="mainEntityOfPage" href="https://sndshun.xyz/2019/10/11/configs/Vue-proxy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -211,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          时间标准
+          Vue 跨域配置
         </h1>
 
         <div class="post-meta">
@@ -221,14 +226,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2018-01-23 12:00:00" itemprop="dateCreated datePublished" datetime="2018-01-23T12:00:00+08:00">2018-01-23</time>
+              <time title="创建时间：2019-10-11 12:00:00" itemprop="dateCreated datePublished" datetime="2019-10-11T12:00:00+08:00">2019-10-11</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-01 12:47:26" itemprop="dateModified" datetime="2021-12-01T12:47:26+08:00">2021-12-01</time>
+                <time title="修改时间：2021-12-08 21:29:00" itemprop="dateModified" datetime="2021-12-08T21:29:00+08:00">2021-12-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,7 +241,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" itemprop="url" rel="index"><span itemprop="name">知识点</span></a>
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
                 </span>
             </span>
 
@@ -252,13 +257,13 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>888</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -270,39 +275,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
-<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
-</blockquote>
-<p>2016-08-9T10:01:54.123Z</p>
-<p>T代表后面跟着的是时间</p>
-<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
-<span id="more"></span>
-
-<hr>
-<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
-<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
-</blockquote>
-<p>Thu Oct 16 07:13:48 GMT 2015</p>
-<hr>
-<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
-<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
-<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
-</blockquote>
-<p>Thu Sep 08 23:14:00 CST 2011</p>
-<hr>
-<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
-</blockquote>
-<p>2017-09-30T09:00:00</p>
-<hr>
-<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
-<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
-</blockquote>
-<p>1633786697</p>
+        <p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082304683.png" alt="QQ截图20211208230445"></p>
+<p><strong>先看 package.json 里的vue 2开头为2.x，3开头为3.x</strong></p>
+<p><strong>然后注意自己的 vue 脚手架是vue-cli还是@vue-lic</strong></p>
 <blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
+<p>vue-cli 创建项目用的命令是 vue init webpack my-demo</p>
+<p>@vue-cli 创建项目用的命令是 vue create my-demo</p>
 </blockquote>
+<p><strong>vue-cli 是 v2版本</strong></p>
+<p><strong>@vue-cli 是 3 或者 4</strong></p>
+<h2 id="Vue-cli-创建的-Vue-2-x"><a href="#Vue-cli-创建的-Vue-2-x" class="headerlink" title="Vue-cli 创建的 Vue 2.x"></a>Vue-cli 创建的 Vue 2.x</h2><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082309831.png" alt="QQ截图20211208230857" style="zoom: 50%;" />
 
+<p><strong>修改config下的index.js即可</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span></span><br><span class="line"><span class="comment">// Template version: 1.3.1</span></span><br><span class="line"><span class="comment">// 注意看这里的链接，一般创建的项目配置都有文档链接,不过新版本连配置文件都无了，只能去官网查</span></span><br><span class="line"><span class="comment">// see http://vuejs-templates.github.io/webpack for documentation.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="attr">dev</span>: &#123;</span><br><span class="line">    <span class="comment">// Paths</span></span><br><span class="line">    <span class="attr">assetsSubDirectory</span>: <span class="string">&#x27;static&#x27;</span>,</span><br><span class="line">    <span class="attr">assetsPublicPath</span>: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">    <span class="attr">proxyTable</span>: &#123;</span><br><span class="line">      <span class="string">&#x27;/api&#x27;</span>: &#123;</span><br><span class="line">        <span class="attr">target</span>: <span class="string">&#x27;http://localhost:8081/&#x27;</span>,<span class="comment">//后端的端口号</span></span><br><span class="line">        <span class="attr">changeOrigin</span>: <span class="literal">true</span>,<span class="comment">//将请求头POST设置为target</span></span><br><span class="line">        <span class="attr">chunkOrigins</span>: <span class="literal">true</span>,<span class="comment">//跨域属性,允许跨域</span></span><br><span class="line">        <span class="attr">pathRewrite</span>:&#123;</span><br><span class="line">          <span class="string">&#x27;^/api&#x27;</span>:<span class="string">&#x27;/&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// Various Dev Server settings</span></span><br><span class="line">    <span class="attr">host</span>: <span class="string">&#x27;localhost&#x27;</span>, <span class="comment">// can be overwritten by process.env.HOST</span></span><br><span class="line">    <span class="attr">port</span>: <span class="number">8080</span>, <span class="comment">// can be overwritten by process.env.PORT, if port is in use, a free one will be determined</span></span><br><span class="line">    <span class="attr">autoOpenBrowser</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">errorOverlay</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">notifyOnErrors</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">poll</span>: <span class="literal">false</span>, </span><br><span class="line">    <span class="attr">devtool</span>: <span class="string">&#x27;cheap-module-eval-source-map&#x27;</span>,</span><br><span class="line">    <span class="attr">cacheBusting</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">cssSourceMap</span>: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">build</span>: &#123;</span><br><span class="line">    <span class="attr">index</span>: path.resolve(__dirname, <span class="string">&#x27;../dist/index.html&#x27;</span>),</span><br><span class="line">    <span class="attr">assetsRoot</span>: path.resolve(__dirname, <span class="string">&#x27;../dist&#x27;</span>),</span><br><span class="line">    <span class="attr">assetsSubDirectory</span>: <span class="string">&#x27;static&#x27;</span>,</span><br><span class="line">    <span class="attr">assetsPublicPath</span>: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">    <span class="attr">productionSourceMap</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">devtool</span>: <span class="string">&#x27;#source-map&#x27;</span>,</span><br><span class="line">    <span class="attr">productionGzip</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">productionGzipExtensions</span>: [<span class="string">&#x27;js&#x27;</span>, <span class="string">&#x27;css&#x27;</span>],</span><br><span class="line">    <span class="attr">bundleAnalyzerReport</span>: process.env.npm_config_report</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这是由 vue-cli 脚手架创建出来的项目</p>
+<p>只需复制 proxyTable 属性里的内容就可以实现跨域</p>
+<p><a target="_blank" rel="noopener" href="http://vuejs-templates.github.io/webpack/proxy.html">vue-cli配置文档点这里</a></p>
+<p><a target="_blank" rel="noopener" href="http://vuejs-templates.github.io/webpack/proxy.html">http://vuejs-templates.github.io/webpack/proxy.html</a></p>
+<h2 id="Vue-cli-创建的-Vue-2-x-或-Vue-3-x"><a href="#Vue-cli-创建的-Vue-2-x-或-Vue-3-x" class="headerlink" title="@Vue-cli 创建的 Vue 2.x 或 Vue.3.x"></a>@Vue-cli 创建的 Vue 2.x 或 Vue.3.x</h2><p><strong>@vue-cli 创建的 vue 项目不管是2.x还是3.x都没config文件夹了，需要在项目跟目录新建 vue.config.js 来根据自己的需求配置</strong></p>
+<p><strong>从这一版本起，vue 也遵循约定大于配置的思想，但是约定肯定拗不过需求 :older_man:</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082317692.png" alt="QQ截图20211208231714" style="zoom:50%;" />
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    <span class="attr">devServer</span>:&#123;</span><br><span class="line">        <span class="attr">open</span> : <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">host</span> : <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">        <span class="attr">port</span> : <span class="number">8080</span>,</span><br><span class="line">        <span class="attr">https</span> : <span class="literal">false</span>,</span><br><span class="line">        <span class="comment">//上面是当前项目的端口号</span></span><br><span class="line">        <span class="attr">proxy</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;/api&#x27;</span>: &#123;</span><br><span class="line">                <span class="attr">target</span>: <span class="string">&#x27;http://localhost:8081&#x27;</span>,<span class="comment">//后端的端口号</span></span><br><span class="line">                <span class="attr">changeOrigin</span>: <span class="literal">true</span>,<span class="comment">//将请求头POST设置为target</span></span><br><span class="line">                <span class="attr">ws</span>: <span class="literal">true</span>,<span class="comment">//跨域属性,允许跨域</span></span><br><span class="line">                <span class="attr">pathRewrite</span>:&#123;</span><br><span class="line">                    <span class="string">&#x27;^/api&#x27;</span>:<span class="string">&#x27;/&#x27;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@Vue-cli 创建的 vue 项目 不管是 2.x 还是 3.x 都可以使用这段跨域</p>
+<p>[@vue-cli配置文档点这里]<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/config/#devserver-proxy"></a></p>
+<p><a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/config/#devserver-proxy">https://cli.vuejs.org/zh/config/#devserver-proxy</a></p>
+<h2 id="Vite-创建的-Vue"><a href="#Vite-创建的-Vue" class="headerlink" title="Vite 创建的 Vue"></a>Vite 创建的 Vue</h2><p>学到这一步的，也不用多做解释了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineConfig &#125; <span class="keyword">from</span> <span class="string">&#x27;vite&#x27;</span></span><br><span class="line"><span class="keyword">import</span> vue <span class="keyword">from</span> <span class="string">&#x27;@vitejs/plugin-vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// https://vitejs.dev/config/</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> defineConfig(&#123;</span><br><span class="line">  <span class="attr">plugins</span>: [vue()],</span><br><span class="line">  <span class="attr">server</span>:&#123;</span><br><span class="line">    <span class="attr">proxy</span>:&#123;</span><br><span class="line">      <span class="string">&#x27;/api&#x27;</span>: &#123;</span><br><span class="line">        <span class="attr">target</span>: <span class="string">&#x27;http://localhost:8081&#x27;</span>,<span class="comment">//后端的端口号</span></span><br><span class="line">        <span class="attr">changeOrigin</span>: <span class="literal">true</span>,<span class="comment">//将请求头POST设置为target</span></span><br><span class="line">        <span class="attr">rewrite</span>: <span class="function">(<span class="params">path</span>) =&gt;</span> path.replace(<span class="regexp">/^\/api/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://vitejs.dev/config/">文档点这里</a></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>一般都是 /api 来代替 target 里的后端地址</p>
+<p>直接 /api + controllerMapper 就行</p>
+<h1 id="捷径"><a href="#捷径" class="headerlink" title="捷径"></a>捷径</h1><p>确实是有捷径的，就是看官方文档，看官方文档，看官方文档</p>
+<p>有问题先看文档，文档找不到再搜索</p>
     </div>
 
     
@@ -317,7 +324,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://sndshun.xyz/2018/01/23/Date/" title="时间标准">https://sndshun.xyz/2018/01/23/Date/</a>
+    <a href="https://sndshun.xyz/2019/10/11/configs/Vue-proxy/" title="Vue 跨域配置">https://sndshun.xyz/2019/10/11/configs/Vue-proxy/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -347,7 +354,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%9F%BA%E7%9F%B3/" rel="tag"># 基石</a>
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+              <a href="/tags/Vue/" rel="tag"># Vue</a>
           </div>
 
         
@@ -356,12 +364,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2018/01/23/configs/spring-eamil/" rel="prev" title="Spring boot 集成邮件发送">
-      <i class="fa fa-chevron-left"></i> Spring boot 集成邮件发送
+    <a href="/2019/10/07/JavaScript-Skills/" rel="prev" title="JavaScript 常用代码段">
+      <i class="fa fa-chevron-left"></i> JavaScript 常用代码段
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/10/07/JavaScript-Skills/" rel="next" title="JavaScript 常用代码段">
-      JavaScript 常用代码段 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/10/11/utils/Vue-axios/" rel="next" title="axios 封装工具类">
+      axios 封装工具类 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -422,7 +430,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#UTC%EF%BC%9A%E5%8D%8F%E8%B0%83%E4%B8%96%E7%95%8C%E6%97%B6"><span class="nav-number">1.</span> <span class="nav-text">UTC：协调世界时</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GMT%EF%BC%9A%E6%A0%BC%E6%9E%97%E5%B0%BC%E6%B2%BB%E5%B9%B3%E6%97%B6"><span class="nav-number">2.</span> <span class="nav-text">GMT：格林尼治平时</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CST%EF%BC%9A%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%8C%97%E4%BA%AC%E6%97%B6%E9%97%B4"><span class="nav-number">3.</span> <span class="nav-text">CST：也就是北京时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISO-8601-%EF%BC%9A%E8%A1%A8%E7%8E%B0%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E7%9A%84%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86"><span class="nav-number">4.</span> <span class="nav-text">ISO 8601 ：表现日期和时间的国际标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UNIX%E6%97%B6%E9%97%B4%E6%88%B3"><span class="nav-number">5.</span> <span class="nav-text">UNIX时间戳</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-cli-%E5%88%9B%E5%BB%BA%E7%9A%84-Vue-2-x"><span class="nav-number">1.</span> <span class="nav-text">Vue-cli 创建的 Vue 2.x</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-cli-%E5%88%9B%E5%BB%BA%E7%9A%84-Vue-2-x-%E6%88%96-Vue-3-x"><span class="nav-number">2.</span> <span class="nav-text">@Vue-cli 创建的 Vue 2.x 或 Vue.3.x</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vite-%E5%88%9B%E5%BB%BA%E7%9A%84-Vue"><span class="nav-number">3.</span> <span class="nav-text">Vite 创建的 Vue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8D%B7%E5%BE%84"><span class="nav-number"></span> <span class="nav-text">捷径</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -741,7 +749,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'sndshun.github.io',
       owner       : 'sndshun',
       admin       : ['sndshun'],
-      id          : '9c73169e77ad1a4474e44486542cf8a9',
+      id          : '496e6fb39554bfaa11a6d44f43623b6d',
         language: 'zh-CN',
       distractionFreeMode: true
     });

@@ -6,6 +6,8 @@ https://sndshun.xyz/2020/10/30/HTML-tags/
 https://sndshun.xyz/2020/01/23/web-tools/
 https://sndshun.xyz/2020/01/01/Promise/
 https://sndshun.xyz/2019/10/11/utils/Javascript-Format/
+https://sndshun.xyz/2019/10/11/utils/Vue-axios/
+https://sndshun.xyz/2019/10/11/configs/Vue-proxy/
 https://sndshun.xyz/2019/10/07/JavaScript-Skills/
 https://sndshun.xyz/2018/01/23/Date/
 https://sndshun.xyz/2018/01/23/configs/spring-eamil/
