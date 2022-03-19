@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sndshun.xyz/2018/01/23/base/data%20structure/</loc>
+    <lastmod>2022-03-19</lastmod>
+  </url>
+  <url>
     <loc>https://sndshun.xyz/2020/01/23/web-tools/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
@@ -11,10 +15,6 @@
   <url>
     <loc>https://sndshun.xyz/2021/10/28/vue3/</loc>
     <lastmod>2022-03-19</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2022/01/12/base/data%20structure/</loc>
-    <lastmod>2022-01-24</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2018/01/23/base/Date/</loc>

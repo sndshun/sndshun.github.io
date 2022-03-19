@@ -38,27 +38,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/01/12/base/data%20structure/"/>
-    <id>https://sndshun.xyz/2022/01/12/base/data%20structure/</id>
-    <published>2022-01-12T09:50:51.895Z</published>
-    <updated>2022-01-24T08:49:46.979Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Redis 学习笔记</title>
     <link href="https://sndshun.xyz/2021/11/21/redis/"/>
     <id>https://sndshun.xyz/2021/11/21/redis/</id>
@@ -315,6 +294,28 @@
 &lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
 &lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
 &lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构与算法</title>
+    <link href="https://sndshun.xyz/2018/01/23/base/data%20structure/"/>
+    <id>https://sndshun.xyz/2018/01/23/base/data%20structure/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2022-03-19T11:32:23.541Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a href=&quot;#数据结构是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据结构是什么？&quot;&gt;&lt;/a&gt;数据结构是什么？&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如何用程序代码把现实世界的问题&lt;strong&gt;信息化&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如何用计算机高效地处理这些信息从而创造价值&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     

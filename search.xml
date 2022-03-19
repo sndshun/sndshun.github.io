@@ -702,13 +702,9 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/01/12/base/data%20structure/</url>
-    <content><![CDATA[<h1 id="1-1数据结构基本概念"><a href="#1-1数据结构基本概念" class="headerlink" title="1.1数据结构基本概念"></a>1.1数据结构基本概念</h1><h2 id="数据结构是什么？"><a href="#数据结构是什么？" class="headerlink" title="数据结构是什么？"></a>数据结构是什么？</h2><ul>
-<li>如何用程序代码把现实世界的问题<strong>信息化</strong></li>
-<li>如何用计算机高效地处理这些信息从而创造价值</li>
-</ul>
-<h2 id="知识总览"><a href="#知识总览" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">t[数据解构] </span><br><span class="line"></span><br><span class="line">t--&gt;j[基本概念] </span><br><span class="line">	j--&gt; 数据</span><br><span class="line">	j--&gt; 数据元素/数据项</span><br><span class="line">	j--&gt; 数据对象/数据解构</span><br><span class="line">	j--&gt; 数据类型/抽象数据类型-ADT</span><br><span class="line">t--&gt;s[三要素]</span><br><span class="line">	s--&gt;l[逻辑结构]</span><br><span class="line">		l--&gt;集合</span><br><span class="line">		l--&gt;线性结构</span><br><span class="line">		l--&gt;树形结构</span><br><span class="line">		l--&gt;图状结构-网状结构</span><br><span class="line">	s--&gt;w[物理结构-存储结构]</span><br><span class="line">		w--&gt;顺序存储</span><br><span class="line">		w--&gt;ls[链式存储]</span><br><span class="line">		w--&gt;索引存储</span><br><span class="line">		w--&gt;sl[散列存储]</span><br><span class="line">			ls--&gt;非顺序存储</span><br><span class="line">			sl--&gt;非顺序存储</span><br><span class="line">	s--&gt;数据的运算</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>数据结构与算法</title>
+    <url>/2018/01/23/base/data%20structure/</url>
+    <content><![CDATA[<h2 id="知识总览"><a href="#知识总览" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">t[数据解构] </span><br><span class="line"></span><br><span class="line">t--&gt;j[基本概念] </span><br><span class="line">	j--&gt; 数据</span><br><span class="line">	j--&gt; 数据元素/数据项</span><br><span class="line">	j--&gt; 数据对象/数据解构</span><br><span class="line">	j--&gt; 数据类型/抽象数据类型-ADT</span><br><span class="line">t--&gt;s[三要素]</span><br><span class="line">	s--&gt;l[逻辑结构]</span><br><span class="line">		l--&gt;集合</span><br><span class="line">		l--&gt;线性结构</span><br><span class="line">		l--&gt;树形结构</span><br><span class="line">		l--&gt;图状结构-网状结构</span><br><span class="line">	s--&gt;w[物理结构-存储结构]</span><br><span class="line">		w--&gt;顺序存储</span><br><span class="line">		w--&gt;ls[链式存储]</span><br><span class="line">		w--&gt;索引存储</span><br><span class="line">		w--&gt;sl[散列存储]</span><br><span class="line">			ls--&gt;非顺序存储</span><br><span class="line">			sl--&gt;非顺序存储</span><br><span class="line">	s--&gt;数据的运算</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>数据是<strong>信息的载体</strong>，是描述客观事物属性的数、字符及所有<strong>能输入到计算机中并被计算机程序识别</strong>和处理的符号的集合。数据是计算机程序加工的原料。</p>
 <h3 id="数据元素、数据项"><a href="#数据元素、数据项" class="headerlink" title="数据元素、数据项"></a>数据元素、数据项</h3><p>数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。</p>
@@ -789,9 +785,13 @@
 <p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141637899.png" alt="image-20220114163739792"></p>
 <h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141639560.png" alt="image-20220114163926459"></h2><h2 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[时间复杂度]</span><br><span class="line">a--&gt;r[如何计算]</span><br><span class="line">	r--&gt;r1[&quot;找到一个基本操作(最深层循环)&quot;]</span><br><span class="line">	r--&gt;r2[&quot;分析该基本操作的执行次数X与问题规模n的关系x=f(n)&quot;]</span><br><span class="line">	r--&gt;r3[&quot;x的数量级O(x)就是算法时间复杂度T(n)&quot;]</span><br><span class="line">a--&gt;c[常用技巧]</span><br><span class="line">	c--&gt;c1[&quot;加法规则：O(f(n))+O(g(n))=O(max(f(n),g(n)))&quot;]</span><br><span class="line">	c--&gt;c2[&quot;乘法规则：O(f(n))xO(g(n))=O(f(n)xg(n))&quot;]</span><br><span class="line">	c--&gt;c3[&quot;常对幂指阶&quot;]</span><br><span class="line">a--&gt;s[三种复杂度]</span><br><span class="line">	s--&gt;最坏时间复杂度:考虑输入数据&#x27;最坏&#x27;的情况</span><br><span class="line">	s--&gt;平均时间复杂度:考虑输入数据都等概率出现的情况</span><br><span class="line">	s--&gt;最好时间复杂度:考虑输入数据&#x27;最好&#x27;的情况</span><br></pre></td></tr></table></figure>
 
-<h1 id="1-2-3算法效率的度量"><a href="#1-2-3算法效率的度量" class="headerlink" title="1.2.3算法效率的度量"></a>1.2.3算法效率的度量</h1><h2 id="知识总览-2"><a href="#知识总览-2" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[算法效率的度量]</span><br><span class="line">a--&gt;s[时间复杂度]</span><br><span class="line">	s==&gt;s1[&quot;时间开销与问题规模nz的关系&quot;]</span><br><span class="line">a--&gt;k[空间复杂度]</span><br><span class="line">	k==&gt;k1[&quot;空间开销（内存开销）与问题规模n之间的关系&quot;]</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<h1 id="1-2-3算法效率的度量"><a href="#1-2-3算法效率的度量" class="headerlink" title="1.2.3算法效率的度量"></a>1.2.3算法效率的度量</h1><h2 id="知识总览-2"><a href="#知识总览-2" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[算法效率的度量]</span><br><span class="line">a--&gt;s[时间复杂度]</span><br><span class="line">	s==&gt;s1[&quot;时间开销与问题规模nz的关系&quot;]</span><br><span class="line">a--&gt;k[空间复杂度]</span><br><span class="line">	k==&gt;k1[&quot;空间开销（内存开销）与问题规模n之间的关系&quot;]</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>知识点</category>
+      </categories>
+      <tags>
+        <tag>基石</tag>
+      </tags>
   </entry>
   <entry>
     <title>Controller 接收多个json对象</title>
