@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sndshun.xyz/2020/01/23/web-tools/</loc>
+    
+    <lastmod>2022-03-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</loc>
     
     <lastmod>2022-03-19</lastmod>
@@ -73,13 +80,6 @@
   
   <url>
     <loc>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</loc>
-    
-    <lastmod>2021-12-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/2020/01/23/web-tools/</loc>
     
     <lastmod>2021-12-01</lastmod>
     
