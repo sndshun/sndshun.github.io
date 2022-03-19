@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2021-11-25T12:54:17.975Z</updated>
+  <updated>2022-03-19T11:16:58.025Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue 部署服务器配置</title>
+    <link href="https://sndshun.xyz/2022/03/19/configs/vue-deploy/"/>
+    <id>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</id>
+    <published>2022-03-19T04:00:00.000Z</published>
+    <updated>2022-03-19T11:16:58.025Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;使用Nginx代理解决Vue部署服务器后的跨域问题和不能刷新的问题&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://sndshun.xyz/categories/Linux/"/>
+    
+    
+    <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    
+    <category term="Nginx" scheme="https://sndshun.xyz/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/01/12/base/data%20structure/"/>
+    <id>https://sndshun.xyz/2022/01/12/base/data%20structure/</id>
+    <published>2022-01-12T09:50:51.895Z</published>
+    <updated>2022-01-24T08:49:46.979Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Redis 学习笔记</title>
@@ -39,10 +81,10 @@
   
   <entry>
     <title>Controller 接收多个json对象</title>
-    <link href="https://sndshun.xyz/2021/11/15/JsonParam/"/>
-    <id>https://sndshun.xyz/2021/11/15/JsonParam/</id>
+    <link href="https://sndshun.xyz/2021/11/15/skills/JsonParam/"/>
+    <id>https://sndshun.xyz/2021/11/15/skills/JsonParam/</id>
     <published>2021-11-15T04:00:00.000Z</published>
-    <updated>2021-11-16T08:13:45.602Z</updated>
+    <updated>2021-12-09T04:14:35.438Z</updated>
     
     
     <summary type="html">&lt;p&gt;在写 &lt;code&gt;Spring Boot&lt;/code&gt; 加 &lt;code&gt;Vue&lt;/code&gt; 项目时,发现由 &lt;code&gt;Spring MVC&lt;/code&gt; 提供的@RequestBody 注解在一个方法内,只能有一个。&lt;/p&gt;
@@ -59,10 +101,10 @@
   
   <entry>
     <title>Vue3 新特性</title>
-    <link href="https://sndshun.xyz/2021/10/28/Vue3/"/>
-    <id>https://sndshun.xyz/2021/10/28/Vue3/</id>
+    <link href="https://sndshun.xyz/2021/10/28/vue3/"/>
+    <id>https://sndshun.xyz/2021/10/28/vue3/</id>
     <published>2021-10-28T04:00:00.000Z</published>
-    <updated>2021-11-26T06:56:47.083Z</updated>
+    <updated>2022-03-19T10:09:38.414Z</updated>
     
     
     <summary type="html">&lt;p&gt;Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化&lt;/p&gt;</summary>
@@ -99,10 +141,10 @@
   
   <entry>
     <title>HTML 实用标签</title>
-    <link href="https://sndshun.xyz/2020/10/30/HTML-tags/"/>
-    <id>https://sndshun.xyz/2020/10/30/HTML-tags/</id>
+    <link href="https://sndshun.xyz/2020/10/30/skills/HTML-tags/"/>
+    <id>https://sndshun.xyz/2020/10/30/skills/HTML-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2021-11-15T11:33:47.163Z</updated>
+    <updated>2021-12-09T04:14:44.131Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
@@ -198,8 +240,8 @@
   
   <entry>
     <title>Vue 跨域配置</title>
-    <link href="https://sndshun.xyz/2019/10/11/configs/Vue-proxy/"/>
-    <id>https://sndshun.xyz/2019/10/11/configs/Vue-proxy/</id>
+    <link href="https://sndshun.xyz/2019/10/11/configs/vue-proxy/"/>
+    <id>https://sndshun.xyz/2019/10/11/configs/vue-proxy/</id>
     <published>2019-10-11T04:00:00.000Z</published>
     <updated>2021-12-08T13:29:00.000Z</updated>
     
@@ -220,10 +262,10 @@
   
   <entry>
     <title>JavaScript 常用代码段</title>
-    <link href="https://sndshun.xyz/2019/10/07/JavaScript-Skills/"/>
-    <id>https://sndshun.xyz/2019/10/07/JavaScript-Skills/</id>
+    <link href="https://sndshun.xyz/2019/10/07/skills/JavaScript-Skills/"/>
+    <id>https://sndshun.xyz/2019/10/07/skills/JavaScript-Skills/</id>
     <published>2019-10-07T04:00:00.000Z</published>
-    <updated>2021-11-15T11:34:47.919Z</updated>
+    <updated>2021-12-09T04:14:21.074Z</updated>
     
     
     <summary type="html">&lt;p&gt;JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
@@ -236,30 +278,6 @@
     <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
     <category term="技巧" scheme="https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>时间标准</title>
-    <link href="https://sndshun.xyz/2018/01/23/Date/"/>
-    <id>https://sndshun.xyz/2018/01/23/Date/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-01T04:47:26.131Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
-&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
-&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
     
   </entry>
   
@@ -280,6 +298,30 @@
     
     
     <category term="项目配置" scheme="https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间标准</title>
+    <link href="https://sndshun.xyz/2018/01/23/base/Date/"/>
+    <id>https://sndshun.xyz/2018/01/23/base/Date/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2021-12-09T04:16:53.385Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
+&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
+&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
     
   </entry>
   

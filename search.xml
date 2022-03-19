@@ -1,358 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>时间标准</title>
-    <url>/2018/01/23/Date/</url>
-    <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
-<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
-</blockquote>
-<p>2016-08-9T10:01:54.123Z</p>
-<p>T代表后面跟着的是时间</p>
-<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
-<span id="more"></span>
-
-<hr>
-<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
-<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
-</blockquote>
-<p>Thu Oct 16 07:13:48 GMT 2015</p>
-<hr>
-<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
-<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
-<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
-</blockquote>
-<p>Thu Sep 08 23:14:00 CST 2011</p>
-<hr>
-<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
-<p><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
-</blockquote>
-<p>2017-09-30T09:00:00</p>
-<hr>
-<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
-<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
-</blockquote>
-<p>1633786697</p>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>知识点</category>
-      </categories>
-      <tags>
-        <tag>基石</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML 实用标签</title>
-    <url>/2020/10/30/HTML-tags/</url>
-    <content><![CDATA[<p><code>HTML</code>标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。</p>
-<span id="more"></span>
-
-<h2 id="颜色选择组件（Color-Picker）"><a href="#颜色选择组件（Color-Picker）" class="headerlink" title="颜色选择组件（Color Picker）"></a>颜色选择组件（Color Picker）</h2><p>在项目中，你可能希望通过调色板组件动态调整颜色，这时你可以使用 <code>&lt;input type=&quot;color&quot;&gt;</code> 就可以轻松调用一个调色板组件，省去你在找第三方组件，示例效果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-color.gif" alt="HTML-tags-color"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;color&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="引用标签（Blockquote）"><a href="#引用标签（Blockquote）" class="headerlink" title="引用标签（Blockquote）"></a>引用标签（Blockquote）</h2><p>在文章排版时，有时候我们需要引用一些信息，这时我们需要用特殊的样式进行强调，这时你可以使用<code>&lt;blockquote&gt;</code> 标签来强调你用的内容，示例效果如下所示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-blockquote.webp" alt="HTML-tags-blockquote"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;border-left: 3px solid blue&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span><br><span class="line">        For 50 years, WWF has been protecting the future of nature. The worlds leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="折叠组件（Accordion）"><a href="#折叠组件（Accordion）" class="headerlink" title="折叠组件（Accordion）"></a>折叠组件（Accordion）</h2><p>折叠列表的需求也是比较常见的，点击标题展开对应的信息内容，这时 <code>&lt;details&gt;</code> 标签就派上用场了，示例效果如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-accordion.gif" alt="HTML-tags-accordion"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">details</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">summary</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">summary</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">details</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="内容编辑（Content-Editor）"><a href="#内容编辑（Content-Editor）" class="headerlink" title="内容编辑（Content Editor）"></a>内容编辑（Content Editor）</h2><p>为了让内容具有编辑性，你可以不必使用表单组件，比如 input、textarea 标签，你可以在可编辑的容器(div) 上添加 <code>contenteditable</code> 属性，就能很轻松的完成当前容器及所见即所得的编辑，示例如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-edit.gif" alt="HTML-tags-edit"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">contenteditable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">	可编辑</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="图片标签（Picture-Tag）"><a href="#图片标签（Picture-Tag）" class="headerlink" title="图片标签（Picture Tag）"></a>图片标签（Picture Tag）</h2><p>有时候需要在不同的分辨率下显示不同的图片，如果你使用<code>&lt;img&gt;</code> 标签的话，你需要做的工作就会许多，但是使用<code>&lt;picture&gt;</code> 标签就能很轻松的完成在不同分辨率下显示不同图片的设置，调整浏览器的大小，就会根据窗口的大小显示不同大小的图片，示例效果如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-img.jpg" alt="HTML-tags-img"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 650px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 465px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--根据屏幕匹配的不同尺寸显示不同图片，如果没有匹配到或浏览器不支持 picture 属性则使用 img 元素--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="进度条（Progress-Bar）"><a href="#进度条（Progress-Bar）" class="headerlink" title="进度条（Progress Bar）"></a><strong>进度条（Progress Bar）</strong></h2><p>进度条组件也是个很常见的组件，你可以使用<code>&lt;progress&gt;</code> 标签就能轻松完成相关外观的设置，示例效果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-progress.jpg" alt="HTML-tags-progress"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">progress</span> <span class="attr">value</span>=<span class="string">&quot;22&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">progress</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="下拉组件（Dropdown）"><a href="#下拉组件（Dropdown）" class="headerlink" title="下拉组件（Dropdown）"></a>下拉组件（Dropdown）</h2><p>如果下拉组件选项比较多，用户选择就会比较困难，用户可能希望结合输入，能很方便的定位到下拉组件的内容，这时候你可以使用 <code>&lt;datalist&gt;</code> 标签就能满足上述需求，示例效果如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-dropdown.gif" alt="HTML-tags-dropdown"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">list</span>=<span class="string">&quot;browsers&quot;</span> <span class="attr">name</span>=<span class="string">&quot;browser&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;browsers&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Internet Explorer&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Firefox&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Chrome&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Opera&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Safari&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="提示框（Tooltip）"><a href="#提示框（Tooltip）" class="headerlink" title="提示框（Tooltip）"></a>提示框（Tooltip）</h2><p>如果你需要对页面某部分进行详细介绍时，你可能需要鼠标经过此区域显示详细的提示框效果，这时我们可以使用 <code>title</code> 属性就能轻松实现，示例效果如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-tooltip.jpg" alt="HTML-tags-tooltip"></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">title</span>=<span class="string">&quot;这是提示&quot;</span>&gt;</span></span><br><span class="line">    这是内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript 常用代码段</title>
-    <url>/2019/10/07/JavaScript-Skills/</url>
-    <content><![CDATA[<p>JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果</p>
-<span id="more"></span>
-
-<h2 id="Quick-Console-log"><a href="#Quick-Console-log" class="headerlink" title="Quick Console.log"></a>Quick Console.log</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> c = <span class="built_in">console</span>.log.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> info = <span class="built_in">console</span>.info.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>更加简短的 console.log() 或者是 console.info() </p>
-</blockquote>
-<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">print1</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> print2 = <span class="function">() =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> sum2 = <span class="function">(<span class="params">x, y</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>通过箭头函数有效减少代码量，熟悉后更易阅读</p>
-</blockquote>
-<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array connection</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> concat = [...num1, ...num2]                 <span class="comment">// [1, 2, 3, 4, 5, 6]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(concat)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Copying An Array</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> alpha = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> copy = [...alpha]                           <span class="comment">// [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(copy)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array literals</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data = [<span class="number">100</span>, <span class="number">200</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> literal = [...data, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>]          <span class="comment">// [100,200,300,400,500]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(literal)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>展开运算符(ES6)，它接受一个可迭代对象并将其扩展为单个元素</p>
-</blockquote>
-<h2 id="Truncating-an-array"><a href="#Truncating-an-array" class="headerlink" title="Truncating an array"></a>Truncating an array</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr = [<span class="number">100</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>, <span class="number">600</span>]</span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">3</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// [100,200,300]</span></span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// []</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>length 方法不仅可以显示字符串大小，还可以将数组截断为任意大小</p>
-</blockquote>
-<h2 id="Smart-Replacing"><a href="#Smart-Replacing" class="headerlink" title="Smart Replacing"></a>Smart Replacing</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> str = <span class="string">&quot;This is potato and potato&quot;</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/</span>, <span class="string">&quot;tom&quot;</span>))          <span class="comment">// This is tomato and potato</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/g</span>, <span class="string">&quot;tom&quot;</span>))         <span class="comment">// This is tomato and tomato</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>替换特定词</p>
-</blockquote>
-<h2 id="Numerical-Separator"><a href="#Numerical-Separator" class="headerlink" title="Numerical Separator"></a>Numerical Separator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data1 = <span class="number">10_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data2 = <span class="number">3_0000_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data1)                              <span class="comment">// 100000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data2)                              <span class="comment">// 300000000</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这个简单的技巧可以提高 JavaScript 大量数据的可读性</p>
-</blockquote>
-<h2 id="Quick-Power-Calculation"><a href="#Quick-Power-Calculation" class="headerlink" title="Quick Power Calculation"></a>Quick Power Calculation</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Normal Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">4</span>, <span class="number">5</span>))                     <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">5</span>))                     <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Quick Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">4</span> ** <span class="number">5</span>)                             <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">2</span> ** <span class="number">5</span>)                             <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>pow() 方法来计算任何数字的幂，这个技巧将常规数学方法以快速形式计算次方</p>
-</blockquote>
-<h2 id="Rest-Parameter"><a href="#Rest-Parameter" class="headerlink" title="Rest Parameter"></a>Rest Parameter</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">...num</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> cal = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">const</span> a <span class="keyword">of</span> num) &#123;</span></span><br><span class="line"><span class="javascript">            cal += a</span></span><br><span class="line"><span class="javascript">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(cal)                            <span class="comment">// 27</span></span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    sum(<span class="number">20</span>,<span class="number">7</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Rest Parameter 语法用于处理函数中定义中的无限数量的参数</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Controller 接收多个json对象</title>
-    <url>/2021/11/15/JsonParam/</url>
-    <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
-<p>但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用</p>
-<span id="more"></span>
-
-<h2 id="1-url-加-请求体"><a href="#1-url-加-请求体" class="headerlink" title="1.url 加 请求体"></a>1.url 加 请求体</h2><p>将分页需要的信息通过url拼接的方式传给后台,将json对象放在body请求体中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png" alt="uTools_1637043775953"></p>
-<p>请求工具是 <code>axios</code> 会将params属性里的json对象自动拼接到url,需要注意的是 <code>@RequestBody</code> 只能放在参数第一位</p>
-<h2 id="2-再次封装实体类"><a href="#2-再次封装实体类" class="headerlink" title="2.再次封装实体类"></a>2.再次封装实体类</h2><p>封装实体类</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PageAndPictureDTO</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Page&lt;Picture&gt; page;</span><br><span class="line">    <span class="keyword">private</span> Picture picture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>前端传入的 <code>json</code> 对象</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;page&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;current&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;size&quot;</span>: <span class="number">5</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;picture&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">        <span class="attr">&quot;type&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>Controller</code> 接收</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;list&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> R <span class="title">test</span><span class="params">(<span class="meta">@RequestBody</span> PageAndPictureDTO dto)</span></span>&#123;</span><br><span class="line">     <span class="keyword">return</span> R.ok(<span class="keyword">this</span>.pictureService.getAll(dto.getPage(),dto.getPicture()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-自定义MVC参数处理器"><a href="#3-自定义MVC参数处理器" class="headerlink" title="3.自定义MVC参数处理器"></a>3.自定义MVC参数处理器</h2><p>定义注解</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Target(ElementType.PARAMETER)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JsonParam &#123;</span><br><span class="line">    <span class="comment">//是否脱敏 默认大小写敏感</span></span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">insensitive</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>编写参数处理器</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonResolver</span> <span class="keyword">implements</span> <span class="title">HandlerMethodArgumentResolver</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String JSON_REQUEST_ATTRIBUTE_NAME = <span class="string">&quot;JSON_REQUEST_BODY&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回值为true时才调用resolveArgument()</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> boolean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supportsParameter</span><span class="params">(MethodParameter methodParameter)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 参数是否有@JsonParam注解</span></span><br><span class="line">        <span class="keyword">return</span> methodParameter.hasParameterAnnotation(JsonParam.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 解析json参数,并反序列化</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter       是spring对被注解修饰过参数的包装，从其中能拿到参数的反射相关信息。</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> modelAndViewContainer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> nativeWebRequest</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webDataBinderFactory</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 根据json反序列化后的对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">resolveArgument</span><span class="params">(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">// 获取参数注解</span></span><br><span class="line">        JsonParam jsonParam = methodParameter.getParameterAnnotation(JsonParam.class);</span><br><span class="line">        <span class="comment">// 获取前端传入的数据</span></span><br><span class="line">        String jsonBody = getRequestBody(nativeWebRequest);</span><br><span class="line">        <span class="comment">// 无数据传入直接返回</span></span><br><span class="line">        <span class="keyword">if</span> (jsonBody.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 创建jackson对象,设置jackson只序列不为空和JavaBean所拥有的属性</span></span><br><span class="line">        ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper()</span><br><span class="line">                .setSerializationInclusion(JsonInclude.Include.NON_NULL)</span><br><span class="line">                .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);</span><br><span class="line"></span><br><span class="line">        objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, jsonParam.insensitive());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取Controller中参数的类型</span></span><br><span class="line">        Class clazz = methodParameter.getParameterType();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 存放泛型类型</span></span><br><span class="line">        Class Superclass = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">// 获取参数类型及泛型类型</span></span><br><span class="line">        Type classParameterizedType = methodParameter.getGenericParameterType();</span><br><span class="line">        <span class="comment">// 判断是否泛型的实例</span></span><br><span class="line">        <span class="keyword">if</span> (classParameterizedType <span class="keyword">instanceof</span> ParameterizedType) &#123;</span><br><span class="line">            <span class="comment">// 强转为泛型</span></span><br><span class="line">            ParameterizedType parameterizedType = (ParameterizedType) classParameterizedType;</span><br><span class="line">            <span class="comment">// 获取第一个泛型Type,强转为Class</span></span><br><span class="line">            Superclass = (Class) parameterizedType.getActualTypeArguments()[<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果参数类型是list,返回ArrayList,list无法newInstance()</span></span><br><span class="line">        <span class="keyword">if</span> (clazz == List.class) &#123;</span><br><span class="line">            clazz = ArrayList.class;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例化</span></span><br><span class="line">        Object target = clazz.newInstance();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断是否为集合类型</span></span><br><span class="line">        <span class="keyword">if</span> (Collection.class.isAssignableFrom(clazz)) &#123;</span><br><span class="line">            <span class="comment">// 设置jackson反序列化时的类型</span></span><br><span class="line">            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(clazz, Superclass);</span><br><span class="line">            <span class="comment">// jackson反序列化为对象</span></span><br><span class="line">            target = objectMapper.readValue(jsonBody, javaType);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            target = objectMapper.readValue(jsonBody, clazz);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取请求体JSON字符串</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webRequest mvc封装后的请求体</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 前端传入的json</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getRequestBody</span><span class="params">(NativeWebRequest webRequest)</span> </span>&#123;</span><br><span class="line">        HttpServletRequest servletRequest = webRequest.getNativeRequest(HttpServletRequest.class);</span><br><span class="line">        String jsonBody = (String) webRequest.getAttribute(JSON_REQUEST_ATTRIBUTE_NAME, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (jsonBody == <span class="keyword">null</span>) &#123;</span><br><span class="line">                jsonBody = servletRequest.getReader().lines().collect(Collectors.joining(<span class="string">&quot;\n&quot;</span>));</span><br><span class="line">                webRequest.setAttribute(JSON_REQUEST_ATTRIBUTE_NAME, jsonBody, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jsonBody;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>将编写的参数处理器注册</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addArgumentResolvers</span><span class="params">(List&lt;HandlerMethodArgumentResolver&gt; resolvers)</span> </span>&#123;</span><br><span class="line">        WebMvcConfigurer.<span class="keyword">super</span>.addArgumentResolvers(resolvers);</span><br><span class="line">        <span class="comment">//配置自定义处理器</span></span><br><span class="line">        resolvers.add(<span class="keyword">new</span> JsonResolver());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png" alt="uTools_1637050412679" style="zoom:33%;" />
-
-<p><a href="https://docs.apipost.cn/preview/28bf59b888c9069c/71437f5c10135a51">这里可以查看用法</a></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>除此外还有别的解决方法,这篇就先分享本人常用的三种.</p>
-<p>关于这三种方法缺点也是很明显.</p>
-<h3 id="url-加-请求体"><a href="#url-加-请求体" class="headerlink" title="url 加  请求体"></a>url 加  请求体</h3><p>这种方法显然是只能接受俩个对象的,如果要加入第三个对象,是接收不到的.并且url有着长度限制.</p>
-<p>但是如果只是传俩个对象,这种方法最为便利,不用对项目做任何更改</p>
-<h3 id="封装实体类"><a href="#封装实体类" class="headerlink" title="封装实体类"></a>封装实体类</h3><p>这种方法不怎么灵活,每次参数组合改变都要新建一个封装类.</p>
-<p>个人项目经验还不够丰富,不知道配合DTO层用这种方法是不是会好很多</p>
-<h3 id="自定义MVC参数处理器"><a href="#自定义MVC参数处理器" class="headerlink" title="自定义MVC参数处理器"></a>自定义MVC参数处理器</h3><p>用这个方法会使小项目结构变得复杂,并且使用了 <code>jackson</code> 进行反序列化,spring boot本身集成了 <code>jackson</code> 这个包,但如果是ssm项目还需导入,或者换成阿里的 <code>fastJson</code> .</p>
-<p>项目本来就很复杂,并且有着各种类,用这个方法配置一次,之后就随意使用了.</p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue3 新特性</title>
-    <url>/2021/10/28/Vue3/</url>
-    <content><![CDATA[<p>Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化</p>
-<span id="more"></span>
-
-<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是 Vue 3 中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
-<blockquote>
-<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
-<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
-<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
-</blockquote>
-<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3><p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252212225.png" alt="uTools_1637849561826"></p>
-<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>下表包含如何在 <a href="https://v3.cn.vuejs.org/guide/composition-api-setup.html">setup ()</a> 内部调用生命周期钩子：</p>
-<table>
-<thead>
-<tr>
-<th>选项式 API</th>
-<th>Hook inside <code>setup</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>beforeCreate</code></td>
-<td>Not needed*</td>
-</tr>
-<tr>
-<td><code>created</code></td>
-<td>Not needed*</td>
-</tr>
-<tr>
-<td><code>beforeMount</code></td>
-<td><code>onBeforeMount</code></td>
-</tr>
-<tr>
-<td><code>mounted</code></td>
-<td><code>onMounted</code></td>
-</tr>
-<tr>
-<td><code>beforeUpdate</code></td>
-<td><code>onBeforeUpdate</code></td>
-</tr>
-<tr>
-<td><code>updated</code></td>
-<td><code>onUpdated</code></td>
-</tr>
-<tr>
-<td><code>beforeUnmount</code></td>
-<td><code>onBeforeUnmount</code></td>
-</tr>
-<tr>
-<td><code>unmounted</code></td>
-<td><code>onUnmounted</code></td>
-</tr>
-<tr>
-<td><code>errorCaptured</code></td>
-<td><code>onErrorCaptured</code></td>
-</tr>
-<tr>
-<td><code>renderTracked</code></td>
-<td><code>onRenderTracked</code></td>
-</tr>
-<tr>
-<td><code>renderTriggered</code></td>
-<td><code>onRenderTriggered</code></td>
-</tr>
-<tr>
-<td><code>activated</code></td>
-<td><code>onActivated</code></td>
-</tr>
-<tr>
-<td><code>deactivated</code></td>
-<td><code>onDeactivated</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>官网的解释是  <code>beforeCreate</code> 和 <code>created</code> 中编写的任何代码都应该直接在 <code>setup</code> 函数中</p>
-<p>编写，所以不需要显式地定义它们。。。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这是一个官网的使用例子</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="comment">// mounted</span></span><br><span class="line">    onMounted(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;Component is mounted!&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="setup-函数"><a href="#setup-函数" class="headerlink" title="setup 函数"></a>setup 函数</h3><p><strong>setup 函数</strong>是 Vue3 中新增的一个生命周期函数</p>
-<p>setup 函数会在 <code>beforeCreate</code> 之前调用，因为此时组件的 <code>data</code> 和 <code>methods</code> 还没有初始化，因此在 setup 中是不能使用 <code>this</code> 的。</p>
-<p>所以 Vue 为了避免我们错误的使用，它直接将 setup 函数中的 <code>this</code> 修改成了<code>undefined</code>。并且，我们只能同步使用setup函数，不能用async将其设为异步。</p>
-<p>setup 函数接收两个参数 <code>props</code>和 <code>context</code>， 语法为：<code>setup(props,context)&#123;&#125;</code></p>
-<h4 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h4><p><code>setup</code> 函数中的第一个参数是 <code>props</code>。正如在一个标准组件中所期望的那样，<code>setup</code> 函数中的 <code>props</code> 是响应式的，当传入新的 prop 时，它将被更新。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">props</span>: &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">String</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(props.title)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>WARNING</p>
-<p>但是，因为 <code>props</code> 是响应式的，你<strong>不能使用 ES6 解构</strong>，因为它会消除 prop 的响应性。</p>
-<p>如果需要解构 prop，可以通过使用 <code>setup</code> 函数中的 <a href="https://v3.cn.vuejs.org/guide/reactivity-fundamentals.html#%E5%93%8D%E5%BA%94%E5%BC%8F%E7%8A%B6%E6%80%81%E8%A7%A3%E6%9E%84"><code>toRefs</code></a> 来完成此操作：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; toRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 不能直接解构let &#123; title ,name ,age &#125; = props;  </span></span><br><span class="line">	<span class="keyword">const</span> &#123; title &#125; = toRefs(props)</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">console</span>.log(title.value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="context"><a href="#context" class="headerlink" title="context"></a>context</h4><p><code>context</code> 里面包含 <code>attrs</code>, <code>slots</code>, <code>emit</code> 等数据方法：</p>
-<ul>
-<li><code>attrs</code>：获取组件上的属性</li>
-<li><code>slots</code>：获取 slot 插槽的节点</li>
-<li><code>emit</code> ：emit 方法（<strong>子组件向父组件传递数据</strong>）</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, context</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// Attribute (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.attrs)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 插槽 (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.slots)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 触发事件 (方法)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.emit)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>context</code> 是一个普通的 JavaScript 对象，也就是说，它不是响应式的，这意味着你可以安全地对 <code>context</code> 使用 ES6 解构。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, &#123; attrs, slots, emit &#125;</span>)</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><h3 id="访问组件的-property"><a href="#访问组件的-property" class="headerlink" title="访问组件的 property"></a>访问组件的 property</h3><p>执行 <code>setup</code> 时，组件实例尚未被创建。因此，你只能访问以下 property：</p>
-<ul>
-<li><code>props</code></li>
-<li><code>attrs</code></li>
-<li><code>slots</code></li>
-<li><code>emit</code></li>
-</ul>
-<p>换句话说，你<strong>将无法访问</strong>以下组件选项：</p>
-<ul>
-<li><code>data</code></li>
-<li><code>computed</code></li>
-<li><code>methods</code></li>
-</ul>
-<h3 id="ref-与-reactive"><a href="#ref-与-reactive" class="headerlink" title="ref 与 reactive"></a>ref 与 reactive</h3><p>创建一个<strong>响应式数据</strong></p>
-<ul>
-<li><strong>ref：任意类型（建议基本类型）数据的响应式引用</strong>（设置、获取值时需要加<code>.value</code>）。<br>ref 的本质是拷贝，修改数据是不会影响到原始数据。</li>
-<li><strong>reactive：只能是复杂类型数据的响应式引用</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; h, ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> readersNumber = ref(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">const</span> book = reactive(&#123; <span class="attr">title</span>: <span class="string">&#x27;Vue 3 Guide&#x27;</span> &#125;)</span><br><span class="line">    <span class="comment">// Please note that we need to explicitly expose ref value here</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> h(<span class="string">&#x27;div&#x27;</span>, [readersNumber.value, book.title])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="toRef-与-toRefs"><a href="#toRef-与-toRefs" class="headerlink" title="toRef 与 toRefs"></a>toRef 与 toRefs</h3><p>也可以创建一个响应式数据</p>
-<ul>
-<li>toRef：用来给抽离响应式对象中的某一个属性，并把该属性包裹成 ref 对象，使其和原对象产生链接。<br>toRef 的本质是引用，修改响应式数据会影响原始数据。</li>
-<li>toRefs：用来把响应式对象转换成普通对象，把对象中的每一个属性，包裹成 ref 对象。<br>toRefs 就是 toRef 的升级版，只是toRefs 是把响应式对象进行转换，其余的特性和 toRef 无二</li>
-</ul>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2015/01/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -599,7 +247,7 @@
 <p>将T替换为空格                                                 2019-10-09 21:51:25.414Z</p>
 <p>将.和Z中间的3个数字包括.和Z替换为空气    2019-10-09 21:51:25</p>
 </blockquote>
-<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><h3 id="文本过长省略"><a href="#文本过长省略" class="headerlink" title="文本过长省略"></a>文本过长省略</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>,count)+omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><h3 id="文本过长省略"><a href="#文本过长省略" class="headerlink" title="文本过长省略"></a>文本过长省略</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> != text &amp;&amp; <span class="string">&quot;&quot;</span> != text &amp;&amp; text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>, count) + omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>设置文本长度到几时省略</p>
@@ -607,7 +255,7 @@
 <p>判断是否达到指标，是则返回处理后的文本，否则返回原值</p>
 </blockquote>
 <h1 id="过滤工具类"><a href="#过滤工具类" class="headerlink" title="过滤工具类"></a>过滤工具类</h1><p><strong>export 模块标准编写</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description </span>: 过滤工具</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author </span>: mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date </span>: 2021/11/9</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version </span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update by : mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update time : 2021/12/8</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 格式化UTC格式的时间 例：2019-10-09T13:51:25.414Z</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>time 需要转换的时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span> </span>格式转换后的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> formatUTC_DateTime = <span class="function">(<span class="params">time</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> == time || <span class="string">&quot;&quot;</span> == time) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;无数据&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>,count)+omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    formatUTC_DateTime,</span><br><span class="line">    textTooLongAndOmitted</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description </span>: 过滤工具</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author </span>: mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date </span>: 2021/11/9</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version </span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update by : mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update time : 2021/12/8</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 格式化UTC格式的时间 例：2019-10-09T13:51:25.414Z</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>time 需要转换的时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span> </span>格式转换后的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> formatUTC_DateTime = <span class="function">(<span class="params">time</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> == time || <span class="string">&quot;&quot;</span> == time) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;无数据&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 处理过长的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>text 需要处理的文本</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>count 处理指标</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>omitted 替换符合</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string|*&#125;</span> </span>处理过的字符串 例：这是这个长度过长的字符串...</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> textTooLongAndOmitted = <span class="function">(<span class="params">text,count, omitted</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!count) count = <span class="number">15</span></span><br><span class="line">    <span class="keyword">if</span> (!omitted) omitted = <span class="string">&#x27;...&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> != text &amp;&amp; <span class="string">&quot;&quot;</span> != text &amp;&amp; text.length &gt; count) &#123;</span><br><span class="line">        <span class="keyword">return</span> text.substring(<span class="number">0</span>, count) + omitted</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> text</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    formatUTC_DateTime,</span><br><span class="line">    textTooLongAndOmitted</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -627,9 +275,6 @@
 <blockquote>
 <p>Vue 3.x 取消了过滤器，官方希望我们使用计算属性来替代</p>
 <p>不过对于常用的工具还是可以注册为全局属性，方便使用</p>
-</blockquote>
-<blockquote>
-<p><em>！如有错误请在评论及时指出</em></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -681,8 +326,188 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue3 新特性</title>
+    <url>/2021/10/28/vue3/</url>
+    <content><![CDATA[<p>Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化</p>
+<span id="more"></span>
+
+<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是 Vue 3 中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<blockquote>
+<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
+<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
+<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+</blockquote>
+<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3><p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252212225.png" alt="uTools_1637849561826"></p>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>下表包含如何在 <a href="https://v3.cn.vuejs.org/guide/composition-api-setup.html">setup ()</a> 内部调用生命周期钩子：</p>
+<table>
+<thead>
+<tr>
+<th>选项式 API</th>
+<th>Hook inside <code>setup</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>beforeCreate</code></td>
+<td>Not needed*</td>
+</tr>
+<tr>
+<td><code>created</code></td>
+<td>Not needed*</td>
+</tr>
+<tr>
+<td><code>beforeMount</code></td>
+<td><code>onBeforeMount</code></td>
+</tr>
+<tr>
+<td><code>mounted</code></td>
+<td><code>onMounted</code></td>
+</tr>
+<tr>
+<td><code>beforeUpdate</code></td>
+<td><code>onBeforeUpdate</code></td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td><code>onUpdated</code></td>
+</tr>
+<tr>
+<td><code>beforeUnmount</code></td>
+<td><code>onBeforeUnmount</code></td>
+</tr>
+<tr>
+<td><code>unmounted</code></td>
+<td><code>onUnmounted</code></td>
+</tr>
+<tr>
+<td><code>errorCaptured</code></td>
+<td><code>onErrorCaptured</code></td>
+</tr>
+<tr>
+<td><code>renderTracked</code></td>
+<td><code>onRenderTracked</code></td>
+</tr>
+<tr>
+<td><code>renderTriggered</code></td>
+<td><code>onRenderTriggered</code></td>
+</tr>
+<tr>
+<td><code>activated</code></td>
+<td><code>onActivated</code></td>
+</tr>
+<tr>
+<td><code>deactivated</code></td>
+<td><code>onDeactivated</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>官网的解释是  <code>beforeCreate</code> 和 <code>created</code> 中编写的任何代码都应该直接在 <code>setup</code> 函数中</p>
+<p>编写，所以不需要显式地定义它们。。。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这是一个官网的使用例子</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="comment">// mounted</span></span><br><span class="line">    onMounted(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;Component is mounted!&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="setup-函数"><a href="#setup-函数" class="headerlink" title="setup 函数"></a>setup 函数</h3><p><strong>setup 函数</strong>是 Vue3 中新增的一个生命周期函数</p>
+<p>setup 函数会在 <code>beforeCreate</code> 之前调用，因为此时组件的 <code>data</code> 和 <code>methods</code> 还没有初始化，因此在 setup 中是不能使用 <code>this</code> 的。</p>
+<p>所以 Vue 为了避免我们错误的使用，它直接将 setup 函数中的 <code>this</code> 修改成了<code>undefined</code>。并且，我们只能同步使用setup函数，不能用async将其设为异步。</p>
+<p>setup 函数接收两个参数 <code>props</code>和 <code>context</code>， 语法为：<code>setup(props,context)&#123;&#125;</code></p>
+<h4 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h4><p><code>setup</code> 函数中的第一个参数是 <code>props</code>。正如在一个标准组件中所期望的那样，<code>setup</code> 函数中的 <code>props</code> 是响应式的，当传入新的 prop 时，它将被更新。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">props</span>: &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">String</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(props.title)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>WARNING</p>
+<p>但是，因为 <code>props</code> 是响应式的，你<strong>不能使用 ES6 解构</strong>，因为它会消除 prop 的响应性。</p>
+<p>如果需要解构 prop，可以通过使用 <code>setup</code> 函数中的 <a href="https://v3.cn.vuejs.org/guide/reactivity-fundamentals.html#%E5%93%8D%E5%BA%94%E5%BC%8F%E7%8A%B6%E6%80%81%E8%A7%A3%E6%9E%84"><code>toRefs</code></a> 来完成此操作：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; toRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 不能直接解构let &#123; title ,name ,age &#125; = props;  </span></span><br><span class="line">	<span class="keyword">const</span> &#123; title &#125; = toRefs(props)</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">console</span>.log(title.value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="context"><a href="#context" class="headerlink" title="context"></a>context</h4><p><code>context</code> 里面包含 <code>attrs</code>, <code>slots</code>, <code>emit</code> 等数据方法：</p>
+<ul>
+<li><code>attrs</code>：获取组件上的属性</li>
+<li><code>slots</code>：获取 slot 插槽的节点</li>
+<li><code>emit</code> ：emit 方法（<strong>子组件向父组件传递数据</strong>）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, context</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// Attribute (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.attrs)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 插槽 (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.slots)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 触发事件 (方法)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.emit)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>context</code> 是一个普通的 JavaScript 对象，也就是说，它不是响应式的，这意味着你可以安全地对 <code>context</code> 使用 ES6 解构。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, &#123; attrs, slots, emit &#125;</span>)</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><h3 id="访问组件的-property"><a href="#访问组件的-property" class="headerlink" title="访问组件的 property"></a>访问组件的 property</h3><p>执行 <code>setup</code> 时，组件实例尚未被创建。因此，你只能访问以下 property：</p>
+<ul>
+<li><code>props</code></li>
+<li><code>attrs</code></li>
+<li><code>slots</code></li>
+<li><code>emit</code></li>
+</ul>
+<p>换句话说，你<strong>将无法访问</strong>以下组件选项：</p>
+<ul>
+<li><code>data</code></li>
+<li><code>computed</code></li>
+<li><code>methods</code></li>
+</ul>
+<h3 id="ref-与-reactive"><a href="#ref-与-reactive" class="headerlink" title="ref 与 reactive"></a>ref 与 reactive</h3><p>创建一个<strong>响应式数据</strong></p>
+<ul>
+<li><strong>ref：任意类型（建议基本类型）数据的响应式引用</strong>（设置、获取值时需要加<code>.value</code>）。<br>ref 的本质是拷贝，修改数据是不会影响到原始数据。</li>
+<li><strong>reactive：只能是复杂类型数据的响应式引用</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; h, ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> readersNumber = ref(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">const</span> book = reactive(&#123; <span class="attr">title</span>: <span class="string">&#x27;Vue 3 Guide&#x27;</span> &#125;)</span><br><span class="line">    <span class="comment">// Please note that we need to explicitly expose ref value here</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> h(<span class="string">&#x27;div&#x27;</span>, [readersNumber.value, book.title])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="toRef-与-toRefs"><a href="#toRef-与-toRefs" class="headerlink" title="toRef 与 toRefs"></a>toRef 与 toRefs</h3><p>也可以创建一个响应式数据</p>
+<ul>
+<li>toRef：用来给抽离响应式对象中的某一个属性，并把该属性包裹成 ref 对象，使其和原对象产生链接。<br>toRef 的本质是引用，修改响应式数据会影响原始数据。</li>
+<li>toRefs：用来把响应式对象转换成普通对象，把对象中的每一个属性，包裹成 ref 对象。<br>toRefs 就是 toRef 的升级版，只是toRefs 是把响应式对象进行转换，其余的特性和 toRef 无二</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>时间标准</title>
+    <url>/2018/01/23/base/Date/</url>
+    <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
+<p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
+</blockquote>
+<p>2016-08-9T10:01:54.123Z</p>
+<p>T代表后面跟着的是时间</p>
+<p>Z代表0时区UTC统一时间（慢北京时间8小时）</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="GMT：格林尼治平时"><a href="#GMT：格林尼治平时" class="headerlink" title="GMT：格林尼治平时"></a>GMT：格林尼治平时</h2><blockquote>
+<p>世界时UT 即格林尼治时间，格林尼治所在地的标准时间。以地球自转为基础的时间计量系统。地球自转的角度可用地方子午线相对于地球上的基本参考点的运动来度量。为了测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳，由此确定的时间分别称为恒星时和平太阳时。<br>但是格林尼治本地的时间比格林尼治平时，大一小时，也就是格林尼治本地的时间：GMT+1</p>
+</blockquote>
+<p>Thu Oct 16 07:13:48 GMT 2015</p>
+<hr>
+<h2 id="CST：也就是北京时间"><a href="#CST：也就是北京时间" class="headerlink" title="CST：也就是北京时间"></a>CST：也就是北京时间</h2><blockquote>
+<p>澳洲中部时间，Central Standard Time (Australia)中部标准时区（北美洲），Central Standard Time (North America)北京时间，China Standard Time古巴标准时间，Cuba Standard Time，参见北美东部时区</p>
+<p>通常我们在数据库中存放，或者给用户看的时间都是CST时间<br>北京时间CST：UTC+8</p>
+</blockquote>
+<p>Thu Sep 08 23:14:00 CST 2011</p>
+<hr>
+<h2 id="ISO-8601-：表现日期和时间的国际标准"><a href="#ISO-8601-：表现日期和时间的国际标准" class="headerlink" title="ISO 8601 ：表现日期和时间的国际标准"></a>ISO 8601 ：表现日期和时间的国际标准</h2><blockquote>
+<p><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87/779832">国际标准化组织</a>的国际标准ISO 8601是日期和时间的表示方法，全称为《数据存储和交换形式·信息交换·日期和时间的表示方法》。最新为第三版ISO8601:2004，第一版为ISO8601:1988，第二版为ISO8601:2000。</p>
+</blockquote>
+<p>2017-09-30T09:00:00</p>
+<hr>
+<h2 id="UNIX时间戳"><a href="#UNIX时间戳" class="headerlink" title="UNIX时间戳"></a>UNIX时间戳</h2><blockquote>
+<p>计算机中的UNIX时间戳，是以GMT/UTC时间「1970-01-01T00:00:00」为起点，到具体时间的秒数，不考虑闰秒。这么做当然是为了简化计算机对时间操作的复杂度。</p>
+</blockquote>
+<p>1633786697</p>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>知识点</category>
+      </categories>
+      <tags>
+        <tag>基石</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue 跨域配置</title>
-    <url>/2019/10/11/configs/Vue-proxy/</url>
+    <url>/2019/10/11/configs/vue-proxy/</url>
     <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082304683.png" alt="QQ截图20211208230445"></p>
 <p><strong>先看 package.json 里的vue 2开头为2.x，3开头为3.x</strong></p>
 <p><strong>然后注意自己的 vue 脚手架是vue-cli还是@vue-lic</strong></p>
@@ -724,6 +549,295 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 部署服务器配置</title>
+    <url>/2022/03/19/configs/vue-deploy/</url>
+    <content><![CDATA[<p>首先把开发时配置的跨域注释，使用代理后用不着</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202203191855536.png" alt="image-20220319183612053"></p>
+<blockquote>
+<p>Vue 端口不用管，走的是Nginx设置的端口</p>
+</blockquote>
+<p>然后设置BaseURL</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> service = axios.create(&#123;</span><br><span class="line">  <span class="attr">baseURL</span>: <span class="string">&#x27;/api&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// OR</span></span><br><span class="line"><span class="keyword">const</span> service = axios.create(&#123;</span><br><span class="line">  <span class="attr">baseURL</span>: <span class="string">&#x27;127.0.0.1/api&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>注意这个<code>/api</code>,要和Nginx转发规则一致</p>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Nginx</span></span><br><span class="line">  	<span class="comment"># 配置Vue刷新依然加载index页面</span></span><br><span class="line">  	<span class="attribute">location</span> / &#123;</span><br><span class="line">        <span class="attribute">try_files</span> $uri $uri/ @router;</span><br><span class="line">        <span class="attribute">index</span>  index.html index.htm index.php;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">location</span> @router&#123;</span><br><span class="line">        <span class="attribute">rewrite</span><span class="regexp"> ^.*$</span> /index.html <span class="literal">last</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment"># 带/api的请求转发给后台</span></span><br><span class="line">    <span class="attribute">location</span> /api &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://127.0.0.1:8081/;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202203191916995.png" alt="image-20220319191656915"></p>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 常用代码段</title>
+    <url>/2019/10/07/skills/JavaScript-Skills/</url>
+    <content><![CDATA[<p>JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果</p>
+<span id="more"></span>
+
+<h2 id="Quick-Console-log"><a href="#Quick-Console-log" class="headerlink" title="Quick Console.log"></a>Quick Console.log</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> c = <span class="built_in">console</span>.log.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> info = <span class="built_in">console</span>.info.bind(<span class="built_in">document</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    c(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="string">&quot;This is JavaScript&quot;</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="literal">true</span>)</span></span><br><span class="line"><span class="javascript">    info(<span class="number">12345</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更加简短的 console.log() 或者是 console.info() </p>
+</blockquote>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">print1</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> print2 = <span class="function">() =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">&quot;Hello World&quot;</span>)</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> sum2 = <span class="function">(<span class="params">x, y</span>) =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> x + y</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>通过箭头函数有效减少代码量，熟悉后更易阅读</p>
+</blockquote>
+<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array connection</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> num2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> concat = [...num1, ...num2]                 <span class="comment">// [1, 2, 3, 4, 5, 6]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(concat)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Copying An Array</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> alpha = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> copy = [...alpha]                           <span class="comment">// [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(copy)</span></span><br><span class="line"><span class="javascript">    <span class="comment">// Array literals</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data = [<span class="number">100</span>, <span class="number">200</span>]</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> literal = [...data, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>]          <span class="comment">// [100,200,300,400,500]</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(literal)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>展开运算符(ES6)，它接受一个可迭代对象并将其扩展为单个元素</p>
+</blockquote>
+<h2 id="Truncating-an-array"><a href="#Truncating-an-array" class="headerlink" title="Truncating an array"></a>Truncating an array</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr = [<span class="number">100</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">400</span>, <span class="number">500</span>, <span class="number">600</span>]</span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">3</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// [100,200,300]</span></span></span><br><span class="line"><span class="javascript">    arr.length = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr)                                <span class="comment">// []</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>length 方法不仅可以显示字符串大小，还可以将数组截断为任意大小</p>
+</blockquote>
+<h2 id="Smart-Replacing"><a href="#Smart-Replacing" class="headerlink" title="Smart Replacing"></a>Smart Replacing</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> str = <span class="string">&quot;This is potato and potato&quot;</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/</span>, <span class="string">&quot;tom&quot;</span>))          <span class="comment">// This is tomato and potato</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(str.replace(<span class="regexp">/pot/g</span>, <span class="string">&quot;tom&quot;</span>))         <span class="comment">// This is tomato and tomato</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>替换特定词</p>
+</blockquote>
+<h2 id="Numerical-Separator"><a href="#Numerical-Separator" class="headerlink" title="Numerical Separator"></a>Numerical Separator</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data1 = <span class="number">10_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> data2 = <span class="number">3_0000_0000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data1)                              <span class="comment">// 100000</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data2)                              <span class="comment">// 300000000</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这个简单的技巧可以提高 JavaScript 大量数据的可读性</p>
+</blockquote>
+<h2 id="Quick-Power-Calculation"><a href="#Quick-Power-Calculation" class="headerlink" title="Quick Power Calculation"></a>Quick Power Calculation</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Normal Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">4</span>, <span class="number">5</span>))                     <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">5</span>))                     <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// Quick Way</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">4</span> ** <span class="number">5</span>)                             <span class="comment">// 1024</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="number">2</span> ** <span class="number">5</span>)                             <span class="comment">// 32</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>pow() 方法来计算任何数字的幂，这个技巧将常规数学方法以快速形式计算次方</p>
+</blockquote>
+<h2 id="Rest-Parameter"><a href="#Rest-Parameter" class="headerlink" title="Rest Parameter"></a>Rest Parameter</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">...num</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> cal = <span class="number">0</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">const</span> a <span class="keyword">of</span> num) &#123;</span></span><br><span class="line"><span class="javascript">            cal += a</span></span><br><span class="line"><span class="javascript">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(cal)                            <span class="comment">// 27</span></span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript">    sum(<span class="number">20</span>,<span class="number">7</span>)</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Rest Parameter 语法用于处理函数中定义中的无限数量的参数</p>
+</blockquote>
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML 实用标签</title>
+    <url>/2020/10/30/skills/HTML-tags/</url>
+    <content><![CDATA[<p><code>HTML</code>标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。</p>
+<span id="more"></span>
+
+<h2 id="颜色选择组件（Color-Picker）"><a href="#颜色选择组件（Color-Picker）" class="headerlink" title="颜色选择组件（Color Picker）"></a>颜色选择组件（Color Picker）</h2><p>在项目中，你可能希望通过调色板组件动态调整颜色，这时你可以使用 <code>&lt;input type=&quot;color&quot;&gt;</code> 就可以轻松调用一个调色板组件，省去你在找第三方组件，示例效果如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-color.gif" alt="HTML-tags-color"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;color&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="引用标签（Blockquote）"><a href="#引用标签（Blockquote）" class="headerlink" title="引用标签（Blockquote）"></a>引用标签（Blockquote）</h2><p>在文章排版时，有时候我们需要引用一些信息，这时我们需要用特殊的样式进行强调，这时你可以使用<code>&lt;blockquote&gt;</code> 标签来强调你用的内容，示例效果如下所示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-blockquote.webp" alt="HTML-tags-blockquote"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;border-left: 3px solid blue&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span><br><span class="line">        For 50 years, WWF has been protecting the future of nature. The worlds leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="折叠组件（Accordion）"><a href="#折叠组件（Accordion）" class="headerlink" title="折叠组件（Accordion）"></a>折叠组件（Accordion）</h2><p>折叠列表的需求也是比较常见的，点击标题展开对应的信息内容，这时 <code>&lt;details&gt;</code> 标签就派上用场了，示例效果如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-accordion.gif" alt="HTML-tags-accordion"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">details</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">summary</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">summary</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">details</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="内容编辑（Content-Editor）"><a href="#内容编辑（Content-Editor）" class="headerlink" title="内容编辑（Content Editor）"></a>内容编辑（Content Editor）</h2><p>为了让内容具有编辑性，你可以不必使用表单组件，比如 input、textarea 标签，你可以在可编辑的容器(div) 上添加 <code>contenteditable</code> 属性，就能很轻松的完成当前容器及所见即所得的编辑，示例如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-edit.gif" alt="HTML-tags-edit"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">contenteditable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">	可编辑</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="图片标签（Picture-Tag）"><a href="#图片标签（Picture-Tag）" class="headerlink" title="图片标签（Picture Tag）"></a>图片标签（Picture Tag）</h2><p>有时候需要在不同的分辨率下显示不同的图片，如果你使用<code>&lt;img&gt;</code> 标签的话，你需要做的工作就会许多，但是使用<code>&lt;picture&gt;</code> 标签就能很轻松的完成在不同分辨率下显示不同图片的设置，调整浏览器的大小，就会根据窗口的大小显示不同大小的图片，示例效果如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-img.jpg" alt="HTML-tags-img"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 650px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">media</span>=<span class="string">&quot;(min-width: 465px)&quot;</span> <span class="attr">srcset</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--根据屏幕匹配的不同尺寸显示不同图片，如果没有匹配到或浏览器不支持 picture 属性则使用 img 元素--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="进度条（Progress-Bar）"><a href="#进度条（Progress-Bar）" class="headerlink" title="进度条（Progress Bar）"></a><strong>进度条（Progress Bar）</strong></h2><p>进度条组件也是个很常见的组件，你可以使用<code>&lt;progress&gt;</code> 标签就能轻松完成相关外观的设置，示例效果如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-progress.jpg" alt="HTML-tags-progress"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">progress</span> <span class="attr">value</span>=<span class="string">&quot;22&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">progress</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="下拉组件（Dropdown）"><a href="#下拉组件（Dropdown）" class="headerlink" title="下拉组件（Dropdown）"></a>下拉组件（Dropdown）</h2><p>如果下拉组件选项比较多，用户选择就会比较困难，用户可能希望结合输入，能很方便的定位到下拉组件的内容，这时候你可以使用 <code>&lt;datalist&gt;</code> 标签就能满足上述需求，示例效果如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-dropdown.gif" alt="HTML-tags-dropdown"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">list</span>=<span class="string">&quot;browsers&quot;</span> <span class="attr">name</span>=<span class="string">&quot;browser&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;browsers&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Internet Explorer&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Firefox&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Chrome&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Opera&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Safari&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="提示框（Tooltip）"><a href="#提示框（Tooltip）" class="headerlink" title="提示框（Tooltip）"></a>提示框（Tooltip）</h2><p>如果你需要对页面某部分进行详细介绍时，你可能需要鼠标经过此区域显示详细的提示框效果，这时我们可以使用 <code>title</code> 属性就能轻松实现，示例效果如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/HTML-tags-tooltip.jpg" alt="HTML-tags-tooltip"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">title</span>=<span class="string">&quot;这是提示&quot;</span>&gt;</span></span><br><span class="line">    这是内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<blockquote>
+<p><em>！如有错误请在评论及时指出</em></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/01/12/base/data%20structure/</url>
+    <content><![CDATA[<h1 id="1-1数据结构基本概念"><a href="#1-1数据结构基本概念" class="headerlink" title="1.1数据结构基本概念"></a>1.1数据结构基本概念</h1><h2 id="数据结构是什么？"><a href="#数据结构是什么？" class="headerlink" title="数据结构是什么？"></a>数据结构是什么？</h2><ul>
+<li>如何用程序代码把现实世界的问题<strong>信息化</strong></li>
+<li>如何用计算机高效地处理这些信息从而创造价值</li>
+</ul>
+<h2 id="知识总览"><a href="#知识总览" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">t[数据解构] </span><br><span class="line"></span><br><span class="line">t--&gt;j[基本概念] </span><br><span class="line">	j--&gt; 数据</span><br><span class="line">	j--&gt; 数据元素/数据项</span><br><span class="line">	j--&gt; 数据对象/数据解构</span><br><span class="line">	j--&gt; 数据类型/抽象数据类型-ADT</span><br><span class="line">t--&gt;s[三要素]</span><br><span class="line">	s--&gt;l[逻辑结构]</span><br><span class="line">		l--&gt;集合</span><br><span class="line">		l--&gt;线性结构</span><br><span class="line">		l--&gt;树形结构</span><br><span class="line">		l--&gt;图状结构-网状结构</span><br><span class="line">	s--&gt;w[物理结构-存储结构]</span><br><span class="line">		w--&gt;顺序存储</span><br><span class="line">		w--&gt;ls[链式存储]</span><br><span class="line">		w--&gt;索引存储</span><br><span class="line">		w--&gt;sl[散列存储]</span><br><span class="line">			ls--&gt;非顺序存储</span><br><span class="line">			sl--&gt;非顺序存储</span><br><span class="line">	s--&gt;数据的运算</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>数据是<strong>信息的载体</strong>，是描述客观事物属性的数、字符及所有<strong>能输入到计算机中并被计算机程序识别</strong>和处理的符号的集合。数据是计算机程序加工的原料。</p>
+<h3 id="数据元素、数据项"><a href="#数据元素、数据项" class="headerlink" title="数据元素、数据项"></a>数据元素、数据项</h3><p>数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。</p>
+<p>一个数据元素可由若干个数据项组成，数据项是构成数据元素的不可分割的最小单位。</p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>各个元素之间的关系</p>
+<h3 id="数据结构、数据对象"><a href="#数据结构、数据对象" class="headerlink" title="数据结构、数据对象"></a>数据结构、数据对象</h3><p>数据结构是相互之间存在一种或多种特定<strong>关系</strong>的数据元素的集合。</p>
+<p>数据对象是具有<strong>相同性质</strong>的数据元素的集合，是数据的一个子集。</p>
+<h3 id="数据的逻辑结构"><a href="#数据的逻辑结构" class="headerlink" title="数据的逻辑结构"></a>数据的逻辑结构</h3><p>数据元素之间的逻辑关系</p>
+<h3 id="数据的物理结构"><a href="#数据的物理结构" class="headerlink" title="数据的物理结构"></a>数据的物理结构</h3><p>如何用计算机表示数据元素的逻辑关系</p>
+<h3 id="数据类型、抽象数据类型"><a href="#数据类型、抽象数据类型" class="headerlink" title="数据类型、抽象数据类型"></a>数据类型、抽象数据类型</h3><p>数据类型是一个值的集合和定义在此集合上的一组操作的总称。</p>
+<blockquote>
+<p>1.原子类型。其值不可再分的数据类型</p>
+<p>2.结构类型。其值可以在分解为若干成分（分量）的数据类型。</p>
+</blockquote>
+<p>抽象数据类型（Abstract Data Type，ADT）是抽象数据组织及与之相关的操作。</p>
+<blockquote>
+<p>ADT用数学化的语言定义数据的逻辑结构、定义运算。与具体的实现无关。</p>
+</blockquote>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>各个元素同属一个集合，别无其它关系</p>
+<h3 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h3><p>数据元素之间是一对一的关系。</p>
+<p>除了第一个元素，所有元素都有唯一前驱；</p>
+<p>除了最后一个元素，所有元素都有唯一后驱；</p>
+<h3 id="树形结构"><a href="#树形结构" class="headerlink" title="树形结构"></a>树形结构</h3><p>数据元素之间是一对多的关系</p>
+<h3 id="图状结构"><a href="#图状结构" class="headerlink" title="图状结构"></a>图状结构</h3><p>数据元素之间是多对多的关系</p>
+<h3 id="线性结构-1"><a href="#线性结构-1" class="headerlink" title="线性结构"></a>线性结构</h3><p>顺序存储：把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中，元素之间的关系由存储单元的相邻关系来体现。</p>
+<p>链式存储：逻辑上相邻的元素在物理位置上可以不相邻，借助指示元素存储地址的指针来表示元素的逻辑关系。</p>
+<p>索引存储：在存储元素信息的同时，还建立附加的索引表。索引表中的每项称为索引项，索引项的一般形式是（关键字，地址）</p>
+<p>散列存储：根据元素的关键字直接计算出该元素的存储地址，又称哈希存储</p>
+<blockquote>
+<p>1.若采用顺序存储，则各个元素在物理上必须是连续的；若采用非顺序存储，则各个元素在物理上可以是离散的</p>
+<p>2.数据的存储结构会影响存储空间分配的方标程度</p>
+<p>3.数据的存储结构会影响对数据运算的速度</p>
+</blockquote>
+<h3 id="数据的运算"><a href="#数据的运算" class="headerlink" title="数据的运算"></a>数据的运算</h3><p>施加在数据上的运算包括运算的定义和实现。运算的定义是针对逻辑结构的，运算的实现是针对存储结构的。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>定义一个ADT，就是定义了数据的逻辑结构、数据的运算。也就是定义了一个数据结构。</p>
+<p>确定一种存储结构，就意味着在计算机中表示出数据的逻辑结构。存储机构不同，也会导致运算的具体实现不同。确定了存储结构，才能实现数据机构。</p>
+<h1 id="1-2-1算法基本概念"><a href="#1-2-1算法基本概念" class="headerlink" title="1.2.1算法基本概念"></a>1.2.1算法基本概念</h1><h2 id="什么是算法"><a href="#什么是算法" class="headerlink" title="什么是算法"></a>什么是算法</h2><p>程序=数据结构+算法</p>
+<blockquote>
+<p>数据机构：如何把现实世界的问题信息化，将信息存进计算机。同时还要实现对数据结构的基本操作</p>
+<p>算法：如何处理这些信息，已解决实际问题</p>
+</blockquote>
+<h2 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h2><p>有穷性。一个算法必须总在执行又穷步之后结束，且每一步都可在又穷时间内完成。</p>
+<blockquote>
+<p>算法必须是有穷的，而程序可以是无穷的</p>
+</blockquote>
+<p>确定性。算法中每条指令必须有确切的含义，对于相同的输入只能得出相同的输出。</p>
+<p>可行性。算法中描述的操作都可以通过已经实现的基本运算执行有限次来实现。</p>
+<p>输入。一个算法有零个或多个输入，这些输入取自于某个特定的对象的集合。</p>
+<p>输出。一个算法有一个或多个输出，这些输出是与输入有着某种特定关系的量。</p>
+<h2 id="“好”算法的特性"><a href="#“好”算法的特性" class="headerlink" title="“好”算法的特性"></a>“好”算法的特性</h2><p>正确性。算法应能够正确地解决问题。</p>
+<p>可读性。算法应具有良好的可读性，以帮人们理解。</p>
+<p>健壮性。输入非法数据时，算法能使当地做出反应或进行处理，而不会产生某明奇妙的输出结果。</p>
+<p>高效率于低储存量需求。</p>
+<blockquote>
+<p>高效率：执行速度快时间复杂度低</p>
+<p>低存储需求：不费内存。空间复杂度低</p>
+</blockquote>
+<h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h2><h1 id=""><a href="#" class="headerlink" title=""></a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[算法的基本概念]</span><br><span class="line">a--&gt;什么是算法</span><br><span class="line">	--&gt;cx[程序=数据结构+算法]</span><br><span class="line">	cx--&gt;数据结构是要处理的信息</span><br><span class="line">	cx--&gt;算法是处理信息的步骤</span><br><span class="line">a--&gt;tx[算法的五个特性]</span><br><span class="line">	tx--&gt;有穷性--&gt;yq[有穷时间内执行完]</span><br><span class="line">				yq--&gt;算法是有穷的</span><br><span class="line">				yq--&gt;程序可以是无穷的</span><br><span class="line">	tx--&gt;确定性--&gt;相同输入只会产生相同输出</span><br><span class="line">	tx--&gt;可行性--&gt;可以用已有的基本操作实现算法</span><br><span class="line">	tx--&gt;输入--&gt;丢给算法处理的数据</span><br><span class="line">	tx--&gt;输出--&gt;算法处理的结果</span><br><span class="line">a--&gt;tz[&#x27;好&#x27;算法的特质]</span><br><span class="line">	tz--&gt;正确性--&gt;能正确解决问题</span><br><span class="line">	tz--&gt;可读性--&gt;对算法的描述要让其他人也看得懂</span><br><span class="line">	tz--&gt;健壮性--&gt;算法能处理一些异常状况</span><br><span class="line">	tz--&gt;gd[高效率与低存储量需求]</span><br><span class="line">		gd--&gt;即算法执行省时/省内存</span><br><span class="line">		gd--&gt;时间复杂度低/空间复杂度低</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="1-2-2算法效率的度量"><a href="#1-2-2算法效率的度量" class="headerlink" title="1.2.2算法效率的度量"></a>1.2.2算法效率的度量</h1><h2 id="知识总览-1"><a href="#知识总览-1" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[算法效率的度量]</span><br><span class="line">a--&gt;时间复杂度</span><br><span class="line">a--&gt;空间复杂度</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="算法时间复杂度"><a href="#算法时间复杂度" class="headerlink" title="算法时间复杂度"></a>算法时间复杂度</h2><p>事前预估算法时间开销T(n)与问题规模n的关系（T表示“time”）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141616610.png" alt="image-20220114161609438"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141626104.PNG" alt="捕获"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141633831.png" alt="image-20220114163322750"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141637899.png" alt="image-20220114163739792"></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202201141639560.png" alt="image-20220114163926459"></h2><h2 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[时间复杂度]</span><br><span class="line">a--&gt;r[如何计算]</span><br><span class="line">	r--&gt;r1[&quot;找到一个基本操作(最深层循环)&quot;]</span><br><span class="line">	r--&gt;r2[&quot;分析该基本操作的执行次数X与问题规模n的关系x=f(n)&quot;]</span><br><span class="line">	r--&gt;r3[&quot;x的数量级O(x)就是算法时间复杂度T(n)&quot;]</span><br><span class="line">a--&gt;c[常用技巧]</span><br><span class="line">	c--&gt;c1[&quot;加法规则：O(f(n))+O(g(n))=O(max(f(n),g(n)))&quot;]</span><br><span class="line">	c--&gt;c2[&quot;乘法规则：O(f(n))xO(g(n))=O(f(n)xg(n))&quot;]</span><br><span class="line">	c--&gt;c3[&quot;常对幂指阶&quot;]</span><br><span class="line">a--&gt;s[三种复杂度]</span><br><span class="line">	s--&gt;最坏时间复杂度:考虑输入数据&#x27;最坏&#x27;的情况</span><br><span class="line">	s--&gt;平均时间复杂度:考虑输入数据都等概率出现的情况</span><br><span class="line">	s--&gt;最好时间复杂度:考虑输入数据&#x27;最好&#x27;的情况</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-2-3算法效率的度量"><a href="#1-2-3算法效率的度量" class="headerlink" title="1.2.3算法效率的度量"></a>1.2.3算法效率的度量</h1><h2 id="知识总览-2"><a href="#知识总览-2" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a[算法效率的度量]</span><br><span class="line">a--&gt;s[时间复杂度]</span><br><span class="line">	s==&gt;s1[&quot;时间开销与问题规模nz的关系&quot;]</span><br><span class="line">a--&gt;k[空间复杂度]</span><br><span class="line">	k==&gt;k1[&quot;空间开销（内存开销）与问题规模n之间的关系&quot;]</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Controller 接收多个json对象</title>
+    <url>/2021/11/15/skills/JsonParam/</url>
+    <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
+<p>但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用</p>
+<span id="more"></span>
+
+<h2 id="1-url-加-请求体"><a href="#1-url-加-请求体" class="headerlink" title="1.url 加 请求体"></a>1.url 加 请求体</h2><p>将分页需要的信息通过url拼接的方式传给后台,将json对象放在body请求体中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png" alt="uTools_1637043775953"></p>
+<p>请求工具是 <code>axios</code> 会将params属性里的json对象自动拼接到url,需要注意的是 <code>@RequestBody</code> 只能放在参数第一位</p>
+<h2 id="2-再次封装实体类"><a href="#2-再次封装实体类" class="headerlink" title="2.再次封装实体类"></a>2.再次封装实体类</h2><p>封装实体类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PageAndPictureDTO</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Page&lt;Picture&gt; page;</span><br><span class="line">    <span class="keyword">private</span> Picture picture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>前端传入的 <code>json</code> 对象</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;page&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;current&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">&quot;size&quot;</span>: <span class="number">5</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;picture&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">        <span class="attr">&quot;type&quot;</span>: <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>Controller</code> 接收</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;list&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> R <span class="title">test</span><span class="params">(<span class="meta">@RequestBody</span> PageAndPictureDTO dto)</span></span>&#123;</span><br><span class="line">     <span class="keyword">return</span> R.ok(<span class="keyword">this</span>.pictureService.getAll(dto.getPage(),dto.getPicture()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-自定义MVC参数处理器"><a href="#3-自定义MVC参数处理器" class="headerlink" title="3.自定义MVC参数处理器"></a>3.自定义MVC参数处理器</h2><p>定义注解</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Target(ElementType.PARAMETER)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JsonParam &#123;</span><br><span class="line">    <span class="comment">//是否脱敏 默认大小写敏感</span></span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">insensitive</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>编写参数处理器</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonResolver</span> <span class="keyword">implements</span> <span class="title">HandlerMethodArgumentResolver</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String JSON_REQUEST_ATTRIBUTE_NAME = <span class="string">&quot;JSON_REQUEST_BODY&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 返回值为true时才调用resolveArgument()</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> boolean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supportsParameter</span><span class="params">(MethodParameter methodParameter)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 参数是否有@JsonParam注解</span></span><br><span class="line">        <span class="keyword">return</span> methodParameter.hasParameterAnnotation(JsonParam.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 解析json参数,并反序列化</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> methodParameter       是spring对被注解修饰过参数的包装，从其中能拿到参数的反射相关信息。</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> modelAndViewContainer</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> nativeWebRequest</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webDataBinderFactory</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 根据json反序列化后的对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">resolveArgument</span><span class="params">(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">// 获取参数注解</span></span><br><span class="line">        JsonParam jsonParam = methodParameter.getParameterAnnotation(JsonParam.class);</span><br><span class="line">        <span class="comment">// 获取前端传入的数据</span></span><br><span class="line">        String jsonBody = getRequestBody(nativeWebRequest);</span><br><span class="line">        <span class="comment">// 无数据传入直接返回</span></span><br><span class="line">        <span class="keyword">if</span> (jsonBody.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 创建jackson对象,设置jackson只序列不为空和JavaBean所拥有的属性</span></span><br><span class="line">        ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper()</span><br><span class="line">                .setSerializationInclusion(JsonInclude.Include.NON_NULL)</span><br><span class="line">                .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);</span><br><span class="line"></span><br><span class="line">        objectMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, jsonParam.insensitive());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取Controller中参数的类型</span></span><br><span class="line">        Class clazz = methodParameter.getParameterType();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 存放泛型类型</span></span><br><span class="line">        Class Superclass = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">// 获取参数类型及泛型类型</span></span><br><span class="line">        Type classParameterizedType = methodParameter.getGenericParameterType();</span><br><span class="line">        <span class="comment">// 判断是否泛型的实例</span></span><br><span class="line">        <span class="keyword">if</span> (classParameterizedType <span class="keyword">instanceof</span> ParameterizedType) &#123;</span><br><span class="line">            <span class="comment">// 强转为泛型</span></span><br><span class="line">            ParameterizedType parameterizedType = (ParameterizedType) classParameterizedType;</span><br><span class="line">            <span class="comment">// 获取第一个泛型Type,强转为Class</span></span><br><span class="line">            Superclass = (Class) parameterizedType.getActualTypeArguments()[<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果参数类型是list,返回ArrayList,list无法newInstance()</span></span><br><span class="line">        <span class="keyword">if</span> (clazz == List.class) &#123;</span><br><span class="line">            clazz = ArrayList.class;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例化</span></span><br><span class="line">        Object target = clazz.newInstance();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断是否为集合类型</span></span><br><span class="line">        <span class="keyword">if</span> (Collection.class.isAssignableFrom(clazz)) &#123;</span><br><span class="line">            <span class="comment">// 设置jackson反序列化时的类型</span></span><br><span class="line">            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(clazz, Superclass);</span><br><span class="line">            <span class="comment">// jackson反序列化为对象</span></span><br><span class="line">            target = objectMapper.readValue(jsonBody, javaType);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            target = objectMapper.readValue(jsonBody, clazz);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> target;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取请求体JSON字符串</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> webRequest mvc封装后的请求体</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 前端传入的json</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getRequestBody</span><span class="params">(NativeWebRequest webRequest)</span> </span>&#123;</span><br><span class="line">        HttpServletRequest servletRequest = webRequest.getNativeRequest(HttpServletRequest.class);</span><br><span class="line">        String jsonBody = (String) webRequest.getAttribute(JSON_REQUEST_ATTRIBUTE_NAME, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (jsonBody == <span class="keyword">null</span>) &#123;</span><br><span class="line">                jsonBody = servletRequest.getReader().lines().collect(Collectors.joining(<span class="string">&quot;\n&quot;</span>));</span><br><span class="line">                webRequest.setAttribute(JSON_REQUEST_ATTRIBUTE_NAME, jsonBody, NativeWebRequest.SCOPE_REQUEST);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jsonBody;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将编写的参数处理器注册</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addArgumentResolvers</span><span class="params">(List&lt;HandlerMethodArgumentResolver&gt; resolvers)</span> </span>&#123;</span><br><span class="line">        WebMvcConfigurer.<span class="keyword">super</span>.addArgumentResolvers(resolvers);</span><br><span class="line">        <span class="comment">//配置自定义处理器</span></span><br><span class="line">        resolvers.add(<span class="keyword">new</span> JsonResolver());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png" alt="uTools_1637050412679" style="zoom:33%;" />
+
+<p><a href="https://docs.apipost.cn/preview/28bf59b888c9069c/71437f5c10135a51">这里可以查看用法</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>除此外还有别的解决方法,这篇就先分享本人常用的三种.</p>
+<p>关于这三种方法缺点也是很明显.</p>
+<h3 id="url-加-请求体"><a href="#url-加-请求体" class="headerlink" title="url 加  请求体"></a>url 加  请求体</h3><p>这种方法显然是只能接受俩个对象的,如果要加入第三个对象,是接收不到的.并且url有着长度限制.</p>
+<p>但是如果只是传俩个对象,这种方法最为便利,不用对项目做任何更改</p>
+<h3 id="封装实体类"><a href="#封装实体类" class="headerlink" title="封装实体类"></a>封装实体类</h3><p>这种方法不怎么灵活,每次参数组合改变都要新建一个封装类.</p>
+<p>个人项目经验还不够丰富,不知道配合DTO层用这种方法是不是会好很多</p>
+<h3 id="自定义MVC参数处理器"><a href="#自定义MVC参数处理器" class="headerlink" title="自定义MVC参数处理器"></a>自定义MVC参数处理器</h3><p>用这个方法会使小项目结构变得复杂,并且使用了 <code>jackson</code> 进行反序列化,spring boot本身集成了 <code>jackson</code> 这个包,但如果是ssm项目还需导入,或者换成阿里的 <code>fastJson</code> .</p>
+<p>项目本来就很复杂,并且有着各种类,用这个方法配置一次,之后就随意使用了.</p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
       </tags>
   </entry>
 </search>

@@ -25,20 +25,20 @@
   <meta name="description" content="在写 Spring Boot 加 Vue 项目时,发现由 Spring MVC 提供的@RequestBody 注解在一个方法内,只能有一个。 但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Controller 接收多个json对象">
-<meta property="og:url" content="https://sndshun.xyz/2021/11/15/JsonParam/index.html">
+<meta property="og:url" content="https://sndshun.xyz/2021/11/15/skills/JsonParam/index.html">
 <meta property="og:site_name" content="&amp;的博客">
 <meta property="og:description" content="在写 Spring Boot 加 Vue 项目时,发现由 Spring MVC 提供的@RequestBody 注解在一个方法内,只能有一个。 但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637050412679.png">
 <meta property="article:published_time" content="2021-11-15T04:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-16T08:13:45.602Z">
+<meta property="article:modified_time" content="2021-12-09T04:14:35.438Z">
 <meta property="article:author" content="sndshun">
 <meta property="article:tag" content="技巧">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/uTools_1637043775953.png">
 
-<link rel="canonical" href="https://sndshun.xyz/2021/11/15/JsonParam/">
+<link rel="canonical" href="https://sndshun.xyz/2021/11/15/skills/JsonParam/">
 
 
 <script id="page-configurations">
@@ -201,7 +201,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sndshun.xyz/2021/11/15/JsonParam/">
+    <link itemprop="mainEntityOfPage" href="https://sndshun.xyz/2021/11/15/skills/JsonParam/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -231,7 +231,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-16 16:13:45" itemprop="dateModified" datetime="2021-11-16T16:13:45+08:00">2021-11-16</time>
+                <time title="修改时间：2021-12-09 12:14:35" itemprop="dateModified" datetime="2021-12-09T12:14:35+08:00">2021-12-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -324,7 +324,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://sndshun.xyz/2021/11/15/JsonParam/" title="Controller 接收多个json对象">https://sndshun.xyz/2021/11/15/JsonParam/</a>
+    <a href="https://sndshun.xyz/2021/11/15/skills/JsonParam/" title="Controller 接收多个json对象">https://sndshun.xyz/2021/11/15/skills/JsonParam/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -363,7 +363,7 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/10/28/Vue3/" rel="prev" title="Vue3 新特性">
+    <a href="/2021/10/28/vue3/" rel="prev" title="Vue3 新特性">
       <i class="fa fa-chevron-left"></i> Vue3 新特性
     </a></div>
       <div class="post-nav-item">
@@ -443,20 +443,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -504,7 +504,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -513,12 +513,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">30k</span>
+    <span title="站点总字数">34k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">28 分钟</span>
+    <span title="站点阅读时长">31 分钟</span>
   <br/>
    <span id="timeDate"></span>
     <span id="times"></span>
@@ -748,7 +748,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'sndshun.github.io',
       owner       : 'sndshun',
       admin       : ['sndshun'],
-      id          : 'fd5d602f7a6f579e75f075147cbfabc4',
+      id          : 'f6ec99457b2f047b77d20c9dd629cea8',
         language: 'zh-CN',
       distractionFreeMode: true
     });
