@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</loc>
+    <lastmod>2022-04-27</lastmod>
+  </url>
+  <url>
     <loc>https://sndshun.xyz/2018/01/23/base/data%20structure/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
@@ -9,19 +13,15 @@
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</loc>
-    <lastmod>2022-03-19</lastmod>
-  </url>
-  <url>
     <loc>https://sndshun.xyz/2021/10/28/vue3/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2018/01/23/base/Date/</loc>
+    <loc>https://sndshun.xyz/2018/01/23/base/date/</loc>
     <lastmod>2021-12-09</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2020/10/30/skills/HTML-tags/</loc>
+    <loc>https://sndshun.xyz/2020/10/30/skills/html-tags/</loc>
     <lastmod>2021-12-09</lastmod>
   </url>
   <url>
@@ -49,7 +49,7 @@
     <lastmod>2021-12-01</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2021/10/26/MySQL-delimiter/</loc>
+    <loc>https://sndshun.xyz/2021/10/26/mysql-delimiter/</loc>
     <lastmod>2021-11-27</lastmod>
   </url>
   <url>
@@ -57,11 +57,7 @@
     <lastmod>2021-11-25</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2020/01/01/Promise/</loc>
+    <loc>https://sndshun.xyz/2020/01/01/promise/</loc>
     <lastmod>2021-11-15</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2015/01/01/hello-world/</loc>
-    <lastmod>2021-10-08</lastmod>
   </url>
 </urlset> 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>&amp;的博客</title>
+  <title>&amp;</title>
   
-  <subtitle>整理中</subtitle>
+  <subtitle>旅行中</subtitle>
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-03-19T11:16:58.025Z</updated>
+  <updated>2022-04-27T14:28:03.133Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sndshun.xyz/2022/03/19/configs/vue-deploy/"/>
     <id>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</id>
     <published>2022-03-19T04:00:00.000Z</published>
-    <updated>2022-03-19T11:16:58.025Z</updated>
+    <updated>2022-04-27T14:28:03.133Z</updated>
     
     
     <summary type="html">&lt;p&gt;使用Nginx代理解决Vue部署服务器后的跨域问题和不能刷新的问题&lt;/p&gt;</summary>
@@ -101,8 +101,8 @@
   
   <entry>
     <title>MySQL 使用存储过程批量插入</title>
-    <link href="https://sndshun.xyz/2021/10/26/MySQL-delimiter/"/>
-    <id>https://sndshun.xyz/2021/10/26/MySQL-delimiter/</id>
+    <link href="https://sndshun.xyz/2021/10/26/mysql-delimiter/"/>
+    <id>https://sndshun.xyz/2021/10/26/mysql-delimiter/</id>
     <published>2021-10-26T04:00:00.000Z</published>
     <updated>2021-11-27T07:23:54.194Z</updated>
     
@@ -120,8 +120,8 @@
   
   <entry>
     <title>HTML 实用标签</title>
-    <link href="https://sndshun.xyz/2020/10/30/skills/HTML-tags/"/>
-    <id>https://sndshun.xyz/2020/10/30/skills/HTML-tags/</id>
+    <link href="https://sndshun.xyz/2020/10/30/skills/html-tags/"/>
+    <id>https://sndshun.xyz/2020/10/30/skills/html-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
     <updated>2021-12-09T04:14:44.131Z</updated>
     
@@ -158,8 +158,8 @@
   
   <entry>
     <title>Promise</title>
-    <link href="https://sndshun.xyz/2020/01/01/Promise/"/>
-    <id>https://sndshun.xyz/2020/01/01/Promise/</id>
+    <link href="https://sndshun.xyz/2020/01/01/promise/"/>
+    <id>https://sndshun.xyz/2020/01/01/promise/</id>
     <published>2020-01-01T04:00:00.000Z</published>
     <updated>2021-11-15T11:33:19.804Z</updated>
     
@@ -281,30 +281,6 @@
   </entry>
   
   <entry>
-    <title>时间标准</title>
-    <link href="https://sndshun.xyz/2018/01/23/base/Date/"/>
-    <id>https://sndshun.xyz/2018/01/23/base/Date/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-09T04:16:53.385Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
-&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
-&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构与算法</title>
     <link href="https://sndshun.xyz/2018/01/23/base/data%20structure/"/>
     <id>https://sndshun.xyz/2018/01/23/base/data%20structure/</id>
@@ -327,17 +303,26 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://sndshun.xyz/2015/01/01/hello-world/"/>
-    <id>https://sndshun.xyz/2015/01/01/hello-world/</id>
-    <published>2015-01-01T04:00:00.000Z</published>
-    <updated>2021-10-08T07:58:49.363Z</updated>
+    <title>时间标准</title>
+    <link href="https://sndshun.xyz/2018/01/23/base/date/"/>
+    <id>https://sndshun.xyz/2018/01/23/base/date/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2021-12-09T04:16:53.385Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
+&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
+&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
     
     
     
+    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    
+    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
     
   </entry>
   

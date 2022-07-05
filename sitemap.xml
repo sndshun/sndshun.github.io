@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</loc>
+    
+    <lastmod>2022-04-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sndshun.xyz/2018/01/23/base/data%20structure/</loc>
     
     <lastmod>2022-03-19</lastmod>
@@ -16,13 +23,6 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</loc>
-    
-    <lastmod>2022-03-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/2021/10/28/vue3/</loc>
     
     <lastmod>2022-03-19</lastmod>
@@ -30,14 +30,14 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2018/01/23/base/Date/</loc>
+    <loc>https://sndshun.xyz/2018/01/23/base/date/</loc>
     
     <lastmod>2021-12-09</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2020/10/30/skills/HTML-tags/</loc>
+    <loc>https://sndshun.xyz/2020/10/30/skills/html-tags/</loc>
     
     <lastmod>2021-12-09</lastmod>
     
@@ -86,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2021/10/26/MySQL-delimiter/</loc>
+    <loc>https://sndshun.xyz/2021/10/26/mysql-delimiter/</loc>
     
     <lastmod>2021-11-27</lastmod>
     
@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2020/01/01/Promise/</loc>
+    <loc>https://sndshun.xyz/2020/01/01/promise/</loc>
     
     <lastmod>2021-11-15</lastmod>
     
@@ -134,17 +134,10 @@
     
   </url>
   
-  <url>
-    <loc>https://sndshun.xyz/2015/01/01/hello-world/</loc>
-    
-    <lastmod>2021-10-08</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://sndshun.xyz/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -152,84 +145,84 @@
   
   <url>
     <loc>https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/HTML/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/JavaScript/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/Vue/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/Redis/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/MySQL/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/tags/Nginx/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -238,56 +231,56 @@
   
   <url>
     <loc>https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://sndshun.xyz/categories/Linux/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
