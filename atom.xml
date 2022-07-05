@@ -93,9 +93,9 @@
     <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
-    
     <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    
+    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
   </entry>
   
@@ -233,9 +233,9 @@
     <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
-    
     <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    
+    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
   </entry>
   
@@ -261,22 +261,26 @@
   </entry>
   
   <entry>
-    <title>Spring boot 集成邮件发送</title>
-    <link href="https://sndshun.xyz/2018/01/23/configs/spring-eamil/"/>
-    <id>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</id>
+    <title>时间标准</title>
+    <link href="https://sndshun.xyz/2018/01/23/base/date/"/>
+    <id>https://sndshun.xyz/2018/01/23/base/date/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-01T07:24:05.971Z</updated>
+    <updated>2021-12-09T04:16:53.385Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;code&gt;Spring boot&lt;/code&gt; 集成邮件发送&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ssm&lt;/code&gt; 集成邮件发送&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
+&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
+&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
     
     
     
-    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
+    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
-    <category term="项目配置" scheme="https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
+    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
     
   </entry>
   
@@ -303,26 +307,22 @@
   </entry>
   
   <entry>
-    <title>时间标准</title>
-    <link href="https://sndshun.xyz/2018/01/23/base/date/"/>
-    <id>https://sndshun.xyz/2018/01/23/base/date/</id>
+    <title>Spring boot 集成邮件发送</title>
+    <link href="https://sndshun.xyz/2018/01/23/configs/spring-eamil/"/>
+    <id>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-09T04:16:53.385Z</updated>
+    <updated>2021-12-01T07:24:05.971Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
-&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
-&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;code&gt;Spring boot&lt;/code&gt; 集成邮件发送&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssm&lt;/code&gt; 集成邮件发送&lt;/p&gt;</summary>
     
     
     
-    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
+    <category term="项目配置" scheme="https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
