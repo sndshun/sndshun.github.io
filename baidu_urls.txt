@@ -10,6 +10,7 @@ https://sndshun.xyz/2019/10/11/configs/vue-proxy/
 https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/
 https://sndshun.xyz/2019/10/11/javascript/javascript-format/
 https://sndshun.xyz/2019/10/07/javascript/javascript-skills/
+https://sndshun.xyz/2018/05/23/java/java-base/
 https://sndshun.xyz/2018/01/23/base/date/
 https://sndshun.xyz/2018/01/23/configs/spring-eamil/
 https://sndshun.xyz/2018/01/23/base/data-structure/
