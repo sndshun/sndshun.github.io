@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-04-27T14:28:03.133Z</updated>
+  <updated>2022-07-10T14:55:02.750Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -21,49 +21,47 @@
     <link href="https://sndshun.xyz/2022/03/19/configs/vue-deploy/"/>
     <id>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</id>
     <published>2022-03-19T04:00:00.000Z</published>
-    <updated>2022-04-27T14:28:03.133Z</updated>
+    <updated>2022-07-10T14:55:02.750Z</updated>
     
     
     <summary type="html">&lt;p&gt;使用Nginx代理解决Vue部署服务器后的跨域问题和不能刷新的问题&lt;/p&gt;</summary>
     
     
     
-    <category term="Linux" scheme="https://sndshun.xyz/categories/Linux/"/>
+    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    <category term="nginx" scheme="https://sndshun.xyz/tags/nginx/"/>
     
-    <category term="Nginx" scheme="https://sndshun.xyz/tags/Nginx/"/>
+    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Redis 学习笔记</title>
-    <link href="https://sndshun.xyz/2021/11/21/redis/"/>
-    <id>https://sndshun.xyz/2021/11/21/redis/</id>
+    <link href="https://sndshun.xyz/2021/11/21/nosql/redis/"/>
+    <id>https://sndshun.xyz/2021/11/21/nosql/redis/</id>
     <published>2021-11-21T04:00:00.000Z</published>
-    <updated>2021-11-25T12:54:17.975Z</updated>
+    <updated>2022-07-10T15:17:17.888Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252012991.jpeg&quot; alt=&quot;4809d0858ab40491687c27e3ec96873e&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252012991.jpeg&quot; alt=&quot;4809d0858ab40491687c27e3ec96873e&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="后端" scheme="https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="笔记" scheme="https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/%E7%AC%94%E8%AE%B0/"/>
+    <category term="nosql" scheme="https://sndshun.xyz/categories/nosql/"/>
     
     
-    <category term="Redis" scheme="https://sndshun.xyz/tags/Redis/"/>
+    <category term="redis" scheme="https://sndshun.xyz/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>Controller 接收多个json对象</title>
-    <link href="https://sndshun.xyz/2021/11/15/skills/JsonParam/"/>
-    <id>https://sndshun.xyz/2021/11/15/skills/JsonParam/</id>
+    <link href="https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/"/>
+    <id>https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/</id>
     <published>2021-11-15T04:00:00.000Z</published>
-    <updated>2021-12-09T04:14:35.438Z</updated>
+    <updated>2022-07-10T15:15:48.465Z</updated>
     
     
     <summary type="html">&lt;p&gt;在写 &lt;code&gt;Spring Boot&lt;/code&gt; 加 &lt;code&gt;Vue&lt;/code&gt; 项目时,发现由 &lt;code&gt;Spring MVC&lt;/code&gt; 提供的@RequestBody 注解在一个方法内,只能有一个。&lt;/p&gt;
@@ -71,69 +69,67 @@
     
     
     
-    <category term="后端" scheme="https://sndshun.xyz/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
     
     
-    <category term="技巧" scheme="https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/"/>
+    <category term="spring mvc" scheme="https://sndshun.xyz/tags/spring-mvc/"/>
     
   </entry>
   
   <entry>
     <title>Vue3 新特性</title>
-    <link href="https://sndshun.xyz/2021/10/28/vue3/"/>
-    <id>https://sndshun.xyz/2021/10/28/vue3/</id>
+    <link href="https://sndshun.xyz/2021/10/28/javascript/vue3/"/>
+    <id>https://sndshun.xyz/2021/10/28/javascript/vue3/</id>
     <published>2021-10-28T04:00:00.000Z</published>
-    <updated>2022-03-19T10:09:38.414Z</updated>
+    <updated>2022-07-10T15:19:14.192Z</updated>
     
     
     <summary type="html">&lt;p&gt;Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
+    
+    <category term="vue" scheme="https://sndshun.xyz/categories/javascript/vue/"/>
     
     
-    <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
-    
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
+    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>MySQL 使用存储过程批量插入</title>
-    <link href="https://sndshun.xyz/2021/10/26/mysql-delimiter/"/>
-    <id>https://sndshun.xyz/2021/10/26/mysql-delimiter/</id>
+    <link href="https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/"/>
+    <id>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</id>
     <published>2021-10-26T04:00:00.000Z</published>
-    <updated>2021-11-27T07:23:54.194Z</updated>
+    <updated>2022-07-10T15:17:32.860Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262125984.png&quot; alt=&quot;uTools_1637933124302&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262125984.png&quot; alt=&quot;uTools_1637933124302&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="数据库" scheme="https://sndshun.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="sql" scheme="https://sndshun.xyz/categories/sql/"/>
     
     
-    <category term="MySQL" scheme="https://sndshun.xyz/tags/MySQL/"/>
+    <category term="mysql" scheme="https://sndshun.xyz/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>HTML 实用标签</title>
-    <link href="https://sndshun.xyz/2020/10/30/skills/html-tags/"/>
-    <id>https://sndshun.xyz/2020/10/30/skills/html-tags/</id>
+    <link href="https://sndshun.xyz/2020/10/30/html/html-tags/"/>
+    <id>https://sndshun.xyz/2020/10/30/html/html-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2021-12-09T04:14:44.131Z</updated>
+    <updated>2022-07-10T14:54:41.242Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
     
-    
-    <category term="HTML" scheme="https://sndshun.xyz/tags/HTML/"/>
     
   </entry>
   
@@ -158,62 +154,18 @@
   
   <entry>
     <title>Promise</title>
-    <link href="https://sndshun.xyz/2020/01/01/promise/"/>
-    <id>https://sndshun.xyz/2020/01/01/promise/</id>
+    <link href="https://sndshun.xyz/2020/01/01/javascript/promise/"/>
+    <id>https://sndshun.xyz/2020/01/01/javascript/promise/</id>
     <published>2020-01-01T04:00:00.000Z</published>
-    <updated>2021-11-15T11:33:19.804Z</updated>
+    <updated>2022-07-10T15:00:54.550Z</updated>
     
     
     <summary type="html">&lt;p&gt;异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
     
-    
-    <category term="知识点" scheme="https://sndshun.xyz/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 格式转换</title>
-    <link href="https://sndshun.xyz/2019/10/11/utils/Javascript-Format/"/>
-    <id>https://sndshun.xyz/2019/10/11/utils/Javascript-Format/</id>
-    <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-12-08T13:29:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
-    
-    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>axios 封装工具类</title>
-    <link href="https://sndshun.xyz/2019/10/11/utils/Vue-axios/"/>
-    <id>https://sndshun.xyz/2019/10/11/utils/Vue-axios/</id>
-    <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-12-08T13:29:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;将 axios 封装为工具类，重复使用，统一配置请求&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
-    
-    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
     
   </entry>
   
@@ -230,31 +182,65 @@
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="Vue" scheme="https://sndshun.xyz/tags/Vue/"/>
+    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
+  </entry>
+  
+  <entry>
+    <title>axios 封装工具类</title>
+    <link href="https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/"/>
+    <id>https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/</id>
+    <published>2019-10-11T04:00:00.000Z</published>
+    <updated>2021-12-08T13:29:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;将 axios 封装为工具类，重复使用，统一配置请求&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
+    
+    
+    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 格式转换</title>
+    <link href="https://sndshun.xyz/2019/10/11/javascript/javascript-format/"/>
+    <id>https://sndshun.xyz/2019/10/11/javascript/javascript-format/</id>
+    <published>2019-10-11T04:00:00.000Z</published>
+    <updated>2021-12-08T13:29:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
+    
+    
+    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 常用代码段</title>
-    <link href="https://sndshun.xyz/2019/10/07/skills/JavaScript-Skills/"/>
-    <id>https://sndshun.xyz/2019/10/07/skills/JavaScript-Skills/</id>
+    <link href="https://sndshun.xyz/2019/10/07/javascript/javascript-skills/"/>
+    <id>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</id>
     <published>2019-10-07T04:00:00.000Z</published>
-    <updated>2021-12-09T04:14:21.074Z</updated>
+    <updated>2022-07-10T15:13:36.935Z</updated>
     
     
-    <summary type="html">&lt;p&gt;JavaScript 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
     
-    
-    <category term="JavaScript" scheme="https://sndshun.xyz/tags/JavaScript/"/>
     
     <category term="技巧" scheme="https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/"/>
     
@@ -265,7 +251,7 @@
     <link href="https://sndshun.xyz/2018/01/23/base/date/"/>
     <id>https://sndshun.xyz/2018/01/23/base/date/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-09T04:16:53.385Z</updated>
+    <updated>2022-07-10T14:51:59.660Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
@@ -277,32 +263,10 @@
     
     
     
-    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <category term="base" scheme="https://sndshun.xyz/categories/base/"/>
     
     
-    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据结构与算法</title>
-    <link href="https://sndshun.xyz/2018/01/23/base/data%20structure/"/>
-    <id>https://sndshun.xyz/2018/01/23/base/data%20structure/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2022-03-19T11:32:23.541Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a href=&quot;#数据结构是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据结构是什么？&quot;&gt;&lt;/a&gt;数据结构是什么？&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;如何用程序代码把现实世界的问题&lt;strong&gt;信息化&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;如何用计算机高效地处理这些信息从而创造价值&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="知识点" scheme="https://sndshun.xyz/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    
-    
-    <category term="基石" scheme="https://sndshun.xyz/tags/%E5%9F%BA%E7%9F%B3/"/>
+    <category term="标准" scheme="https://sndshun.xyz/tags/%E6%A0%87%E5%87%86/"/>
     
   </entry>
   
@@ -311,7 +275,7 @@
     <link href="https://sndshun.xyz/2018/01/23/configs/spring-eamil/"/>
     <id>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</id>
     <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2021-12-01T07:24:05.971Z</updated>
+    <updated>2022-07-10T14:51:40.696Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;Spring boot&lt;/code&gt; 集成邮件发送&lt;/p&gt;
@@ -322,7 +286,29 @@
     <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="项目配置" scheme="https://sndshun.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
+    <category term="spring boot" scheme="https://sndshun.xyz/tags/spring-boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构与算法</title>
+    <link href="https://sndshun.xyz/2018/01/23/base/data-structure/"/>
+    <id>https://sndshun.xyz/2018/01/23/base/data-structure/</id>
+    <published>2018-01-23T04:00:00.000Z</published>
+    <updated>2022-07-10T14:51:55.418Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a href=&quot;#数据结构是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据结构是什么？&quot;&gt;&lt;/a&gt;数据结构是什么？&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如何用程序代码把现实世界的问题&lt;strong&gt;信息化&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如何用计算机高效地处理这些信息从而创造价值&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="base" scheme="https://sndshun.xyz/categories/base/"/>
+    
+    
+    <category term="数据结构" scheme="https://sndshun.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
