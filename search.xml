@@ -262,11 +262,15 @@
   <entry>
     <title>axios 封装工具类</title>
     <url>/2019/10/11/javascript/axios-toolcalss/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description </span>: axios封装工具</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author </span>: mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date </span>: 2021/11/1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version </span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update by : mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update time : 2021/11/1</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import &#123;ElLoading&#125; from &quot;element-plus&quot;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//let loading;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ 创建自定义axios实例</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">const</span> request = axios.create(&#123;</span><br><span class="line">    <span class="comment">//跨域设置的请求头，</span></span><br><span class="line">    <span class="attr">baseURL</span>: <span class="string">&quot;/api&quot;</span>,</span><br><span class="line">    <span class="attr">timeout</span>: <span class="number">1000</span>*<span class="number">3</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ request 请求拦截器=&gt;请求发出前处理</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">request.interceptors.request.use(</span><br><span class="line">    <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//开启loading</span></span><br><span class="line">        <span class="comment">//loading = ElLoading.service()</span></span><br><span class="line">        <span class="keyword">return</span> config;</span><br><span class="line">    &#125;, <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 接口返回失败</span></span><br><span class="line">        <span class="built_in">console</span>.log(error.response);</span><br><span class="line">        <span class="built_in">Promise</span>.reject(error.response);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ request 响应拦截器=&gt;处理响应数据</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">request.interceptors.response.use(</span><br><span class="line">    <span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//关闭loading</span></span><br><span class="line">        <span class="comment">//loading.close()</span></span><br><span class="line">        <span class="comment">//获取统一响应返回体</span></span><br><span class="line">        <span class="keyword">const</span> r=response.data</span><br><span class="line">        <span class="comment">//在这里处理响应体中的状态码</span></span><br><span class="line">        <span class="keyword">const</span> code=r.code</span><br><span class="line">        <span class="keyword">if</span> (code == <span class="number">200</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(r.massage);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(r.massage);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回主要数据</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Promise</span>.resolve(r.data);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// //请求失败，这个地方可以根据error.response.status统一处理一些界面逻辑，比如status为401未登录,可以进行重定向</span></span><br><span class="line">        <span class="comment">// router.replace(&#123;</span></span><br><span class="line">        <span class="comment">//     path: &#x27;/login&#x27;,</span></span><br><span class="line">        <span class="comment">//     query: &#123; redirect: router.currentRoute.fullPath &#125;</span></span><br><span class="line">        <span class="comment">//    &#125;);</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error.response);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> request;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>将 axios 封装为工具类，重复使用，统一配置请求</p>
+<span id="more"></span>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description </span>: axios封装工具</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author </span>: mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date </span>: 2021/11/1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version </span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update by : mr.sun</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Last </span>update time : 2021/11/1</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import &#123;ElLoading&#125; from &quot;element-plus&quot;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//let loading;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ 创建自定义axios实例</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">const</span> request = axios.create(&#123;</span><br><span class="line">    <span class="comment">//跨域设置的请求头，</span></span><br><span class="line">    <span class="attr">baseURL</span>: <span class="string">&quot;/api&quot;</span>,</span><br><span class="line">    <span class="attr">timeout</span>: <span class="number">1000</span>*<span class="number">3</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ request 请求拦截器=&gt;请求发出前处理</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">request.interceptors.request.use(</span><br><span class="line">    <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//开启loading</span></span><br><span class="line">        <span class="comment">//loading = ElLoading.service()</span></span><br><span class="line">        <span class="keyword">return</span> config;</span><br><span class="line">    &#125;, <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 接口返回失败</span></span><br><span class="line">        <span class="built_in">console</span>.log(error.response);</span><br><span class="line">        <span class="built_in">Promise</span>.reject(error.response);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  @ request 响应拦截器=&gt;处理响应数据</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">request.interceptors.response.use(</span><br><span class="line">    <span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//关闭loading</span></span><br><span class="line">        <span class="comment">//loading.close()</span></span><br><span class="line">        <span class="comment">//获取统一响应返回体</span></span><br><span class="line">        <span class="keyword">const</span> r=response.data</span><br><span class="line">        <span class="comment">//在这里处理响应体中的状态码</span></span><br><span class="line">        <span class="keyword">const</span> code=r.code</span><br><span class="line">        <span class="keyword">if</span> (code == <span class="number">200</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(r.massage);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(r.massage);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回主要数据</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Promise</span>.resolve(r.data);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// //请求失败，这个地方可以根据error.response.status统一处理一些界面逻辑，比如status为401未登录,可以进行重定向</span></span><br><span class="line">        <span class="comment">// router.replace(&#123;</span></span><br><span class="line">        <span class="comment">//     path: &#x27;/login&#x27;,</span></span><br><span class="line">        <span class="comment">//     query: &#123; redirect: router.currentRoute.fullPath &#125;</span></span><br><span class="line">        <span class="comment">//    &#125;);</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error.response);</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> request;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>注释部分为 Element-plus 的 loading 加载根据项目需要自行修改</p>
-</blockquote>]]></content>
+</blockquote>
+]]></content>
       <categories>
         <category>javascript</category>
       </categories>
@@ -821,16 +825,16 @@
 <li><p>运行</p>
 </li>
 </ol>
-<p>win+R里面输入cmd运行</p>
+<p>win+R里面输入<code>cmd</code>运行</p>
 <h2 id="使用记事本开发java程序的步骤"><a href="#使用记事本开发java程序的步骤" class="headerlink" title="使用记事本开发java程序的步骤"></a>使用记事本开发java程序的步骤</h2><ol>
 <li><p>编写源程序，以.java为后缀名保存</p>
 </li>
-<li><p>javac命令编译.java文件生成,class</p>
+<li><p><code>javac</code>命令编译.java文件生成,class</p>
 </li>
 <li><p>java命令运行.class文件</p>
 </li>
 </ol>
-<h2 id="使用MyEclipse开发java程序步骤"><a href="#使用MyEclipse开发java程序步骤" class="headerlink" title="使用MyEclipse开发java程序步骤"></a>使用MyEclipse开发java程序步骤</h2><ol>
+<h2 id="使用MyEclipse开发java程序步骤"><a href="#使用MyEclipse开发java程序步骤" class="headerlink" title="使用MyEclipse开发java程序步骤"></a>使用<code>MyEclipse</code>开发java程序步骤</h2><ol>
 <li><p>创建一个java项目</p>
 </li>
 <li><p>手动创建java源程序，就是创建一个类</p>
@@ -842,34 +846,38 @@
 </ol>
 <h2 id="java程序的注释"><a href="#java程序的注释" class="headerlink" title="java程序的注释"></a>java程序的注释</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//单行注释</span></span><br><span class="line"><span class="comment">/*多行注释*/</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="java程序的结构"><a href="#java程序的结构" class="headerlink" title="java程序的结构"></a>java程序的结构</h2><p>类名与文件名完全一样<br>main()方法是java程序的入口<br>main()方法的四要素，public, static, void, String[] args<br>“{“和”}”一一对应,缺一不可</p>
+<h2 id="java程序的结构"><a href="#java程序的结构" class="headerlink" title="java程序的结构"></a>java程序的结构</h2><p>类名与文件名完全一样<br>main()方法是java程序的入口<br>main()方法的四要素，<code>public</code>, <code>static</code>, <code>void</code>, <code>String[] args</code><br>“{“和”}”一一对应,缺一不可</p>
 <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>内存：临时存放数据<br>硬盘：永久存放数据的<br>变量：一个数据存储空间的表示<br>不同的数据存入不同的空间，相互独立</p>
-<h2 id="数值："><a href="#数值：" class="headerlink" title="数值："></a>数值：</h2><p>​    整数：(从小到大)<br>​        byte<br>​        short<br>​        int      √<br>​        long<br>​    非整数：<br>​        float(单精度)<br>​        double(双精度)  √</p>
-<h2 id="非数值："><a href="#非数值：" class="headerlink" title="非数值："></a>非数值：</h2><p>​    char(单个字符)<br>​    String(多个字符，字符串) √<br>​    boolean(布尔， true:真 false:假)  √</p>
-<h2 id="变量名命名规范"><a href="#变量名命名规范" class="headerlink" title="变量名命名规范"></a>变量名命名规范</h2><p>首字母，可以使字母，下划线_，$符号，<br>其余的部分，1.数字2.字母3.下划线_4.$美元<br>简短并且能够清楚的表明变量的作用，通常第一个单词首字母小写，后面的单词首字母大写：例如myScore</p>
+<h2 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h2><p>​    整数：(从小到大)<br>​        <code>byte</code><br>​        <code>short</code><br>​        <code>int</code>      √<br>​        <code>long</code><br>​    非整数：<br>​        <code>float</code>(单精度)<br>​        <code>double</code>(双精度)  √</p>
+<h2 id="非数值"><a href="#非数值" class="headerlink" title="非数值"></a>非数值</h2><p>​    <code>char</code>(单个字符)<br>​    <code>String</code>(多个字符，字符串) √<br>​    <code>boolean</code>(布尔， true:真 false:假)  √</p>
+<h2 id="变量名命名规范"><a href="#变量名命名规范" class="headerlink" title="变量名命名规范"></a>变量名命名规范</h2><p>首字母，可以使字母，下划线_，$符号，<br>其余的部分，1.数字2.字母3.下划线_4.$美元<br>简短并且能够清楚的表明变量的作用，通常第一个单词首字母小写，后面的单词首字母大写：例如<code>myScore</code></p>
 <h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p>语法:变量名=表达式<br>=号就代表赋值运算符.先计算右边的,再运行左边的.</p>
 <h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><p>​    +:加号<br>​    -:减号<br>​    *:乘号<br>​    /:除号  比如:5/2=2<br>​    %:余数  比如:5%2=1<br>​    其他:<br>​        i++:就是本身加1 i=i+1是一个意思<br>​        i–:同理<br>​    注意:进行整数计算的时候,出现的小数部分,不参与计算</p>
 <h2 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h2><p>规则1：如果一个操作数为double型，则整个表达式可提升为double型<br>规则2：满足自动类型转换的条件两种类型要兼容数值类型（整型和浮点型）互相兼容<br>目标类型大于源类型 例如：double 型大于 int 型</p>
 <h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><p>语法:（类型名）表达式<br>不能自动类型转换的就需要强制转换</p>
-<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>，&lt;,==，!=,&gt;=，&lt;=<br>关系运算符的作用：用来做比较运算比较的结果：boolean类型</p>
-<h2 id="boolean类型"><a href="#boolean类型" class="headerlink" title="boolean类型"></a>boolean类型</h2><p>​    boolean类型的值,boolean类型只有这两个值<br>​        真：true<br>​        假：false<br>​    比如:   80&gt;90  结果为false</p>
-<h2 id="Scanner使用步骤"><a href="#Scanner使用步骤" class="headerlink" title="Scanner使用步骤"></a>Scanner使用步骤</h2><p>​    (1)指定Scanner类路径<br>​        import java.util.Scanner;<br>​    (2)键盘输入<br>​        Scanner input=new Scanner(System.in);<br>​    (3)输入提示信息<br>​        System.out.print(“请输入姓名:”);<br>​    (4)通过变量获取控制台输入<br>​        String name=input.next();<br>​    (5)展示信息<br>​        System.out.print(“姓名:”+name);</p>
-<h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><p>​    1.基本if选择结构<br>​        语法：if(条件){代码块}<br>​        if:如果<br>​        ():需要进行判断的条件,只能是boolean类型<br>​        {}：条件成立的时候执行的代码<br>​    2.复杂条件下的if选择结构<br>​        使用逻辑运算符<br>​        1.&amp;&amp;:表示并且，必须两个条件同时满足，结果为真<br>​        2.||:表示或者，两个条件有一个满足，结果为真<br>​        3.!:表示否定，就是把结果反过来<br>​        4.运算符优先级顺序：！&gt;算术运算符&gt;比较运算符&gt;&amp;&amp;&gt;||<br>​    3.if-else选择结构<br>​        语法:if(条件){代码块1}else{代码块2}<br>​        else:表示否则<br>​        当条件满足执行if里面代码块1的内容，条件不满足执行else里面代码块2的内容<br>​    4.多重if选择结构<br>​        语法:if(条件){代码块1}else if(条件){代码块2}<br>​        特点: else if(){}可以有多个<br>​              else{}可以省略<br>​              代码从上向下执行，条件满足以后剩下的代码就不执行了<br>​    5.switch选择结构<br>​        (1)<br>语法：switch(条件){<br>​            case 值:<br>​            代码块<br>​            break;<br>​            default:<br>​            break;<br>​            }<br>​            (2)特点<br>​            1.switch选择结构，条件为等值判断<br>​            2.case可以有很多个，但是不要忘记写break<br>​            3.default顺序可以改变，但是要注意执行顺序，通常写在末尾，也可以省略<br>​           (3)比较switch和多重if的结构<br>​            相同点：都是用来处理多分支结构<br>​            不同点：switch只能进行等值判断<br>​                if一般用于对某个区间进行判断，也可以等值判断</p>
+<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>，&lt;,==，!=,&gt;=，&lt;=<br>关系运算符的作用：用来做比较运算比较的结果：<code>boolean</code>类型</p>
+<h2 id="boolean类型"><a href="#boolean类型" class="headerlink" title="boolean类型"></a><code>boolean</code>类型</h2><p>​    <code>boolean</code>类型的值,<code>boolean</code>类型只有这两个值<br>​        真：true<br>​        假：false<br>​    比如:   80&gt;90  结果为false</p>
+<h2 id="Scanner使用步骤"><a href="#Scanner使用步骤" class="headerlink" title="Scanner使用步骤"></a><code>Scanner</code>使用步骤</h2><p>​    (1)指定<code>Scanner</code>类路径<br>​        <code>import java.util.Scanner;</code><br>​    (2)键盘输入<br>​        <code>Scanner input=new Scanner(System.in);</code><br>​    (3)输入提示信息<br>​        <code>System.out.print(&quot;请输入姓名:&quot;);</code><br>​    (4)通过变量获取控制台输入<br>​        <code>String name=input.next();</code><br>​    (5)展示信息<br>​        <code>System.out.print(&quot;姓名:&quot;+name);</code></p>
+<h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><p>​    1.基本if选择结构<br>​        语法：if(条件){代码块}<br>​        if:如果<br>​        ():需要进行判断的条件,只能是<code>boolean</code>类型<br>​        {}：条件成立的时候执行的代码<br>​    2.复杂条件下的if选择结构<br>​        使用逻辑运算符<br>​        1.&amp;&amp;:表示并且，必须两个条件同时满足，结果为真<br>​        2.||:表示或者，两个条件有一个满足，结果为真<br>​        3.!:表示否定，就是把结果反过来<br>​        4.运算符优先级顺序：！&gt;算术运算符&gt;比较运算符&gt;&amp;&amp;&gt;||<br>​    3.if-else选择结构<br>​        语法:if(条件){代码块1}else{代码块2}<br>​        else:表示否则<br>​        当条件满足执行if里面代码块1的内容，条件不满足执行else里面代码块2的内容<br>​    4.多重if选择结构<br>​        语法:if(条件){代码块1}else if(条件){代码块2}<br>​        特点: else if(){}可以有多个<br>​              else{}可以省略<br>​              代码从上向下执行，条件满足以后剩下的代码就不执行了<br>​    5.switch选择结构<br>​        (1)<br>语法：switch(条件){<br>​            case 值:<br>​            代码块<br>​            break;<br>​            default:<br>​            break;<br>​            }<br>​            (2)特点<br>​            1.switch选择结构，条件为等值判断<br>​            2.case可以有很多个，但是不要忘记写break<br>​            3.default顺序可以改变，但是要注意执行顺序，通常写在末尾，也可以省略<br>​           (3)比较switch和多重if的结构<br>​            相同点：都是用来处理多分支结构<br>​            不同点：switch只能进行等值判断<br>​                if一般用于对某个区间进行判断，也可以等值判断</p>
 <h2 id="循环结构的特点"><a href="#循环结构的特点" class="headerlink" title="循环结构的特点"></a>循环结构的特点</h2><p>​    (1)循环条件<br>​    (2)循环操作</p>
 <h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>​    语法:while(循环条件){循环操作}<br>​    特点:先判断,在执行<br>​    使用while循环的步骤<br>​        1.先声明变量,并且赋予初始值<br>​            int i=0;<br>​        2.判断循环条件<br>​            while(i&lt;=10000){循环操作}<br>​        3.执行循环操作<br>​        4.防止死循环<br>​            i++;<br>3.比较两个String类型的值是否相等<br>​    数字使用两个等号”==”<br>​    字符串使用”变量名.equals(相等的内容)”<br>4.如何进行程序调试<br>​    1.分析错误,设置断点<br>​    2.启动调试,可以右键选择DeBug As,或者点击爬虫的按钮<br>​    3.单步运行,启动调试以后,运行到设置断点的代码会停住,点击F6可以单步运行程序,观察程序运行的过程<br>​    4.观察变量<br>​    5.发现问题<br>​    6.修改代码,重新运行<br>​    7.解决问题</p>
-<h2 id="do-while循环结构"><a href="#do-while循环结构" class="headerlink" title="do-while循环结构"></a>do-while循环结构</h2><p>​    语法:do{循环操作}while(循环条件);<br>​    特点:先执行,再判断,分号必不可少,初始条件不满足至少执行一次<br>​    使用步骤:<br>​        1.先声明变量<br>​            int i=0;<br>​        2.执行循环操作<br>​            do{循环操作}while(循环条件);<br>​        3.判断循环条件<br>​        4.防止死循环</p>
+<h2 id="do-while循环结构"><a href="#do-while循环结构" class="headerlink" title="do-while循环结构"></a>do-while循环结构</h2><p>​    语法:do{循环操作}while(循环条件);<br>​    特点:先执行,再判断,分号必不可少,初始条件不满足至少执行一次<br>​    使用步骤:<br>​        1.先声明变量<br>​            <code>int i=0;</code><br>​        2.执行循环操作<br>​            do{循环操作}while(循环条件);<br>​        3.判断循环条件<br>​        4.防止死循环</p>
 <h2 id="for循环结构"><a href="#for循环结构" class="headerlink" title="for循环结构"></a>for循环结构</h2><p>​    语法和执行顺序<br>​        for(1.初始化;2.判断条件;4.更新循环变量){<br>​            3.循环操作<br>​        }<br>​    执行顺序:1.–&gt;2.–&gt;3.–&gt;4.–&gt;2.–&gt;3.–&gt;4…循环到结束<br>​    特点<br>​        表达式全部省略,会造成死循环<br>​            for(;;){<br>​            //死循环<br>​            }</p>
 <h2 id="关键单词"><a href="#关键单词" class="headerlink" title="关键单词"></a>关键单词</h2><p>​    (1)break<br>​        控制流程语句,跳出整个循环,通常和条件语句一起使用<br>​    (2)continue<br>​        只能用在循环里,跳过循环中剩余的语句,执行下一次循环<br>​    (3)return<br>​        都能使用,结束程序</p>
-<h2 id="如何进行程序调试"><a href="#如何进行程序调试" class="headerlink" title="如何进行程序调试"></a>如何进行程序调试</h2><pre><code>      1. 分析错误，设置断点
-      1. 启动调试
-      1. 单步运行，启动调试以后，运行到设置断点的代码将停住点击F6可以单步运行程序，观察程序运行过程
-      1. 观察变量
-      1. 发现问题
-      1. 修改代码，重新运行
-      1. 解决问题
+<h2 id="如何进行程序调试"><a href="#如何进行程序调试" class="headerlink" title="如何进行程序调试"></a>如何进行程序调试</h2><pre><code>     1. 分析错误，设置断点
+     2. 启动调试
+     3. 单步运行，启动调试以后，运行到设置断点的代码将停住点击F6可以单步运行程序，观察程序运行过程
+     4. 观察变量
+     5. 发现问题
+     6. 修改代码，重新运行
+     7. 解决问题
 </code></pre>
 <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="1-什么是数组"><a href="#1-什么是数组" class="headerlink" title="1.什么是数组"></a>1.什么是数组</h3><p>​        数组就是一个变量,存储相同类型的一组数据<br>​        声明数组就是在内存开辟出一连串连续的空间</p>
-<h3 id="2-数组的基本组成要素"><a href="#2-数组的基本组成要素" class="headerlink" title="2.数组的基本组成要素"></a>2.数组的基本组成要素</h3><p>​        1.标识符:数组的名称,用于区分不同的数组<br>​        2.数组元素:数组当中存放的值<br>​        3.元素下标:每一个存放进来的值都有一个对应的编号,从0开始,数组中每个元素都可以通过下标来访问<br>​        4.元素类型:存放值的具体类型,决定了是什么类型的数组</p>
+<h3 id="2-数组的基本组成要素"><a href="#2-数组的基本组成要素" class="headerlink" title="2.数组的基本组成要素"></a>2.数组的基本组成要素</h3><pre><code>      1. 标识符:数组的名称,用于区分不同的数组
+      2. 数组元素:数组当中存放的值
+      3. 元素下标:每一个存放进来的值都有一个对应的编号,从0开始,数组中每个元素都可以通过下标来访问
+      4. 元素类型:存放值的具体类型,决定了是什么类型的数组
+</code></pre>
 <h3 id="3-使用数组的好处"><a href="#3-使用数组的好处" class="headerlink" title="3.使用数组的好处"></a>3.使用数组的好处</h3><p>​        减少代码量,有利于数据的处理,使用的时候要注意,数组中所有的元素必须属于相同的数据类型</p>
 <h3 id="4-如何使用数组"><a href="#4-如何使用数组" class="headerlink" title="4.如何使用数组"></a>4.如何使用数组</h3><h4 id="1-声明数组-就是告诉计算机数据类型是什么"><a href="#1-声明数组-就是告诉计算机数据类型是什么" class="headerlink" title="1.声明数组,就是告诉计算机数据类型是什么"></a>1.声明数组,就是告诉计算机数据类型是什么</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[] a;</span><br><span class="line"><span class="keyword">int</span> a[];</span><br></pre></td></tr></table></figure>
 
@@ -904,7 +912,7 @@
 </code></pre>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Scanner input=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"><span class="keyword">int</span>[] socre=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">System.out.print(<span class="string">&quot;请输入5个人的成绩:&quot;</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">	score[i]=input.nextInt();</span><br></pre></td></tr></table></figure>
 
-<h4 id="5-Arrays工具类的使用"><a href="#5-Arrays工具类的使用" class="headerlink" title="5.Arrays工具类的使用"></a>5.Arrays工具类的使用</h4><p>​        1.判断数组之间是否相等<br>​            Arrays.equals(数组a,数组b);显示的结果为boolean<br>​        2.排序,对数组进行升序排列<br>​            Arrays.sort(数组);<br>​        3.替换数组元素,把数组换成字符串输出<br>​            Arrays.toString(数组);<br>​        4.改变数组长度<br>​            新的数组=Arrays.copyOf(要改变的数组,长度);</p>
+<h4 id="5-Arrays工具类的使用"><a href="#5-Arrays工具类的使用" class="headerlink" title="5.Arrays工具类的使用"></a>5.Arrays工具类的使用</h4><p>​        1.判断数组之间是否相等<br>​            <code>Arrays.equals(数组a,数组b);</code>显示的结果为<code>boolean</code><br>​        2.排序,对数组进行升序排列<br>​            <code>Arrays.sort(数组);</code><br>​        3.替换数组元素,把数组换成字符串输出<br>​            <code>Arrays.toString(数组);</code><br>​        4.改变数组长度<br>​            <code>新的数组=Arrays.copyOf(要改变的数组,长度);</code></p>
 <h4 id="6-典型应用"><a href="#6-典型应用" class="headerlink" title="6.典型应用"></a>6.典型应用</h4><h5 id="1-求数组的最大值-最小值"><a href="#1-求数组的最大值-最小值" class="headerlink" title="1.求数组的最大值,最小值"></a>1.求数组的最大值,最小值</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ao=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> max=<span class="number">0</span>;<span class="comment">//记录最大值</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入5位学员的嗓门:&quot;</span>);</span><br><span class="line">Scanner input=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ao.length; i++) &#123;</span><br><span class="line">	ao[i]=input.nextInt();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//计算最大值</span></span><br><span class="line"><span class="comment">//1.把数组中第一位给最大值,让它去跟其它值进行比较</span></span><br><span class="line">max=ao[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ao.length; i++) &#123;</span><br><span class="line">	<span class="comment">//2.判断其他值是否比最大值大</span></span><br><span class="line">	<span class="keyword">if</span> (ao[i]&gt;max) &#123;</span><br><span class="line">		max=ao[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;云图第一届好嗓门大赛冠军:&quot;</span>+max);</span><br><span class="line"><span class="comment">//计算最小值</span></span><br><span class="line"><span class="keyword">int</span> min=ao[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ao.length; i++) &#123;</span><br><span class="line">	<span class="keyword">if</span> (ao[i]&lt;min) &#123;</span><br><span class="line">		min=ao[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;云图第一届好嗓门大赛最low:&quot;</span>+min);</span><br></pre></td></tr></table></figure>
 
 <h5 id="2-9-9乘法表"><a href="#2-9-9乘法表" class="headerlink" title="2.9*9乘法表"></a>2.9*9乘法表</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) &#123;<span class="comment">//一共9行</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</span><br><span class="line">		System.out.print(j+<span class="string">&quot;*&quot;</span>+i+<span class="string">&quot;=&quot;</span>+j*+<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -914,6 +922,833 @@
 ]]></content>
       <categories>
         <category>java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<p>docker</p>
+<p>elasticSearch 搜索引擎</p>
+<p>nuxt</p>
+<p>office project</p>
+<p>powerDesigner</p>
+<p>23种设计模式</p>
+<p>open-jdk</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<hr>
+<p>title：面试题</p>
+<hr>
+<h3 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h3><h3 id="ioc是怎么解耦的"><a href="#ioc是怎么解耦的" class="headerlink" title="ioc是怎么解耦的"></a>ioc是怎么解耦的</h3><h3 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h3><h3 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h3><h3 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h3><h3 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h3><h3 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h3><h3 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h3><h3 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h3><h3 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h3><h3 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h3><h3 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h3><h3 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h3><h3 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h3><h3 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h3><h3 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h3><h3 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h3><h3 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h3><h3 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h3><h3 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h3><h3 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h3><h3 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h3><h3 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h3><h3 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h3><h3 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h3><h3 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS-transfrom的动画有哪几种熟悉"><a href="#CSS-transfrom的动画有哪几种熟悉" class="headerlink" title="CSS transfrom的动画有哪几种熟悉"></a>CSS transfrom的动画有哪几种熟悉</h3><h3 id="Ajax的原理是什么？如何实现"><a href="#Ajax的原理是什么？如何实现" class="headerlink" title="Ajax的原理是什么？如何实现"></a>Ajax的原理是什么？如何实现</h3><p>Ajax核心对象是xmlHttpRequest对象</p>
+<h3 id="Axios的实现原理是什么"><a href="#Axios的实现原理是什么" class="headerlink" title="Axios的实现原理是什么"></a>Axios的实现原理是什么</h3><p>Promise对象</p>
+<h3 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h3><p><code>byte</code> <code>int</code> <code>short</code> <code>long</code> <code>float</code> <code>double</code> <code>char</code> <code>boolean</code></p>
+<h3 id="Java引用数据类型"><a href="#Java引用数据类型" class="headerlink" title="Java引用数据类型"></a>Java引用数据类型</h3><p><code>Class</code> <code>Interface</code> <code>Array</code> <code>String</code></p>
+<h3 id="什么是事物"><a href="#什么是事物" class="headerlink" title="什么是事物"></a>什么是事物</h3><p>一个最小的不可再分的单元；可以理解为一个事务对应的是一组完整的业务，并且在这个事务中所作的一切操作要么全部成功，要么全部失败，只要有一个操作没成功，整个事务都将回滚到事务开始前。</p>
+<p><strong>原子性</strong></p>
+<p><strong>一致性</strong></p>
+<p><strong>隔离性</strong></p>
+<p><strong>持久性</strong></p>
+<h3 id="什么是spring-beans"><a href="#什么是spring-beans" class="headerlink" title="什么是spring beans"></a>什么是spring beans</h3><p>是构成Spring应用核心的Java对象</p>
+<h3 id="ioc-的优点"><a href="#ioc-的优点" class="headerlink" title="ioc 的优点"></a>ioc 的优点</h3><h3 id="有哪些不同类型的ioc注入"><a href="#有哪些不同类型的ioc注入" class="headerlink" title="有哪些不同类型的ioc注入"></a>有哪些不同类型的ioc注入</h3><h3 id="MySQL-union-union-all的区别，哪个查询快"><a href="#MySQL-union-union-all的区别，哪个查询快" class="headerlink" title="MySQL union - union all的区别，哪个查询快"></a>MySQL union - union all的区别，哪个查询快</h3><h3 id="MySQL中有几个聚合函数"><a href="#MySQL中有几个聚合函数" class="headerlink" title="MySQL中有几个聚合函数"></a>MySQL中有几个聚合函数</h3><p>count() max() min() sum() avg()</p>
+<h3 id="spring-mvc的特性"><a href="#spring-mvc的特性" class="headerlink" title="spring mvc的特性"></a>spring mvc的特性</h3><h3 id="jQuery-html-text-val-的区别"><a href="#jQuery-html-text-val-的区别" class="headerlink" title="jQuery html(),text(),val()的区别"></a>jQuery html(),text(),val()的区别</h3><h3 id="innerHtml-innerText-有什么区别"><a href="#innerHtml-innerText-有什么区别" class="headerlink" title="innerHtml(),innerText()有什么区别"></a>innerHtml(),innerText()有什么区别</h3><h3 id="jQuery常用选择器"><a href="#jQuery常用选择器" class="headerlink" title="jQuery常用选择器"></a>jQuery常用选择器</h3><h3 id="string-buffer-和-string-builder的区别"><a href="#string-buffer-和-string-builder的区别" class="headerlink" title="string buffer 和 string builder的区别"></a>string buffer 和 string builder的区别</h3><h3 id="list-set-map-是否都继承collection类-？有什么区别"><a href="#list-set-map-是否都继承collection类-？有什么区别" class="headerlink" title="list set map 是否都继承collection类 ？有什么区别"></a>list set map 是否都继承collection类 ？有什么区别</h3><h3 id="RequestMapping-注解的作用"><a href="#RequestMapping-注解的作用" class="headerlink" title="@RequestMapping 注解的作用"></a>@RequestMapping 注解的作用</h3><h3 id="Autowired-注解的作用"><a href="#Autowired-注解的作用" class="headerlink" title="@Autowired 注解的作用"></a>@Autowired 注解的作用</h3><h3 id="索引有什么作用"><a href="#索引有什么作用" class="headerlink" title="索引有什么作用"></a>索引有什么作用</h3><p>提高检索速度</p>
+<p>保证唯一性</p>
+<p>加速表之间的连接</p>
+<h3 id="主键跟外键的区别"><a href="#主键跟外键的区别" class="headerlink" title="主键跟外键的区别"></a>主键跟外键的区别</h3><h3 id="MySQL分组和排序"><a href="#MySQL分组和排序" class="headerlink" title="MySQL分组和排序"></a>MySQL分组和排序</h3><p>group by    order by</p>
+<h3 id="hashmap和hashtable的区别和作用"><a href="#hashmap和hashtable的区别和作用" class="headerlink" title="hashmap和hashtable的区别和作用"></a>hashmap和hashtable的区别和作用</h3><p>HashMap是非线程安全的,HashTable是线程安全的。所以HashMap效率要比HashTable效率高</p>
+<p>HashMap的键和值都允许有null值存在,而HashTable则不行。</p>
+<p>Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。</p>
+<h3 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h3>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</url>
+    <content><![CDATA[<h1 id="微信支付时序图"><a href="#微信支付时序图" class="headerlink" title="微信支付时序图"></a>微信支付时序图</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 微信支付时序图</span><br><span class="line">participant 微信支付用户 as user</span><br><span class="line">participant 微信客户端 as wxc</span><br><span class="line">participant 商户APP客户端 as appc</span><br><span class="line">participant 商户后台系统 as apps</span><br><span class="line">participant 微信支付系统 as wxs</span><br><span class="line"></span><br><span class="line">user-&gt;appc:1.打开商户APP客户端()</span><br><span class="line">appc-&gt;appc:2.选择商品下单()</span><br><span class="line">appc-&gt;apps:3.请求生成支付订单()</span><br><span class="line">apps-&gt;wxs:4.调用统一下单API()</span><br><span class="line">wxs-&gt;wxs:生成预付单()</span><br><span class="line">wxs--&gt;&gt;apps:5.返回预付单信息(prepay_id)</span><br><span class="line">apps-&gt;apps:6.生成带签名的客户端支付信息()</span><br><span class="line">apps--&gt;&gt;appc:7:返回信息(prepay_id,sign等)</span><br><span class="line">user-&gt;appc:8:用户确认支付()</span><br><span class="line">appc--&gt;wxc:9:支付参数通过调用SDK调起微信支付()</span><br><span class="line">wxc-&gt;wxs:10.发起支付请求()</span><br><span class="line">wxs-&gt;wxs:验证支付参数, APP支付权限等()</span><br><span class="line">wxs--&gt;&gt;wxc:11.返回需要支付授权()</span><br><span class="line">user-&gt;wxc:12.用户确认支付, 输入密码()</span><br><span class="line">wxc-&gt;wxs:13:提交支付授权()</span><br><span class="line">wxs-&gt;wxs:验证授权, 完成支付交易()</span><br><span class="line">wxs--&gt;&gt;apps:15.异步通知商户支付结果()</span><br><span class="line">apps-&gt;apps:接收和保存支付通知()</span><br><span class="line">apps-&gt;&gt;wxs:16.返回告知已成功接收处理()</span><br><span class="line">wxs--&gt;wxc:14.返回支付结果, 发送微信消息提示()</span><br><span class="line">wxc-&gt;appc:将支付状态通过商户APP已实现的回调接口执行回调()</span><br><span class="line">appc-&gt;apps:后台查询实际支付结果()</span><br><span class="line">apps-&gt;wxs:调用微信查询API查询支付结果()</span><br><span class="line">wxs--&gt;&gt;apps:返回支付结果()</span><br><span class="line">apps--&gt;appc:返回支付结果</span><br><span class="line">appc--&gt;user:展示支付结果()</span><br><span class="line">appc-&gt;appc:商户发货()</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<hr>
+<p>title:简历注意事项</p>
+<hr>
+<p>简历文件命名：名字+求职岗位+工作年限</p>
+<p>简历使用pdf格式</p>
+<p>不用竖版简历</p>
+<p>不用太沉重的颜色，不要用黑白配</p>
+<p>放证件照片</p>
+<p>字体大小，行间距</p>
+<p>不能有错别字</p>
+<p>简历内容顺序：</p>
+<ul>
+<li>个人信息</li>
+<li>求职意向</li>
+<li>专业技能</li>
+<li>工作经历</li>
+<li>项目经验</li>
+<li>学校信息</li>
+<li>荣誉信息</li>
+<li>自我评价</li>
+</ul>
+<p>个人信息顺序</p>
+<p>基本信息都是成对出现</p>
+<ol>
+<li>姓名</li>
+<li>年龄（22-23写真实年龄或者写年月）22岁下可以写虚岁</li>
+<li>性别(非必要)</li>
+<li>学历（统招可以加上）层次：大专/本科</li>
+<li>工作经验</li>
+<li>电话（带分隔符）</li>
+<li>邮箱（最好不要用QQ邮箱）</li>
+</ol>
+<p>求职意向</p>
+<ol>
+<li>求职意向和专业技能和项目经验要一致</li>
+<li>期望薪资不要区间不要超过2000</li>
+<li>薪资范围跟市场挂钩</li>
+</ol>
+<p>专业技能</p>
+<ol>
+<li>不能用精通</li>
+<li>对应的岗位，把对应的技能写在靠前 （框架技术）</li>
+<li>流行的技术点</li>
+<li>简历的技术点控制在7-12条</li>
+<li>专业技能主次分明</li>
+</ol>
+<p>工作经历</p>
+<ol>
+<li>公司名称</li>
+<li>工作时间</li>
+<li>工作岗位</li>
+<li>工作内容描述</li>
+<li>多份工作经历按倒叙时间写</li>
+<li>时间空挡不要间隔太长</li>
+</ol>
+<p>项目经验</p>
+<ol>
+<li>名称</li>
+<li>时间</li>
+<li>技术</li>
+<li>岗位描述</li>
+<li>职责</li>
+<li>OA项目不能写，物流的项目不能写，书城的项目不能写，超市订单管理系统不能写</li>
+<li>项目时间不能有空隔</li>
+<li>项目时间间隔不要超过一个月</li>
+<li>最上面写技术最全的项目</li>
+<li>背景 功能 技术点 功能模块 不能写个人写的</li>
+<li>个人职责是自己负责的某个模块，用什么样的技术完成的。个人职责里不能出现增删改查类的词语，新人程序员不会涉及到第三方支付</li>
+<li>个人职责一般3-4条</li>
+</ol>
+<p>学校信息</p>
+<ol>
+<li>未毕业不写毕业时间</li>
+</ol>
+<p>荣誉</p>
+<ol>
+<li>国家级别的荣誉写上</li>
+</ol>
+<p>个人介绍写符合自己的</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<ol>
+<li>先敲门</li>
+<li>先跟面试官打过招呼</li>
+<li>面试官您好，这是我的简历（双手反向递简历）然后坐下</li>
+<li>坐椅子三分之二，不靠在后面</li>
+<li>自我介绍</li>
+<li>面试官您好</li>
+<li>介绍自己的姓名，（年龄可以介绍） 我是谁，我会做什么，我做了什么</li>
+<li>我要面试的岗位</li>
+<li>我会干什么</li>
+<li>技术和项目一块说，重点侧重于一个项目，项目的技术点（框架）自己负责什么，和自己的感悟</li>
+<li>沟通能力，学习能力，语言表达能力，协作能力</li>
+<li>结尾（好的面试官，这就是我的介绍）</li>
+<li>不说缺点，离职原因。（我希望加入贵公司，为公司创造价值，不真实）</li>
+<li>声音要洪亮</li>
+<li>要流程</li>
+<li>思路要清晰，时间上不能错乱</li>
+<li>自己的应聘岗位，要和自己介绍项目一致</li>
+<li>缺点可以有，面试官要的是改进方法</li>
+<li>不能说的缺点，技术差，粗心，不仔细，过于内向，不善言谈，懒</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/29/base/git/</url>
+    <content><![CDATA[<h2 id="配置公钥-私钥"><a href="#配置公钥-私钥" class="headerlink" title="配置公钥+私钥"></a>配置公钥+私钥</h2><ol>
+<li>生成，运行<code>cmd</code>命令：<code>ssh-keygen -t rsa -C &quot;名称&quot;</code>；</li>
+<li>得到公钥私钥：<code>C:\Users\用户名\.ssh\</code>目录下有<code>id_rsa</code>和<code>id_rsa.pub</code>；</li>
+<li>将<code>id_rsa.pub</code>内容填写到平台即可。</li>
+</ol>
+<h2 id="基于空项目使用git"><a href="#基于空项目使用git" class="headerlink" title="基于空项目使用git"></a>基于空项目使用git</h2><ol>
+<li>创建<code>git</code>仓库</li>
+<li>将服务器上空git库克隆至本地：<code>git clone git@项目地址 [项目名]</code></li>
+<li>将本地文件添加到git托管中：<code>git add .</code></li>
+<li>提交代码到本地仓库：<code>git commit -m 消息</code></li>
+<li>拉取别人的代码：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 拉取</span><br><span class="line">git pull 源 分支</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>推送仓库到远程仓库：<code>git push 源 分支</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看本地已经链接的源服务器列表：</span><br><span class="line">git remote</span><br><span class="line"># 查看目标源的服务器地址：</span><br><span class="line">git remote get-url 源名称</span><br><span class="line">git remote get-url origin</span><br><span class="line"># 添加源：</span><br><span class="line">git remote add 远程名称 仓库地址</span><br><span class="line">git remote add gitee git@gitee.com:geeksss-master/gitee-admin.git</span><br><span class="line"># 修改源名称</span><br><span class="line">git remote rename 源名称 新名称</span><br><span class="line"># 删除源</span><br><span class="line">git rmeote remove 源名称</span><br><span class="line"># 将本地仓库推送到远程仓库：</span><br><span class="line">git push 源名称 分支名称</span><br><span class="line">git push origin master</span><br><span class="line">git push gitee master</span><br></pre></td></tr></table></figure>
+
+<h2 id="分支使用"><a href="#分支使用" class="headerlink" title="分支使用"></a>分支使用</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 克隆项目：</span><br><span class="line">git clone git@49.232.13.110:ytzl-online/admin.git</span><br><span class="line"></span><br><span class="line"># 查看当前分支：</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"># 切换分支：</span><br><span class="line">git checkout 分支名称</span><br><span class="line">git checkout zhangsan</span><br><span class="line"></span><br><span class="line"># 创建并切换分支：</span><br><span class="line">git checkout -b 分支名称</span><br><span class="line">git checkout -b zhangsan</span><br><span class="line"></span><br><span class="line"># 合并本地仓库的master分支，到当前分支。</span><br><span class="line">git merge master</span><br></pre></td></tr></table></figure>
+
+<p>删除git文件及记录</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/29/configs/maven/</url>
+    <content><![CDATA[<h1 id="nexus"><a href="#nexus" class="headerlink" title="nexus"></a>nexus</h1><p>nexus是一个强大的maven仓库管理工具，使用nexus可以方便的管理内部仓库，也就是私服，专门用于管理公司内部的jar包，可以将公司内部的jar包上传到nexus中。</p>
+<h1 id="svn"><a href="#svn" class="headerlink" title="svn(!)"></a>svn(!)</h1><p>SVN全名Subversion，即版本控制系统。SVN与CVS一样，是一个跨平台的软件，支持大多数常见的操作系统。</p>
+<p>作为一个开源的版本控制系统,Subversion管理着随时间改变的数据。这些数据放置在一个中央资料档案库(repository)中。这个档案库很像一个普通的文件服务器,不过它会记住每一次文件的变动。</p>
+<p>这样你就可以把档案恢复到旧的版本,或是浏览文件的变动历史。Subversion是一个通用的系统,可用来管理任何类型的文件,其中包括了程序源码。</p>
+<h1 id="gitlab"><a href="#gitlab" class="headerlink" title="gitlab"></a>gitlab</h1><p>GitLab是利用Ruby on Rails一个开源的版本管理系统，实现一个自托管的Git项目仓库，可通过Web界面进行访问公开的或者私人项目。<br>与Github类似，GitLab能够浏览源代码，管理缺陷和注释。可以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供一个文件历史库。团队成员可以利用内置的简单聊天程序(Wall)进行交流。<br>它还提供一个代码片段收集功能可以轻松实现代码复用，便于日后有需要的时候进行查找。<br>本篇教程将教你如何安装部署及使用GitLab。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">properties</span><br><span class="line">depedencyManagement</span><br><span class="line">repositories</span><br><span class="line">pluginRepositories</span><br><span class="line">distributionMangement</span><br><span class="line">build</span><br></pre></td></tr></table></figure>
+
+<p>不要配maven全局配置文件，在项目中配置</p>
+<p>配置文件</p>
+<p>私服</p>
+<h2 id="全局镜像配置"><a href="#全局镜像配置" class="headerlink" title="全局镜像配置"></a>全局镜像配置</h2><blockquote>
+<p>maven根目录/conf/settings.xml</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--阿里仓库--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>项目镜像配置</p>
+<blockquote>
+<p>pom.xml</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun-repos<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>blade-release<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Release Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://nexus.bladex.vip/repository/maven-releases/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>网站换肤的最佳实现</title>
+    <url>/2027/07/30/html/html-theme/</url>
+    <content><![CDATA[<h1 id="大多数开发人员的实现"><a href="#大多数开发人员的实现" class="headerlink" title="大多数开发人员的实现"></a>大多数开发人员的实现</h1><h1 id="原生HTML下的换肤实现"><a href="#原生HTML下的换肤实现" class="headerlink" title="原生HTML下的换肤实现"></a>原生HTML下的换肤实现</h1><h1 id="实现的优点及碎碎念"><a href="#实现的优点及碎碎念" class="headerlink" title="实现的优点及碎碎念"></a>实现的优点及碎碎念</h1>]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/29/java/open-jdk/</url>
+    <content><![CDATA[<p>下载地址：</p>
+<p><a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">https://developer.ibm.com/languages/java/semeru-runtimes/downloads/</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>centOS 初认识</title>
+    <url>/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</url>
+    <content><![CDATA[<p>安装 <code>centOS</code> 系统后生成账号密码，生成公钥私钥</p>
+<span id="more"></span>
+
+<h2 id="创建web服务用户"><a href="#创建web服务用户" class="headerlink" title="创建web服务用户"></a>创建web服务用户</h2><h3 id="1-切换到root用户"><a href="#1-切换到root用户" class="headerlink" title="1.切换到root用户"></a>1.切换到root用户</h3><p>使用 <code>su</code> 命令切换到 <code>root</code> 账户</p>
+<p><code>su root</code><br>输入安装时设置的用户密码</p>
+<p>输入密码时不会显示，切换成功后命令行前置用户名会更改为 <code>root</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301902761.png" alt="image-20220730190224707"></p>
+<h3 id="2-创建用户"><a href="#2-创建用户" class="headerlink" title="2.创建用户"></a>2.创建用户</h3><p>使用 <code>useradd</code> 命令添加一个用户</p>
+<p>由于是用来管理网站的，这里新建的用户就叫做 <code>www</code> 之后就用这个账户管理网站</p>
+<p><code>useradd www</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301912040.png" alt="image-20220730191200004"></p>
+<p>使用 <code>passwd</code> 命令设置账户的密码</p>
+<p>系统会检测密码复杂度，太简单会提示，无视重新输入即可设计简单密码</p>
+<p><code>passwd www</code><br><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301913238.png" alt="image-20220730191356177"></p>
+<h3 id="3-授权"><a href="#3-授权" class="headerlink" title="3.授权"></a>3.授权</h3><blockquote>
+<p>个人用户的权限只可以在本home下有完整权限，其他目录要看别人授权。而经常需要root用户的权限，这时候sudo可以化身为root来操作。我记得我曾经sudo创建了文件，然后发现自己并没有读写权限，因为查看权限是root创建的。</p>
+<p>新创建的用户并不能使用sudo命令，需要给他添加授权。</p>
+<p>sudo命令的授权管理是在sudoers文件里的。可以看看sudoers：<br>原文链接：<a href="https://blog.csdn.net/GGxiaobai/article/details/53504989">https://blog.csdn.net/GGxiaobai/article/details/53504989</a></p>
+</blockquote>
+<p><code>whereis sudoers</code>显示sudoers路径<br><code>ls sudoers -l</code>查看文件权限，默认应该是只读的<br><code>chmod -v u+w sudoers</code>加上写入权限</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302002358.png" alt="image-20220730200224314"></p>
+<p><code>vim sudoers</code> 使用 <code>vim</code> 编辑文件</p>
+<p>vim操作方式 <a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302158169.png" alt="image-20220730215844130"></p>
+<p>添加 <code>www    ALL=(ALL)    ALL</code></p>
+<p>到此 <code>www</code> 账户已经可以用 <code>sudo</code> 命令获取root的权限了</p>
+<h2 id="生成-SSH-KEY-（公钥私钥）"><a href="#生成-SSH-KEY-（公钥私钥）" class="headerlink" title="生成 SSH-KEY （公钥私钥）"></a>生成 <code>SSH-KEY</code> （公钥私钥）</h2><h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><p>生成新的 <code>SSH_KEY</code></p>
+<p><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code> </p>
+<p>之后回车出来这个方框即可</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302219052.png" alt="image-20220730221927997"></p>
+<p>之后再home目录中的.ssh文件夹中会看到<code>id_rsa</code>跟<code>id_rsa.pub</code>文件</p>
+<p>将<code>id_rsa</code>私钥下载，或者用vim查看复制出里面的内容即可</p>
+<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>修改/etc/ssh/sshd_config如下部分:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">RSAAuthentication yes 开启RSA验证</span><br><span class="line">PubkeyAuthentication yes 是否使用公钥验证</span><br><span class="line">AuthorizedKeysFile .ssh/authorized_keys 公钥的保存位置</span><br><span class="line">PasswordAuthentication no 禁止使用密码验证登录</span><br></pre></td></tr></table></figure>
+
+<p>这里最好是禁止使用密码验证登录，否则用密钥就没多大意义了。<br>更改后保存。</p>
+<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p>进入到密钥保存的目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /www/.ssh</span><br></pre></td></tr></table></figure>
+
+
+
+<p>新建密钥验证文件”authorized_keys”，并将公钥输出重定向覆盖密钥验证文件:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">touch authorized_keys  </span><br><span class="line">cat id_rsa.pub &gt;&gt; authorized_keys   这里建议使用追加而不是覆盖</span><br></pre></td></tr></table></figure>
+
+
+
+<p>修改authorized_keys文件权限为600</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod  600 /www/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+
+
+
+<p><del>补充</del>：<br>ssh 密钥登录对以下文件有权限要求：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~ # 即家目录 权限为 700  </span><br><span class="line">~/.ssh # 权限为 700  </span><br><span class="line">~/.ssh/authorized_keys # 权限为 600</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h4><p>　　重启ssh服务 </p>
+<p>​        <em>注意用root账户或者sudo命令</em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#CentOS 7之前的版本请执行:  </span><br><span class="line">service sshd restart</span><br><span class="line">#CentOS 7请执行:  </span><br><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+<p>接下来就能够通过密钥登录服务器了:<br>在打开连接的时候会提示导入用户密钥，选择之前保存的私钥文件<code>id_rsa</code>即可</p>
+<h1 id="用到的命令"><a href="#用到的命令" class="headerlink" title="用到的命令"></a>用到的命令</h1><h2 id="ls-命令-–-显示指定工作目录下的文件及属性信息"><a href="#ls-命令-–-显示指定工作目录下的文件及属性信息" class="headerlink" title="ls 命令 – 显示指定工作目录下的文件及属性信息"></a>ls 命令 – 显示指定工作目录下的文件及属性信息</h2><blockquote>
+<p>s是最常被使用到的Linux命令之一，来自于英文单词list的缩写，也正如list单词的英文意思，其功能是列举出指定目录下的文件名称及其属性。</p>
+<p>默认不加参数的情况下，ls命令会列出当前工作目录中的文件信息，经常与cd和pwd命令搭配使用，十分方便。而带上参数后，我们则可以做更多的事情，作为最基础、最频繁使用的命令，有必要仔细了解下其常用功能。</p>
+</blockquote>
+<p><strong>语法格式:</strong> ls [参数] [文件]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-a</th>
+<th>显示所有文件及目录 (包括以“.”开头的隐藏文件)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-l</td>
+<td>使用长格式列出文件及目录的详细信息</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>将文件以相反次序显示(默认依英文字母次序)</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>根据最后的修改时间排序</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>同 -a ，但不列出 “.” (当前目录) 及 “..” (父目录)</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>根据文件大小排序</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>递归列出所有子目录</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>查看目录的信息，而不是里面子文件的信息</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>输出文件的inode节点信息</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>水平列出文件，以逗号间隔</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>按文件扩展名排序</td>
+</tr>
+<tr>
+<td>–color</td>
+<td>输出信息中带有着色效果</td>
+</tr>
+</tbody></table>
+<h2 id="pwd命令-–-显示当前工作目录的路径"><a href="#pwd命令-–-显示当前工作目录的路径" class="headerlink" title="pwd命令 – 显示当前工作目录的路径"></a>pwd命令 – 显示当前工作目录的路径</h2><blockquote>
+<p>pwd命令来自于英文词组”print working directory“的缩写，其功能是用于显示当前工作目录的路径，即显示所在位置的绝对路径。</p>
+<p>在实际工作中，我们经常会在不同目录之间进行切换，为了防止”迷路“，可以使用pwd命令快速查看当前所处的工作目录路径，方便开展后续工作。</p>
+</blockquote>
+<p><strong>语法格式</strong>：pwd [参数]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-L</th>
+<th>显示逻辑路径</th>
+</tr>
+</thead>
+</table>
+<h2 id="cd命令-–-切换目录"><a href="#cd命令-–-切换目录" class="headerlink" title="cd命令 – 切换目录"></a>cd命令 – 切换目录</h2><blockquote>
+<p>cd命令来自于英文词组”change directory“的缩写，其功能是用于更改当前所处的工作目录，路径可以是绝对路径，也可以是相对路径，若省略不写则会跳转至当前使用者的家目录。</p>
+</blockquote>
+<p><strong>语法格式：</strong>cd [参数] [目录名]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-P</th>
+<th>如果切换的目标目录是一个符号链接，则直接切换到符号链接指向的目标目录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-L</td>
+<td>如果切换的目标目录是一个符号链接，则直接切换到符号链接名所在的目录</td>
+</tr>
+<tr>
+<td>–</td>
+<td>仅使用”-“选项时，当前目录将被切换到环境变量”OLDPWD”对应值的目录</td>
+</tr>
+<tr>
+<td>~</td>
+<td>切换至当前用户目录</td>
+</tr>
+<tr>
+<td>..</td>
+<td>切换至当前目录位置的上一级目录</td>
+</tr>
+</tbody></table>
+<h2 id="whereis命令-–-显示命令及相关文件的路径"><a href="#whereis命令-–-显示命令及相关文件的路径" class="headerlink" title="whereis命令 – 显示命令及相关文件的路径"></a>whereis命令 – 显示命令及相关文件的路径</h2><blockquote>
+<p>whereis命令用来定位命令的二进制程序、源代码文件和man手册页等相关文件的路径。</p>
+<p>whereis命令查找速度非常快，因为它不是在磁盘中乱找，而是在一个数据库中查询; 数据库是linux系统自动创建的，包含有本地所有文件的信息，并且每天通过自动执行updatedb命令更新一次。正因为这样，whereis命令的搜索结果有时候会不准确，比如刚添加的文件可能搜不到， 原因就是该数据库文件没有被更新。</p>
+</blockquote>
+<p><strong>语法格式：</strong>whereis [参数] [命令名]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-b</th>
+<th>查找二进制程序或命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-B</td>
+<td>从指定目录下 查找二进制程序或命令</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>查找man手册文件</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>从指定目录下 查找man手册文件</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>只查找源代码文件</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>从指定目录下 查找源代码文件</td>
+</tr>
+</tbody></table>
+<h2 id="chmod命令-–-改变文件或目录权限"><a href="#chmod命令-–-改变文件或目录权限" class="headerlink" title="chmod命令 – 改变文件或目录权限"></a>chmod命令 – 改变文件或目录权限</h2><p>chmod命令来自于英文词组”change mode (模式) “的缩写，其功能是用于改变文件或目录权限的命令。默认只有文件的所有者和管理员可以设置文件权限，普通用户只能管理自己文件的权限属性。</p>
+<p>设置权限时可以使用数字法，亦可使用字母表达式，对于目录文件建议加入-R参数进行递归操作，意味着不仅对于目录本身，也对目录内的子文件/目录都进行新权限的设定。</p>
+<p><strong>语法格式：</strong> chmod 参数 文件</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-c</th>
+<th>若该文件权限确实已经更改，才显示其更改动作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-f</td>
+<td>若该文件权限无法被更改也不显示错误讯息</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示权限变更的详细资料</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>对目前目录下的所有文件与子目录进行相同的权限变更(即以递回的方式逐个变更)</td>
+</tr>
+</tbody></table>
+<h2 id="ssh-keygen命令-–-生成SSH密钥文件"><a href="#ssh-keygen命令-–-生成SSH密钥文件" class="headerlink" title="ssh-keygen命令 – 生成SSH密钥文件"></a>ssh-keygen命令 – 生成SSH密钥文件</h2><blockquote>
+<p>ssh-keygen命令来自于英文词组“SSH key (关键) generate”的缩写，其功能是用于生成SSH密钥文件。ssh-keygen命令能够对SSH密钥文件进行生成、管理、转换等工作，支持RSA和DSA两种密钥格式。</p>
+</blockquote>
+<p><strong>语法格式：</strong>ssh-keygen [参数]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-b</th>
+<th>指定密钥长度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-e</td>
+<td>读取已有私钥或者公钥文件</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>指定用来保存密钥的文件名</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>指定要创建的密钥类型</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>添加注释</td>
+</tr>
+</tbody></table>
+<h2 id="touch-命令-–-创建空文件与修改时间戳"><a href="#touch-命令-–-创建空文件与修改时间戳" class="headerlink" title="touch 命令 – 创建空文件与修改时间戳"></a>touch 命令 – 创建空文件与修改时间戳</h2><blockquote>
+<p>touch命令的功能是用于创建空文件与修改时间戳。如果文件不存在，则会创建出一个空内容的文本文件；如果文件已经存在，则会对文件的Atime（访问时间）和Ctime（修改时间）进行修改操作，管理员可以完成此项工作，而普通用户只能管理主机的文件。</p>
+</blockquote>
+<p><strong>语法格式：</strong> touch [参数] 文件</p>
+<p><strong>常用参数：</strong>﻿</p>
+<table>
+<thead>
+<tr>
+<th>-a</th>
+<th>改变档案的读取时间记录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-m</td>
+<td>改变档案的修改时间记录</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>使用参考档的时间记录，与 – file 的效果一样</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>不创建新文件</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>设定时间与日期，可以使用各种不同的格式</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>设定档案的时间记录，格式与 date 命令相同</td>
+</tr>
+<tr>
+<td>–no-create</td>
+<td>不创建新文件</td>
+</tr>
+<tr>
+<td>–help</td>
+<td>显示帮助信息</td>
+</tr>
+<tr>
+<td>– version</td>
+<td>列出版本讯息</td>
+</tr>
+</tbody></table>
+<h2 id="cat命令-–-在终端设备上显示文件内容"><a href="#cat命令-–-在终端设备上显示文件内容" class="headerlink" title="cat命令 – 在终端设备上显示文件内容"></a>cat命令 – 在终端设备上显示文件内容</h2><blockquote>
+<p>cat命令来自于英文单词concatenate的缩写，其功能是用于查看文件内容。在Linux系统中有很多用于查看文件内容的命令，例如more、tail、head……等等，每个命令都有各自的特点。cat命令适合查看内容较少的、纯文本的文件。</p>
+<p>对于内容较多的文件，使用cat命令查看后会在屏幕上快速滚屏，用户往往看不清所显示的具体内容，只好按Ctrl+c键中断命令的执行，所以对于大文件，干脆用more命令吧~</p>
+</blockquote>
+<p><strong>语法格式：</strong>cat [参数] 文件</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-n</th>
+<th>显示行数（空行也编号）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>显示行数（多个空行算一个编号）</td>
+</tr>
+<tr>
+<td>-b</td>
+<td>显示行数（空行不编号）</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>每行结束处显示$符号</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>将TAB字符显示为 ^I符号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>等价于”-vE”组合</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>等价于”-vT”组合</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>等价于 -vET组合</td>
+</tr>
+<tr>
+<td>–help</td>
+<td>显示帮助信息</td>
+</tr>
+<tr>
+<td>–version</td>
+<td>显示版本信息</td>
+</tr>
+</tbody></table>
+<h2 id="目录介绍"><a href="#目录介绍" class="headerlink" title="目录介绍"></a>目录介绍</h2><table>
+<thead>
+<tr>
+<th>目录</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/bin</td>
+<td>存放<a href="https://so.csdn.net/so/search?q=%E4%BA%8C%E8%BF%9B%E5%88%B6&spm=1001.2101.3001.7020">二进制</a>可执行文件(ls,cat,mkdir等)，常用命令一般都在这里。</td>
+</tr>
+<tr>
+<td>/etc</td>
+<td>存放系统管理和配置文件</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>存放所有用户文件的<a href="https://so.csdn.net/so/search?q=%E6%A0%B9%E7%9B%AE%E5%BD%95&spm=1001.2101.3001.7020">根目录</a>，是用户主目录的基点，比如用户user的主目录就是/home/user，可以用~user表示</td>
+</tr>
+<tr>
+<td>/usr</td>
+<td>用于存放系统应用程序，比较重要的目录/usr/local 本地系统管理员软件安装目录（安装系统级的应用）。这是最庞大的目录，要用到的应用程序和文件几乎都在这个目录。/usr/x11r6 存放x window的目录/usr/bin 众多的应用程序 /usr/sbin 超级用户的一些管理程序 /usr/doc <a href="https://so.csdn.net/so/search?from=pc_blog_highlight&q=linux">linux</a>文档 /usr/include linux下开发和编译应用程序所需要的头文件 /usr/lib 常用的动态链接库和软件包的配置文件 /usr/man 帮助文档 /usr/src 源代码，linux内核的源代码就放在/usr/src/linux里 /usr/local/bin 本地增加的命令 /usr/local/lib 本地增加的库</td>
+</tr>
+<tr>
+<td>/opt</td>
+<td>额外安装的可选应用程序包所放置的位置。一般情况下，我们可以把tomcat等都安装到这里。</td>
+</tr>
+<tr>
+<td>/proc</td>
+<td>虚拟文件系统目录，是系统内存的映射。可直接访问这个目录来获取系统信息。</td>
+</tr>
+<tr>
+<td>/root</td>
+<td>超级用户（系统管理员）的主目录（特权阶级^o^）</td>
+</tr>
+<tr>
+<td>/sbin</td>
+<td>存放二进制<a href="https://so.csdn.net/so/search?q=%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020">可执行文件</a>，只有root才能访问。这里存放的是系统管理员使用的系统级别的管理命令和程序。如ifconfig等。</td>
+</tr>
+<tr>
+<td>/dev</td>
+<td>用于存放设备文件。</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>系统管理员安装临时文件系统的安装点，系统提供这个目录是让用户临时挂载其他的文件系统。</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>存放用于系统引导时使用的各种文件</td>
+</tr>
+<tr>
+<td>/lib</td>
+<td>存放跟文件系统中的程序运行所需要的共享库及内核模块。共享库又叫动态链接共享库，作用类似windows里的.dll文件，存放了根文件系统程序运行所需的共享文件。</td>
+</tr>
+<tr>
+<td>/tmp</td>
+<td>用于存放各种临时文件，是公用的临时文件存储点。</td>
+</tr>
+<tr>
+<td>/var</td>
+<td>用于存放运行时需要改变数据的文件，也是某些大文件的溢出区，比方说各种服务的日志文件（系统启动日志等。）等。</td>
+</tr>
+<tr>
+<td>/lost+found</td>
+<td>这个目录平时是空的，系统非正常关机而留下“无家可归”的文件（windows下叫什么.chk）就在这里</td>
+</tr>
+</tbody></table>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><em><strong>Linux命令介绍来自 <a href="https://www.linuxcool.com/">https://www.linuxcool.com/</a> 网站还有命令使用用例</strong></em></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>centOS 配置 open-jdk</title>
+    <url>/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</url>
+    <content><![CDATA[<p>用yum命令在centOS8.2上配置OpenJDK</p>
+<span id="more"></span>
+
+<p>用yum 搜索Java</p>
+<p><code>yum search java | grep -i --color JDK</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302319935.png" alt="image-20220730231938866"></p>
+<p>java-1.8.0-openjdk 是生产环境版本，只有jre</p>
+<p>devel 是开发环境版本</p>
+<p>headless 是缺少显示设备，键盘或鼠标的系统配置的版本，意思是不可以运行GUI图形界面</p>
+<p>安装 OpenJDK 生产环境即可,生产版本的无法编译<code>java</code>没有<code>javac</code>命令</p>
+<p>sudo yum install java-1.8.0-openjdk</p>
+<p>这里用的普通账户，需要sudo</p>
+<p>输入密码选择y,输入 <code>Java -version</code> 检查安装是否成功</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302332602.png" alt="image-20220730233218553"></p>
+<p> <code>which java</code> 命令查看安装路径</p>
+<p>命令成功后显示的应该是</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos ~]$ <span class="built_in">which</span> java</span><br><span class="line">/usr/bin/java</span><br><span class="line">[www@VM-4-12-centos ~]$ </span><br></pre></td></tr></table></figure>
+
+<p><code>ls -l /usr/bin/java</code> 查看文件详情</p>
+<p>可以看到这是个超链接，再继续找</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/bin/java</span><br><span class="line">lrwxrwxrwx 1 root root 22 Jul 30 23:28 /usr/bin/java -&gt; /etc/alternatives/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
+
+<p><code>ls -l /etc/alternatives/java</code> 继续查看最终路径</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /etc/alternatives/java</span><br><span class="line">lrwxrwxrwx 1 root root 73 Jul 30 23:28 /etc/alternatives/java -&gt; /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/jre/bin/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</span><br><span class="line">total 4</span><br><span class="line">drwxr-xr-x 4 root root 4096 Jul 30 23:28 jre</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
+
+<p>复制路径 <code>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</code></p>
+<p><code>vim /etc/profile</code> 编辑环境变量</p>
+<p>然后移动光标到文件的最后面添加如下内容：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64</span><br><span class="line"><span class="built_in">export</span> CLASS_PATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+
+<p><em>除了路径不一样，其他完全可以复制</em></p>
+<p><em>如果修改无法保存</em>，使用root账户，或者sudo</p>
+<p>值得注意的是windows 和Linux不太一样：</p>
+<blockquote>
+<p>在Linux 中，$PATH 表示之前的环境变量<br>在Linux中: 冒号作为环境变量分割符号，而在Windows中是; 分号作为分隔符。<br>其次配置环境变量CLASS_PATH必须第一个是. 然后分号添加其他路径，这样会首选从当前路径下找，当前路径下如果找不到会从其他路径找。<br>dt.jar 和tools.jar 都位于$JAVA_HOME/lib/ 文件夹下，rt.jar 位于jre 文件夹下</p>
+</blockquote>
+<p>然后还需要将环境变量编译生效</p>
+<p><code>source /etc/profile</code></p>
+<h1 id="用到的命令"><a href="#用到的命令" class="headerlink" title="用到的命令"></a>用到的命令</h1><h2 id="yum命令-–-基于RPM的软件包管理器"><a href="#yum命令-–-基于RPM的软件包管理器" class="headerlink" title="yum命令 – 基于RPM的软件包管理器"></a>yum命令 – 基于RPM的软件包管理器</h2><blockquote>
+<p>yum命令来自于英文词组”YellowdogUpdater,Modified“的缩写，其功能是用于在Linux系统中基于RPM技术进行软件包的管理工作。yum技术通用于RHEL、CentOS、Fedora、OpenSUSE等主流系统，可以让系统管理人员交互式的自动化更新和管理软件包，实现从指定服务器自动下载、更新、删除软件包的工作。</p>
+<p>yum软件仓库及命令能够自动处理软件依赖关系，一次性安装所需全部软件，无需繁琐的操作。</p>
+</blockquote>
+<p><strong>语法格式：</strong>yum [参数] 软件包</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-h</th>
+<th>显示帮助信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-y</td>
+<td>对所有的提问都回答“yes”</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>指定配置文件</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>安静模式</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>详细模式</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>检查外部错误</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>设置调试等级（0-10）</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>设置错误等级（0-10）</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>设置yum处理一个命令的最大等待时间</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>完全从缓存中运行，而不去下载或者更新任何头文件</td>
+</tr>
+<tr>
+<td>install</td>
+<td>安装rpm软件包</td>
+</tr>
+<tr>
+<td>update</td>
+<td>更新rpm软件包</td>
+</tr>
+<tr>
+<td>check-update</td>
+<td>检查是否有可用的更新rpm软件包</td>
+</tr>
+<tr>
+<td>remove</td>
+<td>删除指定的rpm软件包</td>
+</tr>
+<tr>
+<td>list</td>
+<td>显示软件包的信息</td>
+</tr>
+<tr>
+<td>search</td>
+<td>检查软件包的信息</td>
+</tr>
+<tr>
+<td>info</td>
+<td>显示指定的rpm软件包的描述信息和概要信息</td>
+</tr>
+<tr>
+<td>clean</td>
+<td>清理yum过期的缓存</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>进入yum的shell提示符</td>
+</tr>
+<tr>
+<td>resolvedep</td>
+<td>显示rpm软件包的依赖关系</td>
+</tr>
+<tr>
+<td>localinstall</td>
+<td>安装本地的rpm软件包</td>
+</tr>
+<tr>
+<td>localupdate</td>
+<td>显示本地rpm软件包进行更新</td>
+</tr>
+<tr>
+<td>deplist</td>
+<td>显示rpm软件包的所有依赖关系</td>
+</tr>
+</tbody></table>
+<h2 id="which命令-–-查找命令文件"><a href="#which命令-–-查找命令文件" class="headerlink" title="which命令 – 查找命令文件"></a>which命令 – 查找命令文件</h2><blockquote>
+<p>which命令的功能是用于查找命令文件，能够快速搜索二进制程序所对应的位置。如果我们既不关心同名文件（find与locate），也不关心命令所对应的源代码和帮助文件（whereis），仅仅是想找到命令本身所在的路径，那么这个which命令就太合适了。</p>
+</blockquote>
+<p><strong>语法格式：</strong>which [参数] 文件</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-n</th>
+<th>指定文件名长度（不含路径）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>指定文件名长度（含路径）</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>指定输出时栏位的宽度</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>显示版本信息</td>
+</tr>
+</tbody></table>
+<h2 id="source命令-–-从指定文件中读取和执行命令"><a href="#source命令-–-从指定文件中读取和执行命令" class="headerlink" title="source命令 – 从指定文件中读取和执行命令"></a>source命令 – 从指定文件中读取和执行命令</h2><blockquote>
+<p>source命令的功能是用于从指定文件中读取和执行命令，通常用于被修改过的文件，使之新参数能够立即生效，而不必重启整台服务器。</p>
+</blockquote>
+<p><strong>语法格式：</strong>source [文件]</p>
+<p><strong>参考实例</strong></p>
+<p>读取和执行指定文件中的命令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[root@linuxcool ~]<span class="comment"># source ~/.bash_profile</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>linux</category>
       </categories>
   </entry>
 </search>

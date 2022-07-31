@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="Xs5iAnmEwPfEpJdfJ2ZNxju7yV2pEoHfzTUqaXadFCQ">
+  <meta name="baidu-site-verification" content="code-nmJ2dYSqef">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sndshun.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="title：面试题  什么是iocioc是怎么解耦的什么是aopaop可以干什么什么是MVCMVC模式的优点SpringMVC的核心控制器什么SpringMVC的参数接收方式SpringBoot对比之前技术有啥好处SpringBoot的web服务器是那种mybatis批量插入的方式mybatis常用的动态Sql标签mybatis #{} 跟 ${}的区别mybatisPlus 主键形式mybat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&amp;">
+<meta property="og:url" content="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="&amp;">
+<meta property="og:description" content="title：面试题  什么是iocioc是怎么解耦的什么是aopaop可以干什么什么是MVCMVC模式的优点SpringMVC的核心控制器什么SpringMVC的参数接收方式SpringBoot对比之前技术有啥好处SpringBoot的web服务器是那种mybatis批量插入的方式mybatis常用的动态Sql标签mybatis #{} 跟 ${}的区别mybatisPlus 主键形式mybat">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-25T14:51:11.401Z">
+<meta property="article:modified_time" content="2022-07-27T11:54:05.560Z">
+<meta property="article:author" content="sndshun">
+<meta property="article:tag" content="sndshun">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> | &</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="&" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">&</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">旅行中</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="sndshun">
+      <meta itemprop="description" content="不小心停留在某处">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="&">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-07-25 22:51:11" itemprop="dateCreated datePublished" datetime="2022-07-25T22:51:11+08:00">2022-07-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-07-27 19:54:05" itemprop="dateModified" datetime="2022-07-27T19:54:05+08:00">2022-07-27</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<p>title：面试题</p>
+<hr>
+<h3 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h3><h3 id="ioc是怎么解耦的"><a href="#ioc是怎么解耦的" class="headerlink" title="ioc是怎么解耦的"></a>ioc是怎么解耦的</h3><h3 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h3><h3 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h3><h3 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h3><h3 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h3><h3 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h3><h3 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h3><h3 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h3><h3 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h3><h3 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h3><h3 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h3><h3 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h3><h3 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h3><h3 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h3><h3 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h3><h3 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h3><h3 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h3><h3 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h3><h3 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h3><h3 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h3><h3 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h3><h3 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h3><h3 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h3><h3 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h3><h3 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS-transfrom的动画有哪几种熟悉"><a href="#CSS-transfrom的动画有哪几种熟悉" class="headerlink" title="CSS transfrom的动画有哪几种熟悉"></a>CSS transfrom的动画有哪几种熟悉</h3><h3 id="Ajax的原理是什么？如何实现"><a href="#Ajax的原理是什么？如何实现" class="headerlink" title="Ajax的原理是什么？如何实现"></a>Ajax的原理是什么？如何实现</h3><p>Ajax核心对象是xmlHttpRequest对象</p>
+<h3 id="Axios的实现原理是什么"><a href="#Axios的实现原理是什么" class="headerlink" title="Axios的实现原理是什么"></a>Axios的实现原理是什么</h3><p>Promise对象</p>
+<h3 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h3><p><code>byte</code> <code>int</code> <code>short</code> <code>long</code> <code>float</code> <code>double</code> <code>char</code> <code>boolean</code></p>
+<h3 id="Java引用数据类型"><a href="#Java引用数据类型" class="headerlink" title="Java引用数据类型"></a>Java引用数据类型</h3><p><code>Class</code> <code>Interface</code> <code>Array</code> <code>String</code></p>
+<h3 id="什么是事物"><a href="#什么是事物" class="headerlink" title="什么是事物"></a>什么是事物</h3><p>一个最小的不可再分的单元；可以理解为一个事务对应的是一组完整的业务，并且在这个事务中所作的一切操作要么全部成功，要么全部失败，只要有一个操作没成功，整个事务都将回滚到事务开始前。</p>
+<p><strong>原子性</strong></p>
+<p><strong>一致性</strong></p>
+<p><strong>隔离性</strong></p>
+<p><strong>持久性</strong></p>
+<h3 id="什么是spring-beans"><a href="#什么是spring-beans" class="headerlink" title="什么是spring beans"></a>什么是spring beans</h3><p>是构成Spring应用核心的Java对象</p>
+<h3 id="ioc-的优点"><a href="#ioc-的优点" class="headerlink" title="ioc 的优点"></a>ioc 的优点</h3><h3 id="有哪些不同类型的ioc注入"><a href="#有哪些不同类型的ioc注入" class="headerlink" title="有哪些不同类型的ioc注入"></a>有哪些不同类型的ioc注入</h3><h3 id="MySQL-union-union-all的区别，哪个查询快"><a href="#MySQL-union-union-all的区别，哪个查询快" class="headerlink" title="MySQL union - union all的区别，哪个查询快"></a>MySQL union - union all的区别，哪个查询快</h3><h3 id="MySQL中有几个聚合函数"><a href="#MySQL中有几个聚合函数" class="headerlink" title="MySQL中有几个聚合函数"></a>MySQL中有几个聚合函数</h3><p>count() max() min() sum() avg()</p>
+<h3 id="spring-mvc的特性"><a href="#spring-mvc的特性" class="headerlink" title="spring mvc的特性"></a>spring mvc的特性</h3><h3 id="jQuery-html-text-val-的区别"><a href="#jQuery-html-text-val-的区别" class="headerlink" title="jQuery html(),text(),val()的区别"></a>jQuery html(),text(),val()的区别</h3><h3 id="innerHtml-innerText-有什么区别"><a href="#innerHtml-innerText-有什么区别" class="headerlink" title="innerHtml(),innerText()有什么区别"></a>innerHtml(),innerText()有什么区别</h3><h3 id="jQuery常用选择器"><a href="#jQuery常用选择器" class="headerlink" title="jQuery常用选择器"></a>jQuery常用选择器</h3><h3 id="string-buffer-和-string-builder的区别"><a href="#string-buffer-和-string-builder的区别" class="headerlink" title="string buffer 和 string builder的区别"></a>string buffer 和 string builder的区别</h3><h3 id="list-set-map-是否都继承collection类-？有什么区别"><a href="#list-set-map-是否都继承collection类-？有什么区别" class="headerlink" title="list set map 是否都继承collection类 ？有什么区别"></a>list set map 是否都继承collection类 ？有什么区别</h3><h3 id="RequestMapping-注解的作用"><a href="#RequestMapping-注解的作用" class="headerlink" title="@RequestMapping 注解的作用"></a>@RequestMapping 注解的作用</h3><h3 id="Autowired-注解的作用"><a href="#Autowired-注解的作用" class="headerlink" title="@Autowired 注解的作用"></a>@Autowired 注解的作用</h3><h3 id="索引有什么作用"><a href="#索引有什么作用" class="headerlink" title="索引有什么作用"></a>索引有什么作用</h3><p>提高检索速度</p>
+<p>保证唯一性</p>
+<p>加速表之间的连接</p>
+<h3 id="主键跟外键的区别"><a href="#主键跟外键的区别" class="headerlink" title="主键跟外键的区别"></a>主键跟外键的区别</h3><h3 id="MySQL分组和排序"><a href="#MySQL分组和排序" class="headerlink" title="MySQL分组和排序"></a>MySQL分组和排序</h3><p>group by    order by</p>
+<h3 id="hashmap和hashtable的区别和作用"><a href="#hashmap和hashtable的区别和作用" class="headerlink" title="hashmap和hashtable的区别和作用"></a>hashmap和hashtable的区别和作用</h3><p>HashMap是非线程安全的,HashTable是线程安全的。所以HashMap效率要比HashTable效率高</p>
+<p>HashMap的键和值都允许有null值存在,而HashTable则不行。</p>
+<p>Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。</p>
+<h3 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h3>
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>sndshun
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/" title="">https://sndshun.xyz/2022/07/25/常用面试题/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFioc"><span class="nav-number">1.</span> <span class="nav-text">什么是ioc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ioc%E6%98%AF%E6%80%8E%E4%B9%88%E8%A7%A3%E8%80%A6%E7%9A%84"><span class="nav-number">2.</span> <span class="nav-text">ioc是怎么解耦的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFaop"><span class="nav-number">3.</span> <span class="nav-text">什么是aop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#aop%E5%8F%AF%E4%BB%A5%E5%B9%B2%E4%BB%80%E4%B9%88"><span class="nav-number">4.</span> <span class="nav-text">aop可以干什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFMVC"><span class="nav-number">5.</span> <span class="nav-text">什么是MVC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVC%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%BC%98%E7%82%B9"><span class="nav-number">6.</span> <span class="nav-text">MVC模式的优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringMVC%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8E%A7%E5%88%B6%E5%99%A8%E4%BB%80%E4%B9%88"><span class="nav-number">7.</span> <span class="nav-text">SpringMVC的核心控制器什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringMVC%E7%9A%84%E5%8F%82%E6%95%B0%E6%8E%A5%E6%94%B6%E6%96%B9%E5%BC%8F"><span class="nav-number">8.</span> <span class="nav-text">SpringMVC的参数接收方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot%E5%AF%B9%E6%AF%94%E4%B9%8B%E5%89%8D%E6%8A%80%E6%9C%AF%E6%9C%89%E5%95%A5%E5%A5%BD%E5%A4%84"><span class="nav-number">9.</span> <span class="nav-text">SpringBoot对比之前技术有啥好处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E9%82%A3%E7%A7%8D"><span class="nav-number">10.</span> <span class="nav-text">SpringBoot的web服务器是那种</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatis%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">11.</span> <span class="nav-text">mybatis批量插入的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatis%E5%B8%B8%E7%94%A8%E7%9A%84%E5%8A%A8%E6%80%81Sql%E6%A0%87%E7%AD%BE"><span class="nav-number">12.</span> <span class="nav-text">mybatis常用的动态Sql标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatis-%E8%B7%9F-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">13.</span> <span class="nav-text">mybatis #{} 跟 ${}的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatisPlus-%E4%B8%BB%E9%94%AE%E5%BD%A2%E5%BC%8F"><span class="nav-number">14.</span> <span class="nav-text">mybatisPlus 主键形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatisPlus%E5%88%86%E9%A1%B5%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-number">15.</span> <span class="nav-text">mybatisPlus分页实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mybatisPlus%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-number">16.</span> <span class="nav-text">mybatisPlus批量插入实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis%E9%99%A4%E4%BA%86%E5%AD%98%E5%82%A8%E8%BF%98%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88"><span class="nav-number">17.</span> <span class="nav-text">Redis除了存储还能做什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%8E%8B%E7%BC%A9%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89%E5%91%BD%E4%BB%A4"><span class="nav-number">18.</span> <span class="nav-text">Linux 压缩（打包）命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven%E6%89%93%E5%8C%85%E5%90%8E%E6%B2%A1%E6%9C%89%E4%BE%9D%E8%B5%96%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="nav-number">19.</span> <span class="nav-text">Maven打包后没有依赖怎么解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vue%E7%9A%84%E8%B7%A8%E5%9F%9F%E6%9C%89%E9%82%A3%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%8F%8A%E6%89%93%E5%8C%85%E5%90%8ENginx%E4%BB%A3%E7%90%86"><span class="nav-number">20.</span> <span class="nav-text">Vue的跨域有那几种方式，及打包后Nginx代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OSS%E5%AF%B9%E8%B1%A1%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4"><span class="nav-number">21.</span> <span class="nav-text">OSS对象怎么删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Token%E4%B8%AD%E4%B8%80%E8%88%AC%E5%AD%98%E4%BB%80%E4%B9%88"><span class="nav-number">22.</span> <span class="nav-text">Token中一般存什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx%E6%80%8E%E4%B9%88%E9%99%90%E5%88%B6%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="nav-number">23.</span> <span class="nav-text">Nginx怎么限制上传文件的大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx%E5%AE%9E%E7%8E%B0https%E5%8A%A0%E5%AF%86"><span class="nav-number">24.</span> <span class="nav-text">Nginx实现https加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E5%AF%BC%E5%87%BAExcel%E8%A1%A8%E6%A0%BC%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%94%A8%E6%88%B7%E8%A6%81%E5%AF%B9%E4%BA%8E%E6%8A%A5%E8%A1%A8%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E8%A6%81%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86"><span class="nav-number">25.</span> <span class="nav-text">后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80%E7%AC%AC%E4%BA%8C%E5%88%97%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%A4%9F%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86"><span class="nav-number">26.</span> <span class="nav-text">CSS 弹性布局第二列数据不够怎么处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-transfrom%E7%9A%84%E5%8A%A8%E7%94%BB%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E7%86%9F%E6%82%89"><span class="nav-number">27.</span> <span class="nav-text">CSS transfrom的动画有哪几种熟悉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ajax%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0"><span class="nav-number">28.</span> <span class="nav-text">Ajax的原理是什么？如何实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Axios%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">29.</span> <span class="nav-text">Axios的实现原理是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">30.</span> <span class="nav-text">Java基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">31.</span> <span class="nav-text">Java引用数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E7%89%A9"><span class="nav-number">32.</span> <span class="nav-text">什么是事物</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFspring-beans"><span class="nav-number">33.</span> <span class="nav-text">什么是spring beans</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ioc-%E7%9A%84%E4%BC%98%E7%82%B9"><span class="nav-number">34.</span> <span class="nav-text">ioc 的优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84ioc%E6%B3%A8%E5%85%A5"><span class="nav-number">35.</span> <span class="nav-text">有哪些不同类型的ioc注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-union-union-all%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%93%AA%E4%B8%AA%E6%9F%A5%E8%AF%A2%E5%BF%AB"><span class="nav-number">36.</span> <span class="nav-text">MySQL union - union all的区别，哪个查询快</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL%E4%B8%AD%E6%9C%89%E5%87%A0%E4%B8%AA%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="nav-number">37.</span> <span class="nav-text">MySQL中有几个聚合函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring-mvc%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">38.</span> <span class="nav-text">spring mvc的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-html-text-val-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">39.</span> <span class="nav-text">jQuery html(),text(),val()的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#innerHtml-innerText-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="nav-number">40.</span> <span class="nav-text">innerHtml(),innerText()有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery%E5%B8%B8%E7%94%A8%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">41.</span> <span class="nav-text">jQuery常用选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#string-buffer-%E5%92%8C-string-builder%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">42.</span> <span class="nav-text">string buffer 和 string builder的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-set-map-%E6%98%AF%E5%90%A6%E9%83%BD%E7%BB%A7%E6%89%BFcollection%E7%B1%BB-%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="nav-number">43.</span> <span class="nav-text">list set map 是否都继承collection类 ？有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RequestMapping-%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">44.</span> <span class="nav-text">@RequestMapping 注解的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Autowired-%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">45.</span> <span class="nav-text">@Autowired 注解的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8"><span class="nav-number">46.</span> <span class="nav-text">索引有什么作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%94%AE%E8%B7%9F%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">47.</span> <span class="nav-text">主键跟外键的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL%E5%88%86%E7%BB%84%E5%92%8C%E6%8E%92%E5%BA%8F"><span class="nav-number">48.</span> <span class="nav-text">MySQL分组和排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hashmap%E5%92%8Chashtable%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%9C%E7%94%A8"><span class="nav-number">49.</span> <span class="nav-text">hashmap和hashtable的区别和作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis%E6%9C%89%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">50.</span> <span class="nav-text">Redis有什么数据类型</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">sndshun</p>
+  <div class="site-description" itemprop="description">不小心停留在某处</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sndshun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sndshun" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sndshun@foxmail.com" title="E-Mail → mailto:sndshun@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://readcode.top/" title="https:&#x2F;&#x2F;readcode.top&#x2F;" rel="noopener" target="_blank">RudeCode</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sndshun</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">51k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">47 分钟</span>
+  <br/>
+   <span id="timeDate"></span>
+    <span id="times"></span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+  <script>
+      var now = new Date();
+      function createtime() {
+          var grt= new Date("09/20/2021 12:00:00");//此处修改你的建站时间或者网站上线时间
+          now.setTime(now.getTime()+250);
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+      }
+  setInterval("createtime()",250);
+  </script>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'bba1b1762ccc50c149d7',
+      clientSecret: 'ed7348f8da15f679f480867c1fa719f768d9a575',
+      repo        : 'sndshun.github.io',
+      owner       : 'sndshun',
+      admin       : ['sndshun'],
+      id          : 'dad6f780a5fb43659a0519e0f741bcac',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+    </div>
+</body>
+</html>

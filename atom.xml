@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-07-10T14:55:02.750Z</updated>
+  <updated>2022-07-27T11:40:28.841Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,221 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站换肤的最佳实现</title>
+    <link href="https://sndshun.xyz/2027/07/30/html/html-theme/"/>
+    <id>https://sndshun.xyz/2027/07/30/html/html-theme/</id>
+    <published>2027-07-30T04:00:00.000Z</published>
+    <updated>2022-07-27T11:40:28.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;大多数开发人员的实现&quot;&gt;&lt;a href=&quot;#大多数开发人员的实现&quot; class=&quot;headerlink&quot; title=&quot;大多数开发人员的实现&quot;&gt;&lt;/a&gt;大多数开发人员的实现&lt;/h1&gt;&lt;h1 id=&quot;原生HTML下的换肤实现&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/29/java/open-jdk/"/>
+    <id>https://sndshun.xyz/2022/07/29/java/open-jdk/</id>
+    <published>2022-07-29T08:14:51.037Z</published>
+    <updated>2022-07-29T08:15:23.362Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;下载地址：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/29/base/git/"/>
+    <id>https://sndshun.xyz/2022/07/29/base/git/</id>
+    <published>2022-07-29T03:13:42.057Z</published>
+    <updated>2022-07-29T06:01:01.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/29/configs/maven/"/>
+    <id>https://sndshun.xyz/2022/07/29/configs/maven/</id>
+    <published>2022-07-29T01:38:14.392Z</published>
+    <updated>2022-07-30T06:17:25.881Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;nexus&quot;&gt;&lt;a href=&quot;#nexus&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
+    <id>https://sndshun.xyz/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
+    <published>2022-07-28T06:45:17.232Z</published>
+    <updated>2022-07-28T06:59:24.932Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信支付时序图&quot;&gt;&lt;a href=&quot;#微信支付时序图&quot; class=&quot;headerlink&quot; title=&quot;微信支付时序图&quot;&gt;&lt;/a&gt;微信支付时序图&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+    <id>https://sndshun.xyz/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
+    <published>2022-07-26T08:10:16.799Z</published>
+    <updated>2022-07-26T15:33:47.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;先敲门&lt;/li&gt;
+&lt;li&gt;先跟面试官打过招呼&lt;/li&gt;
+&lt;li&gt;面试官您好，这是我的简历（双手反向递简历）然后坐下&lt;/li&gt;
+&lt;li&gt;坐椅子三分之二，不靠在后面&lt;/li&gt;
+&lt;li&gt;自我介绍&lt;/li&gt;
+&lt;li&gt;面试官您好&lt;/li&gt;
+&lt;li&gt;介绍自己的姓名，（年龄可</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>https://sndshun.xyz/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
+    <published>2022-07-25T15:27:03.763Z</published>
+    <updated>2022-07-29T09:54:35.734Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;docker&lt;/p&gt;
+&lt;p&gt;elasticSearch 搜索引擎&lt;/p&gt;
+&lt;p&gt;nuxt&lt;/p&gt;
+&lt;p&gt;office</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2022-07-25T14:51:11.401Z</published>
+    <updated>2022-07-27T11:54:05.560Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title：面试题&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;什么是ioc&quot;&gt;&lt;a href=&quot;#什么是ioc&quot; class=&quot;headerlink&quot; title=&quot;什么是ioc&quot;&gt;&lt;/a&gt;什么是ioc&lt;/h3&gt;&lt;h3 id=&quot;ioc是怎么解耦的&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://sndshun.xyz/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2022-07-25T11:45:09.701Z</published>
+    <updated>2022-07-26T07:46:10.426Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title:简历注意事项&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
+&lt;p&gt;简历使用pdf格式&lt;/p&gt;
+&lt;p&gt;不用竖版简历&lt;/p&gt;
+&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
+&lt;p&gt;放证件照片&lt;/p&gt;
+&lt;p&gt;字体大小，行间距&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Vue 部署服务器配置</title>
@@ -134,6 +349,40 @@
   </entry>
   
   <entry>
+    <title>centOS 配置 open-jdk</title>
+    <link href="https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
+    <id>https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
+    <published>2020-08-30T09:54:00.000Z</published>
+    <updated>2022-07-31T03:10:22.399Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;用yum命令在centOS8.2上配置OpenJDK&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>centOS 初认识</title>
+    <link href="https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/"/>
+    <id>https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</id>
+    <published>2020-07-30T09:54:00.000Z</published>
+    <updated>2022-07-30T15:04:55.322Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;安装 &lt;code&gt;centOS&lt;/code&gt; 系统后生成账号密码，生成公钥私钥&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>学习小网站</title>
     <link href="https://sndshun.xyz/2020/01/23/web-tools/"/>
     <id>https://sndshun.xyz/2020/01/23/web-tools/</id>
@@ -186,146 +435,6 @@
     
     
     <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>axios 封装工具类</title>
-    <link href="https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/"/>
-    <id>https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/</id>
-    <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-12-08T13:29:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;将 axios 封装为工具类，重复使用，统一配置请求&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
-    
-    
-    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 格式转换</title>
-    <link href="https://sndshun.xyz/2019/10/11/javascript/javascript-format/"/>
-    <id>https://sndshun.xyz/2019/10/11/javascript/javascript-format/</id>
-    <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-12-08T13:29:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;JavaScript 中常用的格式转换&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
-    
-    
-    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 常用代码段</title>
-    <link href="https://sndshun.xyz/2019/10/07/javascript/javascript-skills/"/>
-    <id>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</id>
-    <published>2019-10-07T04:00:00.000Z</published>
-    <updated>2022-07-10T15:13:36.935Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
-    
-    
-    <category term="技巧" scheme="https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java 基础</title>
-    <link href="https://sndshun.xyz/2018/05/23/java/java-base/"/>
-    <id>https://sndshun.xyz/2018/05/23/java/java-base/</id>
-    <published>2018-05-23T04:00:00.000Z</published>
-    <updated>2022-07-10T17:01:21.692Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;java程序，变量，运算符，循环，数组的基本认识&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>时间标准</title>
-    <link href="https://sndshun.xyz/2018/01/23/base/date/"/>
-    <id>https://sndshun.xyz/2018/01/23/base/date/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2022-07-10T14:51:59.660Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;UTC：协调世界时&quot;&gt;&lt;a href=&quot;#UTC：协调世界时&quot; class=&quot;headerlink&quot; title=&quot;UTC：协调世界时&quot;&gt;&lt;/a&gt;UTC：协调世界时&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。&lt;br&gt;世界标准时间UTC：GMT+0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2016-08-9T10:01:54.123Z&lt;/p&gt;
-&lt;p&gt;T代表后面跟着的是时间&lt;/p&gt;
-&lt;p&gt;Z代表0时区UTC统一时间（慢北京时间8小时）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="base" scheme="https://sndshun.xyz/categories/base/"/>
-    
-    
-    <category term="标准" scheme="https://sndshun.xyz/tags/%E6%A0%87%E5%87%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring boot 集成邮件发送</title>
-    <link href="https://sndshun.xyz/2018/01/23/configs/spring-eamil/"/>
-    <id>https://sndshun.xyz/2018/01/23/configs/spring-eamil/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2022-07-10T14:51:40.696Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;code&gt;Spring boot&lt;/code&gt; 集成邮件发送&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ssm&lt;/code&gt; 集成邮件发送&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
-    
-    
-    <category term="spring boot" scheme="https://sndshun.xyz/tags/spring-boot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据结构与算法</title>
-    <link href="https://sndshun.xyz/2018/01/23/base/data-structure/"/>
-    <id>https://sndshun.xyz/2018/01/23/base/data-structure/</id>
-    <published>2018-01-23T04:00:00.000Z</published>
-    <updated>2022-07-10T14:51:55.418Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-1数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-1数据结构基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.1数据结构基本概念&quot;&gt;&lt;/a&gt;1.1数据结构基本概念&lt;/h1&gt;&lt;h2 id=&quot;数据结构是什么？&quot;&gt;&lt;a href=&quot;#数据结构是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据结构是什么？&quot;&gt;&lt;/a&gt;数据结构是什么？&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;如何用程序代码把现实世界的问题&lt;strong&gt;信息化&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;如何用计算机高效地处理这些信息从而创造价值&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="base" scheme="https://sndshun.xyz/categories/base/"/>
-    
-    
-    <category term="数据结构" scheme="https://sndshun.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
