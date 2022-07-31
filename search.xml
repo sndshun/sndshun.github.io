@@ -925,8 +925,8 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <title>以后的事</title>
+    <url>/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
     <content><![CDATA[<p>docker</p>
 <p>elasticSearch 搜索引擎</p>
 <p>nuxt</p>
@@ -937,11 +937,11 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<hr>
-<p>title：面试题</p>
-<hr>
+    <title>面试题</title>
+    <url>/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<p>被问到的面试题整理，及常被提到的题</p>
+<span id="more"></span>
+
 <h3 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h3><h3 id="ioc是怎么解耦的"><a href="#ioc是怎么解耦的" class="headerlink" title="ioc是怎么解耦的"></a>ioc是怎么解耦的</h3><h3 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h3><h3 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h3><h3 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h3><h3 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h3><h3 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h3><h3 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h3><h3 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h3><h3 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h3><h3 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h3><h3 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h3><h3 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h3><h3 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h3><h3 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h3><h3 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h3><h3 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h3><h3 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h3><h3 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h3><h3 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h3><h3 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h3><h3 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h3><h3 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h3><h3 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h3><h3 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h3><h3 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="CSS-transfrom的动画有哪几种熟悉"><a href="#CSS-transfrom的动画有哪几种熟悉" class="headerlink" title="CSS transfrom的动画有哪几种熟悉"></a>CSS transfrom的动画有哪几种熟悉</h3><h3 id="Ajax的原理是什么？如何实现"><a href="#Ajax的原理是什么？如何实现" class="headerlink" title="Ajax的原理是什么？如何实现"></a>Ajax的原理是什么？如何实现</h3><p>Ajax核心对象是xmlHttpRequest对象</p>
@@ -965,17 +965,14 @@
 <h3 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h3>]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</url>
+    <title>时序图</title>
+    <url>/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</url>
     <content><![CDATA[<h1 id="微信支付时序图"><a href="#微信支付时序图" class="headerlink" title="微信支付时序图"></a>微信支付时序图</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 微信支付时序图</span><br><span class="line">participant 微信支付用户 as user</span><br><span class="line">participant 微信客户端 as wxc</span><br><span class="line">participant 商户APP客户端 as appc</span><br><span class="line">participant 商户后台系统 as apps</span><br><span class="line">participant 微信支付系统 as wxs</span><br><span class="line"></span><br><span class="line">user-&gt;appc:1.打开商户APP客户端()</span><br><span class="line">appc-&gt;appc:2.选择商品下单()</span><br><span class="line">appc-&gt;apps:3.请求生成支付订单()</span><br><span class="line">apps-&gt;wxs:4.调用统一下单API()</span><br><span class="line">wxs-&gt;wxs:生成预付单()</span><br><span class="line">wxs--&gt;&gt;apps:5.返回预付单信息(prepay_id)</span><br><span class="line">apps-&gt;apps:6.生成带签名的客户端支付信息()</span><br><span class="line">apps--&gt;&gt;appc:7:返回信息(prepay_id,sign等)</span><br><span class="line">user-&gt;appc:8:用户确认支付()</span><br><span class="line">appc--&gt;wxc:9:支付参数通过调用SDK调起微信支付()</span><br><span class="line">wxc-&gt;wxs:10.发起支付请求()</span><br><span class="line">wxs-&gt;wxs:验证支付参数, APP支付权限等()</span><br><span class="line">wxs--&gt;&gt;wxc:11.返回需要支付授权()</span><br><span class="line">user-&gt;wxc:12.用户确认支付, 输入密码()</span><br><span class="line">wxc-&gt;wxs:13:提交支付授权()</span><br><span class="line">wxs-&gt;wxs:验证授权, 完成支付交易()</span><br><span class="line">wxs--&gt;&gt;apps:15.异步通知商户支付结果()</span><br><span class="line">apps-&gt;apps:接收和保存支付通知()</span><br><span class="line">apps-&gt;&gt;wxs:16.返回告知已成功接收处理()</span><br><span class="line">wxs--&gt;wxc:14.返回支付结果, 发送微信消息提示()</span><br><span class="line">wxc-&gt;appc:将支付状态通过商户APP已实现的回调接口执行回调()</span><br><span class="line">appc-&gt;apps:后台查询实际支付结果()</span><br><span class="line">apps-&gt;wxs:调用微信查询API查询支付结果()</span><br><span class="line">wxs--&gt;&gt;apps:返回支付结果()</span><br><span class="line">apps--&gt;appc:返回支付结果</span><br><span class="line">appc--&gt;user:展示支付结果()</span><br><span class="line">appc-&gt;appc:商户发货()</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
-    <content><![CDATA[<hr>
-<p>title:简历注意事项</p>
-<hr>
-<p>简历文件命名：名字+求职岗位+工作年限</p>
+    <title>简历注意事项</title>
+    <url>/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<p>简历文件命名：名字+求职岗位+工作年限</p>
 <p>简历使用pdf格式</p>
 <p>不用竖版简历</p>
 <p>不用太沉重的颜色，不要用黑白配</p>
@@ -1054,10 +1051,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<ol>
+    <title>面试流程</title>
+    <url>/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<ol start="2">
+<li><ol>
 <li>先敲门</li>
+</ol>
+</li>
 <li>先跟面试官打过招呼</li>
 <li>面试官您好，这是我的简历（双手反向递简历）然后坐下</li>
 <li>坐椅子三分之二，不靠在后面</li>
@@ -1080,8 +1080,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/29/base/git/</url>
+    <title>git 基本命令</title>
+    <url>/2020/01/23/base/git/</url>
     <content><![CDATA[<h2 id="配置公钥-私钥"><a href="#配置公钥-私钥" class="headerlink" title="配置公钥+私钥"></a>配置公钥+私钥</h2><ol>
 <li>生成，运行<code>cmd</code>命令：<code>ssh-keygen -t rsa -C &quot;名称&quot;</code>；</li>
 <li>得到公钥私钥：<code>C:\Users\用户名\.ssh\</code>目录下有<code>id_rsa</code>和<code>id_rsa.pub</code>；</li>
@@ -1107,8 +1107,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/07/29/configs/maven/</url>
+    <title>Maven 相关</title>
+    <url>/2020/01/23/configs/maven/</url>
     <content><![CDATA[<h1 id="nexus"><a href="#nexus" class="headerlink" title="nexus"></a>nexus</h1><p>nexus是一个强大的maven仓库管理工具，使用nexus可以方便的管理内部仓库，也就是私服，专门用于管理公司内部的jar包，可以将公司内部的jar包上传到nexus中。</p>
 <h1 id="svn"><a href="#svn" class="headerlink" title="svn(!)"></a>svn(!)</h1><p>SVN全名Subversion，即版本控制系统。SVN与CVS一样，是一个跨平台的软件，支持大多数常见的操作系统。</p>
 <p>作为一个开源的版本控制系统,Subversion管理着随时间改变的数据。这些数据放置在一个中央资料档案库(repository)中。这个档案库很像一个普通的文件服务器,不过它会记住每一次文件的变动。</p>
@@ -1134,18 +1134,197 @@
   </entry>
   <entry>
     <title>网站换肤的最佳实现</title>
-    <url>/2027/07/30/html/html-theme/</url>
+    <url>/2022/07/30/html/html-theme/</url>
     <content><![CDATA[<h1 id="大多数开发人员的实现"><a href="#大多数开发人员的实现" class="headerlink" title="大多数开发人员的实现"></a>大多数开发人员的实现</h1><h1 id="原生HTML下的换肤实现"><a href="#原生HTML下的换肤实现" class="headerlink" title="原生HTML下的换肤实现"></a>原生HTML下的换肤实现</h1><h1 id="实现的优点及碎碎念"><a href="#实现的优点及碎碎念" class="headerlink" title="实现的优点及碎碎念"></a>实现的优点及碎碎念</h1>]]></content>
       <categories>
         <category>html</category>
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title>openJDK 的初步了解</title>
     <url>/2022/07/29/java/open-jdk/</url>
     <content><![CDATA[<p>下载地址：</p>
 <p><a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">https://developer.ibm.com/languages/java/semeru-runtimes/downloads/</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>centOS 配置 open-jdk</title>
+    <url>/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</url>
+    <content><![CDATA[<p>用yum命令在centOS8.2上配置OpenJDK</p>
+<span id="more"></span>
+
+<p>用yum 搜索Java</p>
+<p><code>yum search java | grep -i --color JDK</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302319935.png" alt="image-20220730231938866"></p>
+<p>java-1.8.0-openjdk 是生产环境版本，只有jre</p>
+<p>devel 是开发环境版本</p>
+<p>headless 是缺少显示设备，键盘或鼠标的系统配置的版本，意思是不可以运行GUI图形界面</p>
+<p>安装 OpenJDK 生产环境即可,生产版本的无法编译<code>java</code>没有<code>javac</code>命令</p>
+<p>sudo yum install java-1.8.0-openjdk</p>
+<p>这里用的普通账户，需要sudo</p>
+<p>输入密码选择y,输入 <code>Java -version</code> 检查安装是否成功</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302332602.png" alt="image-20220730233218553"></p>
+<p> <code>which java</code> 命令查看安装路径</p>
+<p>命令成功后显示的应该是</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos ~]$ <span class="built_in">which</span> java</span><br><span class="line">/usr/bin/java</span><br><span class="line">[www@VM-4-12-centos ~]$ </span><br></pre></td></tr></table></figure>
+
+<p><code>ls -l /usr/bin/java</code> 查看文件详情</p>
+<p>可以看到这是个超链接，再继续找</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/bin/java</span><br><span class="line">lrwxrwxrwx 1 root root 22 Jul 30 23:28 /usr/bin/java -&gt; /etc/alternatives/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
+
+<p><code>ls -l /etc/alternatives/java</code> 继续查看最终路径</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /etc/alternatives/java</span><br><span class="line">lrwxrwxrwx 1 root root 73 Jul 30 23:28 /etc/alternatives/java -&gt; /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/jre/bin/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</span><br><span class="line">total 4</span><br><span class="line">drwxr-xr-x 4 root root 4096 Jul 30 23:28 jre</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
+
+<p>复制路径 <code>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</code></p>
+<p><code>vim /etc/profile</code> 编辑环境变量</p>
+<p>然后移动光标到文件的最后面添加如下内容：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64</span><br><span class="line"><span class="built_in">export</span> CLASS_PATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+
+<p><em>除了路径不一样，其他完全可以复制</em></p>
+<p><em>如果修改无法保存</em>，使用root账户，或者sudo</p>
+<p>值得注意的是windows 和Linux不太一样：</p>
+<blockquote>
+<p>在Linux 中，$PATH 表示之前的环境变量<br>在Linux中: 冒号作为环境变量分割符号，而在Windows中是; 分号作为分隔符。<br>其次配置环境变量CLASS_PATH必须第一个是. 然后分号添加其他路径，这样会首选从当前路径下找，当前路径下如果找不到会从其他路径找。<br>dt.jar 和tools.jar 都位于$JAVA_HOME/lib/ 文件夹下，rt.jar 位于jre 文件夹下</p>
+</blockquote>
+<p>然后还需要将环境变量编译生效</p>
+<p><code>source /etc/profile</code></p>
+<h1 id="用到的命令"><a href="#用到的命令" class="headerlink" title="用到的命令"></a>用到的命令</h1><h2 id="yum命令-–-基于RPM的软件包管理器"><a href="#yum命令-–-基于RPM的软件包管理器" class="headerlink" title="yum命令 – 基于RPM的软件包管理器"></a>yum命令 – 基于RPM的软件包管理器</h2><blockquote>
+<p>yum命令来自于英文词组”YellowdogUpdater,Modified“的缩写，其功能是用于在Linux系统中基于RPM技术进行软件包的管理工作。yum技术通用于RHEL、CentOS、Fedora、OpenSUSE等主流系统，可以让系统管理人员交互式的自动化更新和管理软件包，实现从指定服务器自动下载、更新、删除软件包的工作。</p>
+<p>yum软件仓库及命令能够自动处理软件依赖关系，一次性安装所需全部软件，无需繁琐的操作。</p>
+</blockquote>
+<p><strong>语法格式：</strong>yum [参数] 软件包</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-h</th>
+<th>显示帮助信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-y</td>
+<td>对所有的提问都回答“yes”</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>指定配置文件</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>安静模式</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>详细模式</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>检查外部错误</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>设置调试等级（0-10）</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>设置错误等级（0-10）</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>设置yum处理一个命令的最大等待时间</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>完全从缓存中运行，而不去下载或者更新任何头文件</td>
+</tr>
+<tr>
+<td>install</td>
+<td>安装rpm软件包</td>
+</tr>
+<tr>
+<td>update</td>
+<td>更新rpm软件包</td>
+</tr>
+<tr>
+<td>check-update</td>
+<td>检查是否有可用的更新rpm软件包</td>
+</tr>
+<tr>
+<td>remove</td>
+<td>删除指定的rpm软件包</td>
+</tr>
+<tr>
+<td>list</td>
+<td>显示软件包的信息</td>
+</tr>
+<tr>
+<td>search</td>
+<td>检查软件包的信息</td>
+</tr>
+<tr>
+<td>info</td>
+<td>显示指定的rpm软件包的描述信息和概要信息</td>
+</tr>
+<tr>
+<td>clean</td>
+<td>清理yum过期的缓存</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>进入yum的shell提示符</td>
+</tr>
+<tr>
+<td>resolvedep</td>
+<td>显示rpm软件包的依赖关系</td>
+</tr>
+<tr>
+<td>localinstall</td>
+<td>安装本地的rpm软件包</td>
+</tr>
+<tr>
+<td>localupdate</td>
+<td>显示本地rpm软件包进行更新</td>
+</tr>
+<tr>
+<td>deplist</td>
+<td>显示rpm软件包的所有依赖关系</td>
+</tr>
+</tbody></table>
+<h2 id="which命令-–-查找命令文件"><a href="#which命令-–-查找命令文件" class="headerlink" title="which命令 – 查找命令文件"></a>which命令 – 查找命令文件</h2><blockquote>
+<p>which命令的功能是用于查找命令文件，能够快速搜索二进制程序所对应的位置。如果我们既不关心同名文件（find与locate），也不关心命令所对应的源代码和帮助文件（whereis），仅仅是想找到命令本身所在的路径，那么这个which命令就太合适了。</p>
+</blockquote>
+<p><strong>语法格式：</strong>which [参数] 文件</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-n</th>
+<th>指定文件名长度（不含路径）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>指定文件名长度（含路径）</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>指定输出时栏位的宽度</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>显示版本信息</td>
+</tr>
+</tbody></table>
+<h2 id="source命令-–-从指定文件中读取和执行命令"><a href="#source命令-–-从指定文件中读取和执行命令" class="headerlink" title="source命令 – 从指定文件中读取和执行命令"></a>source命令 – 从指定文件中读取和执行命令</h2><blockquote>
+<p>source命令的功能是用于从指定文件中读取和执行命令，通常用于被修改过的文件，使之新参数能够立即生效，而不必重启整台服务器。</p>
+</blockquote>
+<p><strong>语法格式：</strong>source [文件]</p>
+<p><strong>参考实例</strong></p>
+<p>读取和执行指定文件中的命令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[root@linuxcool ~]<span class="comment"># source ~/.bash_profile</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
   </entry>
   <entry>
     <title>centOS 初认识</title>
@@ -1156,30 +1335,30 @@
 <h2 id="创建web服务用户"><a href="#创建web服务用户" class="headerlink" title="创建web服务用户"></a>创建web服务用户</h2><h3 id="1-切换到root用户"><a href="#1-切换到root用户" class="headerlink" title="1.切换到root用户"></a>1.切换到root用户</h3><p>使用 <code>su</code> 命令切换到 <code>root</code> 账户</p>
 <p><code>su root</code><br>输入安装时设置的用户密码</p>
 <p>输入密码时不会显示，切换成功后命令行前置用户名会更改为 <code>root</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301902761.png" alt="image-20220730190224707"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301902761.png" alt="image-20220730190224707"></p>
 <h3 id="2-创建用户"><a href="#2-创建用户" class="headerlink" title="2.创建用户"></a>2.创建用户</h3><p>使用 <code>useradd</code> 命令添加一个用户</p>
 <p>由于是用来管理网站的，这里新建的用户就叫做 <code>www</code> 之后就用这个账户管理网站</p>
 <p><code>useradd www</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301912040.png" alt="image-20220730191200004"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301912040.png" alt="image-20220730191200004"></p>
 <p>使用 <code>passwd</code> 命令设置账户的密码</p>
 <p>系统会检测密码复杂度，太简单会提示，无视重新输入即可设计简单密码</p>
-<p><code>passwd www</code><br><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301913238.png" alt="image-20220730191356177"></p>
+<p><code>passwd www</code><br><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207301913238.png" alt="image-20220730191356177"></p>
 <h3 id="3-授权"><a href="#3-授权" class="headerlink" title="3.授权"></a>3.授权</h3><blockquote>
 <p>个人用户的权限只可以在本home下有完整权限，其他目录要看别人授权。而经常需要root用户的权限，这时候sudo可以化身为root来操作。我记得我曾经sudo创建了文件，然后发现自己并没有读写权限，因为查看权限是root创建的。</p>
 <p>新创建的用户并不能使用sudo命令，需要给他添加授权。</p>
 <p>sudo命令的授权管理是在sudoers文件里的。可以看看sudoers：<br>原文链接：<a href="https://blog.csdn.net/GGxiaobai/article/details/53504989">https://blog.csdn.net/GGxiaobai/article/details/53504989</a></p>
 </blockquote>
 <p><code>whereis sudoers</code>显示sudoers路径<br><code>ls sudoers -l</code>查看文件权限，默认应该是只读的<br><code>chmod -v u+w sudoers</code>加上写入权限</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302002358.png" alt="image-20220730200224314"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302002358.png" alt="image-20220730200224314"></p>
 <p><code>vim sudoers</code> 使用 <code>vim</code> 编辑文件</p>
 <p>vim操作方式 <a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302158169.png" alt="image-20220730215844130"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302158169.png" alt="image-20220730215844130"></p>
 <p>添加 <code>www    ALL=(ALL)    ALL</code></p>
 <p>到此 <code>www</code> 账户已经可以用 <code>sudo</code> 命令获取root的权限了</p>
 <h2 id="生成-SSH-KEY-（公钥私钥）"><a href="#生成-SSH-KEY-（公钥私钥）" class="headerlink" title="生成 SSH-KEY （公钥私钥）"></a>生成 <code>SSH-KEY</code> （公钥私钥）</h2><h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><p>生成新的 <code>SSH_KEY</code></p>
 <p><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code> </p>
 <p>之后回车出来这个方框即可</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302219052.png" alt="image-20220730221927997"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302219052.png" alt="image-20220730221927997"></p>
 <p>之后再home目录中的.ssh文件夹中会看到<code>id_rsa</code>跟<code>id_rsa.pub</code>文件</p>
 <p>将<code>id_rsa</code>私钥下载，或者用vim查看复制出里面的内容即可</p>
 <h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>修改/etc/ssh/sshd_config如下部分:</p>
@@ -1568,185 +1747,6 @@
 </tbody></table>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><em><strong>Linux命令介绍来自 <a href="https://www.linuxcool.com/">https://www.linuxcool.com/</a> 网站还有命令使用用例</strong></em></p>
 ]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>centOS 配置 open-jdk</title>
-    <url>/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</url>
-    <content><![CDATA[<p>用yum命令在centOS8.2上配置OpenJDK</p>
-<span id="more"></span>
-
-<p>用yum 搜索Java</p>
-<p><code>yum search java | grep -i --color JDK</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302319935.png" alt="image-20220730231938866"></p>
-<p>java-1.8.0-openjdk 是生产环境版本，只有jre</p>
-<p>devel 是开发环境版本</p>
-<p>headless 是缺少显示设备，键盘或鼠标的系统配置的版本，意思是不可以运行GUI图形界面</p>
-<p>安装 OpenJDK 生产环境即可,生产版本的无法编译<code>java</code>没有<code>javac</code>命令</p>
-<p>sudo yum install java-1.8.0-openjdk</p>
-<p>这里用的普通账户，需要sudo</p>
-<p>输入密码选择y,输入 <code>Java -version</code> 检查安装是否成功</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202207302332602.png" alt="image-20220730233218553"></p>
-<p> <code>which java</code> 命令查看安装路径</p>
-<p>命令成功后显示的应该是</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos ~]$ <span class="built_in">which</span> java</span><br><span class="line">/usr/bin/java</span><br><span class="line">[www@VM-4-12-centos ~]$ </span><br></pre></td></tr></table></figure>
-
-<p><code>ls -l /usr/bin/java</code> 查看文件详情</p>
-<p>可以看到这是个超链接，再继续找</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/bin/java</span><br><span class="line">lrwxrwxrwx 1 root root 22 Jul 30 23:28 /usr/bin/java -&gt; /etc/alternatives/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
-
-<p><code>ls -l /etc/alternatives/java</code> 继续查看最终路径</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[www@VM-4-12-centos bin]$ ls -l /etc/alternatives/java</span><br><span class="line">lrwxrwxrwx 1 root root 73 Jul 30 23:28 /etc/alternatives/java -&gt; /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/jre/bin/java</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br><span class="line">[www@VM-4-12-centos bin]$ ls -l /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</span><br><span class="line">total 4</span><br><span class="line">drwxr-xr-x 4 root root 4096 Jul 30 23:28 jre</span><br><span class="line">[www@VM-4-12-centos bin]$ </span><br></pre></td></tr></table></figure>
-
-<p>复制路径 <code>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64/</code></p>
-<p><code>vim /etc/profile</code> 编辑环境变量</p>
-<p>然后移动光标到文件的最后面添加如下内容：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64</span><br><span class="line"><span class="built_in">export</span> CLASS_PATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
-
-<p><em>除了路径不一样，其他完全可以复制</em></p>
-<p><em>如果修改无法保存</em>，使用root账户，或者sudo</p>
-<p>值得注意的是windows 和Linux不太一样：</p>
-<blockquote>
-<p>在Linux 中，$PATH 表示之前的环境变量<br>在Linux中: 冒号作为环境变量分割符号，而在Windows中是; 分号作为分隔符。<br>其次配置环境变量CLASS_PATH必须第一个是. 然后分号添加其他路径，这样会首选从当前路径下找，当前路径下如果找不到会从其他路径找。<br>dt.jar 和tools.jar 都位于$JAVA_HOME/lib/ 文件夹下，rt.jar 位于jre 文件夹下</p>
-</blockquote>
-<p>然后还需要将环境变量编译生效</p>
-<p><code>source /etc/profile</code></p>
-<h1 id="用到的命令"><a href="#用到的命令" class="headerlink" title="用到的命令"></a>用到的命令</h1><h2 id="yum命令-–-基于RPM的软件包管理器"><a href="#yum命令-–-基于RPM的软件包管理器" class="headerlink" title="yum命令 – 基于RPM的软件包管理器"></a>yum命令 – 基于RPM的软件包管理器</h2><blockquote>
-<p>yum命令来自于英文词组”YellowdogUpdater,Modified“的缩写，其功能是用于在Linux系统中基于RPM技术进行软件包的管理工作。yum技术通用于RHEL、CentOS、Fedora、OpenSUSE等主流系统，可以让系统管理人员交互式的自动化更新和管理软件包，实现从指定服务器自动下载、更新、删除软件包的工作。</p>
-<p>yum软件仓库及命令能够自动处理软件依赖关系，一次性安装所需全部软件，无需繁琐的操作。</p>
-</blockquote>
-<p><strong>语法格式：</strong>yum [参数] 软件包</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-h</th>
-<th>显示帮助信息</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-y</td>
-<td>对所有的提问都回答“yes”</td>
-</tr>
-<tr>
-<td>-c</td>
-<td>指定配置文件</td>
-</tr>
-<tr>
-<td>-q</td>
-<td>安静模式</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>详细模式</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>检查外部错误</td>
-</tr>
-<tr>
-<td>-d</td>
-<td>设置调试等级（0-10）</td>
-</tr>
-<tr>
-<td>-e</td>
-<td>设置错误等级（0-10）</td>
-</tr>
-<tr>
-<td>-R</td>
-<td>设置yum处理一个命令的最大等待时间</td>
-</tr>
-<tr>
-<td>-C</td>
-<td>完全从缓存中运行，而不去下载或者更新任何头文件</td>
-</tr>
-<tr>
-<td>install</td>
-<td>安装rpm软件包</td>
-</tr>
-<tr>
-<td>update</td>
-<td>更新rpm软件包</td>
-</tr>
-<tr>
-<td>check-update</td>
-<td>检查是否有可用的更新rpm软件包</td>
-</tr>
-<tr>
-<td>remove</td>
-<td>删除指定的rpm软件包</td>
-</tr>
-<tr>
-<td>list</td>
-<td>显示软件包的信息</td>
-</tr>
-<tr>
-<td>search</td>
-<td>检查软件包的信息</td>
-</tr>
-<tr>
-<td>info</td>
-<td>显示指定的rpm软件包的描述信息和概要信息</td>
-</tr>
-<tr>
-<td>clean</td>
-<td>清理yum过期的缓存</td>
-</tr>
-<tr>
-<td>shell</td>
-<td>进入yum的shell提示符</td>
-</tr>
-<tr>
-<td>resolvedep</td>
-<td>显示rpm软件包的依赖关系</td>
-</tr>
-<tr>
-<td>localinstall</td>
-<td>安装本地的rpm软件包</td>
-</tr>
-<tr>
-<td>localupdate</td>
-<td>显示本地rpm软件包进行更新</td>
-</tr>
-<tr>
-<td>deplist</td>
-<td>显示rpm软件包的所有依赖关系</td>
-</tr>
-</tbody></table>
-<h2 id="which命令-–-查找命令文件"><a href="#which命令-–-查找命令文件" class="headerlink" title="which命令 – 查找命令文件"></a>which命令 – 查找命令文件</h2><blockquote>
-<p>which命令的功能是用于查找命令文件，能够快速搜索二进制程序所对应的位置。如果我们既不关心同名文件（find与locate），也不关心命令所对应的源代码和帮助文件（whereis），仅仅是想找到命令本身所在的路径，那么这个which命令就太合适了。</p>
-</blockquote>
-<p><strong>语法格式：</strong>which [参数] 文件</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-n</th>
-<th>指定文件名长度（不含路径）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-p</td>
-<td>指定文件名长度（含路径）</td>
-</tr>
-<tr>
-<td>-w</td>
-<td>指定输出时栏位的宽度</td>
-</tr>
-<tr>
-<td>-V</td>
-<td>显示版本信息</td>
-</tr>
-</tbody></table>
-<h2 id="source命令-–-从指定文件中读取和执行命令"><a href="#source命令-–-从指定文件中读取和执行命令" class="headerlink" title="source命令 – 从指定文件中读取和执行命令"></a>source命令 – 从指定文件中读取和执行命令</h2><blockquote>
-<p>source命令的功能是用于从指定文件中读取和执行命令，通常用于被修改过的文件，使之新参数能够立即生效，而不必重启整台服务器。</p>
-</blockquote>
-<p><strong>语法格式：</strong>source [文件]</p>
-<p><strong>参考实例</strong></p>
-<p>读取和执行指定文件中的命令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">[root@linuxcool ~]<span class="comment"># source ~/.bash_profile</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>linux</category>
       </categories>

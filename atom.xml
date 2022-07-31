@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>&amp;</title>
+  <title>SNDSHUN</title>
   
   <subtitle>旅行中</subtitle>
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-07-27T11:40:28.841Z</updated>
+  <updated>2022-07-31T10:32:10.979Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>网站换肤的最佳实现</title>
-    <link href="https://sndshun.xyz/2027/07/30/html/html-theme/"/>
-    <id>https://sndshun.xyz/2027/07/30/html/html-theme/</id>
-    <published>2027-07-30T04:00:00.000Z</published>
-    <updated>2022-07-27T11:40:28.841Z</updated>
+    <link href="https://sndshun.xyz/2022/07/30/html/html-theme/"/>
+    <id>https://sndshun.xyz/2022/07/30/html/html-theme/</id>
+    <published>2022-07-30T04:00:00.000Z</published>
+    <updated>2022-07-31T10:32:10.979Z</updated>
     
     
       
@@ -40,11 +40,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>openJDK 的初步了解</title>
     <link href="https://sndshun.xyz/2022/07/29/java/open-jdk/"/>
     <id>https://sndshun.xyz/2022/07/29/java/open-jdk/</id>
     <published>2022-07-29T08:14:51.037Z</published>
-    <updated>2022-07-29T08:15:23.362Z</updated>
+    <updated>2022-07-31T10:22:50.753Z</updated>
     
     
       
@@ -53,176 +53,6 @@
         
     <summary type="html">&lt;p&gt;下载地址：&lt;/p&gt;
 &lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/29/base/git/"/>
-    <id>https://sndshun.xyz/2022/07/29/base/git/</id>
-    <published>2022-07-29T03:13:42.057Z</published>
-    <updated>2022-07-29T06:01:01.948Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/29/configs/maven/"/>
-    <id>https://sndshun.xyz/2022/07/29/configs/maven/</id>
-    <published>2022-07-29T01:38:14.392Z</published>
-    <updated>2022-07-30T06:17:25.881Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;nexus&quot;&gt;&lt;a href=&quot;#nexus&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
-    <id>https://sndshun.xyz/2022/07/28/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
-    <published>2022-07-28T06:45:17.232Z</published>
-    <updated>2022-07-28T06:59:24.932Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;微信支付时序图&quot;&gt;&lt;a href=&quot;#微信支付时序图&quot; class=&quot;headerlink&quot; title=&quot;微信支付时序图&quot;&gt;&lt;/a&gt;微信支付时序图&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
-    <id>https://sndshun.xyz/2022/07/26/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
-    <published>2022-07-26T08:10:16.799Z</published>
-    <updated>2022-07-26T15:33:47.298Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;先敲门&lt;/li&gt;
-&lt;li&gt;先跟面试官打过招呼&lt;/li&gt;
-&lt;li&gt;面试官您好，这是我的简历（双手反向递简历）然后坐下&lt;/li&gt;
-&lt;li&gt;坐椅子三分之二，不靠在后面&lt;/li&gt;
-&lt;li&gt;自我介绍&lt;/li&gt;
-&lt;li&gt;面试官您好&lt;/li&gt;
-&lt;li&gt;介绍自己的姓名，（年龄可</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <id>https://sndshun.xyz/2022/07/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
-    <published>2022-07-25T15:27:03.763Z</published>
-    <updated>2022-07-29T09:54:35.734Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;docker&lt;/p&gt;
-&lt;p&gt;elasticSearch 搜索引擎&lt;/p&gt;
-&lt;p&gt;nuxt&lt;/p&gt;
-&lt;p&gt;office</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>https://sndshun.xyz/2022/07/25/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
-    <published>2022-07-25T14:51:11.401Z</published>
-    <updated>2022-07-27T11:54:05.560Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;title：面试题&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;什么是ioc&quot;&gt;&lt;a href=&quot;#什么是ioc&quot; class=&quot;headerlink&quot; title=&quot;什么是ioc&quot;&gt;&lt;/a&gt;什么是ioc&lt;/h3&gt;&lt;h3 id=&quot;ioc是怎么解耦的&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://sndshun.xyz/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://sndshun.xyz/2022/07/25/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-    <published>2022-07-25T11:45:09.701Z</published>
-    <updated>2022-07-26T07:46:10.426Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;title:简历注意事项&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
-&lt;p&gt;简历使用pdf格式&lt;/p&gt;
-&lt;p&gt;不用竖版简历&lt;/p&gt;
-&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
-&lt;p&gt;放证件照片&lt;/p&gt;
-&lt;p&gt;字体大小，行间距&lt;/p&gt;
-</summary>
         
       
     
@@ -387,7 +217,7 @@
     <link href="https://sndshun.xyz/2020/01/23/web-tools/"/>
     <id>https://sndshun.xyz/2020/01/23/web-tools/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-03-19T11:28:16.181Z</updated>
+    <updated>2022-07-31T10:16:38.848Z</updated>
     
     
     <summary type="html">&lt;p&gt;理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。&lt;/p&gt;</summary>
@@ -398,6 +228,159 @@
     
     
     <category term="工具" scheme="https://sndshun.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以后的事</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:18:24.849Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;docker&lt;/p&gt;
+&lt;p&gt;elasticSearch 搜索引擎&lt;/p&gt;
+&lt;p&gt;nuxt&lt;/p&gt;
+&lt;p&gt;office</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试题</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:26:02.140Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;被问到的面试题整理，及常被提到的题&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>时序图</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:17:09.239Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信支付时序图&quot;&gt;&lt;a href=&quot;#微信支付时序图&quot; class=&quot;headerlink&quot; title=&quot;微信支付时序图&quot;&gt;&lt;/a&gt;微信支付时序图&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简历注意事项</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:16:47.220Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
+&lt;p&gt;简历使用pdf格式&lt;/p&gt;
+&lt;p&gt;不用竖版简历&lt;/p&gt;
+&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
+&lt;p&gt;放证件照片&lt;/p&gt;
+&lt;p&gt;字体大小，行间距&lt;/p&gt;
+&lt;p&gt;不能有错别字&lt;/p&gt;
+&lt;p&gt;简历内容顺序：&lt;/p&gt;
+&lt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试流程</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:17:58.630Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 基本命令</title>
+    <link href="https://sndshun.xyz/2020/01/23/base/git/"/>
+    <id>https://sndshun.xyz/2020/01/23/base/git/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:20:58.109Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Maven 相关</title>
+    <link href="https://sndshun.xyz/2020/01/23/configs/maven/"/>
+    <id>https://sndshun.xyz/2020/01/23/configs/maven/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-07-31T10:22:03.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;nexus&quot;&gt;&lt;a href=&quot;#nexus&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
     
   </entry>
   
