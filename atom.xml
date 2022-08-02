@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-07-31T10:32:10.979Z</updated>
+  <updated>2022-08-01T06:40:02.895Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/"/>
+    <id>https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/</id>
+    <published>2022-08-01T06:26:19.832Z</published>
+    <updated>2022-08-01T06:40:02.895Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;prd：一般指产品需求文档&lt;/p&gt;
+&lt;p&gt;crm：&lt;/p&gt;
+&lt;p&gt;erp：&lt;/p&gt;
+&lt;p&gt;HR：&lt;/p&gt;
+&lt;p&gt;OA：&lt;/p&gt;
+&lt;p&gt;pmp：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;产品架构&lt;/li&gt;
+&lt;li&gt;数据中台&lt;/li&gt;
+&lt;li&gt;业务中台&lt;/li&gt;
+&lt;li&gt;高内聚、低耦合&lt;/l</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/08/01/temp/"/>
+    <id>https://sndshun.xyz/2022/08/01/temp/</id>
+    <published>2022-08-01T02:22:47.544Z</published>
+    <updated>2022-08-01T09:42:35.255Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;visio&lt;/p&gt;
+&lt;p&gt;聚合支付&lt;/p&gt;
+&lt;p&gt;支付宝沙箱支付&lt;/p&gt;
+&lt;p&gt;微信登录模拟&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;问好，自我介绍&lt;/p&gt;
+&lt;p&gt;介绍项目背景&lt;/p&gt;
+&lt;p&gt;流程图&lt;/p&gt;
+&lt;p&gt;原型&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;亿图</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>网站换肤的最佳实现</title>
@@ -87,10 +149,18 @@
     <link href="https://sndshun.xyz/2021/11/21/nosql/redis/"/>
     <id>https://sndshun.xyz/2021/11/21/nosql/redis/</id>
     <published>2021-11-21T04:00:00.000Z</published>
-    <updated>2022-07-10T15:17:17.888Z</updated>
+    <updated>2022-08-01T06:09:28.611Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252012991.jpeg&quot; alt=&quot;4809d0858ab40491687c27e3ec96873e&quot;&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h2 id=&quot;什么是Redis数据库&quot;&gt;&lt;a href=&quot;#什么是Redis数据库&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -381,43 +451,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Promise</title>
-    <link href="https://sndshun.xyz/2020/01/01/javascript/promise/"/>
-    <id>https://sndshun.xyz/2020/01/01/javascript/promise/</id>
-    <published>2020-01-01T04:00:00.000Z</published>
-    <updated>2022-07-10T15:00:54.550Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 跨域配置</title>
-    <link href="https://sndshun.xyz/2019/10/11/configs/vue-proxy/"/>
-    <id>https://sndshun.xyz/2019/10/11/configs/vue-proxy/</id>
-    <published>2019-10-11T04:00:00.000Z</published>
-    <updated>2021-12-08T13:29:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;初学 Vue 时配置跨域走了不少坑，区分不了版本，找不到配置文件，复制粘贴到无效配置等等&lt;/p&gt;
-&lt;p&gt;现已找到捷径，总结记录下&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
-    
-    
-    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
   </entry>
   

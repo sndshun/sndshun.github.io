@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sndshun.xyz/2022/08/01/temp/</loc>
+    <lastmod>2022-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/</loc>
+    <lastmod>2022-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2021/11/21/nosql/redis/</loc>
+    <lastmod>2022-08-01</lastmod>
+  </url>
+  <url>
     <loc>https://sndshun.xyz/2022/07/30/html/html-theme/</loc>
     <lastmod>2022-07-31</lastmod>
   </url>
@@ -58,10 +70,6 @@
   </url>
   <url>
     <loc>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</loc>
-    <lastmod>2022-07-10</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2021/11/21/nosql/redis/</loc>
     <lastmod>2022-07-10</lastmod>
   </url>
   <url>
