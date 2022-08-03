@@ -24,7 +24,7 @@
     <meta name="description" content="Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue3 新特性">
-<meta property="og:url" content="https://github.com/sndshun/2021/10/28/javascript/vue3/index.html">
+<meta property="og:url" content="https://sndshun.xyz/2021/10/28/javascript/vue3/index.html">
 <meta property="og:site_name" content="SNDSHUN">
 <meta property="og:description" content="Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化">
 <meta property="og:locale" content="zh_CN">
@@ -40,12 +40,12 @@
 
   <!-- feed -->
   
-    <link rel="alternate" href="/sndshun/atom.xml" title="SNDSHUN" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="SNDSHUN" type="application/atom+xml">
   
 
   
     
-<link rel="stylesheet" href="/sndshun/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 
   
 
@@ -67,8 +67,8 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="title" href="/sndshun/"><div class="main">SNDSHUN</div><div class="sub cap">旅行中</div></a></div>
-<nav class="menu dis-select"><a class="nav-item active" href="/sndshun/">文章</a><a class="nav-item" href="/sndshun/wiki/">项目</a><a class="nav-item" href="/sndshun/notes/">笔记</a><a class="nav-item" href="/sndshun/more/">更多</a></nav></header>
+<div class="logo-wrap"><a class="title" href="/"><div class="main">SNDSHUN</div><div class="sub cap">旅行中</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">笔记</a><a class="nav-item" href="/more/">更多</a></nav></header>
 
 <div class="widgets">
 
@@ -84,7 +84,7 @@
 
       
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/sndshun/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/sndshun/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/sndshun/categories/javascript/">javascript</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/sndshun/categories/javascript/vue/">vue</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-10-28T04:00:00.000Z">2021-10-28</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/javascript/">javascript</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/javascript/vue/">vue</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-10-28T04:00:00.000Z">2021-10-28</time></div></div>
 
 <article class='content md post'>
 <h1 class="article-title"><span>Vue3 新特性</span></h1>
@@ -220,7 +220,7 @@
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/sndshun/2021/10/26/sql/mysql-delimiter/">MySQL 使用存储过程批量插入<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/sndshun/2021/11/15/java/springmvc-jsonparam/">Controller 接收多个json对象<span class="note">较新</span></a></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2021/10/26/sql/mysql-delimiter/">MySQL 使用存储过程批量插入<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2021/11/15/java/springmvc-jsonparam/">Controller 接收多个json对象<span class="note">较新</span></a></section></div>
 
 
 
@@ -231,7 +231,7 @@
 
       
 <footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
-<p>本站由 <a href="https://github.com/sndshun/sndshun/">@sndshun</a> 创建，使用 <a href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
+<p>本站由 <a href="https://sndshun.xyz/">@sndshun</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
 </div></footer>
 
       <div class='float-panel mobile-only blur' style='display:none'>
@@ -349,8 +349,8 @@
   // required plugins (only load if needs)
   stellar.plugins = {
     jQuery: 'https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
-    sitesjs: '/sndshun/js/plugins/sites.js',
-    friendsjs: '/sndshun/js/plugins/friends.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
   };
 
   // optional plugins
@@ -377,7 +377,7 @@
 <!-- required -->
 
   
-<script src="/sndshun/js/main.js" async></script>
+<script src="/js/main.js" async></script>
 
 
 

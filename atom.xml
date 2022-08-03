@@ -3,11 +3,11 @@
   <title>SNDSHUN</title>
   
   <subtitle>旅行中</subtitle>
-  <link href="https://github.com/sndshun/atom.xml" rel="self"/>
+  <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
-  <link href="https://github.com/sndshun/"/>
+  <link href="https://sndshun.xyz/"/>
   <updated>2022-08-03T06:12:11.093Z</updated>
-  <id>https://github.com/sndshun/</id>
+  <id>https://sndshun.xyz/</id>
   
   <author>
     <name>sndshun</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="https://github.com/sndshun/2022/08/01/%E6%9C%AF%E8%AF%AD/"/>
-    <id>https://github.com/sndshun/2022/08/01/%E6%9C%AF%E8%AF%AD/</id>
+    <link href="https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/"/>
+    <id>https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/</id>
     <published>2022-08-01T06:26:19.832Z</published>
     <updated>2022-08-03T06:12:11.093Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title></title>
-    <link href="https://github.com/sndshun/2022/08/01/temp/"/>
-    <id>https://github.com/sndshun/2022/08/01/temp/</id>
+    <link href="https://sndshun.xyz/2022/08/01/temp/"/>
+    <id>https://sndshun.xyz/2022/08/01/temp/</id>
     <published>2022-08-01T02:22:47.544Z</published>
     <updated>2022-08-01T09:42:35.255Z</updated>
     
@@ -71,8 +71,8 @@
   
   <entry>
     <title>网站换肤的最佳实现</title>
-    <link href="https://github.com/sndshun/2022/07/30/html/html-theme/"/>
-    <id>https://github.com/sndshun/2022/07/30/html/html-theme/</id>
+    <link href="https://sndshun.xyz/2022/07/30/html/html-theme/"/>
+    <id>https://sndshun.xyz/2022/07/30/html/html-theme/</id>
     <published>2022-07-30T04:00:00.000Z</published>
     <updated>2022-07-31T10:32:10.979Z</updated>
     
@@ -87,15 +87,15 @@
     
     
     
-    <category term="html" scheme="https://github.com/sndshun/categories/html/"/>
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
     
     
   </entry>
   
   <entry>
     <title>openJDK 的初步了解</title>
-    <link href="https://github.com/sndshun/2022/07/29/java/open-jdk/"/>
-    <id>https://github.com/sndshun/2022/07/29/java/open-jdk/</id>
+    <link href="https://sndshun.xyz/2022/07/29/java/open-jdk/"/>
+    <id>https://sndshun.xyz/2022/07/29/java/open-jdk/</id>
     <published>2022-07-29T08:14:51.037Z</published>
     <updated>2022-07-31T10:22:50.753Z</updated>
     
@@ -116,8 +116,8 @@
   
   <entry>
     <title>Vue 部署服务器配置</title>
-    <link href="https://github.com/sndshun/2022/03/19/configs/vue-deploy/"/>
-    <id>https://github.com/sndshun/2022/03/19/configs/vue-deploy/</id>
+    <link href="https://sndshun.xyz/2022/03/19/configs/vue-deploy/"/>
+    <id>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</id>
     <published>2022-03-19T04:00:00.000Z</published>
     <updated>2022-07-10T14:55:02.750Z</updated>
     
@@ -126,19 +126,19 @@
     
     
     
-    <category term="配置" scheme="https://github.com/sndshun/categories/%E9%85%8D%E7%BD%AE/"/>
+    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="nginx" scheme="https://github.com/sndshun/tags/nginx/"/>
+    <category term="nginx" scheme="https://sndshun.xyz/tags/nginx/"/>
     
-    <category term="vue" scheme="https://github.com/sndshun/tags/vue/"/>
+    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Redis 学习笔记</title>
-    <link href="https://github.com/sndshun/2021/11/21/nosql/redis/"/>
-    <id>https://github.com/sndshun/2021/11/21/nosql/redis/</id>
+    <link href="https://sndshun.xyz/2021/11/21/nosql/redis/"/>
+    <id>https://sndshun.xyz/2021/11/21/nosql/redis/</id>
     <published>2021-11-21T04:00:00.000Z</published>
     <updated>2022-08-01T06:09:28.611Z</updated>
     
@@ -155,17 +155,17 @@
     
     
     
-    <category term="nosql" scheme="https://github.com/sndshun/categories/nosql/"/>
+    <category term="nosql" scheme="https://sndshun.xyz/categories/nosql/"/>
     
     
-    <category term="redis" scheme="https://github.com/sndshun/tags/redis/"/>
+    <category term="redis" scheme="https://sndshun.xyz/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>Controller 接收多个json对象</title>
-    <link href="https://github.com/sndshun/2021/11/15/java/springmvc-jsonparam/"/>
-    <id>https://github.com/sndshun/2021/11/15/java/springmvc-jsonparam/</id>
+    <link href="https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/"/>
+    <id>https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/</id>
     <published>2021-11-15T04:00:00.000Z</published>
     <updated>2022-07-10T15:15:48.465Z</updated>
     
@@ -175,17 +175,17 @@
     
     
     
-    <category term="java" scheme="https://github.com/sndshun/categories/java/"/>
+    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
     
     
-    <category term="spring mvc" scheme="https://github.com/sndshun/tags/spring-mvc/"/>
+    <category term="spring mvc" scheme="https://sndshun.xyz/tags/spring-mvc/"/>
     
   </entry>
   
   <entry>
     <title>Vue3 新特性</title>
-    <link href="https://github.com/sndshun/2021/10/28/javascript/vue3/"/>
-    <id>https://github.com/sndshun/2021/10/28/javascript/vue3/</id>
+    <link href="https://sndshun.xyz/2021/10/28/javascript/vue3/"/>
+    <id>https://sndshun.xyz/2021/10/28/javascript/vue3/</id>
     <published>2021-10-28T04:00:00.000Z</published>
     <updated>2022-07-10T15:19:14.192Z</updated>
     
@@ -194,19 +194,19 @@
     
     
     
-    <category term="javascript" scheme="https://github.com/sndshun/categories/javascript/"/>
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
     
-    <category term="vue" scheme="https://github.com/sndshun/categories/javascript/vue/"/>
+    <category term="vue" scheme="https://sndshun.xyz/categories/javascript/vue/"/>
     
     
-    <category term="vue" scheme="https://github.com/sndshun/tags/vue/"/>
+    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>MySQL 使用存储过程批量插入</title>
-    <link href="https://github.com/sndshun/2021/10/26/sql/mysql-delimiter/"/>
-    <id>https://github.com/sndshun/2021/10/26/sql/mysql-delimiter/</id>
+    <link href="https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/"/>
+    <id>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</id>
     <published>2021-10-26T04:00:00.000Z</published>
     <updated>2022-07-10T15:17:32.860Z</updated>
     
@@ -215,17 +215,17 @@
     
     
     
-    <category term="sql" scheme="https://github.com/sndshun/categories/sql/"/>
+    <category term="sql" scheme="https://sndshun.xyz/categories/sql/"/>
     
     
-    <category term="mysql" scheme="https://github.com/sndshun/tags/mysql/"/>
+    <category term="mysql" scheme="https://sndshun.xyz/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>HTML 实用标签</title>
-    <link href="https://github.com/sndshun/2020/10/30/html/html-tags/"/>
-    <id>https://github.com/sndshun/2020/10/30/html/html-tags/</id>
+    <link href="https://sndshun.xyz/2020/10/30/html/html-tags/"/>
+    <id>https://sndshun.xyz/2020/10/30/html/html-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
     <updated>2022-07-10T14:54:41.242Z</updated>
     
@@ -234,15 +234,15 @@
     
     
     
-    <category term="html" scheme="https://github.com/sndshun/categories/html/"/>
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
     
     
   </entry>
   
   <entry>
     <title>centOS 配置 open-jdk</title>
-    <link href="https://github.com/sndshun/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
-    <id>https://github.com/sndshun/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
+    <link href="https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
+    <id>https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
     <published>2020-08-30T09:54:00.000Z</published>
     <updated>2022-07-31T03:10:22.399Z</updated>
     
@@ -251,15 +251,15 @@
     
     
     
-    <category term="linux" scheme="https://github.com/sndshun/categories/linux/"/>
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>centOS 初认识</title>
-    <link href="https://github.com/sndshun/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/"/>
-    <id>https://github.com/sndshun/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</id>
+    <link href="https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/"/>
+    <id>https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</id>
     <published>2020-07-30T09:54:00.000Z</published>
     <updated>2022-07-30T15:04:55.322Z</updated>
     
@@ -268,15 +268,15 @@
     
     
     
-    <category term="linux" scheme="https://github.com/sndshun/categories/linux/"/>
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>学习小网站</title>
-    <link href="https://github.com/sndshun/2020/01/23/web-tools/"/>
-    <id>https://github.com/sndshun/2020/01/23/web-tools/</id>
+    <link href="https://sndshun.xyz/2020/01/23/web-tools/"/>
+    <id>https://sndshun.xyz/2020/01/23/web-tools/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:16:38.848Z</updated>
     
@@ -285,17 +285,17 @@
     
     
     
-    <category term="实用网站" scheme="https://github.com/sndshun/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    <category term="实用网站" scheme="https://sndshun.xyz/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
     
     
-    <category term="工具" scheme="https://github.com/sndshun/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://sndshun.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>以后的事</title>
-    <link href="https://github.com/sndshun/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <id>https://github.com/sndshun/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
+    <link href="https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:18:24.849Z</updated>
     
@@ -318,8 +318,8 @@
   
   <entry>
     <title>面试题</title>
-    <link href="https://github.com/sndshun/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>https://github.com/sndshun/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <link href="https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:26:02.140Z</updated>
     
@@ -333,8 +333,8 @@
   
   <entry>
     <title>时序图</title>
-    <link href="https://github.com/sndshun/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
-    <id>https://github.com/sndshun/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
+    <link href="https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:17:09.239Z</updated>
     
@@ -354,8 +354,8 @@
   
   <entry>
     <title>简历注意事项</title>
-    <link href="https://github.com/sndshun/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://github.com/sndshun/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <link href="https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:16:47.220Z</updated>
     
@@ -383,8 +383,8 @@
   
   <entry>
     <title>面试流程</title>
-    <link href="https://github.com/sndshun/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
-    <id>https://github.com/sndshun/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
+    <link href="https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:17:58.630Z</updated>
     
@@ -404,8 +404,8 @@
   
   <entry>
     <title>git 基本命令</title>
-    <link href="https://github.com/sndshun/2020/01/23/base/git/"/>
-    <id>https://github.com/sndshun/2020/01/23/base/git/</id>
+    <link href="https://sndshun.xyz/2020/01/23/base/git/"/>
+    <id>https://sndshun.xyz/2020/01/23/base/git/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:20:58.109Z</updated>
     
@@ -426,8 +426,8 @@
   
   <entry>
     <title>Maven 相关</title>
-    <link href="https://github.com/sndshun/2020/01/23/configs/maven/"/>
-    <id>https://github.com/sndshun/2020/01/23/configs/maven/</id>
+    <link href="https://sndshun.xyz/2020/01/23/configs/maven/"/>
+    <id>https://sndshun.xyz/2020/01/23/configs/maven/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:22:03.089Z</updated>
     
