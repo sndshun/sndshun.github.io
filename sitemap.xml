@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sndshun.xyz/more/index.html</loc>
+    <loc>https://sndshun.xyz/notes/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/notes/index.html</loc>
+    <loc>https://sndshun.xyz/more/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -37,13 +37,6 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2020/01/23/configs/maven/</loc>
-    
-    <lastmod>2022-08-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/2022/07/30/html/html-theme/</loc>
     
     <lastmod>2022-07-31</lastmod>
@@ -59,6 +52,13 @@
   
   <url>
     <loc>https://sndshun.xyz/2022/07/29/java/open-jdk/</loc>
+    
+    <lastmod>2022-07-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/2020/01/23/configs/maven/</loc>
     
     <lastmod>2022-07-31</lastmod>
     
@@ -270,21 +270,14 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/tags/nginx/</loc>
+    <loc>https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/tags/vue/</loc>
-    <lastmod>2022-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/tags/spring-boot/</loc>
+    <loc>https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -305,21 +298,21 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/tags/spring-mvc/</loc>
+    <loc>https://sndshun.xyz/tags/spring-boot/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    <loc>https://sndshun.xyz/tags/nginx/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://sndshun.xyz/tags/vue/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -327,6 +320,13 @@
   
   <url>
     <loc>https://sndshun.xyz/tags/redis/</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/tags/spring-mvc/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -356,28 +356,7 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/categories/html/</loc>
-    <lastmod>2022-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/categories/base/</loc>
-    <lastmod>2022-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/categories/linux/</loc>
-    <lastmod>2022-08-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/categories/java/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -405,7 +384,28 @@
   </url>
   
   <url>
+    <loc>https://sndshun.xyz/categories/java/</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/categories/html/</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sndshun.xyz/categories/sql/</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/categories/linux/</loc>
     <lastmod>2022-08-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
