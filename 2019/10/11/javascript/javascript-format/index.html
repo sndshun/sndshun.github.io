@@ -24,7 +24,7 @@
     <meta name="description" content="JavaScript 中常用的格式转换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 格式转换">
-<meta property="og:url" content="https://sndshun.xyz/2019/10/11/javascript/javascript-format/index.html">
+<meta property="og:url" content="https://github.com/sndshun/2019/10/11/javascript/javascript-format/index.html">
 <meta property="og:site_name" content="SNDSHUN">
 <meta property="og:description" content="JavaScript 中常用的格式转换">
 <meta property="og:locale" content="zh_CN">
@@ -38,12 +38,12 @@
 
   <!-- feed -->
   
-    <link rel="alternate" href="/atom.xml" title="SNDSHUN" type="application/atom+xml">
+    <link rel="alternate" href="/sndshun/atom.xml" title="SNDSHUN" type="application/atom+xml">
   
 
   
     
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/sndshun/css/main.css">
 
   
 
@@ -65,8 +65,8 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="title" href="/"><div class="main">SNDSHUN</div><div class="sub cap">旅行中</div></a></div>
-<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">笔记</a><a class="nav-item" href="/more/">更多</a></nav></header>
+<div class="logo-wrap"><a class="title" href="/sndshun/"><div class="main">SNDSHUN</div><div class="sub cap">旅行中</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/sndshun/">文章</a><a class="nav-item" href="/sndshun/wiki/">项目</a><a class="nav-item" href="/sndshun/notes/">笔记</a><a class="nav-item" href="/sndshun/more/">更多</a></nav></header>
 
 <div class="widgets">
 
@@ -82,7 +82,7 @@
 
       
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/javascript/">javascript</a></div><div id="post-meta">发布于&nbsp;<time datetime="2019-10-11T04:00:00.000Z">2019-10-11</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/sndshun/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/sndshun/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/sndshun/categories/javascript/">javascript</a></div><div id="post-meta">发布于&nbsp;<time datetime="2019-10-11T04:00:00.000Z">2019-10-11</time></div></div>
 
 <article class='content md post'>
 <h1 class="article-title"><span>JavaScript 格式转换</span></h1>
@@ -92,7 +92,7 @@
 <h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><h3 id="UTC格式转换"><a href="#UTC格式转换" class="headerlink" title="UTC格式转换"></a>UTC格式转换</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 格式化UTC格式的时间 例：2019-10-09T13:51:25.414Z</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param </span>time 需要转换的时间</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span> </span>格式转换后的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> formatUTC_DateTime = <span class="function">(<span class="params">time</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">null</span> == time || <span class="string">&quot;&quot;</span> == time) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;无数据&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(time).toJSON()</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="keyword">new</span> <span class="built_in">Date</span>(date) + <span class="number">8</span> * <span class="number">3600</span> * <span class="number">1000</span>)</span><br><span class="line">        .toISOString()</span><br><span class="line">        .replace(<span class="regexp">/T/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        .replace(<span class="regexp">/\.[\d]&#123;3&#125;Z/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>传入的参数时间格式为 <a href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
+<p>传入的参数时间格式为 <a target="_blank" rel="noopener" href="https://sndshun.xyz/Standardization/Date/">UTC格式</a>                   2019-10-09T13:51:25.414Z</p>
 <p>将参数时间转换暂存                                       2019-10-09T13:51:25.414Z</p>
 <p>返回一个新的时间=参数时间+8*3600（60分钟 x 60秒）x1000毫秒 [八小时] 变为北京时间         2019-10-09T21:51:25.414Z</p>
 <p>使用ISO标准将 Date 对象转换为字符串。    2019-10-09T21:51:25.414Z</p>
@@ -135,7 +135,7 @@
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2019/10/07/javascript/javascript-skills/">JavaScript 常用代码段<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2019/10/11/javascript/axios-toolcalss/">axios 封装工具类<span class="note">较新</span></a></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/sndshun/2019/10/07/javascript/javascript-skills/">JavaScript 常用代码段<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/sndshun/2019/10/11/javascript/axios-toolcalss/">axios 封装工具类<span class="note">较新</span></a></section></div>
 
 
 
@@ -146,7 +146,7 @@
 
       
 <footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
-<p>本站由 <a href="https://sndshun.xyz/">@sndshun</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
+<p>本站由 <a href="https://github.com/sndshun/sndshun/">@sndshun</a> 创建，使用 <a href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
 </div></footer>
 
       <div class='float-panel mobile-only blur' style='display:none'>
@@ -264,8 +264,8 @@
   // required plugins (only load if needs)
   stellar.plugins = {
     jQuery: 'https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
-    sitesjs: '/js/plugins/sites.js',
-    friendsjs: '/js/plugins/friends.js',
+    sitesjs: '/sndshun/js/plugins/sites.js',
+    friendsjs: '/sndshun/js/plugins/friends.js',
   };
 
   // optional plugins
@@ -292,7 +292,7 @@
 <!-- required -->
 
   
-<script src="/js/main.js" async></script>
+<script src="/sndshun/js/main.js" async></script>
 
 
 

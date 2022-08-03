@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>学习小网站</title>
-    <url>/2020/01/23/web-tools/</url>
+    <url>/sndshun/2020/01/23/web-tools/</url>
     <content><![CDATA[<p>理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。</p>
 <span id="more"></span>
 
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title>时间标准</title>
-    <url>/2018/01/23/base/date/</url>
+    <url>/sndshun/2018/01/23/base/date/</url>
     <content><![CDATA[<h2 id="UTC：协调世界时"><a href="#UTC：协调世界时" class="headerlink" title="UTC：协调世界时"></a>UTC：协调世界时</h2><blockquote>
 <p>协调世界时（英：Coordinated Universal Time ，法：Temps Universel Coordonné），又称世界统一时间，世界标准时间，国际协调时间。英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。<br>世界标准时间UTC：GMT+0</p>
 </blockquote>
@@ -78,7 +78,7 @@
   </entry>
   <entry>
     <title>Spring boot 集成邮件发送</title>
-    <url>/2018/01/23/configs/spring-eamil/</url>
+    <url>/sndshun/2018/01/23/configs/spring-eamil/</url>
     <content><![CDATA[<h2 id="Spring-boot-集成邮件发送"><a href="#Spring-boot-集成邮件发送" class="headerlink" title="Spring boot 集成邮件发送"></a>Spring boot 集成邮件发送</h2><h3 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h3><ul>
 <li>Spring boot : <strong>2.6.1</strong></li>
 <li>mail : <strong>1.4</strong></li>
@@ -102,7 +102,7 @@
   </entry>
   <entry>
     <title>Vue 跨域配置</title>
-    <url>/2019/10/11/configs/vue-proxy/</url>
+    <url>/sndshun/2019/10/11/configs/vue-proxy/</url>
     <content><![CDATA[<p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202112082304683.png" alt="QQ截图20211208230445"></p>
 <p><strong>先看 package.json 里的vue 2开头为2.x，3开头为3.x</strong></p>
 <p><strong>然后注意自己的 vue 脚手架是vue-cli还是@vue-lic</strong></p>
@@ -144,7 +144,7 @@
   </entry>
   <entry>
     <title>Vue 部署服务器配置</title>
-    <url>/2022/03/19/configs/vue-deploy/</url>
+    <url>/sndshun/2022/03/19/configs/vue-deploy/</url>
     <content><![CDATA[<p>首先把开发时配置的跨域注释，使用代理后用不着</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202203191855536.png" alt="image-20220319183612053"></p>
 <blockquote>
@@ -169,7 +169,7 @@
   </entry>
   <entry>
     <title>数据结构与算法</title>
-    <url>/2018/01/23/base/data-structure/</url>
+    <url>/sndshun/2018/01/23/base/data-structure/</url>
     <content><![CDATA[<h2 id="知识总览"><a href="#知识总览" class="headerlink" title="知识总览"></a>知识总览</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">t[数据解构] </span><br><span class="line"></span><br><span class="line">t--&gt;j[基本概念] </span><br><span class="line">	j--&gt; 数据</span><br><span class="line">	j--&gt; 数据元素/数据项</span><br><span class="line">	j--&gt; 数据对象/数据解构</span><br><span class="line">	j--&gt; 数据类型/抽象数据类型-ADT</span><br><span class="line">t--&gt;s[三要素]</span><br><span class="line">	s--&gt;l[逻辑结构]</span><br><span class="line">		l--&gt;集合</span><br><span class="line">		l--&gt;线性结构</span><br><span class="line">		l--&gt;树形结构</span><br><span class="line">		l--&gt;图状结构-网状结构</span><br><span class="line">	s--&gt;w[物理结构-存储结构]</span><br><span class="line">		w--&gt;顺序存储</span><br><span class="line">		w--&gt;ls[链式存储]</span><br><span class="line">		w--&gt;索引存储</span><br><span class="line">		w--&gt;sl[散列存储]</span><br><span class="line">			ls--&gt;非顺序存储</span><br><span class="line">			sl--&gt;非顺序存储</span><br><span class="line">	s--&gt;数据的运算</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>数据是<strong>信息的载体</strong>，是描述客观事物属性的数、字符及所有<strong>能输入到计算机中并被计算机程序识别</strong>和处理的符号的集合。数据是计算机程序加工的原料。</p>
@@ -261,7 +261,7 @@
   </entry>
   <entry>
     <title>axios 封装工具类</title>
-    <url>/2019/10/11/javascript/axios-toolcalss/</url>
+    <url>/sndshun/2019/10/11/javascript/axios-toolcalss/</url>
     <content><![CDATA[<p>将 axios 封装为工具类，重复使用，统一配置请求</p>
 <span id="more"></span>
 
@@ -280,7 +280,7 @@
   </entry>
   <entry>
     <title>JavaScript 格式转换</title>
-    <url>/2019/10/11/javascript/javascript-format/</url>
+    <url>/sndshun/2019/10/11/javascript/javascript-format/</url>
     <content><![CDATA[<p>JavaScript 中常用的格式转换</p>
 <span id="more"></span>
 
@@ -333,7 +333,7 @@
   </entry>
   <entry>
     <title>Promise</title>
-    <url>/2020/01/01/javascript/promise/</url>
+    <url>/sndshun/2020/01/01/javascript/promise/</url>
     <content><![CDATA[<p>异步编程允许我们在执行一个长时间任务时程序不需要等待，而是继续执行之后的代码，直到这些任务完成之后再回来通知你，通常是以回调函数（callback）的形式。这种编程模式避免了程序的阻塞，大大提高了CPU的执行效率。尤其适用于IO密集的，例如需要经常进行网络操作，数据库访问的应用</p>
 <span id="more"></span>
 
@@ -358,7 +358,7 @@
   </entry>
   <entry>
     <title>Vue3 新特性</title>
-    <url>/2021/10/28/javascript/vue3/</url>
+    <url>/sndshun/2021/10/28/javascript/vue3/</url>
     <content><![CDATA[<p>Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化</p>
 <span id="more"></span>
 
@@ -495,7 +495,7 @@
   </entry>
   <entry>
     <title>JavaScript 常用代码段</title>
-    <url>/2019/10/07/javascript/javascript-skills/</url>
+    <url>/sndshun/2019/10/07/javascript/javascript-skills/</url>
     <content><![CDATA[<p><code>JavaScript</code> 编写中可能用到的技巧，熟练运用后说不定会有事半功倍的效果</p>
 <span id="more"></span>
 
@@ -552,7 +552,7 @@
   </entry>
   <entry>
     <title>Redis 学习笔记</title>
-    <url>/2021/11/21/nosql/redis/</url>
+    <url>/sndshun/2021/11/21/nosql/redis/</url>
     <content><![CDATA[<span id="more"></span>
 
 <h2 id="什么是Redis数据库"><a href="#什么是Redis数据库" class="headerlink" title="什么是Redis数据库"></a>什么是Redis数据库</h2><p><strong>完全开源的key-value的高性能数据库</strong></p>
@@ -677,7 +677,7 @@
   </entry>
   <entry>
     <title>Controller 接收多个json对象</title>
-    <url>/2021/11/15/java/springmvc-jsonparam/</url>
+    <url>/sndshun/2021/11/15/java/springmvc-jsonparam/</url>
     <content><![CDATA[<p>在写 <code>Spring Boot</code> 加 <code>Vue</code> 项目时,发现由 <code>Spring MVC</code> 提供的@RequestBody 注解在一个方法内,只能有一个。</p>
 <p>但是分页外加条件查询需要接受俩个对象参数,经过一番搜索后也是得到了几种不同的解决方法,各有各的优点,视情况和需求选择使用</p>
 <span id="more"></span>
@@ -724,7 +724,7 @@
   </entry>
   <entry>
     <title>HTML 实用标签</title>
-    <url>/2020/10/30/html/html-tags/</url>
+    <url>/sndshun/2020/10/30/html/html-tags/</url>
     <content><![CDATA[<p><code>HTML</code>标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。</p>
 <span id="more"></span>
 
@@ -788,7 +788,7 @@
   </entry>
   <entry>
     <title>MySQL 使用存储过程批量插入</title>
-    <url>/2021/10/26/sql/mysql-delimiter/</url>
+    <url>/sndshun/2021/10/26/sql/mysql-delimiter/</url>
     <content><![CDATA[<p>存储过程：是保存一条或多条 <code>SQL</code> 的批处理脚本</p>
 <p>存储过程的优点</p>
 <ul>
@@ -815,7 +815,7 @@
   </entry>
   <entry>
     <title>java 基础</title>
-    <url>/2018/05/23/java/java-base/</url>
+    <url>/sndshun/2018/05/23/java/java-base/</url>
     <content><![CDATA[<p>java程序，变量，运算符，循环，数组的基本认识</p>
 <span id="more"></span>
 
@@ -929,7 +929,7 @@
   </entry>
   <entry>
     <title>以后的事</title>
-    <url>/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <url>/sndshun/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
     <content><![CDATA[<p>docker</p>
 <p>elasticSearch 搜索引擎</p>
 <p>nuxt</p>
@@ -941,7 +941,7 @@
   </entry>
   <entry>
     <title>面试题</title>
-    <url>/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <url>/sndshun/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
     <content><![CDATA[<p>被问到的面试题整理，及常被提到的题</p>
 <span id="more"></span>
 
@@ -969,12 +969,12 @@
   </entry>
   <entry>
     <title>时序图</title>
-    <url>/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</url>
+    <url>/sndshun/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</url>
     <content><![CDATA[<h1 id="微信支付时序图"><a href="#微信支付时序图" class="headerlink" title="微信支付时序图"></a>微信支付时序图</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 微信支付时序图</span><br><span class="line">participant 微信支付用户 as user</span><br><span class="line">participant 微信客户端 as wxc</span><br><span class="line">participant 商户APP客户端 as appc</span><br><span class="line">participant 商户后台系统 as apps</span><br><span class="line">participant 微信支付系统 as wxs</span><br><span class="line"></span><br><span class="line">user-&gt;appc:1.打开商户APP客户端()</span><br><span class="line">appc-&gt;appc:2.选择商品下单()</span><br><span class="line">appc-&gt;apps:3.请求生成支付订单()</span><br><span class="line">apps-&gt;wxs:4.调用统一下单API()</span><br><span class="line">wxs-&gt;wxs:生成预付单()</span><br><span class="line">wxs--&gt;&gt;apps:5.返回预付单信息(prepay_id)</span><br><span class="line">apps-&gt;apps:6.生成带签名的客户端支付信息()</span><br><span class="line">apps--&gt;&gt;appc:7:返回信息(prepay_id,sign等)</span><br><span class="line">user-&gt;appc:8:用户确认支付()</span><br><span class="line">appc--&gt;wxc:9:支付参数通过调用SDK调起微信支付()</span><br><span class="line">wxc-&gt;wxs:10.发起支付请求()</span><br><span class="line">wxs-&gt;wxs:验证支付参数, APP支付权限等()</span><br><span class="line">wxs--&gt;&gt;wxc:11.返回需要支付授权()</span><br><span class="line">user-&gt;wxc:12.用户确认支付, 输入密码()</span><br><span class="line">wxc-&gt;wxs:13:提交支付授权()</span><br><span class="line">wxs-&gt;wxs:验证授权, 完成支付交易()</span><br><span class="line">wxs--&gt;&gt;apps:15.异步通知商户支付结果()</span><br><span class="line">apps-&gt;apps:接收和保存支付通知()</span><br><span class="line">apps-&gt;&gt;wxs:16.返回告知已成功接收处理()</span><br><span class="line">wxs--&gt;wxc:14.返回支付结果, 发送微信消息提示()</span><br><span class="line">wxc-&gt;appc:将支付状态通过商户APP已实现的回调接口执行回调()</span><br><span class="line">appc-&gt;apps:后台查询实际支付结果()</span><br><span class="line">apps-&gt;wxs:调用微信查询API查询支付结果()</span><br><span class="line">wxs--&gt;&gt;apps:返回支付结果()</span><br><span class="line">apps--&gt;appc:返回支付结果</span><br><span class="line">appc--&gt;user:展示支付结果()</span><br><span class="line">appc-&gt;appc:商户发货()</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>简历注意事项</title>
-    <url>/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <url>/sndshun/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     <content><![CDATA[<p>简历文件命名：名字+求职岗位+工作年限</p>
 <p>简历使用pdf格式</p>
 <p>不用竖版简历</p>
@@ -1055,7 +1055,7 @@
   </entry>
   <entry>
     <title>面试流程</title>
-    <url>/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
+    <url>/sndshun/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<ol start="2">
 <li><ol>
 <li>先敲门</li>
@@ -1084,7 +1084,7 @@
   </entry>
   <entry>
     <title>git 基本命令</title>
-    <url>/2020/01/23/base/git/</url>
+    <url>/sndshun/2020/01/23/base/git/</url>
     <content><![CDATA[<h2 id="配置公钥-私钥"><a href="#配置公钥-私钥" class="headerlink" title="配置公钥+私钥"></a>配置公钥+私钥</h2><ol>
 <li>生成，运行<code>cmd</code>命令：<code>ssh-keygen -t rsa -C &quot;名称&quot;</code>；</li>
 <li>得到公钥私钥：<code>C:\Users\用户名\.ssh\</code>目录下有<code>id_rsa</code>和<code>id_rsa.pub</code>；</li>
@@ -1111,7 +1111,7 @@
   </entry>
   <entry>
     <title>Maven 相关</title>
-    <url>/2020/01/23/configs/maven/</url>
+    <url>/sndshun/2020/01/23/configs/maven/</url>
     <content><![CDATA[<h1 id="nexus"><a href="#nexus" class="headerlink" title="nexus"></a>nexus</h1><p>nexus是一个强大的maven仓库管理工具，使用nexus可以方便的管理内部仓库，也就是私服，专门用于管理公司内部的jar包，可以将公司内部的jar包上传到nexus中。</p>
 <h1 id="svn"><a href="#svn" class="headerlink" title="svn(!)"></a>svn(!)</h1><p>SVN全名Subversion，即版本控制系统。SVN与CVS一样，是一个跨平台的软件，支持大多数常见的操作系统。</p>
 <p>作为一个开源的版本控制系统,Subversion管理着随时间改变的数据。这些数据放置在一个中央资料档案库(repository)中。这个档案库很像一个普通的文件服务器,不过它会记住每一次文件的变动。</p>
@@ -1137,7 +1137,7 @@
   </entry>
   <entry>
     <title>网站换肤的最佳实现</title>
-    <url>/2022/07/30/html/html-theme/</url>
+    <url>/sndshun/2022/07/30/html/html-theme/</url>
     <content><![CDATA[<h1 id="大多数开发人员的实现"><a href="#大多数开发人员的实现" class="headerlink" title="大多数开发人员的实现"></a>大多数开发人员的实现</h1><h1 id="原生HTML下的换肤实现"><a href="#原生HTML下的换肤实现" class="headerlink" title="原生HTML下的换肤实现"></a>原生HTML下的换肤实现</h1><h1 id="实现的优点及碎碎念"><a href="#实现的优点及碎碎念" class="headerlink" title="实现的优点及碎碎念"></a>实现的优点及碎碎念</h1>]]></content>
       <categories>
         <category>html</category>
@@ -1145,14 +1145,14 @@
   </entry>
   <entry>
     <title>openJDK 的初步了解</title>
-    <url>/2022/07/29/java/open-jdk/</url>
+    <url>/sndshun/2022/07/29/java/open-jdk/</url>
     <content><![CDATA[<p>下载地址：</p>
 <p><a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">https://developer.ibm.com/languages/java/semeru-runtimes/downloads/</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>centOS 配置 open-jdk</title>
-    <url>/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</url>
+    <url>/sndshun/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</url>
     <content><![CDATA[<p>用yum命令在centOS8.2上配置OpenJDK</p>
 <span id="more"></span>
 
@@ -1331,7 +1331,7 @@
   </entry>
   <entry>
     <title>centOS 初认识</title>
-    <url>/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</url>
+    <url>/sndshun/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</url>
     <content><![CDATA[<p>安装 <code>centOS</code> 系统后生成账号密码，生成公钥私钥</p>
 <span id="more"></span>
 
@@ -1756,7 +1756,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2022/08/01/temp/</url>
+    <url>/sndshun/2022/08/01/temp/</url>
     <content><![CDATA[<p>visio</p>
 <p>聚合支付</p>
 <p>支付宝沙箱支付</p>
@@ -1810,7 +1810,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2022/08/01/%E6%9C%AF%E8%AF%AD/</url>
+    <url>/sndshun/2022/08/01/%E6%9C%AF%E8%AF%AD/</url>
     <content><![CDATA[<p>prd：一般指产品需求文档</p>
 <p>crm： afdf</p>
 <p>erp：</p>
