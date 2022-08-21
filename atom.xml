@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-08-03T06:12:11.093Z</updated>
+  <updated>2022-08-10T10:49:09.258Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/08/10/%E7%94%B5%E5%BD%B1%E7%BD%91/"/>
+    <id>https://sndshun.xyz/2022/08/10/%E7%94%B5%E5%BD%B1%E7%BD%91/</id>
+    <published>2022-08-10T10:48:29.301Z</published>
+    <updated>2022-08-10T10:49:09.258Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;茶杯狐&lt;/p&gt;
+&lt;p&gt;电影港&lt;/p&gt;
+&lt;p&gt;白嫖者联盟&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -211,7 +235,7 @@
     <updated>2022-07-10T15:17:32.860Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262125984.png&quot; alt=&quot;uTools_1637933124302&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111262125984.png&quot; alt=&quot;uTools_1637933124302&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -240,11 +264,55 @@
   </entry>
   
   <entry>
+    <title>centOS 安装 Docker</title>
+    <link href="https://sndshun.xyz/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/"/>
+    <id>https://sndshun.xyz/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/</id>
+    <published>2020-08-21T09:54:00.000Z</published>
+    <updated>2022-08-21T11:32:55.168Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker要求CentOS的内核版本要高于3.10&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;用到的命令&quot;&gt;&lt;a href=&quot;#用到的命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常用命令</title>
+    <link href="https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-08-19T02:57:00.000Z</published>
+    <updated>2022-08-21T11:26:05.823Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;会不会无所谓，但是很方便的操作&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>centOS 配置 open-jdk</title>
-    <link href="https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
-    <id>https://sndshun.xyz/2020/08/30/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
-    <published>2020-08-30T09:54:00.000Z</published>
-    <updated>2022-07-31T03:10:22.399Z</updated>
+    <link href="https://sndshun.xyz/2020/08/11/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
+    <id>https://sndshun.xyz/2020/08/11/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
+    <published>2020-08-11T09:54:00.000Z</published>
+    <updated>2022-08-21T11:21:43.713Z</updated>
     
     
     <summary type="html">&lt;p&gt;用yum命令在centOS8.2上配置OpenJDK&lt;/p&gt;</summary>
@@ -261,7 +329,7 @@
     <link href="https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/"/>
     <id>https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</id>
     <published>2020-07-30T09:54:00.000Z</published>
-    <updated>2022-07-30T15:04:55.322Z</updated>
+    <updated>2022-08-21T11:21:39.540Z</updated>
     
     
     <summary type="html">&lt;p&gt;安装 &lt;code&gt;centOS&lt;/code&gt; 系统后生成账号密码，生成公钥私钥&lt;/p&gt;</summary>
@@ -297,7 +365,7 @@
     <link href="https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     <id>https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-08-05T02:27:45.252Z</updated>
+    <updated>2022-08-15T00:50:40.408Z</updated>
     
     
       
@@ -325,39 +393,10 @@
     <link href="https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <id>https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:26:02.140Z</updated>
+    <updated>2022-08-10T00:53:06.210Z</updated>
     
     
     <summary type="html">&lt;p&gt;被问到的面试题整理，及常被提到的题&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>简历注意事项</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:16:47.220Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
-&lt;p&gt;简历使用pdf格式&lt;/p&gt;
-&lt;p&gt;不用竖版简历&lt;/p&gt;
-&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
-&lt;p&gt;放证件照片&lt;/p&gt;
-&lt;p&gt;字体大小，行间距&lt;/p&gt;
-&lt;p&gt;不能有错别字&lt;/p&gt;
-&lt;p&gt;简历内容顺序：&lt;/p&gt;
-&lt;</summary>
-        
-      
     
     
     
@@ -386,61 +425,26 @@
   </entry>
   
   <entry>
-    <title>面试流程</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
+    <title>简历注意事项</title>
+    <link href="https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:17:58.630Z</updated>
+    <updated>2022-07-31T10:16:47.220Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;ol</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git 基本命令</title>
-    <link href="https://sndshun.xyz/2020/01/23/base/git/"/>
-    <id>https://sndshun.xyz/2020/01/23/base/git/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:20:58.109Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Maven 相关</title>
-    <link href="https://sndshun.xyz/2020/01/23/configs/maven/"/>
-    <id>https://sndshun.xyz/2020/01/23/configs/maven/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-08-01T03:00:37.803Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;nexus&quot;&gt;&lt;a href=&quot;#nexus&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
+&lt;p&gt;简历使用pdf格式&lt;/p&gt;
+&lt;p&gt;不用竖版简历&lt;/p&gt;
+&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
+&lt;p&gt;放证件照片&lt;/p&gt;
+&lt;p&gt;字体大小，行间距&lt;/p&gt;
+&lt;p&gt;不能有错别字&lt;/p&gt;
+&lt;p&gt;简历内容顺序：&lt;/p&gt;
+&lt;</summary>
         
       
     
