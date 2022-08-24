@@ -945,6 +945,8 @@
 <p>spring boot @Cacheable 注解</p>
 <p>spring boot 配置分离 模板分离</p>
 <p>saas</p>
+<p>ClassPathResource类 可以用流的方式读取jar包中resource中的文件，直接获取resource路径通用</p>
+<p>前端开发桌面应用：electron</p>
 ]]></content>
   </entry>
   <entry>
@@ -1338,6 +1340,10 @@
       <categories>
         <category>linux</category>
       </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centOS</tag>
+      </tags>
   </entry>
   <entry>
     <title>centOS 初认识</title>
@@ -1763,6 +1769,10 @@
       <categories>
         <category>linux</category>
       </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centOS</tag>
+      </tags>
   </entry>
   <entry>
     <title></title>
@@ -1852,8 +1862,7 @@
   <entry>
     <title>centOS 安装 Docker</title>
     <url>/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/</url>
-    <content><![CDATA[<p>1</p>
-<blockquote>
+    <content><![CDATA[<blockquote>
 <p>Docker要求CentOS的内核版本要高于3.10</p>
 </blockquote>
 <h1 id="用到的命令"><a href="#用到的命令" class="headerlink" title="用到的命令"></a>用到的命令</h1><p>uname命令来自于英文词组”Unix name“的缩写，其功能是用于查看系统主机名、内核及硬件架构等信息。如果不加任何参数，默认仅显示系统内核名称，相当于-s参数。</p>
@@ -1904,6 +1913,10 @@
       <categories>
         <category>linux</category>
       </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centOS</tag>
+      </tags>
   </entry>
   <entry>
     <title>常用命令</title>
@@ -1917,5 +1930,9 @@
       <categories>
         <category>linux</category>
       </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centOS</tag>
+      </tags>
   </entry>
 </search>
