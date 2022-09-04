@@ -27,6 +27,8 @@ https://sndshun.xyz/2019/10/11/javascript/axios-toolcalss/
 https://sndshun.xyz/2019/10/11/javascript/javascript-format/
 https://sndshun.xyz/2019/10/07/javascript/javascript-skills/
 https://sndshun.xyz/2018/05/23/java/java-base/
+https://sndshun.xyz/2018/05/23/java/java-boolean-size/
 https://sndshun.xyz/2018/01/23/base/date/
 https://sndshun.xyz/2018/01/23/configs/spring-eamil/
 https://sndshun.xyz/2018/01/23/base/data-structure/
+https://sndshun.xyz/2018/01/23/base/%E5%A4%A7%E5%B0%8F%E5%8D%95%E4%BD%8D/
