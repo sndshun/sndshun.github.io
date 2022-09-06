@@ -6,7 +6,7 @@ https://sndshun.xyz/2022/07/29/java/open-jdk/
 https://sndshun.xyz/2022/03/19/vue/vue-deploy/
 https://sndshun.xyz/2021/11/21/nosql/redis/
 https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/
-https://sndshun.xyz/2021/10/28/javascript/vue3/
+https://sndshun.xyz/2021/10/28/vue/vue3/
 https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/
 https://sndshun.xyz/2020/10/30/html/html-tags/
 https://sndshun.xyz/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/

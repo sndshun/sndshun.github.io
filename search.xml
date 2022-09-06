@@ -148,6 +148,7 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>前端</category>
         <category>javascript</category>
       </categories>
       <tags>
@@ -201,6 +202,7 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>前端</category>
         <category>javascript</category>
       </categories>
       <tags>
@@ -229,145 +231,9 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>前端</category>
         <category>javascript</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Vue3 新特性</title>
-    <url>/2021/10/28/javascript/vue3/</url>
-    <content><![CDATA[<p>Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化</p>
-<span id="more"></span>
-
-<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是 Vue 3 中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
-<blockquote>
-<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
-<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
-<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
-</blockquote>
-<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3><p><img data-src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252212225.png" alt="uTools_1637849561826"></p>
-<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>下表包含如何在 <a href="https://v3.cn.vuejs.org/guide/composition-api-setup.html">setup ()</a> 内部调用生命周期钩子：</p>
-<table>
-<thead>
-<tr>
-<th>选项式 API</th>
-<th>Hook inside <code>setup</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>beforeCreate</code></td>
-<td>Not needed*</td>
-</tr>
-<tr>
-<td><code>created</code></td>
-<td>Not needed*</td>
-</tr>
-<tr>
-<td><code>beforeMount</code></td>
-<td><code>onBeforeMount</code></td>
-</tr>
-<tr>
-<td><code>mounted</code></td>
-<td><code>onMounted</code></td>
-</tr>
-<tr>
-<td><code>beforeUpdate</code></td>
-<td><code>onBeforeUpdate</code></td>
-</tr>
-<tr>
-<td><code>updated</code></td>
-<td><code>onUpdated</code></td>
-</tr>
-<tr>
-<td><code>beforeUnmount</code></td>
-<td><code>onBeforeUnmount</code></td>
-</tr>
-<tr>
-<td><code>unmounted</code></td>
-<td><code>onUnmounted</code></td>
-</tr>
-<tr>
-<td><code>errorCaptured</code></td>
-<td><code>onErrorCaptured</code></td>
-</tr>
-<tr>
-<td><code>renderTracked</code></td>
-<td><code>onRenderTracked</code></td>
-</tr>
-<tr>
-<td><code>renderTriggered</code></td>
-<td><code>onRenderTriggered</code></td>
-</tr>
-<tr>
-<td><code>activated</code></td>
-<td><code>onActivated</code></td>
-</tr>
-<tr>
-<td><code>deactivated</code></td>
-<td><code>onDeactivated</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>官网的解释是  <code>beforeCreate</code> 和 <code>created</code> 中编写的任何代码都应该直接在 <code>setup</code> 函数中</p>
-<p>编写，所以不需要显式地定义它们。。。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这是一个官网的使用例子</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="comment">// mounted</span></span><br><span class="line">    onMounted(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;Component is mounted!&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="setup-函数"><a href="#setup-函数" class="headerlink" title="setup 函数"></a>setup 函数</h3><p><strong>setup 函数</strong>是 Vue3 中新增的一个生命周期函数</p>
-<p>setup 函数会在 <code>beforeCreate</code> 之前调用，因为此时组件的 <code>data</code> 和 <code>methods</code> 还没有初始化，因此在 setup 中是不能使用 <code>this</code> 的。</p>
-<p>所以 Vue 为了避免我们错误的使用，它直接将 setup 函数中的 <code>this</code> 修改成了<code>undefined</code>。并且，我们只能同步使用setup函数，不能用async将其设为异步。</p>
-<p>setup 函数接收两个参数 <code>props</code>和 <code>context</code>， 语法为：<code>setup(props,context)&#123;&#125;</code></p>
-<h4 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h4><p><code>setup</code> 函数中的第一个参数是 <code>props</code>。正如在一个标准组件中所期望的那样，<code>setup</code> 函数中的 <code>props</code> 是响应式的，当传入新的 prop 时，它将被更新。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">props</span>: &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">String</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(props.title)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>WARNING</p>
-<p>但是，因为 <code>props</code> 是响应式的，你<strong>不能使用 ES6 解构</strong>，因为它会消除 prop 的响应性。</p>
-<p>如果需要解构 prop，可以通过使用 <code>setup</code> 函数中的 <a href="https://v3.cn.vuejs.org/guide/reactivity-fundamentals.html#%E5%93%8D%E5%BA%94%E5%BC%8F%E7%8A%B6%E6%80%81%E8%A7%A3%E6%9E%84"><code>toRefs</code></a> 来完成此操作：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; toRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 不能直接解构let &#123; title ,name ,age &#125; = props;  </span></span><br><span class="line">	<span class="keyword">const</span> &#123; title &#125; = toRefs(props)</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">console</span>.log(title.value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="context"><a href="#context" class="headerlink" title="context"></a>context</h4><p><code>context</code> 里面包含 <code>attrs</code>, <code>slots</code>, <code>emit</code> 等数据方法：</p>
-<ul>
-<li><code>attrs</code>：获取组件上的属性</li>
-<li><code>slots</code>：获取 slot 插槽的节点</li>
-<li><code>emit</code> ：emit 方法（<strong>子组件向父组件传递数据</strong>）</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, context</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// Attribute (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.attrs)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 插槽 (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.slots)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 触发事件 (方法)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.emit)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>context</code> 是一个普通的 JavaScript 对象，也就是说，它不是响应式的，这意味着你可以安全地对 <code>context</code> 使用 ES6 解构。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, &#123; attrs, slots, emit &#125;</span>)</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><h3 id="访问组件的-property"><a href="#访问组件的-property" class="headerlink" title="访问组件的 property"></a>访问组件的 property</h3><p>执行 <code>setup</code> 时，组件实例尚未被创建。因此，你只能访问以下 property：</p>
-<ul>
-<li><code>props</code></li>
-<li><code>attrs</code></li>
-<li><code>slots</code></li>
-<li><code>emit</code></li>
-</ul>
-<p>换句话说，你<strong>将无法访问</strong>以下组件选项：</p>
-<ul>
-<li><code>data</code></li>
-<li><code>computed</code></li>
-<li><code>methods</code></li>
-</ul>
-<h3 id="ref-与-reactive"><a href="#ref-与-reactive" class="headerlink" title="ref 与 reactive"></a>ref 与 reactive</h3><p>创建一个<strong>响应式数据</strong></p>
-<ul>
-<li><strong>ref：任意类型（建议基本类型）数据的响应式引用</strong>（设置、获取值时需要加<code>.value</code>）。<br>ref 的本质是拷贝，修改数据是不会影响到原始数据。</li>
-<li><strong>reactive：只能是复杂类型数据的响应式引用</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; h, ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> readersNumber = ref(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">const</span> book = reactive(&#123; <span class="attr">title</span>: <span class="string">&#x27;Vue 3 Guide&#x27;</span> &#125;)</span><br><span class="line">    <span class="comment">// Please note that we need to explicitly expose ref value here</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> h(<span class="string">&#x27;div&#x27;</span>, [readersNumber.value, book.title])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="toRef-与-toRefs"><a href="#toRef-与-toRefs" class="headerlink" title="toRef 与 toRefs"></a>toRef 与 toRefs</h3><p>也可以创建一个响应式数据</p>
-<ul>
-<li>toRef：用来给抽离响应式对象中的某一个属性，并把该属性包裹成 ref 对象，使其和原对象产生链接。<br>toRef 的本质是引用，修改响应式数据会影响原始数据。</li>
-<li>toRefs：用来把响应式对象转换成普通对象，把对象中的每一个属性，包裹成 ref 对象。<br>toRefs 就是 toRef 的升级版，只是toRefs 是把响应式对象进行转换，其余的特性和 toRef 无二</li>
-</ul>
-]]></content>
-      <categories>
-        <category>javascript</category>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
   </entry>
   <entry>
     <title>JavaScript 常用代码段</title>
@@ -420,6 +286,7 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>前端</category>
         <category>javascript</category>
       </categories>
       <tags>
@@ -1685,7 +1552,7 @@
 <p>在验证完手机号信息后即可开启，会返回一个授权码，发送邮件时会用到</p>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>spring boot</tag>
@@ -2347,6 +2214,144 @@
       </categories>
       <tags>
         <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue3 新特性</title>
+    <url>/2021/10/28/vue/vue3/</url>
+    <content><![CDATA[<p>Vue 3 在2原来的写法上添加了不少新特性，但是也有许多非兼容的变更。稍不留意还是会踩许多坑的，这篇文章就来总结下 Vue3 的变化</p>
+<span id="more"></span>
+
+<h2 id="组合式API-composition-API"><a href="#组合式API-composition-API" class="headerlink" title="组合式API(composition-API)"></a>组合式API(composition-API)</h2><p><code>setup()</code>函数是 Vue 3 中，专门为组件提供的新属性。它为基于<code>Composition API</code>的新特性提供了统一的入口。</p>
+<blockquote>
+<p>在Vue3中，定义<code>methods</code>、<code>watch</code>、<code>computed</code>、<code>data</code>数据都放在了<code>setup()</code>函数中</p>
+<p>根据官网解释，<code>setup()</code>会在<code>data</code>、<code>computed</code>、<code>methods</code>解析前就被调用，所以无法在<code>setup()</code>使用<code>this</code></p>
+<p>但是<code>setup()</code>提供参数<code>context</code>来访问<code>Vue</code>的实例this</p>
+</blockquote>
+<h3 id="执行时期"><a href="#执行时期" class="headerlink" title="执行时期"></a>执行时期</h3><p><img src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/202111252212225.png" alt="uTools_1637849561826"></p>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>下表包含如何在 <a href="https://v3.cn.vuejs.org/guide/composition-api-setup.html">setup ()</a> 内部调用生命周期钩子：</p>
+<table>
+<thead>
+<tr>
+<th>选项式 API</th>
+<th>Hook inside <code>setup</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>beforeCreate</code></td>
+<td>Not needed*</td>
+</tr>
+<tr>
+<td><code>created</code></td>
+<td>Not needed*</td>
+</tr>
+<tr>
+<td><code>beforeMount</code></td>
+<td><code>onBeforeMount</code></td>
+</tr>
+<tr>
+<td><code>mounted</code></td>
+<td><code>onMounted</code></td>
+</tr>
+<tr>
+<td><code>beforeUpdate</code></td>
+<td><code>onBeforeUpdate</code></td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td><code>onUpdated</code></td>
+</tr>
+<tr>
+<td><code>beforeUnmount</code></td>
+<td><code>onBeforeUnmount</code></td>
+</tr>
+<tr>
+<td><code>unmounted</code></td>
+<td><code>onUnmounted</code></td>
+</tr>
+<tr>
+<td><code>errorCaptured</code></td>
+<td><code>onErrorCaptured</code></td>
+</tr>
+<tr>
+<td><code>renderTracked</code></td>
+<td><code>onRenderTracked</code></td>
+</tr>
+<tr>
+<td><code>renderTriggered</code></td>
+<td><code>onRenderTriggered</code></td>
+</tr>
+<tr>
+<td><code>activated</code></td>
+<td><code>onActivated</code></td>
+</tr>
+<tr>
+<td><code>deactivated</code></td>
+<td><code>onDeactivated</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>官网的解释是  <code>beforeCreate</code> 和 <code>created</code> 中编写的任何代码都应该直接在 <code>setup</code> 函数中</p>
+<p>编写，所以不需要显式地定义它们。。。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这是一个官网的使用例子</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="comment">// mounted</span></span><br><span class="line">    onMounted(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;Component is mounted!&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="setup-函数"><a href="#setup-函数" class="headerlink" title="setup 函数"></a>setup 函数</h3><p><strong>setup 函数</strong>是 Vue3 中新增的一个生命周期函数</p>
+<p>setup 函数会在 <code>beforeCreate</code> 之前调用，因为此时组件的 <code>data</code> 和 <code>methods</code> 还没有初始化，因此在 setup 中是不能使用 <code>this</code> 的。</p>
+<p>所以 Vue 为了避免我们错误的使用，它直接将 setup 函数中的 <code>this</code> 修改成了<code>undefined</code>。并且，我们只能同步使用setup函数，不能用async将其设为异步。</p>
+<p>setup 函数接收两个参数 <code>props</code>和 <code>context</code>， 语法为：<code>setup(props,context)&#123;&#125;</code></p>
+<h4 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h4><p><code>setup</code> 函数中的第一个参数是 <code>props</code>。正如在一个标准组件中所期望的那样，<code>setup</code> 函数中的 <code>props</code> 是响应式的，当传入新的 prop 时，它将被更新。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">props</span>: &#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">String</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(props.title)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>WARNING</p>
+<p>但是，因为 <code>props</code> 是响应式的，你<strong>不能使用 ES6 解构</strong>，因为它会消除 prop 的响应性。</p>
+<p>如果需要解构 prop，可以通过使用 <code>setup</code> 函数中的 <a href="https://v3.cn.vuejs.org/guide/reactivity-fundamentals.html#%E5%93%8D%E5%BA%94%E5%BC%8F%E7%8A%B6%E6%80%81%E8%A7%A3%E6%9E%84"><code>toRefs</code></a> 来完成此操作：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; toRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="title">setup</span>(<span class="params">props</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 不能直接解构let &#123; title ,name ,age &#125; = props;  </span></span><br><span class="line">	<span class="keyword">const</span> &#123; title &#125; = toRefs(props)</span><br><span class="line"> </span><br><span class="line">	<span class="built_in">console</span>.log(title.value)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="context"><a href="#context" class="headerlink" title="context"></a>context</h4><p><code>context</code> 里面包含 <code>attrs</code>, <code>slots</code>, <code>emit</code> 等数据方法：</p>
+<ul>
+<li><code>attrs</code>：获取组件上的属性</li>
+<li><code>slots</code>：获取 slot 插槽的节点</li>
+<li><code>emit</code> ：emit 方法（<strong>子组件向父组件传递数据</strong>）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, context</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// Attribute (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.attrs)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 插槽 (非响应式对象)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.slots)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 触发事件 (方法)</span></span><br><span class="line">    <span class="built_in">console</span>.log(context.emit)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>context</code> 是一个普通的 JavaScript 对象，也就是说，它不是响应式的，这意味着你可以安全地对 <code>context</code> 使用 ES6 解构。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params">props, &#123; attrs, slots, emit &#125;</span>)</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><h3 id="访问组件的-property"><a href="#访问组件的-property" class="headerlink" title="访问组件的 property"></a>访问组件的 property</h3><p>执行 <code>setup</code> 时，组件实例尚未被创建。因此，你只能访问以下 property：</p>
+<ul>
+<li><code>props</code></li>
+<li><code>attrs</code></li>
+<li><code>slots</code></li>
+<li><code>emit</code></li>
+</ul>
+<p>换句话说，你<strong>将无法访问</strong>以下组件选项：</p>
+<ul>
+<li><code>data</code></li>
+<li><code>computed</code></li>
+<li><code>methods</code></li>
+</ul>
+<h3 id="ref-与-reactive"><a href="#ref-与-reactive" class="headerlink" title="ref 与 reactive"></a>ref 与 reactive</h3><p>创建一个<strong>响应式数据</strong></p>
+<ul>
+<li><strong>ref：任意类型（建议基本类型）数据的响应式引用</strong>（设置、获取值时需要加<code>.value</code>）。<br>ref 的本质是拷贝，修改数据是不会影响到原始数据。</li>
+<li><strong>reactive：只能是复杂类型数据的响应式引用</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// MyBook.vue</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> &#123; h, ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">setup</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> readersNumber = ref(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">const</span> book = reactive(&#123; <span class="attr">title</span>: <span class="string">&#x27;Vue 3 Guide&#x27;</span> &#125;)</span><br><span class="line">    <span class="comment">// Please note that we need to explicitly expose ref value here</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> h(<span class="string">&#x27;div&#x27;</span>, [readersNumber.value, book.title])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="toRef-与-toRefs"><a href="#toRef-与-toRefs" class="headerlink" title="toRef 与 toRefs"></a>toRef 与 toRefs</h3><p>也可以创建一个响应式数据</p>
+<ul>
+<li>toRef：用来给抽离响应式对象中的某一个属性，并把该属性包裹成 ref 对象，使其和原对象产生链接。<br>toRef 的本质是引用，修改响应式数据会影响原始数据。</li>
+<li>toRefs：用来把响应式对象转换成普通对象，把对象中的每一个属性，包裹成 ref 对象。<br>toRefs 就是 toRef 的升级版，只是toRefs 是把响应式对象进行转换，其余的特性和 toRef 无二</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>javascript</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
       </tags>
   </entry>
 </search>

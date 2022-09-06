@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
+    
+    <lastmod>2022-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/2020/01/01/javascript/promise/</loc>
+    
+    <lastmod>2022-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/2018/01/23/java/spring-eamil/</loc>
+    
+    <lastmod>2022-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/2021/10/28/vue/vue3/</loc>
+    
+    <lastmod>2022-09-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sndshun.xyz/2022/03/19/vue/vue-deploy/</loc>
     
     <lastmod>2022-09-06</lastmod>
@@ -17,13 +45,6 @@
   
   <url>
     <loc>https://sndshun.xyz/2020/10/30/html/html-tags/</loc>
-    
-    <lastmod>2022-09-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/2018/01/23/java/spring-eamil/</loc>
     
     <lastmod>2022-09-06</lastmod>
     
@@ -205,13 +226,6 @@
   </url>
   
   <url>
-    <loc>https://sndshun.xyz/2021/10/28/javascript/vue3/</loc>
-    
-    <lastmod>2022-07-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</loc>
     
     <lastmod>2022-07-10</lastmod>
@@ -220,20 +234,6 @@
   
   <url>
     <loc>https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/</loc>
-    
-    <lastmod>2022-07-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
-    
-    <lastmod>2022-07-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/2020/01/01/javascript/promise/</loc>
     
     <lastmod>2022-07-10</lastmod>
     
@@ -405,13 +405,6 @@
 
   
   <url>
-    <loc>https://sndshun.xyz/categories/Java/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sndshun.xyz/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>daily</changefreq>
@@ -427,20 +420,6 @@
   
   <url>
     <loc>https://sndshun.xyz/categories/base/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/categories/javascript/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sndshun.xyz/categories/javascript/vue/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -490,6 +469,20 @@
   
   <url>
     <loc>https://sndshun.xyz/categories/maven/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/javascript/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/javascript/vue/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
