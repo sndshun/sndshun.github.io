@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://fastly.jsdelivr.net'>
+  <link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>面试题 - SNDSHUN</title>
+
+  
+    <meta name="description" content="被问到的面试题整理，及常被提到的题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题">
+<meta property="og:url" content="https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="SNDSHUN">
+<meta property="og:description" content="被问到的面试题整理，及常被提到的题">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-23T04:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-05T00:36:13.693Z">
+<meta property="article:author" content="sndshun">
+<meta property="article:tag" content="sndshun">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="SNDSHUN" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}</style></head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cdn.jsdelivr.net/gh/sndshun/hosting/img/av.jfif" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">SNDSHUN</div><div class="sub cap">旅行中</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">笔记</a><a class="nav-item" href="/more/">更多</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFioc"><span class="toc-text">什么是ioc</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ioc%E6%98%AF%E6%80%8E%E4%B9%88%E8%A7%A3%E8%80%A6%E7%9A%84"><span class="toc-text">ioc是怎么解耦的</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFaop"><span class="toc-text">什么是aop</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#aop%E5%8F%AF%E4%BB%A5%E5%B9%B2%E4%BB%80%E4%B9%88"><span class="toc-text">aop可以干什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFMVC"><span class="toc-text">什么是MVC</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MVC%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-text">MVC模式的优点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SpringMVC%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8E%A7%E5%88%B6%E5%99%A8%E4%BB%80%E4%B9%88"><span class="toc-text">SpringMVC的核心控制器什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SpringMVC%E7%9A%84%E5%8F%82%E6%95%B0%E6%8E%A5%E6%94%B6%E6%96%B9%E5%BC%8F"><span class="toc-text">SpringMVC的参数接收方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SpringBoot%E5%AF%B9%E6%AF%94%E4%B9%8B%E5%89%8D%E6%8A%80%E6%9C%AF%E6%9C%89%E5%95%A5%E5%A5%BD%E5%A4%84"><span class="toc-text">SpringBoot对比之前技术有啥好处</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SpringBoot%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E9%82%A3%E7%A7%8D"><span class="toc-text">SpringBoot的web服务器是那种</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatis%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-text">mybatis批量插入的方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatis%E5%B8%B8%E7%94%A8%E7%9A%84%E5%8A%A8%E6%80%81Sql%E6%A0%87%E7%AD%BE"><span class="toc-text">mybatis常用的动态Sql标签</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatis-%E8%B7%9F-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">mybatis #{} 跟 ${}的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatisPlus-%E4%B8%BB%E9%94%AE%E5%BD%A2%E5%BC%8F"><span class="toc-text">mybatisPlus 主键形式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatisPlus%E5%88%86%E9%A1%B5%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">mybatisPlus分页实现原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#mybatisPlus%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">mybatisPlus批量插入实现原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Redis%E9%99%A4%E4%BA%86%E5%AD%98%E5%82%A8%E8%BF%98%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88"><span class="toc-text">Redis除了存储还能做什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Linux-%E5%8E%8B%E7%BC%A9%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89%E5%91%BD%E4%BB%A4"><span class="toc-text">Linux 压缩（打包）命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Maven%E6%89%93%E5%8C%85%E5%90%8E%E6%B2%A1%E6%9C%89%E4%BE%9D%E8%B5%96%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-text">Maven打包后没有依赖怎么解决</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Vue%E7%9A%84%E8%B7%A8%E5%9F%9F%E6%9C%89%E9%82%A3%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%8F%8A%E6%89%93%E5%8C%85%E5%90%8ENginx%E4%BB%A3%E7%90%86"><span class="toc-text">Vue的跨域有那几种方式，及打包后Nginx代理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#OSS%E5%AF%B9%E8%B1%A1%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4"><span class="toc-text">OSS对象怎么删除</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Token%E4%B8%AD%E4%B8%80%E8%88%AC%E5%AD%98%E4%BB%80%E4%B9%88"><span class="toc-text">Token中一般存什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Nginx%E6%80%8E%E4%B9%88%E9%99%90%E5%88%B6%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="toc-text">Nginx怎么限制上传文件的大小</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Nginx%E5%AE%9E%E7%8E%B0https%E5%8A%A0%E5%AF%86"><span class="toc-text">Nginx实现https加密</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E5%AF%BC%E5%87%BAExcel%E8%A1%A8%E6%A0%BC%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%94%A8%E6%88%B7%E8%A6%81%E5%AF%B9%E4%BA%8E%E6%8A%A5%E8%A1%A8%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E8%A6%81%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86"><span class="toc-text">后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#CSS-%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80%E7%AC%AC%E4%BA%8C%E5%88%97%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%A4%9F%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86"><span class="toc-text">CSS 弹性布局第二列数据不够怎么处理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#CSS-transfrom%E7%9A%84%E5%8A%A8%E7%94%BB%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E7%86%9F%E6%82%89"><span class="toc-text">CSS transfrom的动画有哪几种熟悉</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Ajax%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0"><span class="toc-text">Ajax的原理是什么？如何实现</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Axios%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">Axios的实现原理是什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">Java基本数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">Java引用数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E7%89%A9"><span class="toc-text">什么是事物</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFspring-beans"><span class="toc-text">什么是spring beans</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ioc-%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-text">ioc 的优点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84ioc%E6%B3%A8%E5%85%A5"><span class="toc-text">有哪些不同类型的ioc注入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL-union-union-all%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%93%AA%E4%B8%AA%E6%9F%A5%E8%AF%A2%E5%BF%AB"><span class="toc-text">MySQL union - union all的区别，哪个查询快</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL%E4%B8%AD%E6%9C%89%E5%87%A0%E4%B8%AA%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-text">MySQL中有几个聚合函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#spring-mvc%E7%9A%84%E7%89%B9%E6%80%A7"><span class="toc-text">spring mvc的特性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#jQuery-html-text-val-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">jQuery html(),text(),val()的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#innerHtml-innerText-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">innerHtml(),innerText()有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#jQuery%E5%B8%B8%E7%94%A8%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">jQuery常用选择器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#string-buffer-%E5%92%8C-string-builder%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">string buffer 和 string builder的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#list-set-map-%E6%98%AF%E5%90%A6%E9%83%BD%E7%BB%A7%E6%89%BFcollection%E7%B1%BB-%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">list set map 是否都继承collection类 ？有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RequestMapping-%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">@RequestMapping 注解的作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Autowired-%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">@Autowired 注解的作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8"><span class="toc-text">索引有什么作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BB%E9%94%AE%E8%B7%9F%E5%A4%96%E9%94%AE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">主键跟外键的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MySQL%E5%88%86%E7%BB%84%E5%92%8C%E6%8E%92%E5%BA%8F"><span class="toc-text">MySQL分组和排序</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#hashmap%E5%92%8Chashtable%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%9C%E7%94%A8"><span class="toc-text">hashmap和hashtable的区别和作用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Redis%E6%9C%89%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">Redis有什么数据类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#JDK-%E5%92%8C-JRE-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">JDK 和 JRE 有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%92%8Cequals%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">&#x3D;&#x3D;和equals的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E5%85%AB%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%A4%A7%E5%B0%8F%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E5%B0%81%E8%A3%85%E7%B1%BB"><span class="toc-text">Java八种基本数据类型的大小，以及他们的封装类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Switch%E8%83%BD%E5%90%A6%E7%94%A8String%E5%81%9A%E5%8F%82%E6%95%B0"><span class="toc-text">Switch能否用String做参数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#String-s-new-String-%E2%80%9Cxyz%E2%80%9D-%E5%88%9B%E5%BB%BA%E4%BA%86%E5%87%A0%E4%B8%AAobject%E5%AF%B9%E8%B1%A1"><span class="toc-text">String s&#x3D;new String(“xyz”);创建了几个object对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Object%E6%9C%89%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E6%96%B9%E6%B3%95"><span class="toc-text">Object有那些公开方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%EF%BC%8C%E5%BC%BA%E5%BC%B1%E8%BD%AF%E8%99%9A%EF%BC%8C%E7%94%A8%E5%88%B0%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-text">Java的四种引用，强弱软虚，用到的场景</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">静态变量和实例的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Overload%E5%92%8COverride%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">Overload和Override的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#String-%E3%80%81StringBuffer%E4%B8%8EStringBuilder%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">String 、StringBuffer与StringBuilder的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%89%B9%E5%BE%81%E4%B8%8E%E5%90%AB%E4%B9%89"><span class="toc-text">Java面向对象的特征与含义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-text">什么是序列化与反序列化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Java%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-text">Java对象的序列化与反序列化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#java-%E4%B8%AD-IO-%E6%B5%81%E5%88%86%E4%B8%BA%E5%87%A0%E7%A7%8D"><span class="toc-text">java 中 IO 流分为几种</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#BIO%E3%80%81NIO%E3%80%81AIO-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">BIO、NIO、AIO 有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Files%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">Files的常用方法都有哪些</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#java-%E5%AE%B9%E5%99%A8%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">java 容器都有哪些</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Collection-%E5%92%8C-Collections-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">Collection 和 Collections 有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#List%E3%80%81Set%E3%80%81Map-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">List、Set、Map 之间的区别是什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#HashMap-%E5%92%8C-Hashtable-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">HashMap 和 Hashtable 有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E4%BD%BF%E7%94%A8-HashMap-%E8%BF%98%E6%98%AF-TreeMap"><span class="toc-text">如何决定使用 HashMap 还是 TreeMap</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B-HashMap-%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">说一下 HashMap 的实现原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B-HashSet-%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">说一下 HashSet 的实现原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ArrayList-%E5%92%8C-LinkedList-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">ArrayList 和 LinkedList 的区别是什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%92%8C-List-%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">如何实现数组和 List 之间的转换</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ArrayList-%E5%92%8C-Vector-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">ArrayList 和 Vector 的区别是什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Array-%E5%92%8C-ArrayList-%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB"><span class="toc-text">Array 和 ArrayList 有何区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%A8-Queue-%E4%B8%AD-poll-%E5%92%8C-remove-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-text">在 Queue 中 poll()和 remove()有什么区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%93%AA%E4%BA%9B%E9%9B%86%E5%90%88%E7%B1%BB%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84"><span class="toc-text">哪些集合类是线程安全的</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-Iterator-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">迭代器 Iterator 是什么</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Iterator-%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9"><span class="toc-text">Iterator 怎么使用？有什么特点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Web%E5%9F%BA%E7%A1%80"><span class="toc-text">Web基础</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Tomcat%E7%9A%84%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C"><span class="toc-text">Tomcat的优化经验</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E7%9A%84GET%E4%B8%8EPOST%E6%96%B9%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">HTTP请求的GET与POST方式的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%A3%E9%87%8A%E4%B8%8B%E4%BB%80%E4%B9%88%E6%98%AFServlet"><span class="toc-text">解释下什么是Servlet</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E8%AF%B4Servlet%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">说一说Servlet的生命周期</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Servlet%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-text">Servlet的基本结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Servlet-Api%E4%B8%AD%E7%9A%84forward-%E4%B8%8Eredirect-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">Servlet Api中的forward()与redirect()的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E8%B0%83%E7%94%A8doGet-%E5%92%8CdoPost"><span class="toc-text">什么情况下调用doGet()和doPost()</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#request-getAttribut-%E5%92%8Crequest-getParameter-%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB"><span class="toc-text">request.getAttribut()和request.getParameter()有何区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#jsp%E6%9C%89%E9%82%A3%E4%BA%9B%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%EF%BC%9F%E4%BD%9C%E7%94%A8%E5%88%86%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%88%86%E5%88%AB%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-text">jsp有那些内置对象？作用分别是什么？分别有什么方法？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MVC%E7%9A%84%E5%90%84%E4%B8%AA%E9%83%A8%E5%88%86%E9%83%BD%E6%9C%89%E9%82%A3%E4%BA%9B%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0%EF%BC%9F%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%EF%BC%9F"><span class="toc-text">MVC的各个部分都有那些技术实现？如何实现？</span></a></li></ol></div></div></div>
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/sndshun/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a><a class="social" href="/about/#comments" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/></a></div></footer>
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2020-01-23T04:00:00.000Z">2020-01-23</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>面试题</span></h1>
+<p>被问到的面试题整理，及常被提到的题</p>
+<span id="more"></span>
+
+<h5 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h5><h5 id="ioc是怎么解耦的"><a href="#ioc是怎么解耦的" class="headerlink" title="ioc是怎么解耦的"></a>ioc是怎么解耦的</h5><h5 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h5><h5 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h5><h5 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h5><h5 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h5><h5 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h5><h5 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h5><h5 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h5><h5 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h5><h5 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h5><h5 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h5><h5 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h5><h5 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h5><h5 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h5><h5 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h5><h5 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h5><h5 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h5><h5 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h5><h5 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h5><h5 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h5><h5 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h5><h5 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h5><h5 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h5><h5 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h5><h5 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="CSS-transfrom的动画有哪几种熟悉"><a href="#CSS-transfrom的动画有哪几种熟悉" class="headerlink" title="CSS transfrom的动画有哪几种熟悉"></a>CSS transfrom的动画有哪几种熟悉</h5><h5 id="Ajax的原理是什么？如何实现"><a href="#Ajax的原理是什么？如何实现" class="headerlink" title="Ajax的原理是什么？如何实现"></a>Ajax的原理是什么？如何实现</h5><blockquote>
+<p>Ajax核心对象是xmlHttpRequest对象</p>
+</blockquote>
+<h5 id="Axios的实现原理是什么"><a href="#Axios的实现原理是什么" class="headerlink" title="Axios的实现原理是什么"></a>Axios的实现原理是什么</h5><blockquote>
+<p>Promise对象</p>
+</blockquote>
+<h5 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h5><blockquote>
+<p><code>byte</code> <code>int</code> <code>short</code> <code>long</code> <code>float</code> <code>double</code> <code>char</code> <code>boolean</code></p>
+</blockquote>
+<h5 id="Java引用数据类型"><a href="#Java引用数据类型" class="headerlink" title="Java引用数据类型"></a>Java引用数据类型</h5><blockquote>
+<p><code>Class</code> <code>Interface</code> <code>Array</code> <code>String</code></p>
+</blockquote>
+<h5 id="什么是事物"><a href="#什么是事物" class="headerlink" title="什么是事物"></a>什么是事物</h5><blockquote>
+<p>一个最小的不可再分的单元；可以理解为一个事务对应的是一组完整的业务，并且在这个事务中所作的一切操作要么全部成功，要么全部失败，只要有一个操作没成功，整个事务都将回滚到事务开始前。</p>
+<p><strong>原子性</strong></p>
+<p><strong>一致性</strong></p>
+<p><strong>隔离性</strong></p>
+<p><strong>持久性</strong></p>
+</blockquote>
+<h5 id="什么是spring-beans"><a href="#什么是spring-beans" class="headerlink" title="什么是spring beans"></a>什么是spring beans</h5><blockquote>
+<p>是构成Spring应用核心的Java对象</p>
+</blockquote>
+<h5 id="ioc-的优点"><a href="#ioc-的优点" class="headerlink" title="ioc 的优点"></a>ioc 的优点</h5><h5 id="有哪些不同类型的ioc注入"><a href="#有哪些不同类型的ioc注入" class="headerlink" title="有哪些不同类型的ioc注入"></a>有哪些不同类型的ioc注入</h5><h5 id="MySQL-union-union-all的区别，哪个查询快"><a href="#MySQL-union-union-all的区别，哪个查询快" class="headerlink" title="MySQL union - union all的区别，哪个查询快"></a>MySQL union - union all的区别，哪个查询快</h5><h5 id="MySQL中有几个聚合函数"><a href="#MySQL中有几个聚合函数" class="headerlink" title="MySQL中有几个聚合函数"></a>MySQL中有几个聚合函数</h5><blockquote>
+<p>count() max() min() sum() avg()</p>
+</blockquote>
+<h5 id="spring-mvc的特性"><a href="#spring-mvc的特性" class="headerlink" title="spring mvc的特性"></a>spring mvc的特性</h5><h5 id="jQuery-html-text-val-的区别"><a href="#jQuery-html-text-val-的区别" class="headerlink" title="jQuery html(),text(),val()的区别"></a>jQuery html(),text(),val()的区别</h5><h5 id="innerHtml-innerText-有什么区别"><a href="#innerHtml-innerText-有什么区别" class="headerlink" title="innerHtml(),innerText()有什么区别"></a>innerHtml(),innerText()有什么区别</h5><h5 id="jQuery常用选择器"><a href="#jQuery常用选择器" class="headerlink" title="jQuery常用选择器"></a>jQuery常用选择器</h5><h5 id="string-buffer-和-string-builder的区别"><a href="#string-buffer-和-string-builder的区别" class="headerlink" title="string buffer 和 string builder的区别"></a>string buffer 和 string builder的区别</h5><h5 id="list-set-map-是否都继承collection类-？有什么区别"><a href="#list-set-map-是否都继承collection类-？有什么区别" class="headerlink" title="list set map 是否都继承collection类 ？有什么区别"></a>list set map 是否都继承collection类 ？有什么区别</h5><h5 id="RequestMapping-注解的作用"><a href="#RequestMapping-注解的作用" class="headerlink" title="@RequestMapping 注解的作用"></a>@RequestMapping 注解的作用</h5><h5 id="Autowired-注解的作用"><a href="#Autowired-注解的作用" class="headerlink" title="@Autowired 注解的作用"></a>@Autowired 注解的作用</h5><h5 id="索引有什么作用"><a href="#索引有什么作用" class="headerlink" title="索引有什么作用"></a>索引有什么作用</h5><blockquote>
+<p>提高检索速度</p>
+<p>保证唯一性</p>
+<p>加速表之间的连接</p>
+</blockquote>
+<h5 id="主键跟外键的区别"><a href="#主键跟外键的区别" class="headerlink" title="主键跟外键的区别"></a>主键跟外键的区别</h5><h5 id="MySQL分组和排序"><a href="#MySQL分组和排序" class="headerlink" title="MySQL分组和排序"></a>MySQL分组和排序</h5><blockquote>
+<p>group by    order by</p>
+</blockquote>
+<h5 id="hashmap和hashtable的区别和作用"><a href="#hashmap和hashtable的区别和作用" class="headerlink" title="hashmap和hashtable的区别和作用"></a>hashmap和hashtable的区别和作用</h5><blockquote>
+<p>HashMap是非线程安全的,HashTable是线程安全的。所以HashMap效率要比HashTable效率高</p>
+<p>HashMap的键和值都允许有null值存在,而HashTable则不行。</p>
+<p>Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。</p>
+</blockquote>
+<h5 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h5><h5 id="JDK-和-JRE-有什么区别"><a href="#JDK-和-JRE-有什么区别" class="headerlink" title="JDK 和 JRE 有什么区别"></a>JDK 和 JRE 有什么区别</h5><blockquote>
+<p>JDK是Java开发工具包，提供了开发环境和运行环境</p>
+<p>JRE只是Java运行环境，包含Java编译器Javac和许多Java程序调试与分析的工具</p>
+</blockquote>
+<h5 id="和equals的区别"><a href="#和equals的区别" class="headerlink" title="==和equals的区别"></a>==和equals的区别</h5><blockquote>
+<p>==对于基本类型和引用类型的作用效果是不同的：</p>
+<p>​    基本类型：比较值是否相同</p>
+<p>​    引用类型：比较的是引用是否相同</p>
+<p>equals：</p>
+</blockquote>
+<h5 id="Java八种基本数据类型的大小，以及他们的封装类"><a href="#Java八种基本数据类型的大小，以及他们的封装类" class="headerlink" title="Java八种基本数据类型的大小，以及他们的封装类"></a>Java八种基本数据类型的大小，以及他们的封装类</h5><table>
+<thead>
+<tr>
+<th>基本类型</th>
+<th>封装类</th>
+<th>默认值</th>
+<th>大小（Byte)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>Byte</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+<td>0L</td>
+<td>8</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+<td>0.0f</td>
+<td>4</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+<td>0.0d</td>
+<td>8</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolen</td>
+<td>fales</td>
+<td>1 or 4</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+<td>\u0000(null)</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<h5 id="Switch能否用String做参数"><a href="#Switch能否用String做参数" class="headerlink" title="Switch能否用String做参数"></a>Switch能否用String做参数</h5><blockquote>
+<p>switch 中可以实用 byte,short,int,char。从 jdk1.7 后可以使用 String 类型，是通过 switch 中的String.hashcode将String转行成int进行判断的。</p>
+</blockquote>
+<h5 id="String-s-new-String-“xyz”-创建了几个object对象"><a href="#String-s-new-String-“xyz”-创建了几个object对象" class="headerlink" title="String s=new String(“xyz”);创建了几个object对象"></a>String s=new String(“xyz”);创建了几个object对象</h5><blockquote>
+<p>两个，第一个对象是字符串常量”xyz” 第二个对象是new String(“xyz”)的时候产生的</p>
+</blockquote>
+<h5 id="Object有那些公开方法"><a href="#Object有那些公开方法" class="headerlink" title="Object有那些公开方法"></a>Object有那些公开方法</h5><blockquote>
+<p>clone() 创建返回此对象的副本</p>
+<p>equals() 判断</p>
+<p>getClass() 返回object的运行类</p>
+<p>hashcode() 返回对象hash值</p>
+<p>notify() 唤醒正在等待对象监听器的单个进程</p>
+<p>notifyAll() 唤醒正在等待对象监听器的所有进程</p>
+<p>wait（）导致当前线程等待，直到另一个线程调用该对象的 notify()方法或 notifyAll()方法。</p>
+<p>toString（）返回此对象的字符串表示形式</p>
+<p>finalize（）当垃圾收集确定不需要该对象时，垃圾回收器调用该方法</p>
+</blockquote>
+<h5 id="Java的四种引用，强弱软虚，用到的场景"><a href="#Java的四种引用，强弱软虚，用到的场景" class="headerlink" title="Java的四种引用，强弱软虚，用到的场景"></a>Java的四种引用，强弱软虚，用到的场景</h5><blockquote>
+<p>强引用：垃圾回收器不会回收</p>
+<p>软引用：如果内存空间足够，垃圾回收器就不会进行回收，如果内存空间不足，垃圾回收器就会进行回收</p>
+<p>弱引用：一旦发现了只有弱引用的对象，垃圾回收器就会进行回收。</p>
+<p>虚引用：如果发现该对象还具有虚引用，就会在回收该对象之前，把这个虚引用加入到与之关联的引用队列中。</p>
+</blockquote>
+<h5 id="静态变量和实例的区别"><a href="#静态变量和实例的区别" class="headerlink" title="静态变量和实例的区别"></a>静态变量和实例的区别</h5><blockquote>
+<p>静态变量前要加上 static </p>
+<p>实例变量是某个对象的属性，创建实例对象，实例变量才会分配空间</p>
+<p>静态变量不属于任何实例对象，属于类，也成为类变量，只要加载了类的字节码，不用创建任何实例就能使用。</p>
+</blockquote>
+<h5 id="Overload和Override的区别"><a href="#Overload和Override的区别" class="headerlink" title="Overload和Override的区别"></a>Overload和Override的区别</h5><blockquote>
+<p>Overload 重载：同个类可以有多个相同名称的方法，但是参数列表不同，即参数数量，参数类型不同。返回值可以不同，但参数列表一致时不能通过不同返回值实现重载。</p>
+<p>Override 重写：子类方法名称和参数可以跟父类完全一致，调用时会执行子类定义的方法。同时子类方法只能抛出比父类更小的异常，访问权限不能比父类低，返回值也要和被覆盖的方法一致</p>
+</blockquote>
+<h5 id="String-、StringBuffer与StringBuilder的区别"><a href="#String-、StringBuffer与StringBuilder的区别" class="headerlink" title="String 、StringBuffer与StringBuilder的区别"></a>String 、StringBuffer与StringBuilder的区别</h5><blockquote>
+<p>String 是内容不可修改的字符串</p>
+<p>StringBuffer 是内容可以修改的字符串</p>
+<p>String 覆盖了equals()和hashcode()，StringBuffer没有，所以StirngBuffer存储到Java集合类会出现问题</p>
+<p>StringBuilder 也表示内容可以修改的字符串，但其线程不安全，运行效率高</p>
+</blockquote>
+<h5 id="Java面向对象的特征与含义"><a href="#Java面向对象的特征与含义" class="headerlink" title="Java面向对象的特征与含义"></a>Java面向对象的特征与含义</h5><blockquote>
+<p>封装、继承、多态、抽象</p>
+<p>封装：把对同一事物的操作方法和相关方法放在同一个类中，把方法和操作数据放在同一个类中</p>
+<p>继承： 子类继承父类作为自己的内容，可以加入新的内容或修改父类内容而更合适特殊需求。提供程序重用性和可扩展性</p>
+<p>多态： 是指同一个行为具有多个不同表现形式或形态的能力</p>
+<p>抽象： 找出事物的相似性和共性，将这些事物归为一类，这个类只考虑这些事物的相似和共性，忽略和当前主题不相关的内容</p>
+</blockquote>
+<h5 id="什么是序列化与反序列化"><a href="#什么是序列化与反序列化" class="headerlink" title="什么是序列化与反序列化"></a>什么是序列化与反序列化</h5><h5 id="Java对象的序列化与反序列化"><a href="#Java对象的序列化与反序列化" class="headerlink" title="Java对象的序列化与反序列化"></a>Java对象的序列化与反序列化</h5><h5 id="java-中-IO-流分为几种"><a href="#java-中-IO-流分为几种" class="headerlink" title="java 中 IO 流分为几种"></a>java 中 IO 流分为几种</h5><blockquote>
+<p>字节流</p>
+<p>字符流</p>
+</blockquote>
+<h5 id="BIO、NIO、AIO-有什么区别"><a href="#BIO、NIO、AIO-有什么区别" class="headerlink" title="BIO、NIO、AIO 有什么区别"></a>BIO、NIO、AIO 有什么区别</h5><blockquote>
+<p>BIO是同步阻塞,NIO是同步非阻塞,AIO是异步非阻塞</p>
+<ol>
+<li>BIO是阻塞的，NIO是非阻塞的</li>
+<li>BIO主要是以I/O流的形式处理数据；NIO以I/O块（buffer）的形式处理数据，效率：块&gt;流</li>
+<li>BIO主要是以字节流和字符流操作，NIO是基于channel（通道）、buffer（缓冲区）操作的；selector（选择器）是用来监听channel的</li>
+<li>BIO是单向的，要么是输入流要么是输出流，NIO是双向的，可以从channel往buffer读写数据，同时buffer也可以向channel读写数据</li>
+</ol>
+</blockquote>
+<h5 id="Files的常用方法都有哪些"><a href="#Files的常用方法都有哪些" class="headerlink" title="Files的常用方法都有哪些"></a>Files的常用方法都有哪些</h5><blockquote>
+<p>Files. exists()：检测文件路径是否存在。<br>Files. createFile()：创建文件。<br>Files. createDirectory()：创建文件夹。<br>Files. delete()：删除一个文件或目录。<br>Files. copy()：复制文件。<br>Files. move()：移动文件。<br>Files. size()：查看文件个数。<br>Files. read()：读取文件。<br>Files. write()：写入文件。</p>
+</blockquote>
+<h5 id="java-容器都有哪些"><a href="#java-容器都有哪些" class="headerlink" title="java 容器都有哪些"></a>java 容器都有哪些</h5><blockquote>
+<p>ArrayList、LinkedList、Vector、HashSet、LinkedHashSet、TreeSet、LinkedHashMap、TreeMap、ConcurrentHashMap、Hashtable</p>
+</blockquote>
+<h5 id="Collection-和-Collections-有什么区别"><a href="#Collection-和-Collections-有什么区别" class="headerlink" title="Collection 和 Collections 有什么区别"></a>Collection 和 Collections 有什么区别</h5><h5 id="List、Set、Map-之间的区别是什么"><a href="#List、Set、Map-之间的区别是什么" class="headerlink" title="List、Set、Map 之间的区别是什么"></a>List、Set、Map 之间的区别是什么</h5><h5 id="HashMap-和-Hashtable-有什么区别"><a href="#HashMap-和-Hashtable-有什么区别" class="headerlink" title="HashMap 和 Hashtable 有什么区别"></a>HashMap 和 Hashtable 有什么区别</h5><h5 id="如何决定使用-HashMap-还是-TreeMap"><a href="#如何决定使用-HashMap-还是-TreeMap" class="headerlink" title="如何决定使用 HashMap 还是 TreeMap"></a>如何决定使用 HashMap 还是 TreeMap</h5><blockquote>
+<p>如果需要得到一个有序的结果时使用TreeMap，但HashMap有更好的性能，所以大多数不需要排序的时候推荐使用HashMap</p>
+</blockquote>
+<h5 id="说一下-HashMap-的实现原理"><a href="#说一下-HashMap-的实现原理" class="headerlink" title="说一下 HashMap 的实现原理"></a>说一下 HashMap 的实现原理</h5><h5 id="说一下-HashSet-的实现原理"><a href="#说一下-HashSet-的实现原理" class="headerlink" title="说一下 HashSet 的实现原理"></a>说一下 HashSet 的实现原理</h5><h5 id="ArrayList-和-LinkedList-的区别是什么"><a href="#ArrayList-和-LinkedList-的区别是什么" class="headerlink" title="ArrayList 和 LinkedList 的区别是什么"></a>ArrayList 和 LinkedList 的区别是什么</h5><h5 id="如何实现数组和-List-之间的转换"><a href="#如何实现数组和-List-之间的转换" class="headerlink" title="如何实现数组和 List 之间的转换"></a>如何实现数组和 List 之间的转换</h5><blockquote>
+<p>Arrays. asList(array)</p>
+<p>List.toArray()</p>
+</blockquote>
+<h5 id="ArrayList-和-Vector-的区别是什么"><a href="#ArrayList-和-Vector-的区别是什么" class="headerlink" title="ArrayList 和 Vector 的区别是什么"></a>ArrayList 和 Vector 的区别是什么</h5><blockquote>
+<p>Vector是线程安全的</p>
+<p>扩容容量不同，Vertor增长原理的两倍，Array增长1.5</p>
+<p>Vertor可以设置增长空间大小</p>
+</blockquote>
+<h5 id="Array-和-ArrayList-有何区别"><a href="#Array-和-ArrayList-有何区别" class="headerlink" title="Array 和 ArrayList 有何区别"></a>Array 和 ArrayList 有何区别</h5><blockquote>
+<p>数组必须指定长度</p>
+<p>集合可以动态改变，创建时可以指定大小也可以不指定</p>
+</blockquote>
+<h5 id="在-Queue-中-poll-和-remove-有什么区别"><a href="#在-Queue-中-poll-和-remove-有什么区别" class="headerlink" title="在 Queue 中 poll()和 remove()有什么区别"></a>在 Queue 中 poll()和 remove()有什么区别</h5><h5 id="哪些集合类是线程安全的"><a href="#哪些集合类是线程安全的" class="headerlink" title="哪些集合类是线程安全的"></a>哪些集合类是线程安全的</h5><blockquote>
+<p>Vector</p>
+<p>HashTable</p>
+<p>Stack</p>
+<p>ArrayBlockingQueue</p>
+<p>ConcurrentHashMap</p>
+<p>ConcurrentLinkedQueue</p>
+</blockquote>
+<h5 id="迭代器-Iterator-是什么"><a href="#迭代器-Iterator-是什么" class="headerlink" title="迭代器 Iterator 是什么"></a>迭代器 Iterator 是什么</h5><blockquote>
+<p>迭代器是一种设计模式，它是一个对象，可以遍历并选择序列中的对象，而开发人员不需要了解该序列的底层机构。</p>
+</blockquote>
+<h5 id="Iterator-怎么使用？有什么特点"><a href="#Iterator-怎么使用？有什么特点" class="headerlink" title="Iterator 怎么使用？有什么特点"></a>Iterator 怎么使用？有什么特点</h5><blockquote>
+<p>功能比较简单，只能单向移动</p>
+<ol>
+<li>使用方法iterator()要求容器返回一个Iterator。第一次调用Iterator的next()方法时，它返回序列的第</li>
+<li>一个元素。注意：iterator()方法是java.lang.Iterable接口,被Collection继承。</li>
+<li>使用next()获得序列中的下一个元素。</li>
+<li>使用hasNext()检查序列中是否还有元素。</li>
+<li>使用remove()将迭代器新返回的元素删除。</li>
+</ol>
+</blockquote>
+<h4 id="Web基础"><a href="#Web基础" class="headerlink" title="Web基础"></a>Web基础</h4><h5 id="Tomcat的优化经验"><a href="#Tomcat的优化经验" class="headerlink" title="Tomcat的优化经验"></a>Tomcat的优化经验</h5><blockquote>
+<p>在内存富余的情况下，加大tomcat使用的jvm内存</p>
+<p>去掉对web.xml的监视</p>
+<p>将jsp提前编辑成servlet</p>
+<p>利用缓存压缩</p>
+<p>采用集群</p>
+<p>优化Tomcat参数</p>
+</blockquote>
+<h5 id="HTTP请求的GET与POST方式的区别"><a href="#HTTP请求的GET与POST方式的区别" class="headerlink" title="HTTP请求的GET与POST方式的区别"></a>HTTP请求的GET与POST方式的区别</h5><h5 id="解释下什么是Servlet"><a href="#解释下什么是Servlet" class="headerlink" title="解释下什么是Servlet"></a>解释下什么是Servlet</h5><blockquote>
+<p>Servlet是Java Servlet的简称,称为小服务程序或服务连接器,用Java编写的服务器端程序,具有独立于平台和协议的特性,是一个Java类。</p>
+</blockquote>
+<h5 id="说一说Servlet的生命周期"><a href="#说一说Servlet的生命周期" class="headerlink" title="说一说Servlet的生命周期"></a>说一说Servlet的生命周期</h5><blockquote>
+<p><strong>加载类</strong>—&gt;**实例化(**为对象分配空间)—&gt;<strong>初始化</strong>(为对象的属性赋值)—&gt;<strong>请求响应</strong>(服务阶段)—&gt;<strong>销毁</strong></p>
+</blockquote>
+<h5 id="Servlet的基本结构"><a href="#Servlet的基本结构" class="headerlink" title="Servlet的基本结构"></a>Servlet的基本结构</h5><h5 id="Servlet-Api中的forward-与redirect-的区别"><a href="#Servlet-Api中的forward-与redirect-的区别" class="headerlink" title="Servlet Api中的forward()与redirect()的区别"></a>Servlet Api中的forward()与redirect()的区别</h5><h5 id="什么情况下调用doGet-和doPost"><a href="#什么情况下调用doGet-和doPost" class="headerlink" title="什么情况下调用doGet()和doPost()"></a>什么情况下调用doGet()和doPost()</h5><h5 id="request-getAttribut-和request-getParameter-有何区别"><a href="#request-getAttribut-和request-getParameter-有何区别" class="headerlink" title="request.getAttribut()和request.getParameter()有何区别"></a>request.getAttribut()和request.getParameter()有何区别</h5><h5 id="jsp有那些内置对象？作用分别是什么？分别有什么方法？"><a href="#jsp有那些内置对象？作用分别是什么？分别有什么方法？" class="headerlink" title="jsp有那些内置对象？作用分别是什么？分别有什么方法？"></a>jsp有那些内置对象？作用分别是什么？分别有什么方法？</h5><h5 id="MVC的各个部分都有那些技术实现？如何实现？"><a href="#MVC的各个部分都有那些技术实现？如何实现？" class="headerlink" title="MVC的各个部分都有那些技术实现？如何实现？"></a>MVC的各个部分都有那些技术实现？如何实现？</h5><blockquote>
+<p>M(Model) 模型 Javabean mybatis</p>
+<p>V(View) 视图 html jsp freeMarker</p>
+<p>C(Control) 控制器 Servlet Controller springMVC</p>
+<p>jsp+servlet+dao</p>
+</blockquote>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2020/01/23/z_temp/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">简历注意事项<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">以后的事<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/wiki/">开源库</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a href="/">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://github.com/sndshun/">GitHub</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://sndshun.xyz/">@sndshun</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://fastly.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://fastly.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://fastly.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://fastly.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

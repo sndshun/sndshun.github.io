@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="https://sndshun.xyz/2022/08/10/%E7%94%B5%E5%BD%B1%E7%BD%91/"/>
-    <id>https://sndshun.xyz/2022/08/10/%E7%94%B5%E5%BD%B1%E7%BD%91/</id>
+    <link href="https://sndshun.xyz/2022/08/10/z_temp/%E7%94%B5%E5%BD%B1%E7%BD%91/"/>
+    <id>https://sndshun.xyz/2022/08/10/z_temp/%E7%94%B5%E5%BD%B1%E7%BD%91/</id>
     <published>2022-08-10T10:48:29.301Z</published>
     <updated>2022-08-10T10:49:09.258Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title></title>
-    <link href="https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/"/>
-    <id>https://sndshun.xyz/2022/08/01/%E6%9C%AF%E8%AF%AD/</id>
+    <link href="https://sndshun.xyz/2022/08/01/z_temp/%E6%9C%AF%E8%AF%AD/"/>
+    <id>https://sndshun.xyz/2022/08/01/z_temp/%E6%9C%AF%E8%AF%AD/</id>
     <published>2022-08-01T06:26:19.832Z</published>
     <updated>2022-08-03T06:12:11.093Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title></title>
-    <link href="https://sndshun.xyz/2022/08/01/temp/"/>
-    <id>https://sndshun.xyz/2022/08/01/temp/</id>
+    <link href="https://sndshun.xyz/2022/08/01/z_temp/temp/"/>
+    <id>https://sndshun.xyz/2022/08/01/z_temp/temp/</id>
     <published>2022-08-01T02:22:47.544Z</published>
     <updated>2022-08-01T09:42:35.255Z</updated>
     
@@ -98,7 +98,7 @@
     <link href="https://sndshun.xyz/2022/07/30/html/html-theme/"/>
     <id>https://sndshun.xyz/2022/07/30/html/html-theme/</id>
     <published>2022-07-30T04:00:00.000Z</published>
-    <updated>2022-07-31T10:32:10.979Z</updated>
+    <updated>2022-09-06T15:38:58.353Z</updated>
     
     
       
@@ -111,7 +111,9 @@
     
     
     
-    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
+    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="html" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/html/"/>
     
     
   </entry>
@@ -140,17 +142,19 @@
   
   <entry>
     <title>Vue 部署服务器配置</title>
-    <link href="https://sndshun.xyz/2022/03/19/configs/vue-deploy/"/>
-    <id>https://sndshun.xyz/2022/03/19/configs/vue-deploy/</id>
+    <link href="https://sndshun.xyz/2022/03/19/vue/vue-deploy/"/>
+    <id>https://sndshun.xyz/2022/03/19/vue/vue-deploy/</id>
     <published>2022-03-19T04:00:00.000Z</published>
-    <updated>2022-08-26T03:18:44.961Z</updated>
+    <updated>2022-09-06T15:39:13.585Z</updated>
     
     
     <summary type="html">&lt;p&gt;使用Nginx代理解决Vue部署服务器后的跨域问题和不能刷新的问题&lt;/p&gt;</summary>
     
     
     
-    <category term="配置" scheme="https://sndshun.xyz/categories/%E9%85%8D%E7%BD%AE/"/>
+    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="vue" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/vue/"/>
     
     
     <category term="nginx" scheme="https://sndshun.xyz/tags/nginx/"/>
@@ -251,14 +255,16 @@
     <link href="https://sndshun.xyz/2020/10/30/html/html-tags/"/>
     <id>https://sndshun.xyz/2020/10/30/html/html-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2022-07-10T14:54:41.242Z</updated>
+    <updated>2022-09-06T15:38:47.089Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
     
     
     
-    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
+    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="html" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/html/"/>
     
     
   </entry>
@@ -357,9 +363,33 @@
   </entry>
   
   <entry>
+    <title>git 基本命令</title>
+    <link href="https://sndshun.xyz/2020/01/23/base/git/"/>
+    <id>https://sndshun.xyz/2020/01/23/base/git/</id>
+    <published>2020-01-23T04:00:00.000Z</published>
+    <updated>2022-09-04T08:43:32.721Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
+        
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://sndshun.xyz/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>学习小网站</title>
-    <link href="https://sndshun.xyz/2020/01/23/web-tools/"/>
-    <id>https://sndshun.xyz/2020/01/23/web-tools/</id>
+    <link href="https://sndshun.xyz/2020/01/23/z_temp/web-tools/"/>
+    <id>https://sndshun.xyz/2020/01/23/z_temp/web-tools/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:16:38.848Z</updated>
     
@@ -377,10 +407,10 @@
   
   <entry>
     <title>以后的事</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
+    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-09-02T09:40:18.481Z</updated>
+    <updated>2022-09-06T01:16:20.604Z</updated>
     
     
       
@@ -405,10 +435,10 @@
   
   <entry>
     <title>面试题</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-09-04T15:53:52.345Z</updated>
+    <updated>2022-09-05T00:36:13.693Z</updated>
     
     
     <summary type="html">&lt;p&gt;被问到的面试题整理，及常被提到的题&lt;/p&gt;</summary>
@@ -419,30 +449,9 @@
   </entry>
   
   <entry>
-    <title>时序图</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E6%B5%81%E7%A8%8B%E5%9B%BE(%E6%97%B6%E5%BA%8F%E5%9B%BE)/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:17:09.239Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;微信支付时序图&quot;&gt;&lt;a href=&quot;#微信支付时序图&quot; class=&quot;headerlink&quot; title=&quot;微信支付时序图&quot;&gt;&lt;/a&gt;微信支付时序图&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>简历注意事项</title>
-    <link href="https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://sndshun.xyz/2020/01/23/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://sndshun.xyz/2020/01/23/z_temp/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
     <published>2020-01-23T04:00:00.000Z</published>
     <updated>2022-07-31T10:16:47.220Z</updated>
     
