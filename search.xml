@@ -148,8 +148,8 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>前端</category>
         <category>javascript</category>
+        <category>node</category>
       </categories>
       <tags>
         <tag>js工具类</tag>
@@ -202,8 +202,8 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>前端</category>
         <category>javascript</category>
+        <category>node</category>
       </categories>
       <tags>
         <tag>js工具类</tag>
@@ -231,8 +231,8 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>前端</category>
         <category>javascript</category>
+        <category>ES6</category>
       </categories>
   </entry>
   <entry>
@@ -286,11 +286,10 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>前端</category>
         <category>javascript</category>
       </categories>
       <tags>
-        <tag>技巧</tag>
+        <tag>不拘一格</tag>
       </tags>
   </entry>
   <entry>
@@ -526,7 +525,6 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>前端</category>
         <category>html</category>
       </categories>
   </entry>
@@ -706,7 +704,6 @@
     <url>/2022/07/30/html/html-theme/</url>
     <content><![CDATA[<h1 id="大多数开发人员的实现"><a href="#大多数开发人员的实现" class="headerlink" title="大多数开发人员的实现"></a>大多数开发人员的实现</h1><h1 id="原生HTML下的换肤实现"><a href="#原生HTML下的换肤实现" class="headerlink" title="原生HTML下的换肤实现"></a>原生HTML下的换肤实现</h1><h1 id="实现的优点及碎碎念"><a href="#实现的优点及碎碎念" class="headerlink" title="实现的优点及碎碎念"></a>实现的优点及碎碎念</h1>]]></content>
       <categories>
-        <category>前端</category>
         <category>html</category>
       </categories>
   </entry>
@@ -1391,13 +1388,14 @@
       </tags>
   </entry>
   <entry>
-    <title>常用命令</title>
+    <title>Linux 常用命令</title>
     <url>/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>会不会无所谓，但是很方便的操作</p>
 <span id="more"></span>
 
 <p><code>clear</code> :清屏</p>
 <p><code>ctrl+L</code>:清屏</p>
+<p>tail命令 – 查看文件尾部内容 -f持续显示</p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -1676,6 +1674,10 @@
 <p>redis 中 ： 和 ：：</p>
 <p>vue 自定义指令 uniapp自动挂载到全局</p>
 <p>nginx alias</p>
+<p>@EqualsAndHashCode</p>
+<p>SQL调优</p>
+<p>为什么使用缓冲流会快这么多</p>
+<p>库有库的编码，表有表的编码，字段有字段的编码。编码不一样联查会失败。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1684,7 +1686,18 @@
     <content><![CDATA[<p>被问到的面试题整理，及常被提到的题</p>
 <span id="more"></span>
 
-<h5 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h5><h5 id="ioc是怎么解耦的"><a href="#ioc是怎么解耦的" class="headerlink" title="ioc是怎么解耦的"></a>ioc是怎么解耦的</h5><h5 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h5><h5 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h5><h5 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h5><h5 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h5><h5 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h5><h5 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h5><h5 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h5><h5 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h5><h5 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h5><h5 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h5><h5 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h5><h5 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h5><h5 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h5><h5 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h5><h5 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h5><h5 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h5><h5 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h5><h5 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h5><h5 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h5><h5 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h5><h5 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h5><h5 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h5><h5 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h5><h5 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="什么是ioc"><a href="#什么是ioc" class="headerlink" title="什么是ioc"></a>什么是ioc</h5><blockquote>
+<p>ioc即控制反转，也被叫做依赖注入（DI），是对ioc更简单的诠释。</p>
+<p>控制反转是把传统程序代码的控制器交给容器，通过容器实现对象组件的装配和管理。</p>
+</blockquote>
+<h5 id="什么是aop"><a href="#什么是aop" class="headerlink" title="什么是aop"></a>什么是aop</h5><blockquote>
+<p>aop面向切面编程是一种程序设计范型，该范型以一种称为切面的语言构造为基础，切面是一种新的模块化机制，用来描述分散在对象、类或方法中的横切关注点。</p>
+<p>利用aop可以对业务逻辑各部分进行隔离，降低耦合度，提高重用性。主要功能是：日志记录，性能统计，安全控制、事物处理、异常处理等等。</p>
+</blockquote>
+<h5 id="aop可以干什么"><a href="#aop可以干什么" class="headerlink" title="aop可以干什么"></a>aop可以干什么</h5><blockquote>
+<p>前置通知、后置通知、异常通知、最终通知、环绕通知</p>
+</blockquote>
+<h5 id="什么是MVC"><a href="#什么是MVC" class="headerlink" title="什么是MVC"></a>什么是MVC</h5><h5 id="MVC模式的优点"><a href="#MVC模式的优点" class="headerlink" title="MVC模式的优点"></a>MVC模式的优点</h5><h5 id="SpringMVC的核心控制器什么"><a href="#SpringMVC的核心控制器什么" class="headerlink" title="SpringMVC的核心控制器什么"></a>SpringMVC的核心控制器什么</h5><h5 id="SpringMVC的参数接收方式"><a href="#SpringMVC的参数接收方式" class="headerlink" title="SpringMVC的参数接收方式"></a>SpringMVC的参数接收方式</h5><h5 id="SpringBoot对比之前技术有啥好处"><a href="#SpringBoot对比之前技术有啥好处" class="headerlink" title="SpringBoot对比之前技术有啥好处"></a>SpringBoot对比之前技术有啥好处</h5><h5 id="SpringBoot的web服务器是那种"><a href="#SpringBoot的web服务器是那种" class="headerlink" title="SpringBoot的web服务器是那种"></a>SpringBoot的web服务器是那种</h5><h5 id="mybatis批量插入的方式"><a href="#mybatis批量插入的方式" class="headerlink" title="mybatis批量插入的方式"></a>mybatis批量插入的方式</h5><h5 id="mybatis常用的动态Sql标签"><a href="#mybatis常用的动态Sql标签" class="headerlink" title="mybatis常用的动态Sql标签"></a>mybatis常用的动态Sql标签</h5><h5 id="mybatis-跟-的区别"><a href="#mybatis-跟-的区别" class="headerlink" title="mybatis #{} 跟 ${}的区别"></a>mybatis #{} 跟 ${}的区别</h5><h5 id="mybatisPlus-主键形式"><a href="#mybatisPlus-主键形式" class="headerlink" title="mybatisPlus 主键形式"></a>mybatisPlus 主键形式</h5><h5 id="mybatisPlus分页实现原理"><a href="#mybatisPlus分页实现原理" class="headerlink" title="mybatisPlus分页实现原理"></a>mybatisPlus分页实现原理</h5><h5 id="mybatisPlus批量插入实现原理"><a href="#mybatisPlus批量插入实现原理" class="headerlink" title="mybatisPlus批量插入实现原理"></a>mybatisPlus批量插入实现原理</h5><h5 id="Redis除了存储还能做什么"><a href="#Redis除了存储还能做什么" class="headerlink" title="Redis除了存储还能做什么"></a>Redis除了存储还能做什么</h5><h5 id="Linux-压缩（打包）命令"><a href="#Linux-压缩（打包）命令" class="headerlink" title="Linux 压缩（打包）命令"></a>Linux 压缩（打包）命令</h5><h5 id="Maven打包后没有依赖怎么解决"><a href="#Maven打包后没有依赖怎么解决" class="headerlink" title="Maven打包后没有依赖怎么解决"></a>Maven打包后没有依赖怎么解决</h5><h5 id="Vue的跨域有那几种方式，及打包后Nginx代理"><a href="#Vue的跨域有那几种方式，及打包后Nginx代理" class="headerlink" title="Vue的跨域有那几种方式，及打包后Nginx代理"></a>Vue的跨域有那几种方式，及打包后Nginx代理</h5><h5 id="OSS对象怎么删除"><a href="#OSS对象怎么删除" class="headerlink" title="OSS对象怎么删除"></a>OSS对象怎么删除</h5><h5 id="Token中一般存什么"><a href="#Token中一般存什么" class="headerlink" title="Token中一般存什么"></a>Token中一般存什么</h5><h5 id="Nginx怎么限制上传文件的大小"><a href="#Nginx怎么限制上传文件的大小" class="headerlink" title="Nginx怎么限制上传文件的大小"></a>Nginx怎么限制上传文件的大小</h5><h5 id="Nginx实现https加密"><a href="#Nginx实现https加密" class="headerlink" title="Nginx实现https加密"></a>Nginx实现https加密</h5><h5 id="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"><a href="#后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理" class="headerlink" title="后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理"></a>后端实现导出Excel表格，以及用户要对于报表增加一些操作要怎么处理</h5><h5 id="CSS-弹性布局第二列数据不够怎么处理"><a href="#CSS-弹性布局第二列数据不够怎么处理" class="headerlink" title="CSS 弹性布局第二列数据不够怎么处理"></a>CSS 弹性布局第二列数据不够怎么处理</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#test</span>:after &#123;</span><br><span class="line">  content:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h5 id="CSS-transfrom的动画有哪几种熟悉"><a href="#CSS-transfrom的动画有哪几种熟悉" class="headerlink" title="CSS transfrom的动画有哪几种熟悉"></a>CSS transfrom的动画有哪几种熟悉</h5><h5 id="Ajax的原理是什么？如何实现"><a href="#Ajax的原理是什么？如何实现" class="headerlink" title="Ajax的原理是什么？如何实现"></a>Ajax的原理是什么？如何实现</h5><blockquote>
 <p>Ajax核心对象是xmlHttpRequest对象</p>
@@ -1837,9 +1850,16 @@
 <p>多态： 是指同一个行为具有多个不同表现形式或形态的能力</p>
 <p>抽象： 找出事物的相似性和共性，将这些事物归为一类，这个类只考虑这些事物的相似和共性，忽略和当前主题不相关的内容</p>
 </blockquote>
-<h5 id="什么是序列化与反序列化"><a href="#什么是序列化与反序列化" class="headerlink" title="什么是序列化与反序列化"></a>什么是序列化与反序列化</h5><h5 id="Java对象的序列化与反序列化"><a href="#Java对象的序列化与反序列化" class="headerlink" title="Java对象的序列化与反序列化"></a>Java对象的序列化与反序列化</h5><h5 id="java-中-IO-流分为几种"><a href="#java-中-IO-流分为几种" class="headerlink" title="java 中 IO 流分为几种"></a>java 中 IO 流分为几种</h5><blockquote>
+<h5 id="什么是序列化与反序列化"><a href="#什么是序列化与反序列化" class="headerlink" title="什么是序列化与反序列化"></a>什么是序列化与反序列化</h5><blockquote>
+<p>序列化就是把Java对象转换为字节流的过程Java反序列化就是指把字节序列恢复为Java对象的过程</p>
+</blockquote>
+<h5 id="Java对象的序列化与反序列化"><a href="#Java对象的序列化与反序列化" class="headerlink" title="Java对象的序列化与反序列化"></a>Java对象的序列化与反序列化</h5><blockquote>
+<p>就是将Java转换为字节流的形式再传输，jre本身提供这种支持可以调用OutputStream的writeObject方法来做，被传输的对象必须实现serizlizable接口，javac编译时就会进行特殊处理才可以被writeObject方法操作，这就是所谓的序列化，serizlizable只是标注该对象可被序列化的。</p>
+</blockquote>
+<h5 id="java-中-IO-流分为几种"><a href="#java-中-IO-流分为几种" class="headerlink" title="java 中 IO 流分为几种"></a>java 中 IO 流分为几种</h5><blockquote>
 <p>字节流</p>
 <p>字符流</p>
+<p>字符流是字节流的包装，它内部将串转成字节，再写入底层设备。</p>
 </blockquote>
 <h5 id="BIO、NIO、AIO-有什么区别"><a href="#BIO、NIO、AIO-有什么区别" class="headerlink" title="BIO、NIO、AIO 有什么区别"></a>BIO、NIO、AIO 有什么区别</h5><blockquote>
 <p>BIO是同步阻塞,NIO是同步非阻塞,AIO是异步非阻塞</p>
@@ -1856,7 +1876,24 @@
 <h5 id="java-容器都有哪些"><a href="#java-容器都有哪些" class="headerlink" title="java 容器都有哪些"></a>java 容器都有哪些</h5><blockquote>
 <p>ArrayList、LinkedList、Vector、HashSet、LinkedHashSet、TreeSet、LinkedHashMap、TreeMap、ConcurrentHashMap、Hashtable</p>
 </blockquote>
-<h5 id="Collection-和-Collections-有什么区别"><a href="#Collection-和-Collections-有什么区别" class="headerlink" title="Collection 和 Collections 有什么区别"></a>Collection 和 Collections 有什么区别</h5><h5 id="List、Set、Map-之间的区别是什么"><a href="#List、Set、Map-之间的区别是什么" class="headerlink" title="List、Set、Map 之间的区别是什么"></a>List、Set、Map 之间的区别是什么</h5><h5 id="HashMap-和-Hashtable-有什么区别"><a href="#HashMap-和-Hashtable-有什么区别" class="headerlink" title="HashMap 和 Hashtable 有什么区别"></a>HashMap 和 Hashtable 有什么区别</h5><h5 id="如何决定使用-HashMap-还是-TreeMap"><a href="#如何决定使用-HashMap-还是-TreeMap" class="headerlink" title="如何决定使用 HashMap 还是 TreeMap"></a>如何决定使用 HashMap 还是 TreeMap</h5><blockquote>
+<h5 id="Collection-和-Collections-有什么区别"><a href="#Collection-和-Collections-有什么区别" class="headerlink" title="Collection 和 Collections 有什么区别"></a>Collection 和 Collections 有什么区别</h5><blockquote>
+<p>collection是集合类的上级接口，继承它的接口主要由Set和List</p>
+<p>Collections是针对集合类的一个帮助类，它提供一系列静态方法实现对各种集合的搜索、排序、线程安全化等操作</p>
+</blockquote>
+<h5 id="List、Set、Map-之间的区别是什么"><a href="#List、Set、Map-之间的区别是什么" class="headerlink" title="List、Set、Map 之间的区别是什么"></a>List、Set、Map 之间的区别是什么</h5><blockquote>
+<p>List、Set 继承 collection 接口</p>
+<p>List是有序集合</p>
+<p>Set是无序不重复集合</p>
+<p>Map是键值对，不能存储重复的key</p>
+</blockquote>
+<h5 id="HashMap-和-Hashtable-有什么区别"><a href="#HashMap-和-Hashtable-有什么区别" class="headerlink" title="HashMap 和 Hashtable 有什么区别"></a>HashMap 和 Hashtable 有什么区别</h5><blockquote>
+<p>这俩采用的算法大概都一样，性能没太大差异。</p>
+<p>HashMap是Hashtable都实现了Map接口，主要区别在于HashMap是轻量级实现，非线程安全的，在只有一个线程访问的情况下，效率要高于Hashtable。</p>
+<p>HashMap允许将null作为key或者value，Hashtable不允许。</p>
+<p>HashMap把Hashtable的contanins方法去掉了，改为containsValue和containKey。因为contanins方法容易让人引起误解。</p>
+<p>Hashtable基本陈旧的Dictionary类，HashMap是Java1.2引进的Map接口的一个实现</p>
+</blockquote>
+<h5 id="如何决定使用-HashMap-还是-TreeMap"><a href="#如何决定使用-HashMap-还是-TreeMap" class="headerlink" title="如何决定使用 HashMap 还是 TreeMap"></a>如何决定使用 HashMap 还是 TreeMap</h5><blockquote>
 <p>如果需要得到一个有序的结果时使用TreeMap，但HashMap有更好的性能，所以大多数不需要排序的时候推荐使用HashMap</p>
 </blockquote>
 <h5 id="说一下-HashMap-的实现原理"><a href="#说一下-HashMap-的实现原理" class="headerlink" title="说一下 HashMap 的实现原理"></a>说一下 HashMap 的实现原理</h5><h5 id="说一下-HashSet-的实现原理"><a href="#说一下-HashSet-的实现原理" class="headerlink" title="说一下 HashSet 的实现原理"></a>说一下 HashSet 的实现原理</h5><h5 id="ArrayList-和-LinkedList-的区别是什么"><a href="#ArrayList-和-LinkedList-的区别是什么" class="headerlink" title="ArrayList 和 LinkedList 的区别是什么"></a>ArrayList 和 LinkedList 的区别是什么</h5><h5 id="如何实现数组和-List-之间的转换"><a href="#如何实现数组和-List-之间的转换" class="headerlink" title="如何实现数组和 List 之间的转换"></a>如何实现数组和 List 之间的转换</h5><blockquote>
@@ -2353,5 +2390,107 @@
       <tags>
         <tag>vue</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>自省</title>
+    <url>/20015/09/15/introspective/introspective/</url>
+    <content><![CDATA[<blockquote>
+<p>一个人不该过分自省，这会使他变得软弱，理智的做法，有在做很小的决定时有效，至于改变人生的事情，意义非凡的事情，你必须冒险。总是碰巧发生的，只有不重要的事，才有周全的计划。 </p>
+</blockquote>
+<p>这里的小事，大概理解为生活中工作中重复的事情，小而不可忽略细节，避免一点疏忽酿成大错。面对机会要敢于面对，希望以后的我能够做到</p>
+<blockquote>
+<p>自省的结果不应该是自我怀疑，而应该是做出决定。自省的正确做法是抽离自我局限，从旁观角度看问题，时刻留一个更高的视角观察自身。保持自省，行一事省一事反而能避免仿徨。</p>
+<p>自省却又不尝试改变才会越来越自卑</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>introspective</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>html 标签转图片</title>
+    <url>/2022/09/20/javascript/html2image/</url>
+    <content><![CDATA[<p>今天的任务是一个分享功能，需要用html标签写成类似海报的效果，然后转换为图片的格式并保存。</p>
+<span id="more"></span>
+
+<p>根据大佬的经验，需要一个<code>html2image</code>的插件。</p>
+<p>这里选用的是 <code>dom-to-image</code> 这个插件</p>
+<p>海报生成的主要内容是一个二维码，关于生成二维码的插件 <code>qrcode</code> 坑比较多，单独写一篇。。。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先下载 <code>dom-to-image</code> 依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i dom-to-image</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>dom-to-image 的作用是将html标签转换成base64,这串base64文本放在浏览器地址栏或者img标签的src属性里，都会被解析成图片</p>
+</blockquote>
+<p>然后下载 <code>file-saver</code> 依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i file-saver</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这个依赖的作用是将字符串，blob(文件流),甚至是网络上的文件导出，让浏览器弹出下载。非常方便的实现纯前端下载，可导出的大小为500兆，一般场合是够用了。</p>
+</blockquote>
+<h3 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;sharePoster&quot;&gt;</span><br><span class="line">		&lt;u-popup :show=&quot;show&quot; mode=&quot;center&quot; @close=&quot;close&quot; @open=&quot;open&quot; customStyle=&quot;width:80%&quot;&gt;</span><br><span class="line">			&lt;view id=&quot;body&quot;&gt;</span><br><span class="line">				&lt;view class=&quot;product-detail-head&quot; v-if=&quot;product&quot;&gt;</span><br><span class="line">					&lt;view class=&quot;product-img&quot;&gt;</span><br><span class="line">						&lt;u-image :src=&quot;product.productLogo&quot; width=&quot;110&quot; height=&quot;110&quot;&gt;&lt;/u-image&gt;</span><br><span class="line">					&lt;/view&gt;</span><br><span class="line">					&lt;view class=&quot;product-info&quot;&gt;</span><br><span class="line">						&lt;u--text :text=&quot;product.productName&quot; color=&quot;#333&quot; bold size=&quot;22&quot; lines=&quot;1&quot;&gt;&lt;/u--text&gt;</span><br><span class="line">						&lt;u--text :text=&quot;product.productSlogan&quot; color=&quot;#666&quot; size=&quot;16&quot; lines=&quot;2&quot;&gt;&lt;/u--text&gt;</span><br><span class="line">						&lt;view class=&quot;mate&quot;&gt;</span><br><span class="line">							&lt;u--text prefixIcon=&quot;tags&quot; iconStyle=&quot;font-size: 32rpx&quot; :text=&quot;product.typeName&quot;</span><br><span class="line">								color=&quot;#999&quot; size=&quot;18&quot; align=&quot;right&quot;&gt;</span><br><span class="line">							&lt;/u--text&gt;</span><br><span class="line">						&lt;/view&gt;</span><br><span class="line">					&lt;/view&gt;</span><br><span class="line">				&lt;/view&gt;</span><br><span class="line">                &lt;!-- 这个是生成二维码插件 --&gt;</span><br><span class="line">				&lt;qrcode class=&quot;qrcode&quot; :value=&quot;this.url&quot;&gt;&lt;/qrcode&gt;</span><br><span class="line">				&lt;u--text text=&quot;扫一扫查看详情&quot; align=&quot;center&quot;&gt;&lt;/u--text&gt;</span><br><span class="line">			&lt;/view&gt;</span><br><span class="line">			&lt;u-button class=&quot;saveImg&quot; text=&quot;保存图片&quot; @click=&quot;createImage&quot;&gt;&lt;/u-button&gt;</span><br><span class="line">		&lt;/u-popup&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	import domtoimage from &#x27;dom-to-image&#x27;</span><br><span class="line">	import FileSaver from &#x27;file-saver&#x27;</span><br><span class="line">	import qrcode from &#x27;@/components/qrcode.vue&#x27;</span><br><span class="line">	export default &#123;</span><br><span class="line">		name: &quot;sharePoster&quot;,</span><br><span class="line">		components: &#123;</span><br><span class="line">			qrcode</span><br><span class="line">		&#125;,</span><br><span class="line">		props: &#123;</span><br><span class="line">			url: &#123;</span><br><span class="line">				type: String,</span><br><span class="line">				require: false,</span><br><span class="line">				default: () =&gt; &#x27;&#x27;</span><br><span class="line">			&#125;,</span><br><span class="line">			show: &#123;</span><br><span class="line">				type: Boolean,</span><br><span class="line">				require: false,</span><br><span class="line">				default: () =&gt; false</span><br><span class="line">			&#125;,</span><br><span class="line">			product: &#123;</span><br><span class="line">				type: Object,</span><br><span class="line">				require: false,</span><br><span class="line">				default: () =&gt; null</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			open() &#123;</span><br><span class="line">				// console.log(&#x27;open&#x27;);</span><br><span class="line">			&#125;,</span><br><span class="line">			close() &#123;</span><br><span class="line">				this.$emit(&#x27;update:show&#x27;, false)</span><br><span class="line">			&#125;,</span><br><span class="line">			createImage()&#123;</span><br><span class="line">                //先获取下dom元素</span><br><span class="line">				let body=document.getElementById(&#x27;body&#x27;)</span><br><span class="line">				let _this=this</span><br><span class="line">                //dom元素转换为base64</span><br><span class="line">				domtoimage.toPng(body).then(function (dataUrl) &#123;</span><br><span class="line">                    //这里的dataUrl就是base64</span><br><span class="line">                    console.log(dataUrl)</span><br><span class="line">                    //传入base64这一大串字符，设置下文件名。 转换成功的话浏览器就自动弹出下载了</span><br><span class="line">                    FileSaver.saveAs(dataUrl, _this.product.productName+&#x27;.png&#x27;);</span><br><span class="line">                &#125;)</span><br><span class="line">                .catch(function (error) &#123;</span><br><span class="line">                    console.error(&#x27;生成失败&#x27;, error);</span><br><span class="line">                &#125;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用非常简单，主要实现在<code>createImage()</code>方法</p>
+<h2 id="dom-to-image-详细使用"><a href="#dom-to-image-详细使用" class="headerlink" title="dom-to-image 详细使用"></a>dom-to-image 详细使用</h2><p>待写</p>
+<h2 id="file-saver-详细使用"><a href="#file-saver-详细使用" class="headerlink" title="file-saver 详细使用"></a>file-saver 详细使用</h2><p>待写</p>
+]]></content>
+      <categories>
+        <category>javascript</category>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>js工具类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>centOS 配置 open-jdk</title>
+    <url>/2022/07/15/linux/3-centOS%E9%85%8D%E7%BD%AEminio/</url>
+    <content><![CDATA[<p>在centOS中安装MinIO存储，安装完成进行后台运行，如果有机会的化，重置下系统再安装，因为安装运行的过程中，要给程序或文件夹赋权后才能正常使用。</p>
+<span id="more"></span>
+
+
+
+
+
+<p>后台运行minio</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">nohup minio server --address <span class="string">&#x27;0.0.0.0:9000&#x27;</span> --console-address <span class="string">&#x27;0.0.0.0:9001&#x27;</span> /mnt/data 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>centOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven 配置打包资源分离</title>
+    <url>/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</url>
+    <content><![CDATA[<p>最近使用 spring blade 框架开发一个项目，使用 maven 将项目打成一个 jar 包，最后构建成的 jar 包足足有150mb，其中源码、配置部分只有5~6兆，其余全是依赖。这要是每次上传服务器都传一个150兆的包，属实浪费，所以想到了资源分离的方式，将依赖、配置文件、模板文件和源码进行分离，每次更新项目只上传依赖以外的东西。</p>
+<span id="more"></span>
+
+]]></content>
+      <categories>
+        <category>maven</category>
+      </categories>
+      <tags>
+        <tag>maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搜集一些可能用得上的网站</title>
+    <url>/2022/09/15/resource/web/</url>
+    <content><![CDATA[<p>g各种类型的网站，整理归档。虽说现在的浏览器都很智能，标签同步在云端非常方便，但还是整理下比较放心。顺便看看都遗留了哪些网站。</p>
+<span id="more"></span>
+
+<h2 id="通用类"><a href="#通用类" class="headerlink" title="通用类"></a>通用类</h2><p><a href="https://www.samr.gov.cn/">国家市场监督总局</a> :<a href="https://www.samr.gov.cn/">https://www.samr.gov.cn/</a></p>
+<blockquote>
+<p>上来就是大的，不过就用到了 合同示范文本库 还有风险提醒，注意事项</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>资料</category>
+      </categories>
   </entry>
 </search>

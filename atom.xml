@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-08-10T10:49:09.258Z</updated>
+  <updated>+020015-09-15T14:32:21.000Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自省</title>
+    <link href="https://sndshun.xyz/20015/09/15/introspective/introspective/"/>
+    <id>https://sndshun.xyz/20015/09/15/introspective/introspective/</id>
+    <published>+020015-09-15T14:32:19.000Z</published>
+    <updated>+020015-09-15T14:32:21.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;一个人不该过分自省，这会使他变得软弱，理智的做法，有在做很小的决定时有效，至于改变人生的事情，意义非凡的事情，你必须冒险。总是碰巧发生的，只有不重要的事，才有周全的计划。</summary>
+        
+      
+    
+    
+    
+    <category term="introspective" scheme="https://sndshun.xyz/categories/introspective/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html 标签转图片</title>
+    <link href="https://sndshun.xyz/2022/09/20/javascript/html2image/"/>
+    <id>https://sndshun.xyz/2022/09/20/javascript/html2image/</id>
+    <published>2022-09-20T15:04:20.000Z</published>
+    <updated>2022-09-20T15:04:25.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天的任务是一个分享功能，需要用html标签写成类似海报的效果，然后转换为图片的格式并保存。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
+    
+    <category term="node" scheme="https://sndshun.xyz/categories/javascript/node/"/>
+    
+    
+    <category term="js工具类" scheme="https://sndshun.xyz/tags/js%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜集一些可能用得上的网站</title>
+    <link href="https://sndshun.xyz/2022/09/15/resource/web/"/>
+    <id>https://sndshun.xyz/2022/09/15/resource/web/</id>
+    <published>2022-09-15T14:17:24.000Z</published>
+    <updated>2022-09-15T14:17:27.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;g各种类型的网站，整理归档。虽说现在的浏览器都很智能，标签同步在云端非常方便，但还是整理下比较放心。顺便看看都遗留了哪些网站。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="资料" scheme="https://sndshun.xyz/categories/%E8%B5%84%E6%96%99/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Maven 配置打包资源分离</title>
+    <link href="https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/"/>
+    <id>https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</id>
+    <published>2022-09-08T15:15:04.000Z</published>
+    <updated>2022-09-08T15:31:15.579Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近使用 spring blade 框架开发一个项目，使用 maven 将项目打成一个 jar 包，最后构建成的 jar 包足足有150mb，其中源码、配置部分只有5~6兆，其余全是依赖。这要是每次上传服务器都传一个150兆的包，属实浪费，所以想到了资源分离的方式，将依赖、配置文件、模板文件和源码进行分离，每次更新项目只上传依赖以外的东西。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="maven" scheme="https://sndshun.xyz/categories/maven/"/>
+    
+    
+    <category term="maven" scheme="https://sndshun.xyz/tags/maven/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -98,7 +179,7 @@
     <link href="https://sndshun.xyz/2022/07/30/html/html-theme/"/>
     <id>https://sndshun.xyz/2022/07/30/html/html-theme/</id>
     <published>2022-07-30T04:00:00.000Z</published>
-    <updated>2022-09-06T15:38:58.353Z</updated>
+    <updated>2022-09-20T14:59:23.776Z</updated>
     
     
       
@@ -111,9 +192,7 @@
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="html" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/html/"/>
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
     
     
   </entry>
@@ -137,6 +216,27 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>centOS 配置 open-jdk</title>
+    <link href="https://sndshun.xyz/2022/07/15/linux/3-centOS%E9%85%8D%E7%BD%AEminio/"/>
+    <id>https://sndshun.xyz/2022/07/15/linux/3-centOS%E9%85%8D%E7%BD%AEminio/</id>
+    <published>2022-07-15T14:44:42.000Z</published>
+    <updated>2022-07-15T14:44:46.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在centOS中安装MinIO存储，安装完成进行后台运行，如果有机会的化，重置下系统再安装，因为安装运行的过程中，要给程序或文件夹赋权后才能正常使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
+    
+    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
     
   </entry>
   
@@ -257,16 +357,14 @@
     <link href="https://sndshun.xyz/2020/10/30/html/html-tags/"/>
     <id>https://sndshun.xyz/2020/10/30/html/html-tags/</id>
     <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2022-09-06T15:38:47.089Z</updated>
+    <updated>2022-09-20T14:59:19.926Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="html" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/html/"/>
+    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
     
     
   </entry>
@@ -302,11 +400,11 @@
   </entry>
   
   <entry>
-    <title>常用命令</title>
+    <title>Linux 常用命令</title>
     <link href="https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2020-08-19T02:57:00.000Z</published>
-    <updated>2022-08-24T06:47:06.381Z</updated>
+    <updated>2022-09-20T06:15:38.048Z</updated>
     
     
     <summary type="html">&lt;p&gt;会不会无所谓，但是很方便的操作&lt;/p&gt;</summary>
@@ -361,121 +459,6 @@
     <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
     
     <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git 基本命令</title>
-    <link href="https://sndshun.xyz/2020/01/23/base/git/"/>
-    <id>https://sndshun.xyz/2020/01/23/base/git/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-09-04T08:43:32.721Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;配置公钥-私钥&quot;&gt;&lt;a href=&quot;#配置公钥-私钥&quot; class=&quot;headerlink&quot; title=&quot;配置公钥+私钥&quot;&gt;&lt;/a&gt;配置公钥+私钥&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;生成，运行&lt;code&gt;cmd&lt;/code&gt;命令：&lt;code&gt;ssh-keygen -t</summary>
-        
-      
-    
-    
-    
-    
-    <category term="git" scheme="https://sndshun.xyz/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习小网站</title>
-    <link href="https://sndshun.xyz/2020/01/23/z_temp/web-tools/"/>
-    <id>https://sndshun.xyz/2020/01/23/z_temp/web-tools/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:16:38.848Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;理论知识虽然比较干货，但学起来确实比较枯燥。理解能力比较差话还会容易误解，如果搭配一些图解或动画，学起来会容易许多，也会更有趣。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="实用网站" scheme="https://sndshun.xyz/categories/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="工具" scheme="https://sndshun.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以后的事</title>
-    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <id>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-09-06T01:16:20.604Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;docker&lt;/p&gt;
-&lt;p&gt;elasticSearch 搜索引擎&lt;/p&gt;
-&lt;p&gt;nuxt&lt;/p&gt;
-&lt;p&gt;office project&lt;/p&gt;
-&lt;p&gt;powerDesigner&lt;/p&gt;
-&lt;p&gt;23种设计模式&lt;/p&gt;
-&lt;p&gt;open-jdk&lt;/p&gt;
-&lt;p&gt;接口</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题</title>
-    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-09-05T00:36:13.693Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;被问到的面试题整理，及常被提到的题&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>简历注意事项</title>
-    <link href="https://sndshun.xyz/2020/01/23/z_temp/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://sndshun.xyz/2020/01/23/z_temp/%E7%AE%80%E5%8E%86%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-    <published>2020-01-23T04:00:00.000Z</published>
-    <updated>2022-07-31T10:16:47.220Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;简历文件命名：名字+求职岗位+工作年限&lt;/p&gt;
-&lt;p&gt;简历使用pdf格式&lt;/p&gt;
-&lt;p&gt;不用竖版简历&lt;/p&gt;
-&lt;p&gt;不用太沉重的颜色，不要用黑白配&lt;/p&gt;
-&lt;p&gt;放证件照片&lt;/p&gt;
-&lt;p&gt;字体大小，行间距&lt;/p&gt;
-&lt;p&gt;不能有错别字&lt;/p&gt;
-&lt;p&gt;简历内容顺序：&lt;/p&gt;
-&lt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

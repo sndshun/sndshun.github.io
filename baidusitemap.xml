@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
-    <lastmod>2022-09-06</lastmod>
+    <loc>https://sndshun.xyz/20015/09/15/introspective/introspective/</loc>
+    <lastmod>+020015-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/09/20/javascript/html2image/</loc>
+    <lastmod>2022-09-20</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2020/01/01/javascript/promise/</loc>
-    <lastmod>2022-09-06</lastmod>
+    <lastmod>2022-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
+    <lastmod>2022-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/07/30/html/html-theme/</loc>
+    <lastmod>2022-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/10/30/html/html-tags/</loc>
+    <lastmod>2022-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2022-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
+    <lastmod>2022-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/09/15/resource/web/</loc>
+    <lastmod>2022-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2022-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</loc>
+    <lastmod>2022-09-08</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2018/01/23/java/spring-eamil/</loc>
@@ -19,22 +55,6 @@
   <url>
     <loc>https://sndshun.xyz/2022/03/19/vue/vue-deploy/</loc>
     <lastmod>2022-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2022/07/30/html/html-theme/</loc>
-    <lastmod>2022-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/10/30/html/html-tags/</loc>
-    <lastmod>2022-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
-    <lastmod>2022-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2022-09-05</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2018/01/23/base/%E5%A4%A7%E5%B0%8F%E5%8D%95%E4%BD%8D/</loc>
@@ -66,10 +86,6 @@
   </url>
   <url>
     <loc>https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</loc>
-    <lastmod>2022-08-24</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2022-08-24</lastmod>
   </url>
   <url>
@@ -107,6 +123,10 @@
   <url>
     <loc>https://sndshun.xyz/2020/01/23/z_temp/web-tools/</loc>
     <lastmod>2022-07-31</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/07/15/linux/3-centOS%E9%85%8D%E7%BD%AEminio/</loc>
+    <lastmod>2022-07-15</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2018/05/23/java/java-base/</loc>
