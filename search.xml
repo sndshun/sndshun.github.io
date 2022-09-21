@@ -2530,6 +2530,58 @@
 <p>可以在num上设置默认值0，确保表中num列没有null值，然后这样查询：</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">=</span><span class="number">0</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="4、in-和-not-in-也要慎用，否则会导致全表扫描"><a href="#4、in-和-not-in-也要慎用，否则会导致全表扫描" class="headerlink" title="4、in 和 not in 也要慎用，否则会导致全表扫描"></a>4、in 和 not in 也要慎用，否则会导致全表扫描</h3><p>如：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num ``<span class="keyword">in</span>``(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<p>对于连续的数值，能用 between 就不要用 in 了：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num ``<span class="keyword">between</span>` `<span class="number">1</span> ``<span class="keyword">and</span>` `<span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5、避免在where子句中对字段进行表达式操作"><a href="#5、避免在where子句中对字段进行表达式操作" class="headerlink" title="5、避免在where子句中对字段进行表达式操作"></a>5、避免在where子句中对字段进行表达式操作</h3><p>比如下面的SQL中对字段就行了算术运算，这会造成引擎放弃使用索引，</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `user_id,user_project ``<span class="keyword">from</span>` `user_base ``<span class="keyword">where</span>` `age<span class="operator">*</span><span class="number">2</span><span class="operator">=</span><span class="number">36</span>;</span><br></pre></td></tr></table></figure>
+
+<p>建议改成：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `user_id,user_project ``<span class="keyword">from</span>` `user_base ``<span class="keyword">where</span>` `age<span class="operator">=</span><span class="number">36</span><span class="operator">/</span><span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>再比如</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">/</span><span class="number">2</span><span class="operator">=</span><span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<p>应改为:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">=</span><span class="number">100</span><span class="operator">*</span><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6、应尽量避免在-where-子句中使用-或-lt-gt-操作符，否则将引擎放弃使用索引而进行全表扫描"><a href="#6、应尽量避免在-where-子句中使用-或-lt-gt-操作符，否则将引擎放弃使用索引而进行全表扫描" class="headerlink" title="6、应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描"></a>6、应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描</h3><h3 id="7、应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描"><a href="#7、应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描" class="headerlink" title="7、应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描"></a>7、应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `substring``(``name``,<span class="number">1</span>,<span class="number">3</span>)<span class="operator">=</span>``<span class="string">&#x27;abc&#x27;</span>``； ``<span class="comment">--name以abc开头的id</span></span><br></pre></td></tr></table></figure>
+
+<p>应改为:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `name` `<span class="keyword">like</span>` `<span class="string">&#x27;abc%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="8、避免隐式类型转换"><a href="#8、避免隐式类型转换" class="headerlink" title="8、避免隐式类型转换"></a>8、避免隐式类型转换</h3><p>隐式转换导致索引失效.这一点应当引起重视.也是开发中经常会犯的错误.</p>
+<p>由于表的字段tu_mdn定义为varchar2(20),但在查询时把该字段作为number类型以where条件传给Oracle,这样会导致索引失效.</p>
+<p>错误的例子：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `<span class="operator">*</span> ``<span class="keyword">from</span>` `test ``<span class="keyword">where</span>` `tu_mdn<span class="operator">=</span><span class="number">13333333333</span>;</span><br></pre></td></tr></table></figure>
+
+<p>正确的例子：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `<span class="operator">*</span> ``<span class="keyword">from</span>` `test ``<span class="keyword">where</span>` `tu_mdn<span class="operator">=</span>``<span class="string">&#x27;13333333333&#x27;</span>``;</span><br></pre></td></tr></table></figure>
+
+<h3 id="9、对于联合索引-组合索引-来说，要遵守最左前缀法则"><a href="#9、对于联合索引-组合索引-来说，要遵守最左前缀法则" class="headerlink" title="9、对于联合索引(组合索引)来说，要遵守最左前缀法则"></a>9、对于联合索引(组合索引)来说，要遵守最左前缀法则</h3><h3 id="10、任何地方都不要使用-select-from-t-，用具体的字段列表代替“-”，不要返回用不到的任何字段。"><a href="#10、任何地方都不要使用-select-from-t-，用具体的字段列表代替“-”，不要返回用不到的任何字段。" class="headerlink" title="10、任何地方都不要使用 select * from t ，用具体的字段列表代替“*”，不要返回用不到的任何字段。"></a>10、任何地方都不要使用 select * from t ，用具体的字段列表代替“*”，不要返回用不到的任何字段。</h3><p>SELECT*增加很多不必要的消耗（CPU、IO、内存、网络带宽）；</p>
+<p>增加了使用覆盖索引的可能性；</p>
+<p>当表结构发生改变时，前断也需要更新。</p>
+<p>所以要求直接在select后面接上字段名。</p>
+<h3 id="11、如果排序字段没有用到索引，就尽量少排序"><a href="#11、如果排序字段没有用到索引，就尽量少排序" class="headerlink" title="11、如果排序字段没有用到索引，就尽量少排序"></a>11、如果排序字段没有用到索引，就尽量少排序</h3><h3 id="12、如果限制条件中其他字段没有索引，尽量少用or"><a href="#12、如果限制条件中其他字段没有索引，尽量少用or" class="headerlink" title="12、如果限制条件中其他字段没有索引，尽量少用or"></a>12、如果限制条件中其他字段没有索引，尽量少用or</h3><p>or两边的字段中，如果有一个不是索引字段，而其他条件也不是索引字段，会造成该查询不走索引的情况。</p>
+<p>很多时候使用union all或者是union（必要的时候）的方式来代替“or”会得到更好的效果。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">=</span><span class="number">10</span> ``<span class="keyword">or</span>` `num<span class="operator">=</span><span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<p>可以这样查询：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">=</span><span class="number">10</span>``<span class="keyword">union</span>` `<span class="keyword">all</span>``<span class="keyword">select</span>` `id ``<span class="keyword">from</span>` `t ``<span class="keyword">where</span>` `num<span class="operator">=</span><span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="13、尽量用union-all代替union"><a href="#13、尽量用union-all代替union" class="headerlink" title="13、尽量用union all代替union"></a>13、尽量用union all代替union</h3><p>union和union all的差异主要是前者需要将结果集合并后再进行唯一性过滤操作，这就会涉及到排序，增加大量的CPU运算，加大资源消耗及延迟。</p>
+<p>当然，union all的前提条件是两个结果集没有重复数据。</p>
+<h3 id="14、不建议使用-前缀模糊查询"><a href="#14、不建议使用-前缀模糊查询" class="headerlink" title="14、不建议使用%前缀模糊查询"></a>14、不建议使用%前缀模糊查询</h3><p>例如LIKE“%name”或者LIKE“%name%”，这种查询会导致索引失效而进行全表扫描。但是可以使用LIKE “name%”。</p>
+<p>假如有这样一列code的值为’AAA’,’AAB’,’BAA’,’BAB’ ,如果where code like ‘%AB’条件</p>
+<p>由于前面是模糊的，所以不能利用索引的顺序，必须一个个去找，看是否满足条件。这样会导致全索引扫描或者全表扫描。</p>
+<p>如果是这样的条件where code like ‘A % ‘，就可以查找CODE中A开头的CODE的位置，</p>
+<p>当碰到B开头的数据时，就可以停止查找了，因为后面的数据一定不满足要求。这样就可以利用索引了。</p>
+<h3 id="15、索引数量不要过多"><a href="#15、索引数量不要过多" class="headerlink" title="15、索引数量不要过多"></a>15、索引数量不要过多</h3><p>索引并不是越多越好，索引固然可以提高相应的 select 的效率，但同时也降低了 insert 及 update 的效率，</p>
+<p>因为 insert 或 update 时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。</p>
+<p>一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。</p>
 ]]></content>
       <categories>
         <category>sql</category>
