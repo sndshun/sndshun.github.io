@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sndshun.xyz/20015/09/15/introspective/introspective/</loc>
-    <lastmod>+020015-09-15</lastmod>
+    <loc>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</loc>
+    <lastmod>2022-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/09/21/sql/sql-tuning/</loc>
+    <lastmod>2022-09-21</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2022/09/20/javascript/html2image/</loc>
@@ -133,10 +137,6 @@
     <lastmod>2022-07-10</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</loc>
-    <lastmod>2022-07-10</lastmod>
-  </url>
-  <url>
     <loc>https://sndshun.xyz/2021/11/15/java/springmvc-jsonparam/</loc>
     <lastmod>2022-07-10</lastmod>
   </url>
@@ -155,5 +155,9 @@
   <url>
     <loc>https://sndshun.xyz/2019/10/11/javascript/javascript-format/</loc>
     <lastmod>2021-12-08</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2015/09/15/introspective/introspective/</loc>
+    <lastmod>2015-09-15</lastmod>
   </url>
 </urlset> 
