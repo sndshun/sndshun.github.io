@@ -1,3 +1,8 @@
+https://sndshun.xyz/2022/10/11/javascript/localstorage/
+https://sndshun.xyz/2022/10/10/java/spring/spring-@profile/
+https://sndshun.xyz/2022/10/09/java/java-transient/
+https://sndshun.xyz/2022/10/09/java/lombok/
+https://sndshun.xyz/2022/10/02/java/spring%20boot/spirng-boot-init/
 https://sndshun.xyz/2022/09/21/sql/sql-tuning/
 https://sndshun.xyz/2022/09/20/javascript/html2image/
 https://sndshun.xyz/2022/09/15/resource/web/
@@ -37,4 +42,3 @@ https://sndshun.xyz/2018/01/23/base/date/
 https://sndshun.xyz/2018/01/23/base/data-structure/
 https://sndshun.xyz/2018/01/23/base/%E5%A4%A7%E5%B0%8F%E5%8D%95%E4%BD%8D/
 https://sndshun.xyz/2018/01/23/java/spring-eamil/
-https://sndshun.xyz/2015/09/15/introspective/introspective/

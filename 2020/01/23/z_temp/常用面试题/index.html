@@ -29,7 +29,7 @@
 <meta property="og:description" content="被问到的面试题整理，及常被提到的题">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-23T04:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-15T01:02:45.269Z">
+<meta property="article:modified_time" content="2022-10-18T02:20:55.868Z">
 <meta property="article:author" content="sndshun">
 <meta property="article:tag" content="sndshun">
 <meta name="twitter:card" content="summary">
@@ -130,15 +130,79 @@
 <h5 id="什么是spring-beans"><a href="#什么是spring-beans" class="headerlink" title="什么是spring beans"></a>什么是spring beans</h5><blockquote>
 <p>是构成Spring应用核心的Java对象</p>
 </blockquote>
-<h5 id="ioc-的优点"><a href="#ioc-的优点" class="headerlink" title="ioc 的优点"></a>ioc 的优点</h5><h5 id="有哪些不同类型的ioc注入"><a href="#有哪些不同类型的ioc注入" class="headerlink" title="有哪些不同类型的ioc注入"></a>有哪些不同类型的ioc注入</h5><h5 id="MySQL-union-union-all的区别，哪个查询快"><a href="#MySQL-union-union-all的区别，哪个查询快" class="headerlink" title="MySQL union - union all的区别，哪个查询快"></a>MySQL union - union all的区别，哪个查询快</h5><h5 id="MySQL中有几个聚合函数"><a href="#MySQL中有几个聚合函数" class="headerlink" title="MySQL中有几个聚合函数"></a>MySQL中有几个聚合函数</h5><blockquote>
+<h5 id="ioc-的优点"><a href="#ioc-的优点" class="headerlink" title="ioc 的优点"></a>ioc 的优点</h5><blockquote>
+<ol>
+<li>资源集中管理，实现资源可配置和易管理</li>
+<li>降低耦合度</li>
+</ol>
+</blockquote>
+<h5 id="有哪些不同类型的ioc注入"><a href="#有哪些不同类型的ioc注入" class="headerlink" title="有哪些不同类型的ioc注入"></a>有哪些不同类型的ioc注入</h5><blockquote>
+<p>构造器注入</p>
+<p>setter注入</p>
+<p>注解方式注入</p>
+</blockquote>
+<h5 id="MySQL-union-union-all的区别，哪个查询快"><a href="#MySQL-union-union-all的区别，哪个查询快" class="headerlink" title="MySQL union - union all的区别，哪个查询快"></a>MySQL union - union all的区别，哪个查询快</h5><blockquote>
+<p>union 会去除重复行数据,重新排列</p>
+<p>union all 直接显示所以行数据</p>
+<p>union all 更快些</p>
+</blockquote>
+<h5 id="MySQL中有几个聚合函数"><a href="#MySQL中有几个聚合函数" class="headerlink" title="MySQL中有几个聚合函数"></a>MySQL中有几个聚合函数</h5><blockquote>
 <p>count() max() min() sum() avg()</p>
 </blockquote>
-<h5 id="spring-mvc的特性"><a href="#spring-mvc的特性" class="headerlink" title="spring mvc的特性"></a>spring mvc的特性</h5><h5 id="jQuery-html-text-val-的区别"><a href="#jQuery-html-text-val-的区别" class="headerlink" title="jQuery html(),text(),val()的区别"></a>jQuery html(),text(),val()的区别</h5><h5 id="innerHtml-innerText-有什么区别"><a href="#innerHtml-innerText-有什么区别" class="headerlink" title="innerHtml(),innerText()有什么区别"></a>innerHtml(),innerText()有什么区别</h5><h5 id="jQuery常用选择器"><a href="#jQuery常用选择器" class="headerlink" title="jQuery常用选择器"></a>jQuery常用选择器</h5><h5 id="string-buffer-和-string-builder的区别"><a href="#string-buffer-和-string-builder的区别" class="headerlink" title="string buffer 和 string builder的区别"></a>string buffer 和 string builder的区别</h5><h5 id="list-set-map-是否都继承collection类-？有什么区别"><a href="#list-set-map-是否都继承collection类-？有什么区别" class="headerlink" title="list set map 是否都继承collection类 ？有什么区别"></a>list set map 是否都继承collection类 ？有什么区别</h5><h5 id="RequestMapping-注解的作用"><a href="#RequestMapping-注解的作用" class="headerlink" title="@RequestMapping 注解的作用"></a>@RequestMapping 注解的作用</h5><h5 id="Autowired-注解的作用"><a href="#Autowired-注解的作用" class="headerlink" title="@Autowired 注解的作用"></a>@Autowired 注解的作用</h5><h5 id="索引有什么作用"><a href="#索引有什么作用" class="headerlink" title="索引有什么作用"></a>索引有什么作用</h5><blockquote>
+<h5 id="spring-mvc的特性"><a href="#spring-mvc的特性" class="headerlink" title="spring mvc的特性"></a>spring mvc的特性</h5><blockquote>
+<p>灵活性、非侵入性、可配置性</p>
+<p>无需额外开发控制器对象</p>
+<p>支持国际化</p>
+<p>支持多种视图技术 jsp velocity freeMarker</p>
+<p>内置常见校验器</p>
+</blockquote>
+<h5 id="jQuery-html-text-val-的区别"><a href="#jQuery-html-text-val-的区别" class="headerlink" title="jQuery html(),text(),val()的区别"></a>jQuery html(),text(),val()的区别</h5><blockquote>
+<p>html()读取或修改HTML内容，包括标签</p>
+<p>text()用来读取或修改元素文本内容</p>
+<p>val()读取修改表单值</p>
+</blockquote>
+<h5 id="innerHtml-innerText-有什么区别"><a href="#innerHtml-innerText-有什么区别" class="headerlink" title="innerHtml(),innerText()有什么区别"></a>innerHtml(),innerText()有什么区别</h5><blockquote>
+<p>innerHtml()可以获取标签和值</p>
+<p>innerText()只能获取标签中的值</p>
+</blockquote>
+<h5 id="jQuery常用选择器"><a href="#jQuery常用选择器" class="headerlink" title="jQuery常用选择器"></a>jQuery常用选择器</h5><blockquote>
+<p>基本选择器</p>
+<p>id 原生 类 </p>
+<p>层次选择器</p>
+<p>表单选择器</p>
+<p>表单对象属性选择器</p>
+<p>基本过滤选择器</p>
+<p>内容过滤选择器</p>
+</blockquote>
+<h5 id="string-buffer-和-string-builder的区别"><a href="#string-buffer-和-string-builder的区别" class="headerlink" title="string buffer 和 string builder的区别"></a>string buffer 和 string builder的区别</h5><blockquote>
+<p>方法和功能是完全等价的</p>
+<p>string buffer是线程安全的，string builder不是所以效率更高</p>
+</blockquote>
+<h5 id="list-set-map-是否都继承collection类-？有什么区别"><a href="#list-set-map-是否都继承collection类-？有什么区别" class="headerlink" title="list set map 是否都继承collection类 ？有什么区别"></a>list set map 是否都继承collection类 ？有什么区别</h5><blockquote>
+<p>map 不继承collection类</p>
+<p>list 有序集合</p>
+<p>set 无序集合</p>
+<p>map 是一个接口，键对值存储</p>
+</blockquote>
+<h5 id="RequestMapping-注解的作用"><a href="#RequestMapping-注解的作用" class="headerlink" title="@RequestMapping 注解的作用"></a>@RequestMapping 注解的作用</h5><blockquote>
+<p>将请求和处理请求的控制器方法关联起来，建立映射关系</p>
+</blockquote>
+<h5 id="Autowired-注解的作用"><a href="#Autowired-注解的作用" class="headerlink" title="@Autowired 注解的作用"></a>@Autowired 注解的作用</h5><blockquote>
+<p>自动装配 根据类型装配</p>
+</blockquote>
+<h5 id="索引有什么作用"><a href="#索引有什么作用" class="headerlink" title="索引有什么作用"></a>索引有什么作用</h5><blockquote>
 <p>提高检索速度</p>
 <p>保证唯一性</p>
 <p>加速表之间的连接</p>
 </blockquote>
-<h5 id="主键跟外键的区别"><a href="#主键跟外键的区别" class="headerlink" title="主键跟外键的区别"></a>主键跟外键的区别</h5><h5 id="MySQL分组和排序"><a href="#MySQL分组和排序" class="headerlink" title="MySQL分组和排序"></a>MySQL分组和排序</h5><blockquote>
+<h5 id="主键跟外键的区别"><a href="#主键跟外键的区别" class="headerlink" title="主键跟外键的区别"></a>主键跟外键的区别</h5><blockquote>
+<ol>
+<li>主键是唯一标识一条记录,不能有重复的,而外键是另一表的主键,可以重复。</li>
+<li>主键不允许为空,而外键可以。</li>
+<li>主键是用来保证数据完整性,而外键是用来和其他表建立联系的。</li>
+</ol>
+</blockquote>
+<h5 id="MySQL分组和排序"><a href="#MySQL分组和排序" class="headerlink" title="MySQL分组和排序"></a>MySQL分组和排序</h5><blockquote>
 <p>group by    order by</p>
 </blockquote>
 <h5 id="hashmap和hashtable的区别和作用"><a href="#hashmap和hashtable的区别和作用" class="headerlink" title="hashmap和hashtable的区别和作用"></a>hashmap和hashtable的区别和作用</h5><blockquote>
@@ -146,7 +210,10 @@
 <p>HashMap的键和值都允许有null值存在,而HashTable则不行。</p>
 <p>Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。</p>
 </blockquote>
-<h5 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h5><h5 id="JDK-和-JRE-有什么区别"><a href="#JDK-和-JRE-有什么区别" class="headerlink" title="JDK 和 JRE 有什么区别"></a>JDK 和 JRE 有什么区别</h5><blockquote>
+<h5 id="Redis有什么数据类型"><a href="#Redis有什么数据类型" class="headerlink" title="Redis有什么数据类型"></a>Redis有什么数据类型</h5><blockquote>
+<p>string list set zset hash Geo经纬数据 bitmap</p>
+</blockquote>
+<h5 id="JDK-和-JRE-有什么区别"><a href="#JDK-和-JRE-有什么区别" class="headerlink" title="JDK 和 JRE 有什么区别"></a>JDK 和 JRE 有什么区别</h5><blockquote>
 <p>JDK是Java开发工具包，提供了开发环境和运行环境</p>
 <p>JRE只是Java运行环境，包含Java编译器Javac和许多Java程序调试与分析的工具</p>
 </blockquote>

@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2022-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
+    <lastmod>2022-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/10/11/javascript/localstorage/</loc>
+    <lastmod>2022-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/10/02/java/spring%20boot/spirng-boot-init/</loc>
+    <lastmod>2022-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/10/10/java/spring/spring-@profile/</loc>
+    <lastmod>2022-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/10/09/java/java-transient/</loc>
+    <lastmod>2022-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
+    <lastmod>2022-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/10/09/java/lombok/</loc>
+    <lastmod>2022-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</loc>
+    <lastmod>2022-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2022-09-29</lastmod>
+  </url>
+  <url>
     <loc>https://sndshun.xyz/2021/10/26/sql/mysql-delimiter/</loc>
     <lastmod>2022-09-21</lastmod>
   </url>
@@ -17,10 +57,6 @@
     <lastmod>2022-09-20</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2019/10/07/javascript/javascript-skills/</loc>
-    <lastmod>2022-09-20</lastmod>
-  </url>
-  <url>
     <loc>https://sndshun.xyz/2022/07/30/html/html-theme/</loc>
     <lastmod>2022-09-20</lastmod>
   </url>
@@ -29,24 +65,8 @@
     <lastmod>2022-09-20</lastmod>
   </url>
   <url>
-    <loc>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2022-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
-    <lastmod>2022-09-16</lastmod>
-  </url>
-  <url>
     <loc>https://sndshun.xyz/2022/09/15/resource/web/</loc>
     <lastmod>2022-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2020/01/23/z_temp/%E5%B8%B8%E7%94%A8%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2022-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</loc>
-    <lastmod>2022-09-08</lastmod>
   </url>
   <url>
     <loc>https://sndshun.xyz/2018/01/23/java/spring-eamil/</loc>
@@ -155,9 +175,5 @@
   <url>
     <loc>https://sndshun.xyz/2019/10/11/javascript/javascript-format/</loc>
     <lastmod>2021-12-08</lastmod>
-  </url>
-  <url>
-    <loc>https://sndshun.xyz/2015/09/15/introspective/introspective/</loc>
-    <lastmod>2015-09-15</lastmod>
   </url>
 </urlset> 

@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2022-09-21T02:38:21.000Z</updated>
+  <updated>2022-10-11T09:48:48.000Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -15,6 +15,102 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript中的localstorage</title>
+    <link href="https://sndshun.xyz/2022/10/11/javascript/localstorage/"/>
+    <id>https://sndshun.xyz/2022/10/11/javascript/localstorage/</id>
+    <published>2022-10-11T09:48:46.000Z</published>
+    <updated>2022-10-11T09:48:48.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在HTML5中，新加入了一个localStorage特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为4k)，localStorage中一般浏览器支持的是5M大小，这个在不同的浏览器中localStorage会有所不同。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="javascript" scheme="https://sndshun.xyz/categories/javascript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring @profile注解</title>
+    <link href="https://sndshun.xyz/2022/10/10/java/spring/spring-@profile/"/>
+    <id>https://sndshun.xyz/2022/10/10/java/spring/spring-@profile/</id>
+    <published>2022-10-10T07:54:50.000Z</published>
+    <updated>2022-10-10T07:54:52.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在开发邮件服务时,我们会面临的情况就是在开发环境或者测试环境下发送邮件策略并不相同,开发环境下发送邮件,测试环境下不发送邮件，我们可以采用spring.profiles.active和@profile结合使用解决该问题。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/10/09/java/java-transient/"/>
+    <id>https://sndshun.xyz/2022/10/09/java/java-transient/</id>
+    <published>2022-10-09T14:45:54.035Z</published>
+    <updated>2022-10-09T15:18:30.849Z</updated>
+    
+    
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: java 中的transient关键字&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: 2022-10-09 22:47:24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;updated: 2022-10-09 22:47:26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;categories: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- [java]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;transient 瞬时关键字，被此关键字修饰的成员变量无法被序列化，String类型的值被修饰后序列化后的值为Null，int类型的则为0&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>lombok 中的注解</title>
+    <link href="https://sndshun.xyz/2022/10/09/java/lombok/"/>
+    <id>https://sndshun.xyz/2022/10/09/java/lombok/</id>
+    <published>2022-10-09T14:32:00.000Z</published>
+    <updated>2022-10-09T14:32:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;常用注解有&quot;&gt;&lt;a href=&quot;#常用注解有&quot; class=&quot;headerlink&quot; title=&quot;常用注解有&quot;&gt;&lt;/a&gt;常用注解有&lt;/h2&gt;&lt;p&gt;@Setter</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://sndshun.xyz/2022/10/02/java/spring%20boot/spirng-boot-init/"/>
+    <id>https://sndshun.xyz/2022/10/02/java/spring%20boot/spirng-boot-init/</id>
+    <published>2022-10-02T08:08:53.132Z</published>
+    <updated>2022-10-11T09:45:55.938Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;阿里构建地址&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>SQL 优化常用方法</title>
@@ -84,7 +180,7 @@
     <link href="https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/"/>
     <id>https://sndshun.xyz/2022/09/08/maven/%E8%B5%84%E6%BA%90%E5%88%86%E7%A6%BB/</id>
     <published>2022-09-08T15:15:04.000Z</published>
-    <updated>2022-09-08T15:31:15.579Z</updated>
+    <updated>2022-10-02T07:35:06.395Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近使用 spring blade 框架开发一个项目，使用 maven 将项目打成一个 jar 包，最后构建成的 jar 包足足有150mb，其中源码、配置部分只有5~6兆，其余全是依赖。这要是每次上传服务器都传一个150兆的包，属实浪费，所以想到了资源分离的方式，将依赖、配置文件、模板文件和源码进行分离，每次更新项目只上传依赖以外的东西。&lt;/p&gt;</summary>
@@ -350,116 +446,6 @@
     
     
     <category term="mysql" scheme="https://sndshun.xyz/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 实用标签</title>
-    <link href="https://sndshun.xyz/2020/10/30/html/html-tags/"/>
-    <id>https://sndshun.xyz/2020/10/30/html/html-tags/</id>
-    <published>2020-10-30T04:00:00.000Z</published>
-    <updated>2022-09-20T14:59:19.926Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt;标签是很基础的知识，但偶然间发现一些复杂的第三方组件，用原生标签也可以简单实现。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="html" scheme="https://sndshun.xyz/categories/html/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>centOS 安装 Docker</title>
-    <link href="https://sndshun.xyz/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/"/>
-    <id>https://sndshun.xyz/2020/08/21/linux/100-CentOS%E5%AE%89%E8%A3%85Docker/</id>
-    <published>2020-08-21T09:54:00.000Z</published>
-    <updated>2022-08-24T06:47:32.475Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Docker要求CentOS的内核版本要高于3.10&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;用到的命令&quot;&gt;&lt;a href=&quot;#用到的命令&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
-    
-    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 常用命令</title>
-    <link href="https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://sndshun.xyz/2020/08/19/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
-    <published>2020-08-19T02:57:00.000Z</published>
-    <updated>2022-09-20T06:15:38.048Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;会不会无所谓，但是很方便的操作&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
-    
-    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centOS 配置 open-jdk</title>
-    <link href="https://sndshun.xyz/2020/08/11/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/"/>
-    <id>https://sndshun.xyz/2020/08/11/linux/2-centOS%E9%85%8D%E7%BD%AEopen-jdk/</id>
-    <published>2020-08-11T09:54:00.000Z</published>
-    <updated>2022-08-24T06:47:27.215Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;用yum命令在centOS8.2上配置OpenJDK&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
-    
-    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centOS 初认识</title>
-    <link href="https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/"/>
-    <id>https://sndshun.xyz/2020/07/30/linux/1-centOS%E5%88%9D%E8%AE%A4%E8%AF%86/</id>
-    <published>2020-07-30T09:54:00.000Z</published>
-    <updated>2022-08-24T06:47:24.964Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;安装 &lt;code&gt;centOS&lt;/code&gt; 系统后生成账号密码，生成公钥私钥&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
-    
-    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
     
   </entry>
   
