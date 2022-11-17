@@ -1,3 +1,4 @@
+https://sndshun.xyz/2022/11/10/java/spring/restTemplate/
 https://sndshun.xyz/2022/10/11/javascript/localstorage/
 https://sndshun.xyz/2022/10/10/java/spring/spring-@profile/
 https://sndshun.xyz/2022/10/09/java/java-transient/
