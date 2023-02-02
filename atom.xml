@@ -6,7 +6,7 @@
   <link href="https://sndshun.xyz/atom.xml" rel="self"/>
   
   <link href="https://sndshun.xyz/"/>
-  <updated>2023-01-10T07:54:16.317Z</updated>
+  <updated>2023-02-02T07:25:16.327Z</updated>
   <id>https://sndshun.xyz/</id>
   
   <author>
@@ -17,19 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>centOS 使用 docker</title>
-    <link href="https://sndshun.xyz/2023/01/10/linux/101-contOS%E4%BD%BF%E7%94%A8Docker/"/>
-    <id>https://sndshun.xyz/2023/01/10/linux/101-contOS%E4%BD%BF%E7%94%A8Docker/</id>
-    <published>2023-01-10T06:31:01.000Z</published>
-    <updated>2023-01-10T07:54:16.317Z</updated>
+    <title>yappam 工作总结</title>
+    <link href="https://sndshun.xyz/2023/02/01/work-yappam/work/"/>
+    <id>https://sndshun.xyz/2023/02/01/work-yappam/work/</id>
+    <published>2023-02-01T09:39:10.000Z</published>
+    <updated>2023-02-02T07:25:16.327Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;使用docker无非是安装各种环境&lt;/p&gt;
-&lt;h1 id=&quot;常用操作&quot;&gt;&lt;a href=&quot;#常用操作&quot; class=&quot;headerlink&quot; title=&quot;常用操作&quot;&gt;&lt;/a&gt;常用操作&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;p&gt;！&lt;/p&gt;
+&lt;p&gt;抖音线索对接 -对方调我方接口&lt;/p&gt;
+&lt;p&gt;doss线索对接 -我方调对方接口&lt;/p&gt;
+&lt;p&gt;restTemplate&lt;/p&gt;
+&lt;p&gt;上汽红岩蜘蛛智选bug修复 需求迭代&lt;/p&gt;
+&lt;p&gt;凯迪拉克经销商管理工具-区域活动模块</summary>
+        
+      
+    
+    
+    
+    
+    <category term="work" scheme="https://sndshun.xyz/tags/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centOS 安装 nginx</title>
+    <link href="https://sndshun.xyz/2023/01/11/linux/4-centOS%E5%AE%89%E8%A3%85nginx/"/>
+    <id>https://sndshun.xyz/2023/01/11/linux/4-centOS%E5%AE%89%E8%A3%85nginx/</id>
+    <published>2023-01-11T08:25:51.000Z</published>
+    <updated>2023-01-11T08:28:14.518Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.安装依赖包&lt;/p&gt;
+&lt;p&gt;//一键安装上面四个依赖&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
     
@@ -40,17 +69,45 @@
     
     <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
     
-    <category term="docker" scheme="https://sndshun.xyz/tags/docker/"/>
+    <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java8使用optional判空</title>
+    <link href="https://sndshun.xyz/2023/01/11/java/work/java-optional/"/>
+    <id>https://sndshun.xyz/2023/01/11/java/work/java-optional/</id>
+    <published>2023-01-11T05:33:47.000Z</published>
+    <updated>2023-01-11T06:39:58.166Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;从 Java 8 引入的一个很有趣的特性是 &lt;em&gt;Optional&lt;/em&gt; 类。Optional 类主要解决的问题是bug的的空指针异 —— 码农们都非常了解的这个异常。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://sndshun.xyz/categories/java/"/>
+    
+    
+    <category term="工作常用" scheme="https://sndshun.xyz/tags/%E5%B7%A5%E4%BD%9C%E5%B8%B8%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>centOS 使用 docker</title>
-    <link href="https://sndshun.xyz/2023/01/10/java/work/java-optional/"/>
-    <id>https://sndshun.xyz/2023/01/10/java/work/java-optional/</id>
+    <link href="https://sndshun.xyz/2023/01/10/linux/101-contOS%E4%BD%BF%E7%94%A8Docker/"/>
+    <id>https://sndshun.xyz/2023/01/10/linux/101-contOS%E4%BD%BF%E7%94%A8Docker/</id>
     <published>2023-01-10T06:31:01.000Z</published>
-    <updated>2023-01-11T03:37:22.884Z</updated>
+    <updated>2023-01-11T08:20:14.738Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用docker无非是安装各种环境&lt;/p&gt;
+&lt;h1 id=&quot;常用操作&quot;&gt;&lt;a href=&quot;#常用操作&quot; class=&quot;headerlink&quot; title=&quot;常用操作&quot;&gt;&lt;/a&gt;常用操作&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
     
     
     
@@ -226,7 +283,7 @@
     <updated>2022-09-15T14:17:27.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;g各种类型的网站，整理归档。虽说现在的浏览器都很智能，标签同步在云端非常方便，但还是整理下比较放心。顺便看看都遗留了哪些网站。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;各种类型的网站，整理归档。虽说现在的浏览器都很智能，标签同步在云端非常方便，但还是整理下比较放心。顺便看看都遗留了哪些网站。&lt;/p&gt;</summary>
     
     
     
@@ -394,56 +451,6 @@
     <category term="linux" scheme="https://sndshun.xyz/tags/linux/"/>
     
     <category term="centOS" scheme="https://sndshun.xyz/tags/centOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 部署服务器配置</title>
-    <link href="https://sndshun.xyz/2022/03/19/vue/vue-deploy/"/>
-    <id>https://sndshun.xyz/2022/03/19/vue/vue-deploy/</id>
-    <published>2022-03-19T04:00:00.000Z</published>
-    <updated>2022-09-06T15:39:13.585Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;使用Nginx代理解决Vue部署服务器后的跨域问题和不能刷新的问题&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="前端" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="vue" scheme="https://sndshun.xyz/categories/%E5%89%8D%E7%AB%AF/vue/"/>
-    
-    
-    <category term="vue" scheme="https://sndshun.xyz/tags/vue/"/>
-    
-    <category term="nginx" scheme="https://sndshun.xyz/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis 学习笔记</title>
-    <link href="https://sndshun.xyz/2021/11/21/nosql/redis/"/>
-    <id>https://sndshun.xyz/2021/11/21/nosql/redis/</id>
-    <published>2021-11-21T04:00:00.000Z</published>
-    <updated>2022-08-01T06:09:28.611Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;h2 id=&quot;什么是Redis数据库&quot;&gt;&lt;a href=&quot;#什么是Redis数据库&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="nosql" scheme="https://sndshun.xyz/categories/nosql/"/>
-    
-    
-    <category term="redis" scheme="https://sndshun.xyz/tags/redis/"/>
     
   </entry>
   
