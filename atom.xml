@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>sndshun的博客</title>
+  
+  
+  <link href="https://sndshun.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://sndshun.github.io/"/>
+  <updated>2025-06-01T10:11:21.679Z</updated>
+  <id>https://sndshun.github.io/</id>
+  
+  <author>
+    <name>sndshun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://sndshun.github.io/2025/05/31/hello-world/"/>
+    <id>https://sndshun.github.io/2025/05/31/hello-world/</id>
+    <published>2025-05-31T20:24:36.000Z</published>
+    <updated>2025-06-01T10:11:21.679Z</updated>
+    
+    
+    <summary type="html">Hello hexo des</summary>
+    
+    
+    
+    <category term="Hello" scheme="https://sndshun.github.io/categories/Hello/"/>
+    
+    
+    <category term="Hello" scheme="https://sndshun.github.io/tags/Hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS安装nginx</title>
+    <link href="https://sndshun.github.io/2023/01/10/CentOS%E5%AE%89%E8%A3%85nginx/"/>
+    <id>https://sndshun.github.io/2023/01/10/CentOS%E5%AE%89%E8%A3%85nginx/</id>
+    <published>2023-01-10T20:24:36.000Z</published>
+    <updated>2025-06-01T10:11:21.679Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;1.安装依赖包&lt;/p&gt;
+&lt;p&gt;&amp;#x2F;&amp;#x2F;一键安装上面四个依赖&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
